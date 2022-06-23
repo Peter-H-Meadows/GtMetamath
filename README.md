@@ -5,7 +5,9 @@ then:
 
 ```Smalltalk
 Metacello new 
-  baseline: 'GtMetamath'; 
+  baseline: 'Metamath'; 
   repository: 'github://Peter-H-Meadows/GtMetamath';
   load.
 ```
+
+![screenshot](mm.png)
