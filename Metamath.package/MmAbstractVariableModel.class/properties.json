@@ -1,0 +1,25 @@
+{
+	"commentStamp" : "",
+	"super" : "MmAbstractModel",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fixed",
+		"mapped",
+		"mappedTo",
+		"target",
+		"isSuccess",
+		"highlightStepDone",
+		"workingOn",
+		"copy",
+		"count",
+		"color",
+		"abDict",
+		"mapCount",
+		"real"
+	],
+	"name" : "MmAbstractVariableModel",
+	"type" : "normal"
+}

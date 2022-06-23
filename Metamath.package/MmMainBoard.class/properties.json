@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "Metamath-Game",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"controller",
+		"currentlySelectedElement",
+		"mainWorkspace",
+		"usableList",
+		"proofToDo",
+		"aList",
+		"workingOnList",
+		"aPannableElement",
+		"workPane"
+	],
+	"name" : "MmMainBoard",
+	"type" : "normal"
+}

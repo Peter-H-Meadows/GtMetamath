@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "MmRawElement",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"textElement",
+		"controller",
+		"selected"
+	],
+	"name" : "MmAbstractThingElement",
+	"type" : "normal"
+}

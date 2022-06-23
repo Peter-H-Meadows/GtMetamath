@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BrLook",
+	"category" : "Metamath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scrollbar"
+	],
+	"name" : "MmScrollbarLook",
+	"type" : "normal"
+}

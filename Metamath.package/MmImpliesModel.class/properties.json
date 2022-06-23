@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "MmAbstract2t",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"aa",
+		"bb"
+	],
+	"name" : "MmImpliesModel",
+	"type" : "normal"
+}

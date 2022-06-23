@@ -1,0 +1,3 @@
+accessing
+exx
+^ self

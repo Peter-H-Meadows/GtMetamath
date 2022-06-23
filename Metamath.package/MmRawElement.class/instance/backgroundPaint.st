@@ -1,0 +1,4 @@
+accessing
+backgroundPaint
+
+^ Color lightGray

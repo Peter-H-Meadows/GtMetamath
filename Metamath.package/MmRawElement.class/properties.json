@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model",
+		"boardElement",
+		"selectedMarkerElement"
+	],
+	"name" : "MmRawElement",
+	"type" : "normal"
+}

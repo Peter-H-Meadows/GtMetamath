@@ -1,0 +1,4 @@
+accessing
+allProofs
+
+^ assertionsDict

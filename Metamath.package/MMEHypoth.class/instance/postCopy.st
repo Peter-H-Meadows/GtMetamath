@@ -1,0 +1,3 @@
+accessing
+postCopy
+isComplete := false .

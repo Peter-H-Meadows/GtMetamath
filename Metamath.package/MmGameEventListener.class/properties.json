@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BlEventListener",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model"
+	],
+	"name" : "MmGameEventListener",
+	"type" : "normal"
+}

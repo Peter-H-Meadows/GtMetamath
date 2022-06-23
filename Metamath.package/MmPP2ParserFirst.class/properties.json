@@ -1,0 +1,30 @@
+{
+	"commentStamp" : "",
+	"super" : "PP2CompositeNode",
+	"category" : "Metamath-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"AllAssertions",
+		"AllProofs",
+		"Comments",
+		"ConstDict",
+		"Database",
+		"Place",
+		"VarNames"
+	],
+	"instvars" : [
+		"scope",
+		"comment",
+		"constant",
+		"variable",
+		"label",
+		"floatingHypothesis",
+		"essentialHypothesis",
+		"distinct",
+		"assertion",
+		"proof"
+	],
+	"name" : "MmPP2ParserFirst",
+	"type" : "normal"
+}

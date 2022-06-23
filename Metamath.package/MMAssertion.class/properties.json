@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MMAssAndProof",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"allFhypoths"
+	],
+	"name" : "MMAssertion",
+	"type" : "normal"
+}

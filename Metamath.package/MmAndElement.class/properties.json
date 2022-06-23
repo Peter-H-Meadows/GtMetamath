@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MmParensElement",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmAndElement",
+	"type" : "normal"
+}

@@ -1,0 +1,40 @@
+main
+pairSelected
+	"selectedWantedElement must be ehypoth of assertion.
+	selectedUsableElement could be assertion or usable ehypoth"
+
+	"add fresh copy of selectedWantedElements parent thing"
+
+	"self halt ."
+
+	"board addToMain: el model ."
+	
+	selectedWantedElement model owner isPartDone ifFalse: [
+
+		board addToWorkPane: selectedWantedElement model owner.
+	
+	].
+	
+	"selectedUsableElement removeFromParent."
+
+	selectedUsableElement unhighlightAsSelected.
+	
+	selectedWantedElement unhighlightAsSelected.
+	
+	"self halt ."
+	
+	selectedUsableElement isFixedEHypoth ifTrue: [
+		selectedUsableElement := MmOnBoardEssentialHypothesisElement new model: selectedUsableElement model .
+	
+	].
+	
+	
+	selectedWantedElement tryMakeWithEl: selectedUsableElement.
+
+	selectedWantedElement model owner isComplete
+		ifTrue: [ finalResultWanted body body = selectedWantedElement model owner body body 
+				ifTrue: [ selectedWantedElement success ] ].
+
+				
+selectedUsableElement := nil.
+selectedWantedElement := nil.

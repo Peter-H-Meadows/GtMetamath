@@ -1,0 +1,4 @@
+initialization
+setEhypothsAsCompleted
+
+essentialHypoths do: #setAsCompleted

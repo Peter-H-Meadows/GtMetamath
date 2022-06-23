@@ -1,0 +1,2 @@
+initialization
+initializeWithHypoth: aHypoth

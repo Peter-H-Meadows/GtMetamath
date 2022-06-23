@@ -1,0 +1,34 @@
+accessing
+canMapTo: thing
+
+
+
+"if complete tell owner"
+thing mappedTo: self .
+
+"self halt ."
+
+canMap := body canMapTo: thing body . 
+isComplete := canMap .
+canMap ifTrue: [
+
+	"if my owner is complete.. "
+	
+	owner isComplete ifTrue: [ "self halt" . "isComplete := true" ].
+
+	
+	"isComplete := thing isComplete .
+
+	thing isEhypoth  ifTrue: [ isComplete := true ]."
+
+"assertion without ehypoths could also make complete"
+
+].
+
+"isComplete ifTrue: [ 
+	
+	owner hypothIsComplete: self .
+] ."
+
+^ canMap
+

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MmAbstractThingElement",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmScopeElement",
+	"type" : "normal"
+}

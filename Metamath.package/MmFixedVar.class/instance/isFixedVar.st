@@ -1,0 +1,3 @@
+accessing
+isFixedVar
+^ true

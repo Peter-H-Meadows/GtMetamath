@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "Metamath-Bloc-Announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"element",
+		"model"
+	],
+	"name" : "MmUseableSelectedAnnouncement",
+	"type" : "normal"
+}

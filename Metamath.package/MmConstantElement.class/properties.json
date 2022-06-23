@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "MmRawElement",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Dict"
+	],
+	"instvars" : [
+		"body",
+		"name"
+	],
+	"name" : "MmConstantElement",
+	"type" : "normal"
+}

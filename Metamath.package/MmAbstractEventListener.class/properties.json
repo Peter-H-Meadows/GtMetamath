@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BlEventListener",
+	"category" : "Metamath-Bloc-Listeners",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gameController",
+		"myModel"
+	],
+	"name" : "MmAbstractEventListener",
+	"type" : "normal"
+}

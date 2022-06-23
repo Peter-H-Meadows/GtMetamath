@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MmAbstractModel",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmExistsStarModel",
+	"type" : "normal"
+}

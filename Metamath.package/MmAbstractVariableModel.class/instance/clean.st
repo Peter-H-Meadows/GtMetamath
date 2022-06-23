@@ -1,0 +1,4 @@
+accessing
+clean 
+
+copy := nil

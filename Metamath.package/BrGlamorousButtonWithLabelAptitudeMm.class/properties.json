@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BrAptitude",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BrGlamorousButtonWithLabelAptitudeMm",
+	"type" : "normal"
+}

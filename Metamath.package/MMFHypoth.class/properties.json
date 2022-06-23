@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "MMHypoth",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"type",
+		"varName",
+		"var"
+	],
+	"name" : "MMFHypoth",
+	"type" : "normal"
+}

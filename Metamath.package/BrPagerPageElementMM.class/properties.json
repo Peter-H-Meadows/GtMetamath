@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "Metamath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"weight",
+		"aWidthSpec",
+		"aHeightSpec"
+	],
+	"name" : "BrPagerPageElementMM",
+	"type" : "normal"
+}

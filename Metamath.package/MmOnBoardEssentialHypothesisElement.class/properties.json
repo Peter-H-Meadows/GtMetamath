@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MmEssentialHypothesisElement",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmOnBoardEssentialHypothesisElement",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+show ehypoths in box and proof on right.

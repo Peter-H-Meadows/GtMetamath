@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "MMAbstractThing",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mandFhypoths",
+		"essentialHypoths",
+		"fHypoths",
+		"mmxx",
+		"prevAssertions",
+		"varsUsed",
+		"bodyString",
+		"usedString",
+		"compressedString",
+		"varObs"
+	],
+	"name" : "MMAssAndProof",
+	"type" : "normal"
+}

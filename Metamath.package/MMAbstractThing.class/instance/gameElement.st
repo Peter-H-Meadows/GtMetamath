@@ -1,0 +1,4 @@
+accessing
+gameElement 
+
+self subclassResponsibility 

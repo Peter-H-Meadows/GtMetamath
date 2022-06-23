@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BlEventListener",
+	"category" : "Metamath-Metamath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmScrollHandler",
+	"type" : "normal"
+}

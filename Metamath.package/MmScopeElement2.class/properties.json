@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BrAccordion",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model"
+	],
+	"name" : "MmScopeElement2",
+	"type" : "normal"
+}

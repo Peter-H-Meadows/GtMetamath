@@ -1,0 +1,42 @@
+{
+	"commentStamp" : "",
+	"super" : "PP2CompositeNode",
+	"category" : "Metamath-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"AllAssertions",
+		"AllProofs",
+		"ConstsUsed",
+		"VarDict",
+		"VarNames",
+		"VarsUsed"
+	],
+	"instvars" : [
+		"comment",
+		"constant",
+		"variable",
+		"label",
+		"floatingHypothesis",
+		"essentialHypothesis",
+		"proof",
+		"primary",
+		"parentheses",
+		"squareBrackets",
+		"label2",
+		"distinct",
+		"curlyBraces",
+		"proveable",
+		"wff",
+		"la",
+		"list",
+		"emptySet",
+		"label3",
+		"angBrackets",
+		"implies",
+		"not",
+		"impliesBi"
+	],
+	"name" : "MmPP2Parser",
+	"type" : "normal"
+}

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "MmProofElement",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmOnBoardProofElement",
+	"type" : "normal"
+}

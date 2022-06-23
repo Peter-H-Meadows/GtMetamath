@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"body",
+		"announcer",
+		"varNames",
+		"second",
+		"first"
+	],
+	"name" : "MmAbstractModel",
+	"type" : "normal"
+}

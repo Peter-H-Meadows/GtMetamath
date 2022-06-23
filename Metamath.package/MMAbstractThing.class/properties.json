@@ -1,0 +1,29 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"body",
+		"vars",
+		"announcer",
+		"varDict",
+		"lastComment",
+		"owner",
+		"canMap",
+		"isComplete",
+		"mappedTo",
+		"rawString",
+		"varNames",
+		"parser",
+		"bodyString1",
+		"place",
+		"comments",
+		"constsUsed"
+	],
+	"name" : "MMAbstractThing",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+accessing
+gameElement
+	^ BlElement new

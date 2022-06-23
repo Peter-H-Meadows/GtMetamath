@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Metamath-Game",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Database",
+		"Scopes"
+	],
+	"instvars" : [
+		"level",
+		"mainBox",
+		"universe",
+		"nodes",
+		"controller",
+		"rs"
+	],
+	"name" : "MmGame",
+	"type" : "normal"
+}

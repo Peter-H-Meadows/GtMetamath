@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MMHypoth",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pmod"
+	],
+	"name" : "MMEHypoth",
+	"type" : "normal"
+}

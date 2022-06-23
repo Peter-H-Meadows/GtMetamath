@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "MmAbstractModel",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"proofs",
+		"assertions",
+		"ehypoths",
+		"comments",
+		"scopes",
+		"title",
+		"stuff",
+		"assertionsDict",
+		"allProofs",
+		"allRawThings",
+		"allAssertions"
+	],
+	"name" : "MmScopeModel",
+	"type" : "normal"
+}

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MmAssertionElement",
+	"category" : "Metamath-Bloc",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"proof"
+	],
+	"name" : "MmProofElement",
+	"type" : "normal"
+}

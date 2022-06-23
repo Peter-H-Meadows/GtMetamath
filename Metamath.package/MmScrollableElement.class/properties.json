@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BlScrollableElement",
+	"category" : "Metamath",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmScrollableElement",
+	"type" : "normal"
+}
