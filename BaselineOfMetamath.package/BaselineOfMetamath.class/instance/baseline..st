@@ -3,7 +3,7 @@ baseline: spec
 	
 	<baseline>
 	
-	spec for: #common do: [ spec package: 'GtMetamath' ]
+	spec for: #common do: [ spec package: 'Metamath' ]
 	
 	"spec for: #'common' do: [
 	
