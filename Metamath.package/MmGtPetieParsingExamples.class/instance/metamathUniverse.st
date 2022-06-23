@@ -11,7 +11,7 @@ self class comment readStreamDo: [ :stream |
     
     st := PP2BufferStream 
 		on: stream
-		bufferSize: 18*1024 .
+		bufferSize: 8*1024 .
 		
 	
     
