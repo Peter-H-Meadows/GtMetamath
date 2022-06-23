@@ -24,7 +24,7 @@ self class comment readStreamDo: [ :stream |
 "
 self assert: database varNames equals: { 'ph' . 'ps' } asSet ."
 
-self assert: database comments size equals: 62 .
+self assert: database comments size equals: 2605 .
 
 "self assert: database proofs size equals: 1 ."
 

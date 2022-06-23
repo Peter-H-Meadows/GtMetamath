@@ -14,12 +14,12 @@ proof
 	==> [ :x | 
 		Place := Place + 1 .
 		"(x first = 'syl') ifTrue: [ self halt ]."
-		(x first = 'ibi') ifTrue: [ self halt ].
-		(x first = 'fsumsub') ifTrue: [ self halt ].
+		"(x first = 'ibi') ifTrue: [ self halt ].
+		(x first = 'fsumsub') ifTrue: [ self halt ]."
 		
 		"Place > 6000 ifTrue: [ self halt ].
 		Place > 6000 ifTrue: [ self halt ]."
-		Place > 25234 ifTrue: [ self halt ].
+		"Place > 25234 ifTrue: [ self halt ]."
 	
 		thing := MMProof new name: x first ;
 			bodyString: x third ;
