@@ -11,10 +11,10 @@ tryMakeWithEl: el
 				
 	"1 seconds asDelay wait."
 				
-		(model canMapTo: el model) ifFalse: [ 
-			"self background: Color red" 
+		(model canMapTo: el model) "ifFalse: [ 
+			 
 			self border: (BlBorder paint: Color red width: 4 ). 
-		].
+		]."
 			
 			"1 seconds asDelay wait."
 			"
@@ -26,7 +26,7 @@ tryMakeWithEl: el
 			((model canMapTo:  el model) ifTrue: [Color green] ifFalse: [Color red])."
 			
 			"el model canMapTo: model."
-			
+	"self background: Color red"		
 "1 seconds asDelay wait."
 
 "self halt ."
