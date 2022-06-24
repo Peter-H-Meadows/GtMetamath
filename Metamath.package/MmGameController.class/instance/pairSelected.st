@@ -9,11 +9,11 @@ pairSelected
 
 	"board addToMain: el model ."
 	
-	selectedWantedElement model owner isPartDone ifFalse: [
+	"selectedWantedElement model owner isPartDone ifFalse: ["
 
 		board addToWorkPane: selectedWantedElement model owner.
 	
-	].
+	"]."
 	
 	"selectedUsableElement removeFromParent."
 

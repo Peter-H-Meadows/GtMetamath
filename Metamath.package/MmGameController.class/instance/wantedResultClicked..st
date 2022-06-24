@@ -3,18 +3,22 @@ wantedResultClicked: el
 	
 selectedWantedElement := el .
 	
-selectedUsableElement isSelected  ifFalse: [  ^ self ] .
+selectedUsableElement isNil ifTrue: [ ^ self ] .
 	
 selectedUsableElement unhighlightAsSelected .
 selectedWantedElement unhighlightAsSelected .
-
+"
 selectedUsableElement class = MmOnBoardEssentialHypothesisElement ifFalse: [
 	
-board addToMain: selectedUsableElement model .
+	board addToMain: selectedUsableElement model .
 
 ] .
 
-selectedWantedElement tryMakeWithEl: selectedUsableElement .
+selectedWantedElement tryMakeWithEl: selectedUsableElement ."
+
+
+
+
 	
 "selectedWantedElement tryMakeWithEl: selectedUsableElement .	"
 		

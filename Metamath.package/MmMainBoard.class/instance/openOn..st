@@ -3,13 +3,14 @@ openOn: aProofModel
 
 |  aEventListener el aSpace wantedResultElement |
 
-proofToDo := aProofModel "copyAndClean" copy reparse "setAllVariablesToFixed" .
-"proofToDo setEhypothsAsCompleted ."
+proofToDo := aProofModel copy "reparse" .
 
+"proofToDo setEhypothsAsCompleted ."
 
 proofToDo setAllVariablesToFixed.
 
-self background: "BlTransparentBackground new" Color veryVeryDarkGray .
+self background: Color veryVeryDarkGray .
+"BlTransparentBackground new"
 
 controller := MmGameController new  board: self .
 controller finalResultWanted: proofToDo .
