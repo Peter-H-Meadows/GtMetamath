@@ -2,7 +2,7 @@ accessing
 canMapTo: stuff
 
 stuff isVar ifTrue: [  
-	self halt .
+	"self halt ."
 	^ stuff canMapTo: self .
 ] .
 

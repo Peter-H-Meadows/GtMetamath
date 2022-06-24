@@ -1,16 +1,11 @@
 initialization
 initializeWithProof: aAssertion
 
-| aText el box comment |
+|  el box  |
 
 self model: aAssertion .
 
-"aText := aAssertion name asRopedText .
-aText fontSize: 18.
-aText foreground: Color white   .
-textElement := (BlTextElement text: aText) .
-self addChild: textElement ."
-
+model announcer when: #complete  send: #highlight: to: self.
 
 box := BlElement new layout: BlLinearLayout vertical .
 
