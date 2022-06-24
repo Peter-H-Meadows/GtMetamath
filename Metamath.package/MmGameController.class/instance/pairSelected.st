@@ -30,10 +30,10 @@ pairSelected
 	
 	
 	selectedWantedElement tryMakeWithEl: selectedUsableElement.
-
+"
 	selectedWantedElement model owner isComplete
 		ifTrue: [ finalResultWanted body body = selectedWantedElement model owner body body 
-				ifTrue: [ selectedWantedElement success ] ].
+				ifTrue: [ selectedWantedElement success ] ]."
 
 				
 selectedUsableElement := nil.

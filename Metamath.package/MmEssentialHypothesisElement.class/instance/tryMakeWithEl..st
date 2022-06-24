@@ -17,8 +17,9 @@ tryMakeWithEl: el
 		].
 			
 			"1 seconds asDelay wait."
-			
-		model isComplete ifTrue: [ self background: Color veryDarkGray ].
+			"
+		model isComplete ifTrue: [ self background: Color veryDarkGray ]."
+		
 "check if owner is complete"
 
 			"self background:
