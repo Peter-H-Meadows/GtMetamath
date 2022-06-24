@@ -6,13 +6,17 @@ canMapTo: thing
 "if complete tell owner"
 thing mappedTo: self .
 
-"self halt ."
+""
+
+"self announcer announce: #complete ." "(MmxAnn new )."
 
 canMap := body canMapTo: thing body . 
 isComplete := canMap .
 canMap ifTrue: [
 
 	"if my owner is complete.. "
+	
+	self halt .
 	
 	owner isComplete ifTrue: [ "self halt" . "isComplete := true" ].
 
