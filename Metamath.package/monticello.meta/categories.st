@@ -6,4 +6,3 @@ SystemOrganization addCategory: #'Metamath-Game'!
 SystemOrganization addCategory: #'Metamath-GtExamples'!
 SystemOrganization addCategory: #'Metamath-Model'!
 SystemOrganization addCategory: #'Metamath-Parsing'!
-SystemOrganization addCategory: #'Metamath-Tests'!
