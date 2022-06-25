@@ -8,13 +8,9 @@ selectedUsableElement highlightAsSelected .
 selectedWantedElement ifNil: [
 	"selectedUsableElement ifNotNil: [ selectedUsableElement unhighlightAsSelected ]."
 	
-
- ^ self
-
+	^ self
 
 ] ifNotNil: [
-
-
 
 	self pairSelected.
 

@@ -11,7 +11,7 @@ pairSelected
 	
 	"selectedWantedElement model owner isPartDone ifFalse: ["
 
-		board addToWorkPane: selectedWantedElement model owner.
+		"board addToWorkPane: selectedWantedElement model owner."
 	
 	"]."
 	
