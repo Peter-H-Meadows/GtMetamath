@@ -15,12 +15,12 @@ self background: Color veryVeryDarkGray .
 controller := MmGameController new  board: self .
 controller finalResultWanted: proofToDo .
 
-mainWorkspace := BlElement  new constraintsDo: [ :c | 
+self mainWorkspace: (BlElement  new constraintsDo: [ :c | 
 	c horizontal matchParent .
 	c vertical fitContent 
 ]; 
 background: BlTransparentBackground new;
-layout: "BlFlowLayout"  BlLinearLayout horizontal.
+layout: "BlFlowLayout"  BlLinearLayout horizontal).
 
 
 workPane  := BlElement  new constraintsDo: [ :c | 
@@ -30,7 +30,7 @@ workPane  := BlElement  new constraintsDo: [ :c |
 background: BlTransparentBackground new ;
 layout: BlLinearLayout vertical .
 
-self addChild: mainWorkspace "asScalableElement".
+self addChild: self topPane "asScalableElement".
 
 self addChild: workPane.
 
@@ -43,7 +43,7 @@ proofToDo eHypoths do: [ :ea | | ehypoth |
 	aEventListener := MmOnBoardHypothEventListener new gameController: controller .
 	ehypoth addEventHandler: aEventListener .
 	
-	mainWorkspace addChild: ehypoth .
+	self mainWorkspace addChild: ehypoth .
 	
 ] .
 
@@ -54,9 +54,9 @@ wantedResultElement constraintsDo: [ :c |
 		c linear horizontal alignRight.
 ].
 
-mainWorkspace addChild: BlElement new .
+self topPane addChild: BlElement new .
 
-mainWorkspace addChild: wantedResultElement .
+self topPane addChild: wantedResultElement .
 
 workPane addChild: BlElement new .
 

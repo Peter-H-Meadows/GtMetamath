@@ -8,13 +8,13 @@
 	"instvars" : [
 		"controller",
 		"currentlySelectedElement",
-		"mainWorkspace",
 		"usableList",
 		"proofToDo",
 		"aList",
 		"workingOnList",
 		"aPannableElement",
-		"workPane"
+		"workPane",
+		"topPane"
 	],
 	"name" : "MmMainBoard",
 	"type" : "normal"

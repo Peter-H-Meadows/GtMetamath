@@ -1,0 +1,4 @@
+accessing
+topPane
+
+	^ topPane

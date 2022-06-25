@@ -16,7 +16,7 @@ usable := assertion copyAndClean .
 
 "workingOnList" 
 
-mainWorkspace addChild: ((usable assertionAndEssentialHypothesisElement: controller) addEventHandler: BlPullHandler new allowOutOfBounds ).
+self topPane addChild: ((usable assertionAndEssentialHypothesisElement: controller) addEventHandler: BlPullHandler new allowOutOfBounds ).
 
 	"aPullable := BlElement new
 		border: (BlBorder paint: Color lightGray width: 2);
