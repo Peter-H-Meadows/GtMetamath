@@ -1,5 +1,5 @@
 adding
-addUsable
+addUsableAssertions
 	| c |
 	proofToDo assertionsUsed
 		reverseDo: [ :each | 

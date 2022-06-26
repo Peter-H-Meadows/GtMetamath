@@ -60,7 +60,7 @@ self topPane addChild: wantedResultElement .
 
 workPane addChild: BlElement new .
 
-self addUsable .
+self addUsableAssertions .
 
 
 
