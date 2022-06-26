@@ -15,12 +15,12 @@ self background: Color veryVeryDarkGray .
 controller := MmGameController new  board: self .
 controller finalResultWanted: proofToDo .
 
-self mainWorkspace: (BlElement  new constraintsDo: [ :c | 
+topPane := (BlElement  new constraintsDo: [ :c | 
 	c horizontal matchParent .
 	c vertical fitContent 
 ]; 
 background: BlTransparentBackground new;
-layout: "BlFlowLayout"  BlLinearLayout horizontal).
+layout: BlFlowLayout  "BlLinearLayout" horizontal).
 
 
 workPane  := BlElement  new constraintsDo: [ :c | 
@@ -30,9 +30,9 @@ workPane  := BlElement  new constraintsDo: [ :c |
 background: BlTransparentBackground new ;
 layout: BlLinearLayout vertical .
 
-self addChild: self topPane "asScalableElement".
+self addChild: self topPane .
 
-self addChild: workPane.
+self addChild: workPane asScalableElement.
 
 
 proofToDo eHypoths do: [ :ea | | ehypoth |
