@@ -43,7 +43,7 @@ proofToDo eHypoths do: [ :ea | | ehypoth |
 	aEventListener := MmOnBoardHypothEventListener new gameController: controller .
 	ehypoth addEventHandler: aEventListener .
 	
-	self mainWorkspace addChild: ehypoth .
+	self topPane addChild: ehypoth .
 	
 ] .
 

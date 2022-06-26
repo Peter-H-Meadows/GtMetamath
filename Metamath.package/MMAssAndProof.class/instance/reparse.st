@@ -17,4 +17,4 @@ varObs := parser varDict copy .
 constsUsed := parser constsUsed copy .
 
 
-"body class = PP2Failure ifTrue: [self halt]"
+body class = PP2Failure ifTrue: [self halt]

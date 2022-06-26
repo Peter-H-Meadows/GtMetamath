@@ -1,8 +1,8 @@
 accessing
 gtTreeFor: aView
-	<gtView>
+	"<gtView>
 	
 	^ aView mondrian
 		title: 'Tree';
 		priority: 2000;
-		painting: [ :aMondrian | self paintTreeWith: aMondrian ]
+		painting: [ :aMondrian | self paintTreeWith: aMondrian ]"
