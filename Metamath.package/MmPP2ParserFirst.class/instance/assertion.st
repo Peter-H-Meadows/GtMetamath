@@ -7,7 +7,7 @@ assertion
 	[ :x | 
 	
 	Place := Place + 1 .
-	thing := MMProof new  
+	thing := MMAssertion new  
 		name: x first ; 
 		rawString: x third ;
 		bodyString: x third ;
@@ -22,7 +22,6 @@ assertion
 	Comments := OrderedCollection new .
 		
 	"(x first = 'df-dm') ifTrue: [ self halt ].	
-	
 	(x first = 'ax-reg') ifTrue: [ self halt ].
 	(x first = 'ax5') ifTrue: [ self halt ]."
 	
