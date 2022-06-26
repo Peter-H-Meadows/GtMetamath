@@ -10,7 +10,10 @@ self constraintsDo: [ :c |
 
 self layout: BlFrameLayout new .
 
-self layout: BlLinearLayout vertical .
+
+self background: Color veryVeryDarkGray .
+
+self layout: BlLinearLayout horizontal .
 
 
 "sc := BlScrollableElement new .
