@@ -1,3 +1,4 @@
 accessing
 printOn: aStream
-	aStream nextPutAll: name printString  .
+aStream nextPutAll: 'ASS '.
+aStream nextPutAll: name asString .

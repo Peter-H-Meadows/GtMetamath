@@ -8,11 +8,15 @@ addUsableAssertions
 
 			usableAssertion body isWFF
 				ifTrue: [  ]
-				ifFalse: [ usableAssertion hasEhypoths
+				ifFalse: [ 
+					usableAssertion hasEhypoths
 						ifFalse: [ 
 						
-						"use same vars as proofworkingon"
-						usableAssertion setAllVariablesToFixed ].
+							"use same vars as proofworkingon"
+							usableAssertion cloneVarsFrom: proofToDo .
+							
+							"usableAssertion setAllVariablesToFixed" 
+						].
 
 					c := (AssertionAndEssentialHypothesisElement new
 							initializeWith: usableAssertion) addHandlersController: controller.

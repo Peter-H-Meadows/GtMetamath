@@ -3,14 +3,13 @@ openOn: aProofModel
 
 | aEventListener aSpace wantedResultElement |
 
-proofToDo := aProofModel copy "reparse" .
+proofToDo := aProofModel copy .
 
 "proofToDo setEhypothsAsCompleted ."
 
 proofToDo setAllVariablesToFixed.
 
 self background: Color veryVeryDarkGray .
-"BlTransparentBackground new"
 
 controller := MmGameController new  board: self .
 controller finalResultWanted: proofToDo .
@@ -20,7 +19,7 @@ topPane := (BlElement  new constraintsDo: [ :c |
 	c vertical fitContent 
 ]; 
 background: BlTransparentBackground new;
-layout: BlFlowLayout  "BlLinearLayout" horizontal).
+layout: "BlFlowLayout"  BlLinearLayout horizontal).
 
 
 workPane  := BlElement  new constraintsDo: [ :c | 
@@ -32,7 +31,7 @@ layout: BlLinearLayout vertical .
 
 self addChild: self topPane .
 
-self addChild: workPane asScalableElement.
+self addChild: workPane "asScalableElement".
 
 
 proofToDo eHypoths do: [ :ea | | ehypoth |
@@ -50,9 +49,9 @@ proofToDo eHypoths do: [ :ea | | ehypoth |
 aEventListener := MmProofResultListener new gameController: controller .
 wantedResultElement := (MmWantedResultElement new initializeWith: proofToDo)  addEventHandler: aEventListener .
 
-wantedResultElement constraintsDo: [ :c |
+"wantedResultElement constraintsDo: [ :c |
 		c linear horizontal alignRight.
-].
+]."
 
 self topPane addChild: BlElement new .
 
