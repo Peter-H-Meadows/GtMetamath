@@ -21,12 +21,12 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 	blob := BlElement new
 		"geometry: BlSquare new;"
 		"geometry: geometryClass new;"
-		background: model color " col"
+		background: model color
 		"border: (BlBorder paint: (Color blue alpha: 0.5) width: 6)" ;
 		"size: 30@30;"
 		constraintsDo: [ :c | 
-					c horizontal "exact: 13" fitContent .
-					c vertical "exact: 13" fitContent .
+					c horizontal exact: 13 "fitContent" .
+					c vertical exact: 13 "fitContent" .
 					c linear "vertical" horizontal  alignCenter .
 					c linear vertical alignCenter ].
 	
@@ -55,8 +55,8 @@ textElement := (BlTextElement text: aText) constraintsDo: [ :c | c linear vertic
 textElement  margin: (BlInsets all: 8).
 
 blob layout: BlLinearLayout horizontal  .
-
-blob addChild: textElement .
+"
+blob addChild: textElement ."
 
 				
 self addChild: blob .
