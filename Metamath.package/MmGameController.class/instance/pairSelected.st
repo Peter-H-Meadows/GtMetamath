@@ -3,15 +3,10 @@ pairSelected
 	"selectedWantedElement must be ehypoth of assertion.
 	selectedUsableElement could be assertion or usable ehypoth"
 
-	"add fresh copy of selectedWantedElements parent thing"
-
-	"self halt ."
-
-	"board addToMain: el model ."
 	
 	"selectedWantedElement model owner isPartDone ifFalse: ["
 
-		"board addToWorkPane: selectedWantedElement model owner."
+		board addToTopPane: selectedWantedElement model owner.
 	
 	"]."
 	
