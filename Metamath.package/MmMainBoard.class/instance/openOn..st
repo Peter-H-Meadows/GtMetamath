@@ -40,7 +40,6 @@ wantedResultElement constraintsDo: [ :c |
 		c linear horizontal alignRight.
 ].
 
-"self topPane addChild: BlElement new ."
 
 self "topPane" addChild: wantedResultElement .
 
@@ -62,11 +61,7 @@ proofToDo eHypoths do: [ :ea | | ehypoth |
 
 self addUsableAssertions .
 
-
-
-"self addOnBoardUsableEHypoths ."
-
-"self addEventHandler: MmBoardListener new  ."
+self topPane addChild: BlElement new .
 
 
 

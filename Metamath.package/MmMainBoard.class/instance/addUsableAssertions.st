@@ -22,4 +22,4 @@ addUsableAssertions
 							initializeWith: usableAssertion) addHandlersController: controller.
 
 
-					workPane addChild: c ] ]
+					topPane addChild: c ] ]
