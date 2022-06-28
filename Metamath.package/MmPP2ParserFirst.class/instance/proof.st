@@ -27,7 +27,7 @@ proof
 			usedString: (x at: 6) ;
 			compressed: (x at: 8) ;
 			place: Place ;
-			prevAssertions: AllProofs ;
+			prevAssertions: AllProofs copy;
 			comments: Comments copy .
 			
 		"thing reparse ."

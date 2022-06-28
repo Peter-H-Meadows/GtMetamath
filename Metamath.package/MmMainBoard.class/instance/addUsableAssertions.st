@@ -1,8 +1,8 @@
 adding
 addUsableAssertions
 	| c |
-	proofToDo assertionsUsed
-		reverseDo: [ :each | 
+	proofToDo prevAssertions "assertionsUsed"
+		do: [ :each | 
 			| usableAssertion |
 			usableAssertion := (proofToDo prevAssertions at: each name) copy.
 
