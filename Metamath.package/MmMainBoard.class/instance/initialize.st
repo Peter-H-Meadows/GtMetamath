@@ -13,7 +13,7 @@ self layout: BlFrameLayout new .
 
 self background: Color veryVeryDarkGray .
 
-self layout: BlLinearLayout horizontal .
+self layout: BlLinearLayout vertical .
 
 
 "sc := BlScrollableElement new .

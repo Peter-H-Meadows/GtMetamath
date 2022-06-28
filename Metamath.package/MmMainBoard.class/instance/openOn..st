@@ -9,7 +9,6 @@ proofToDo := aProofModel copy .
 
 proofToDo setAllVariablesToFixed.
 
-
 controller := MmGameController new  board: self .
 controller finalResultWanted: proofToDo .
 
@@ -17,8 +16,7 @@ topPane := (BlElement  new constraintsDo: [ :c |
 	c horizontal fitContent .
 	c vertical fitContent 
 ]; 
-background: BlTransparentBackground new;
-layout: BlFlowLayout vertical"horizontal").
+layout: BlFlowLayout horizontal).
 
 
 workPane  := BlElement  new constraintsDo: [ :c | 
@@ -30,7 +28,6 @@ layout: BlLinearLayout vertical .
 
 self addChild: self topPane .
 
-self addChild: workPane asScalableElement.
 
 
 aEventListener := MmProofResultListener new gameController: controller .
@@ -41,7 +38,9 @@ wantedResultElement constraintsDo: [ :c |
 ].
 
 
-self "topPane" addChild: wantedResultElement .
+
+
+proofToDo comments do: [ :ea | self addChild: ea gameElement ].
 
 
 proofToDo eHypoths do: [ :ea | | ehypoth |
@@ -57,12 +56,18 @@ proofToDo eHypoths do: [ :ea | | ehypoth |
 ] .
 
 
+self topPane addChild: BlElement new .
+
+self topPane addChild: wantedResultElement .
+
+
 "workPane addChild: BlElement new ."
 
 self addUsableAssertions .
 
-self topPane addChild: BlElement new .
 
+
+self addChild: workPane asScalableElement.
 
 
 	aSpace := BlSpace new
