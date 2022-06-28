@@ -1,4 +1,9 @@
-https://vimeo.com/723971182/01bdf9f22b
+A game/GUI to teach logic.
+Implemented with: GT / Pharo / Smalltalk / Metamath.
+
+![screenshot](mm.png)
+
+https://vimeo.com/723971182
 
 https://vimeo.com/724183323
 
@@ -13,4 +18,3 @@ Metacello new
   load.
 ```
 
-![screenshot](mm.png)
