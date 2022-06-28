@@ -2,12 +2,12 @@ accessing
 gtTreeFor2: aView
 	<gtView>
 	^ aView columnedList
-		title: 'list';
+		title: 'Proofs';
 		items: assertionsDict values asArray;
 		"send: [ :item |  ];"
 		
 		column: 'Name' text: #name width: 40;
-		column: 'N'
+		column: ''
 			text: [ :proof | proof printString ]
 			"width: 120"
 			"column: 'Commit' text: #name width: 70;
