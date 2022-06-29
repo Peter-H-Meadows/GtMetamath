@@ -4,6 +4,8 @@ addUsableAssertions
 	proofToDo prevAssertions "assertionsUsed"
 		do: [ :each | 
 			| usableAssertion |
+			each name = 'a1ii' ifFalse: [
+			
 			usableAssertion := (proofToDo prevAssertions at: each name) copy.
 
 			usableAssertion body isWFF
@@ -22,4 +24,4 @@ addUsableAssertions
 							initializeWith: usableAssertion) addHandlersController: controller.
 
 
-					workPane addChild: c ] ]
+					leftPane addChild: c ] ]]

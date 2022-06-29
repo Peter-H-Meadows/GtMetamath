@@ -1,4 +1,3 @@
 adding
 addToWorkPane: mod 
-"self halt ."
-			workPane addChild: (mod copy reparse  "copyAndClean"  assertionAndEssentialHypothesisElement: controller) .
+workPane addChild: (mod copy assertionAndEssentialHypothesisElement: controller) .

@@ -14,7 +14,9 @@
 		"workingOnList",
 		"aPannableElement",
 		"workPane",
-		"topPane"
+		"topPane",
+		"leftPane",
+		"mPane"
 	],
 	"name" : "MmMainBoard",
 	"type" : "normal"

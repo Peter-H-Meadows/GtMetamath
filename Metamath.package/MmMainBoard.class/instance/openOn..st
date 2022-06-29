@@ -18,15 +18,19 @@ topPane := (BlElement  new constraintsDo: [ :c |
 ]; 
 layout: BlFlowLayout horizontal).
 
+self addChild: self topPane .
 
 workPane  := BlElement  new constraintsDo: [ :c | 
-	c horizontal "matchParent" fitContent .
-	c vertical "matchParent" fitContent 
-]; 
-background: BlTransparentBackground new ;
+	c horizontal fitContent .
+	c vertical fitContent 
+];
 layout: BlLinearLayout vertical .
 
-self addChild: self topPane .
+leftPane  := BlElement  new constraintsDo: [ :c | 
+	c horizontal fitContent .
+	c vertical fitContent 
+];
+layout: BlLinearLayout vertical .
 
 
 
@@ -66,9 +70,17 @@ self topPane addChild: wantedResultElement .
 self addUsableAssertions .
 
 
+mPane  := BlElement  new constraintsDo: [ :c | 
+	c horizontal matchParent .
+	c vertical fitContent 
+];
+layout: BlLinearLayout horizontal.
 
-self addChild: workPane asScalableElement.
+mPane addChild: leftPane.
 
+mPane addChild: workPane asScalableElement.
+
+self addChild: mPane.
 
 	aSpace := BlSpace new
 		extent: 1000@900;

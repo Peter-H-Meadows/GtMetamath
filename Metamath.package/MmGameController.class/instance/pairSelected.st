@@ -6,7 +6,7 @@ pairSelected
 	
 	"selectedWantedElement model owner isPartDone ifFalse: ["
 
-		board addToTopPane: selectedWantedElement model owner.
+		board addToWorkPane: selectedWantedElement model owner.
 	
 	"]."
 	
