@@ -1,5 +1,5 @@
 adding
-addUsableAssertions
+addUsableAssertionsToLeftpane
 	| c |
 	proofToDo prevAssertions "assertionsUsed"
 		do: [ :each | 

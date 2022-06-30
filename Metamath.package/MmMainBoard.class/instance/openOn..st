@@ -67,7 +67,7 @@ self topPane addChild: wantedResultElement .
 
 "workPane addChild: BlElement new ."
 
-self addUsableAssertions .
+self addUsableAssertionsToLeftpane .
 
 
 mPane  := BlElement  new constraintsDo: [ :c | 
