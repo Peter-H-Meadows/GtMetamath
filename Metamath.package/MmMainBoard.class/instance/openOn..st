@@ -1,90 +1,84 @@
-instance creation
-openOn: aProofModel 
+initialization
+openOn: aProofModel
+	| aEventListener aSpace wantedResultElement |
+	proofToDo := aProofModel copy.
 
-| aEventListener aSpace wantedResultElement |
+	proofToDo setAllVariablesToFixed.
 
-proofToDo := aProofModel copy .
+	controller := MmGameController new board: self.
+	controller finalResultWanted: proofToDo.
 
-"proofToDo setEhypothsAsCompleted ."
+	topPane := BlElement new
+			constraintsDo: [ :c | 
+				c horizontal fitContent.
+				c vertical fitContent ];
+			layout: BlFlowLayout horizontal.
 
-proofToDo setAllVariablesToFixed.
+	self addChild: self topPane.
 
-controller := MmGameController new  board: self .
-controller finalResultWanted: proofToDo .
+	workPane := BlElement new
+			constraintsDo: [ :c | 
+				c horizontal fitContent.
+				c vertical fitContent ];
+			layout: BlLinearLayout vertical.
 
-topPane := (BlElement  new constraintsDo: [ :c | 
-	c horizontal fitContent .
-	c vertical fitContent 
-]; 
-layout: BlFlowLayout horizontal).
-
-self addChild: self topPane .
-
-workPane  := BlElement  new constraintsDo: [ :c | 
-	c horizontal fitContent .
-	c vertical fitContent 
-];
-layout: BlLinearLayout vertical .
-
-leftPane  := BlElement  new constraintsDo: [ :c | 
-	c horizontal fitContent .
-	c vertical fitContent 
-];
-layout: BlLinearLayout vertical .
+	leftPane := BlElement new
+			constraintsDo: [ :c | 
+				c horizontal fitContent.
+				c vertical fitContent ];
+			layout: BlLinearLayout vertical.
 
 
 
-aEventListener := MmProofResultListener new gameController: controller .
-wantedResultElement := (MmWantedResultElement new initializeWith: proofToDo)  addEventHandler: aEventListener .
+	aEventListener := MmProofResultListener new gameController: controller.
+	wantedResultElement := (MmWantedResultElement new initializeWith: proofToDo)
+			addEventHandler: aEventListener.
 
-wantedResultElement constraintsDo: [ :c |
-		c linear horizontal alignRight.
-].
-
-
-
-
-proofToDo comments do: [ :ea | self addChild: ea gameElement ].
-
-
-proofToDo eHypoths do: [ :ea | | ehypoth |
-	
-	"ea setCompleted ."
-	ehypoth := MmOnBoardEssentialHypothesisElement new model: ea .
-	
-	aEventListener := MmOnBoardHypothEventListener new gameController: controller .
-	ehypoth addEventHandler: aEventListener .
-	
-	self topPane addChild: ehypoth .
-	
-] .
+	"wantedResultElement constraintsDo: [ :c | c linear horizontal alignRight ]."
+	wantedResultElement
+		size: 200@200;
+		constraintsDo: [ :c |
+			c frame horizontal alignRight.
+			c frame vertical alignBottom ].
 
 
-self topPane addChild: BlElement new .
 
-self topPane addChild: wantedResultElement .
-
-
-"workPane addChild: BlElement new ."
-
-self addUsableAssertionsToLeftpane .
+	proofToDo comments do: [ :ea | self addChild: ea gameElement ].
 
 
-mPane  := BlElement  new constraintsDo: [ :c | 
-	c horizontal matchParent .
-	c vertical fitContent 
-];
-layout: BlLinearLayout horizontal.
+	proofToDo eHypoths
+		do: [ :ea | 
+			| ehypoth |
+			"ea setCompleted ."
+			ehypoth := MmOnBoardEssentialHypothesisElement new model: ea.
 
-mPane addChild: leftPane.
+			aEventListener := MmOnBoardHypothEventListener new gameController: controller.
+			ehypoth addEventHandler: aEventListener.
 
-mPane addChild: workPane asScalableElement.
+			leftPane addChild: ehypoth ].
 
-self addChild: mPane.
+
+	self topPane addChild: BlElement new.
+
+	self "topPane" addChild: wantedResultElement.	"workPane addChild: BlElement new ."
+
+	self addUsableAssertionsToLeftpane.
+
+
+	mPane := BlElement new
+			constraintsDo: [ :c | 
+				c horizontal fitContent.
+				c vertical fitContent ];
+			layout: BlLinearLayout horizontal.
+
+	self addChild: leftPane asScalableElement.
+
+	mPane addChild: workPane asScalableElement.
+
+	"self addChild: mPane."
 
 	aSpace := BlSpace new
-		extent: 1000@900;
-		title: proofToDo name .
-	aSpace root addChild: self .
-	aSpace show.
-
+			extent: 900 @ 700;
+			title: proofToDo name.
+	aSpace root addChild: self.
+	aSpace show
