@@ -17,9 +17,9 @@ selectedWantedElement tryMakeWithEl: selectedUsableElement.
 
 	selectedUsableElement.
 
-	"selectedUsableElement parent removeFromParent."
+	selectedUsableElement parent removeFromParent.
 
-	"board workPane addChild: selectedUsableElement" "parent".	
+	board workPane addChild: selectedUsableElement parent.	
 	
 	"copy of selectedWantedElement model owner."	"(selectedWantedElement model owner copy assertionAndEssentialHypothesisElement: self) ."	"selectedWantedElement model owner isPartDone ifFalse: ["	"
 		board addToWorkPane: selectedWantedElement model owner."	"]."	"

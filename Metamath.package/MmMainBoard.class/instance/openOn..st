@@ -13,8 +13,8 @@ openOn: aProofModel
 				c horizontal fitContent.
 				c vertical fitContent ];
 			layout: BlFlowLayout horizontal.
-
-	self addChild: self topPane.
+"
+	self addChild: self topPane."
 
 	workPane := BlElement new
 			constraintsDo: [ :c | 
@@ -25,7 +25,8 @@ openOn: aProofModel
 	leftPane := BlElement new
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
-				c vertical fitContent ];
+				c vertical fitContent .
+				c frame horizontal alignLeft.];
 			layout: BlLinearLayout vertical.
 
 
@@ -36,7 +37,7 @@ openOn: aProofModel
 
 	"wantedResultElement constraintsDo: [ :c | c linear horizontal alignRight ]."
 	wantedResultElement
-		size: 200@200;
+		"size: 200@200;"
 		constraintsDo: [ :c |
 			c frame horizontal alignRight.
 			c frame vertical alignBottom ].
@@ -57,10 +58,15 @@ openOn: aProofModel
 
 			leftPane addChild: ehypoth ].
 
-
+"
+	proofToDo comments do: [ :ea | workPane addChild: ea gameElement ]."
 	self topPane addChild: BlElement new.
 
-	self "topPane" addChild: wantedResultElement.	"workPane addChild: BlElement new ."
+	self addChild: workPane asScalableElement.
+	self addChild: leftPane "asScalableElement".
+	
+	
+	self  addChild:  wantedResultElement.	"BlElement new ."
 
 	self addUsableAssertionsToLeftpane.
 
@@ -71,9 +77,9 @@ openOn: aProofModel
 				c vertical fitContent ];
 			layout: BlLinearLayout horizontal.
 
-	self addChild: leftPane asScalableElement.
-
-	mPane addChild: workPane asScalableElement.
+	""
+"
+	mPane addChild: workPane asScalableElement."
 
 	"self addChild: mPane."
 
