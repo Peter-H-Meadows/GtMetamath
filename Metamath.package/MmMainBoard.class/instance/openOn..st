@@ -56,6 +56,10 @@ openOn: aProofModel
 
 			aEventListener := MmOnBoardHypothEventListener new gameController: controller.
 			ehypoth addEventHandler: aEventListener.
+			
+			
+ea announcer when: #mm send: #highlight: to: self.
+			
 
 			leftPane addChild: ehypoth ].
 
