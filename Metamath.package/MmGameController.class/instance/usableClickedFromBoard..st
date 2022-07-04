@@ -1,9 +1,11 @@
 main
 usableClickedFromBoard: el 
-
+"self halt."
 selectedUsableElement := el .
 selectedUsableElement highlightAsSelected .
 
+selectedUsableElement removeFromParent.
+board workPane addChild: selectedUsableElement.
 
 selectedWantedElement ifNil: [
 	"selectedUsableElement ifNotNil: [ selectedUsableElement unhighlightAsSelected ]."

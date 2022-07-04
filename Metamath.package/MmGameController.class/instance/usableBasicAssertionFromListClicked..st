@@ -1,6 +1,6 @@
 accessing
 usableBasicAssertionFromListClicked: mod
-
+self halt.
 board addToWorkingBoard: mod.
 
 

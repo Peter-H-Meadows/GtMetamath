@@ -3,13 +3,21 @@ pairSelected
 	"selectedWantedElement must be ehypoth of assertion.
 	selectedUsableElement could be assertion or usable ehypoth"
 
+	| c |
 	selectedUsableElement unhighlightAsSelected.
 	selectedWantedElement unhighlightAsSelected.
 
 	selectedUsableElement isFixedEHypoth
 		ifTrue: [ selectedUsableElement := MmOnBoardEssentialHypothesisElement new
 					model: selectedUsableElement model.
+					
+				c := (AssertionAndEssentialHypothesisElement new
+							initializeWith: selectedWantedElement model owner copy) addHandlersController: self.
 
+
+					board leftPane addChild: c.
+
+					
 			selectedWantedElement tryMakeWithEl: selectedUsableElement.
 			^ self ].
 
