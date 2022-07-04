@@ -21,7 +21,7 @@ addUsableAssertionsToLeftpane
 						].
 
 					c := (AssertionAndEssentialHypothesisElement new
-							initializeWith: usableAssertion) addHandlersController: controller.
+							initializeWith: usableAssertion) addHandlersForListUsable:  controller.
 
 
 					leftPane addChild: c ] ]]

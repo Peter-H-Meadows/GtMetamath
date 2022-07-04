@@ -1,14 +1,27 @@
 main
 usableClickedFromBoard: el 
-"self halt."
-selectedUsableElement := el .
+
+	"self halt."
+
+	selectedUsableElement := el .
 selectedUsableElement highlightAsSelected .
 
-selectedUsableElement removeFromParent.
-board workPane addChild: selectedUsableElement.
+"selectedUsableElement removeFromParent."
+
+"
+usableAssertion cloneVarsFrom: proofToDo ."
+
+"c := (AssertionAndEssentialHypothesisElement new initializeWith: el model copy) addHandlersController: self.
+
+
+board workPane addChild: c."
+"
+board workPane addChild: selectedUsableElement."
+
+
+
 
 selectedWantedElement ifNil: [
-	"selectedUsableElement ifNotNil: [ selectedUsableElement unhighlightAsSelected ]."
 	
 	^ self
 
@@ -16,11 +29,6 @@ selectedWantedElement ifNil: [
 
 	self pairSelected.
 
-	"	selectedUsableElement unhighlightAsSelected .
-	selectedWantedElement unhighlightAsSelected .
-	board addToMain: el model .	
-	selectedWantedElement tryMakeWithEl: selectedUsableElement ."
-	
 ].
 
 

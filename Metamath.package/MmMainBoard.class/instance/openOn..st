@@ -19,7 +19,8 @@ openOn: aProofModel
 	workPane := BlElement new
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
-				c vertical fitContent ];
+				c vertical fitContent .
+				c linear horizontal alignRight];
 			layout: BlLinearLayout vertical.
 
 	leftPane := BlElement new
@@ -40,11 +41,11 @@ openOn: aProofModel
 		"size: 200@200;"
 		constraintsDo: [ :c |
 			c frame horizontal alignRight.
-			c frame vertical alignBottom ].
+			c frame vertical alignCenter ].
 
 
-
-	proofToDo comments do: [ :ea | self addChild: ea gameElement ].
+"
+	proofToDo comments do: [ :ea | self addChild: ea gameElement ]."
 
 
 	proofToDo eHypoths
@@ -60,22 +61,23 @@ openOn: aProofModel
 
 "
 	proofToDo comments do: [ :ea | workPane addChild: ea gameElement ]."
-	self topPane addChild: BlElement new.
+	
+	"self topPane addChild: BlElement new."
 
 	self addChild: workPane asScalableElement.
 	self addChild: leftPane "asScalableElement".
 	
 	
-	self  addChild:  wantedResultElement.	"BlElement new ."
+	self  addChild:  wantedResultElement.
 
 	self addUsableAssertionsToLeftpane.
 
 
-	mPane := BlElement new
+	"mPane := BlElement new
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent ];
-			layout: BlLinearLayout horizontal.
+			layout: BlLinearLayout horizontal."
 
 	""
 "
