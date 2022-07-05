@@ -6,7 +6,7 @@ metamathUniverse
 
 "
 'se.txt' asFileReference"
-self class comment readStreamDo: [ :stream | 
+(self class comment copyFrom: 1 to: 61112) readStreamDo: [ :stream | 
     "stream upToEnd" 
     
     st := PP2BufferStream 
@@ -21,7 +21,7 @@ self class comment readStreamDo: [ :stream |
     
 ].
 
-self assert: database comments size equals: 4947 .
+"self assert: database comments size equals: 4947 ."
 
 "self assert: database proofs size equals: 1 ."
 
