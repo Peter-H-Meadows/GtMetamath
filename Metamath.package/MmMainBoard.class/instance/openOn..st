@@ -41,7 +41,7 @@ openOn: aProofModel
 		"size: 200@200;"
 		constraintsDo: [ :c |
 			c frame horizontal alignRight.
-			c frame vertical alignCenter ].
+			c frame vertical alignTop ].
 
 
 "
