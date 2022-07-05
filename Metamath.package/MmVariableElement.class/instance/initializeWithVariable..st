@@ -1,10 +1,8 @@
 initialization
 initializeWithVariable: aVariableModel
-| aText col box geometryClass abDict |
+| aText |
 
 model := aVariableModel .
-
-"model checkLoop ."
 
 model announcer when: MmHighlightAnnouncement send: #highlight: to: self.
 model announcer when: MmVariableMappedAnnouncement send: #mapped: to: self.
@@ -25,8 +23,8 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 		"border: (BlBorder paint: (Color blue alpha: 0.5) width: 6)" ;
 		"size: 30@30;"
 		constraintsDo: [ :c | 
-					c horizontal exact: 13 "fitContent" .
-					c vertical exact: 13 "fitContent" .
+					c horizontal exact: 16 "fitContent" .
+					c vertical exact: 16 "fitContent" .
 					c linear "vertical" horizontal  alignCenter .
 					c linear vertical alignCenter ].
 	
