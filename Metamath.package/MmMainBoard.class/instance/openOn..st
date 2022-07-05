@@ -18,9 +18,10 @@ openOn: aProofModel
 
 	workPane := BlElement new
 			constraintsDo: [ :c | 
-				c horizontal fitContent.
-				c vertical fitContent .
-				c linear horizontal alignRight];
+				c horizontal matchParent.
+				c vertical matchParent .
+				"c linear horizontal alignRight."
+				c frame horizontal weight: 0.5];
 			layout: BlLinearLayout vertical.
 
 	leftPane := BlElement new
@@ -68,9 +69,10 @@ ea announcer when: #mm send: #highlight: to: self.
 	
 	"self topPane addChild: BlElement new."
 
-	self addChild: workPane asScalableElement.
-	self addChild: leftPane "asScalableElement".
 	
+	self addChild: workPane asScalableElement.
+	
+	self addChild: leftPane "asScalableElement".
 	
 	self  addChild:  wantedResultElement.
 

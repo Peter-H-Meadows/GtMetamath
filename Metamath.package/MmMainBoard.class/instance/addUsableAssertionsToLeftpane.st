@@ -15,7 +15,8 @@ addUsableAssertionsToLeftpane
 						ifFalse: [ 
 						
 							"use same vars as proofworkingon"
-							usableAssertion cloneVarsFrom: proofToDo .
+							
+							"usableAssertion cloneVarsFrom: proofToDo ."
 							
 							"usableAssertion setAllVariablesToFixed" 
 						].
@@ -24,4 +25,5 @@ addUsableAssertionsToLeftpane
 							initializeWith: usableAssertion) addHandlersForListUsable:  controller.
 
 
-					leftPane addChild: c ] ]]
+					leftPane addChild: c.
+					] ]]
