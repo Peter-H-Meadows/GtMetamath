@@ -1,7 +1,7 @@
 A game/GUI to teach logic.
 Implemented with: GT / Pharo / Smalltalk / Metamath.
 
-![gif2](metamath_game-_240p_.gif)
+![gif2](metamath-_240p_.gif)
 ![screenshot](mm.png)
 ![gif](metamath_game-_720p_.gif)
 
