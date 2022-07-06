@@ -23,9 +23,9 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 		"border: (BlBorder paint: (Color blue alpha: 0.5) width: 6)" ;
 		"size: 30@30;"
 		constraintsDo: [ :c | 
-					c horizontal exact: 16 "fitContent" .
-					c vertical exact: 16 "fitContent" .
-					c linear "vertical" horizontal  alignCenter .
+					c horizontal "exact: 16" fitContent .
+					c vertical "exact: 16" fitContent .
+					c linear horizontal  alignCenter .
 					c linear vertical alignCenter ].
 	
 		
@@ -53,8 +53,8 @@ textElement := (BlTextElement text: aText) constraintsDo: [ :c | c linear vertic
 textElement  margin: (BlInsets all: 8).
 
 blob layout: BlLinearLayout horizontal  .
-"
-blob addChild: textElement ."
+
+blob addChild: textElement .
 
 				
 self addChild: blob .
