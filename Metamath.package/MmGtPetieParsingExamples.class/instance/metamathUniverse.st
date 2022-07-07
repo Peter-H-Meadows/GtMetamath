@@ -6,7 +6,7 @@ metamathUniverse
 
 "
 'se.txt' asFileReference"
-(self class comment copyFrom: 1 to: 61112) readStreamDo: [ :stream | 
+(self class comment copyFrom: 1 to: 161112) readStreamDo: [ :stream | 
     "stream upToEnd" 
     
     st := PP2BufferStream 

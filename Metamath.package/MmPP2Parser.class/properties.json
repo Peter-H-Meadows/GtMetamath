@@ -35,7 +35,8 @@
 		"angBrackets",
 		"implies",
 		"not",
-		"impliesBi"
+		"impliesBi",
+		"or"
 	],
 	"name" : "MmPP2Parser",
 	"type" : "normal"

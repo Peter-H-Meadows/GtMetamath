@@ -5,8 +5,13 @@ selectedWantedElement := el .
 	
 selectedUsableElement isNil ifTrue: [ ^ self ] .
 	
+selectedUsableElement model canMapTo: selectedWantedElement model.
+	
 selectedUsableElement unhighlightAsSelected .
 selectedWantedElement unhighlightAsSelected .
+selectedUsableElement := nil .
+selectedWantedElement := nil .
+
 "
 selectedUsableElement class = MmOnBoardEssentialHypothesisElement ifFalse: [
 	
@@ -16,16 +21,4 @@ selectedUsableElement class = MmOnBoardEssentialHypothesisElement ifFalse: [
 
 selectedWantedElement tryMakeWithEl: selectedUsableElement ."
 
-
-
-
-	
 "selectedWantedElement tryMakeWithEl: selectedUsableElement .	"
-		
-"(selectedUsableElement model canMapTo: selectedWantedElement model)" 
-"ifFalse: [ self background: Color red ]".
-	
-"selectedUsableElement := nil .
-selectedWantedElement := nil ."
-	
-

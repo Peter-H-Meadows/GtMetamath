@@ -1,3 +1,3 @@
 accessing
 primary
-	^  emptySet / not / implies / impliesBi / squareBrackets / curlyBraces / angBrackets / label2 
+	^  emptySet / not / or / implies / impliesBi / squareBrackets / curlyBraces / angBrackets / label2 
