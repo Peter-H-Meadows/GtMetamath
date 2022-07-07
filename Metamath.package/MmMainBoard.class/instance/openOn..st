@@ -1,6 +1,6 @@
 initialization
 openOn: aProofModel
-	| aEventListener aSpace wantedResultElement |
+	| aEventListener aSpace wantedResultElement hide |
 	proofToDo := aProofModel copy.
 
 	proofToDo setAllVariablesToFixed.
@@ -31,11 +31,25 @@ openOn: aProofModel
 				c frame horizontal alignLeft.];
 			layout: BlLinearLayout vertical.
 
-
-
+hide := BrButton new
+		beHugeSize;
+		aptitude: BrGlamorousButtonWithLabelAptitude new;
+		label: 'hide';
+		action: [ 
+		
+		
+		leftPane isAttachedToSceneGraph ifTrue: [leftPane removeFromParent] ifFalse: [self addChild: leftPane].
+		 ]. 
 	aEventListener := MmProofResultListener new gameController: controller.
 	wantedResultElement := (MmWantedResultElement new initializeWith: proofToDo)
 			addEventHandler: aEventListener.
+			
+		hide	constraintsDo: [ :c |
+			c frame horizontal alignCenter.
+			c frame vertical alignTop ].
+			
+
+
 
 	"wantedResultElement constraintsDo: [ :c | c linear horizontal alignRight ]."
 	wantedResultElement
@@ -78,6 +92,7 @@ ea announcer when: #mm send: #highlight: to: self.
 
 	self addUsableAssertionsToLeftpane.
 
+	self addChild: hide.
 
 	"mPane := BlElement new
 			constraintsDo: [ :c | 
