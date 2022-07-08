@@ -36,7 +36,10 @@
 		"implies",
 		"not",
 		"impliesBi",
-		"or"
+		"or",
+		"and",
+		"nand",
+		"exists"
 	],
 	"name" : "MmPP2Parser",
 	"type" : "normal"
