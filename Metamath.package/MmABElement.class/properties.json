@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "MmA",
-	"category" : "Metamath-Model",
+	"super" : "MmRawElement",
+	"category" : "Metamath-Bloc",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MmExistsModel",
+	"name" : "MmABElement",
 	"type" : "normal"
 }

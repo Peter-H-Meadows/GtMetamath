@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "MmA",
+	"super" : "MmAbstractModel",
 	"category" : "Metamath-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MmExistsModel",
+	"name" : "MmA",
 	"type" : "normal"
 }

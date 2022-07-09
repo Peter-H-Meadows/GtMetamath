@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MmSquareBracets",
+	"name" : "MmSquareBracketsElement",
 	"type" : "normal"
 }

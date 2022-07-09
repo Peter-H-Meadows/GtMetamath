@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 gameElement
-^ MmF2Element new initializeWith: self
+^ MmABElement new initializeWith: self

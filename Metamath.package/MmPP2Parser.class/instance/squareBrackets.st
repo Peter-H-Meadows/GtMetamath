@@ -1,5 +1,5 @@
 accessing
 squareBrackets
-	^ $[ asPParser trim , list , $] asPParser trim ==> 
+	^ $[ asPParser trim , label2 trim , '/' asPParser trim , label2 trim , $] asPParser trim , primary asPParser trim ==> 
 
-		[ :x | MmSquareBracetsModel new body: x second . ]
+		[ :x | MmSquareBracetsModel new first: x second second: x fourth   . ]

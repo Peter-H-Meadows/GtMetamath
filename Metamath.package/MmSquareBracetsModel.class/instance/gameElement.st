@@ -1,3 +1,3 @@
 accessing
 gameElement
-^ MmSquareBracets new initializeWith: self .
+^ MmSquareBracketsElement new initializeWith: self .

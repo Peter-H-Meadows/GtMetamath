@@ -28,10 +28,8 @@
 		"curlyBraces",
 		"proveable",
 		"wff",
-		"la",
 		"list",
 		"emptySet",
-		"label3",
 		"angBrackets",
 		"implies",
 		"not",
@@ -39,7 +37,12 @@
 		"or",
 		"and",
 		"nand",
-		"exists"
+		"exists",
+		"notFree",
+		"forAll",
+		"equals",
+		"existsu",
+		"existsStar"
 	],
 	"name" : "MmPP2Parser",
 	"type" : "normal"
