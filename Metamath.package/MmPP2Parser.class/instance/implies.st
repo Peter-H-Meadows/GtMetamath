@@ -1,7 +1,7 @@
 accessing
 implies
 
-^ "$( asPParser trim ," primary trim , '->' asPParser trim  , primary trim ", $) asPParser trim"  ==> 
+^ primary trim , '->' asPParser trim  , primary trim  ==> 
 
 	[ :x | 
 	

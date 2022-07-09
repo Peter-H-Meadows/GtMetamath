@@ -1,11 +1,10 @@
 accessing
 proveable
 
-^ '|-' asPParser trim , "list" primary  ==> 
+^ '|-' asPParser trim , primary trim  ==> 
 
 	[ :x |
-	"(x second isArray ifTrue: [self halt.])."
-	
+
 		MmProveableModel new body: x second 
 	
 	] 
