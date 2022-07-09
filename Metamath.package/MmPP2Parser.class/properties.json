@@ -42,7 +42,10 @@
 		"forAll",
 		"equals",
 		"existsu",
-		"existsStar"
+		"existsStar",
+		"intersection",
+		"member",
+		"subset"
 	],
 	"name" : "MmPP2Parser",
 	"type" : "normal"
