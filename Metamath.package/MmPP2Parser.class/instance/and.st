@@ -1,10 +1,10 @@
 accessing
 and
 
-^ $( asPParser trim , primary , '/\' asPParser trim  , primary , $) asPParser trim  ==> 
+^ primary , '/\' asPParser trim  , primary  ==> 
 
 	[ :x | 
 	
-		MmAndModel new first: x second second: x fourth   
+		MmAndModel new first: x first second: x third   
 	
 	] 

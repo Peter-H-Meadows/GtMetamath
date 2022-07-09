@@ -45,7 +45,8 @@
 		"existsStar",
 		"intersection",
 		"member",
-		"subset"
+		"subset",
+		"p2"
 	],
 	"name" : "MmPP2Parser",
 	"type" : "normal"

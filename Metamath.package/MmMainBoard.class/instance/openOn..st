@@ -106,8 +106,8 @@ ea announcer when: #mm send: #highlight: to: self.
 
 	"self addChild: mPane."
 
-	aSpace := BlSpace new
+	"aSpace := BlSpace new
 			extent: 900 @ 700;
 			title: proofToDo name.
 	aSpace root addChild: self.
-	aSpace show
+	aSpace show"

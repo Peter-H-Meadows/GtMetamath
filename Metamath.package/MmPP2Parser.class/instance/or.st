@@ -1,10 +1,10 @@
 accessing
 or
 
-^ $( asPParser trim , primary , '\/' asPParser trim  , primary , $) asPParser trim  ==> 
+^ primary , '\/' asPParser trim  , primary  ==> 
 
 	[ :x | 
 	
-		MmOrModel new first: x second second: x fourth   
+		MmOrModel new first: x first second: x third   
 	
 	] 
