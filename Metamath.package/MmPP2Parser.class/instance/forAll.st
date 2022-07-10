@@ -1,7 +1,7 @@
 accessing
 forAll
 
-^ 'A.' asPParser trim  , label2 trim , label2 trim ==> 
+^ 'A.' asPParser trim  , label2 trim , primary trim ==> 
 
 	[ :x | 
 	

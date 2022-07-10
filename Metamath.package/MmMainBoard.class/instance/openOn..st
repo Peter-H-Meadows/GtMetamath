@@ -1,6 +1,6 @@
 initialization
 openOn: aProofModel
-	| aEventListener aSpace wantedResultElement hide |
+	| aEventListener aSpace wantedResultElement hide cc |
 	proofToDo := aProofModel copy.
 
 	proofToDo setAllVariablesToFixed.
@@ -59,8 +59,13 @@ hide := BrButton new
 			c frame vertical alignTop ].
 
 
-"
-	proofToDo comments do: [ :ea | self addChild: ea gameElement ]."
+
+	proofToDo comments do: [ :ea |  cc := ea gameElement ].
+	
+	cc constraintsDo: [ :c |
+			"c frame horizontal alignRight."
+			c frame vertical alignBottom ].
+	self addChild: cc.
 
 
 	proofToDo eHypoths

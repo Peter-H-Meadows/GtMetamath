@@ -1,6 +1,6 @@
 accessing
 gtDependenciesMapFor: aView
-	<gtView>
+	"<gtView>"
 	^ aView mondrian
 	title: 'Map';
 	priority: 1110;

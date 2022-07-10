@@ -1,7 +1,7 @@
 accessing
 existsStar
 
-^ 'E*' asPParser trim  , label2 trim , primary ==> 
+^ 'E*' asPParser trim  , primary trim , primary ==> 
 
 	[ :x | 
 	

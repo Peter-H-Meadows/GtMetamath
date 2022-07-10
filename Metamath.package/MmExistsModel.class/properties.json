@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "MmAbstractModel",
+	"super" : "MmA",
 	"category" : "Metamath-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
