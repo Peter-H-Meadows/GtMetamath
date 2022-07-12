@@ -1,5 +1,5 @@
 accessing
 curlyBraces
-	^ ${ asPParser trim , list , $} asPParser trim ==> 
+	^ ${ asPParser trim , p4 , $| asPParser trim, p4 , $} asPParser trim ==> 
 
 		[ :x | MmCurlyBracesModel new body: x second ]

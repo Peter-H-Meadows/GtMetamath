@@ -1,10 +1,10 @@
 accessing
 and3
 
-^ $( asPParser trim , primary , '/\' asPParser trim  , primary , '/\' asPParser trim  , primary , $) asPParser trim  ==> 
+^ p4 , '/\' asPParser trim  , p4 , '/\' asPParser trim  , p4  ==> 
 
 	[ :x | 
 	
-		MmImpliesBiModel new first: x second second: x fourth   
+		MmImpliesBiModel new first: x first second: x third   
 	
 	] 

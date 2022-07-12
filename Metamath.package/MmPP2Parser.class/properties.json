@@ -13,17 +13,11 @@
 		"VarsUsed"
 	],
 	"instvars" : [
-		"comment",
-		"constant",
-		"variable",
 		"label",
-		"floatingHypothesis",
-		"essentialHypothesis",
 		"primary",
 		"parentheses",
 		"squareBrackets",
 		"label2",
-		"distinct",
 		"curlyBraces",
 		"proveable",
 		"wff",
@@ -50,7 +44,11 @@
 		"notEquals",
 		"s",
 		"p3",
-		"p4"
+		"p4",
+		"p5",
+		"notFree2",
+		"and3",
+		"squareBrackets2"
 	],
 	"name" : "MmPP2Parser",
 	"type" : "normal"

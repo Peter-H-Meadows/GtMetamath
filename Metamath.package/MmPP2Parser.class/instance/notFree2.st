@@ -1,7 +1,7 @@
 accessing
-notFree
+notFree2
 
-^ 'F/' asPParser trim  , p5 , p5 ==> 
+^ 'F/_' asPParser trim  , p5 , p5 ==> 
 
 	[ :x | 
 	

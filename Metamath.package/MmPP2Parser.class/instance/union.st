@@ -1,7 +1,7 @@
 accessing
 union
 
-^ p3  , 'u.' asPParser trim  , p3 trim  ==> 
+^ ( "parentheses /" label2)  , 'u.' asPParser trim  , ( "parentheses /" label2)  ==> 
 
 	[ :x | 
 	

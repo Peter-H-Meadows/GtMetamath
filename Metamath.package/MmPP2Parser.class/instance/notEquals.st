@@ -1,7 +1,7 @@
 accessing
 notEquals
 
-^ label2 trim , '=/=' asPParser trim  , p3 trim  ==> 
+^ (parentheses / label2) trim , '=/=' asPParser trim  , (parentheses / label2)  ==> 
 
 	[ :x | 
 	

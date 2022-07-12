@@ -1,10 +1,10 @@
 accessing
 wff
 
-^ ('wff' asPParser trim / 'class' asPParser trim) , list ==> 
+^ 'wff' asPParser trim , p4  "==> 
 
-	[ :x | 
+	[ :x |
+
+		MmW new body: x second 
 	
-		MmWffModel new body: x second 
-	
-	] 
+	] "

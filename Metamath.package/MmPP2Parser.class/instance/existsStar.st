@@ -1,7 +1,7 @@
 accessing
 existsStar
 
-^ 'E*' asPParser trim  , primary trim , primary ==> 
+^ 'E*' asPParser trim  , p5 , p5 ==> 
 
 	[ :x | 
 	

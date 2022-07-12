@@ -1,7 +1,7 @@
 accessing
 exists
 
-^ 'E.' asPParser trim  , label2 trim , ( parentheses / forAll / exists / not / label2) trim ==> 
+^ 'E.' asPParser trim  , p5 , p5 ==> 
 
 	[ :x | 
 	
