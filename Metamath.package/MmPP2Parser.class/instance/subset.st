@@ -1,7 +1,7 @@
 accessing
 subset
 
-^ primary trim , 'C_' asPParser trim  , primary trim  ==> 
+^ label2 trim , 'C_' asPParser trim  , ( parentheses / label2) trim  ==> 
 
 	[ :x | 
 	

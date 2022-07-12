@@ -1,7 +1,7 @@
 accessing
 forAll
 
-^ 'A.' asPParser trim  , label2 trim , primary trim ==> 
+^ 'A.' asPParser trim  , label2 trim , ( parentheses / forAll / exists / not / label2) trim ==> 
 
 	[ :x | 
 	

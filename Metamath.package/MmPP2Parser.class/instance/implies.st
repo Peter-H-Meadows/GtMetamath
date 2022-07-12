@@ -1,7 +1,7 @@
 accessing
 implies
 
-^ primary trim , '->' asPParser trim  , primary trim  ==> 
+^ p4 trim , '->' asPParser trim  , p4 trim  ==> 
 
 	[ :x | 
 	

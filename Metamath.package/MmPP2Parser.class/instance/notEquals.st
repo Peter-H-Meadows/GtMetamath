@@ -1,7 +1,7 @@
 accessing
-equals
+notEquals
 
-^ p3 trim , $= asPParser trim  , p3 trim  ==> 
+^ label2 trim , '=/=' asPParser trim  , p3 trim  ==> 
 
 	[ :x | 
 	

@@ -1,7 +1,7 @@
 accessing
 notFree
 
-^ 'F/' asPParser trim  , label2 trim , primary ==> 
+^ 'F/' asPParser trim  , label2 trim , p3 ==> 
 
 	[ :x | 
 	

@@ -1,7 +1,7 @@
 accessing
 member
 
-^ label2 trim , 'e.' asPParser trim  , primary trim  ==> 
+^ (parentheses / label2) trim , 'e.' asPParser trim  , (parentheses / label2) trim  ==> 
 
 	[ :x | 
 	

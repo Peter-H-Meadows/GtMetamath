@@ -1,7 +1,7 @@
 accessing
 or
 
-^ primary , '\/' asPParser trim  , primary  ==> 
+^ p4 , '\/' asPParser trim  , p4  ==> 
 
 	[ :x | 
 	

@@ -1,3 +1,5 @@
 accessing
 p2
-^ implies / impliesBi / or / and / exists / forAll / intersection
+"^   notFree / intersection / implies / s / union / impliesBi / or / and / exists / forAll  "
+
+^ implies / member

@@ -1,7 +1,7 @@
 accessing
 not
 
-^ '-.' asPParser trim , primary ==> 
+^ '-.' asPParser trim , p4 trim ==> 
 
 	[ :x | 
 	

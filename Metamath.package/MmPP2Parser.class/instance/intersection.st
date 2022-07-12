@@ -1,7 +1,7 @@
 accessing
 intersection
 
-^ "$( asPParser trim ," primary trim , '|^|' asPParser trim  , primary trim ", $) asPParser trim"  ==> 
+^ label2 trim , 'i^i' asPParser trim  , label2 trim  ==> 
 
 	[ :x | 
 	

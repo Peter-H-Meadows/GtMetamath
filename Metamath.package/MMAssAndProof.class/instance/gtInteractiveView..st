@@ -7,4 +7,4 @@ self reparse.
 
 	^ aView explicit 
 		title: 'interactive';
-		stencil: [ self gameElement2 ]
+		stencil: [ MmMainBoard new  openOn: self "self gameElement2" ]

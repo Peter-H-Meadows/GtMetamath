@@ -1,7 +1,7 @@
 accessing
 proveable
 
-^ '|-' asPParser trim , primary trim  ==> 
+^ '|-' asPParser trim , p4  ==> 
 
 	[ :x |
 

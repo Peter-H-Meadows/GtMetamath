@@ -1,3 +1,3 @@
 accessing
 assertionsUsed
-^assertionsUsed := used substrings collect: [:ea | prevAssertions at: ea ]
+^assertionsUsed := used substrings copyWithoutFirst collect: [:ea | prevAssertions at: ea ]

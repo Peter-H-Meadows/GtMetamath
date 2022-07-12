@@ -19,7 +19,6 @@
 		"label",
 		"floatingHypothesis",
 		"essentialHypothesis",
-		"proof",
 		"primary",
 		"parentheses",
 		"squareBrackets",
@@ -46,7 +45,12 @@
 		"intersection",
 		"member",
 		"subset",
-		"p2"
+		"p2",
+		"union",
+		"notEquals",
+		"s",
+		"p3",
+		"p4"
 	],
 	"name" : "MmPP2Parser",
 	"type" : "normal"
