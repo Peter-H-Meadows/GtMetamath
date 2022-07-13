@@ -16,9 +16,9 @@ addUsableAssertionsToLeftpane
 						
 							"use same vars as proofworkingon"
 							
-							"usableAssertion cloneVarsFrom: proofToDo ."
+							usableAssertion cloneVarsFrom: proofToDo .
 							
-							"usableAssertion setAllVariablesToFixed" 
+							usableAssertion setAllVariablesToFixed
 						].
 
 					c := (AssertionAndEssentialHypothesisElement new

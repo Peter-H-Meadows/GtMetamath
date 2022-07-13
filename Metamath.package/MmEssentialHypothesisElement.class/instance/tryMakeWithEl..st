@@ -7,7 +7,9 @@ tryMakeWithEl: el
 	
 	"ehypel := MmOnBoardEssentialHypothesisElement new model: el model copy ."
 			
-	self addChildFirst: el .	
+	self addChildFirst: el .
+	
+	"self halt."
 		
 	(model canMapTo: el model) ifFalse: [ 
 			 

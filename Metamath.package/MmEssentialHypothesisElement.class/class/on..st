@@ -1,3 +1,3 @@
 instance creation
 on: aHypoth
-	^ self new initializeWithHypoth: aHypoth
+	^ self new initializeWith: aHypoth

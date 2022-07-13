@@ -1,14 +1,14 @@
 initialization
 initializeWith: aAssertion
-| aText el mmodel look |
+|  el  |
 
 model := aAssertion .
 
-model announcer when: MmHighlightAnnouncement send: #highlight to: self.
+"model announcer when: MmHighlightAnnouncement send: #highlight to: self.
 
 model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 
-model announcer when: MmCanMapAnnouncement send: #canMap: to: self.
+model announcer when: MmCanMapAnnouncement send: #canMap: to: self."
 
 "aText := aAssertion name asRopedText .
 aText fontSize: 18.
