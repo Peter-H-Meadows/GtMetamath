@@ -1,15 +1,15 @@
 adding
 addUsableAssertionsToLeftpane
 	| c |
-	proofToDo "prevAssertions" assertionsUsed
+	proofToDo prevAssertions "assertionsUsed"
 		do: [ :each | 
 			| usableAssertion |
-			each name = 'a1ii' ifFalse: [
+			"each name = 'a1ii' ifFalse: ["
 			
 			usableAssertion := (proofToDo prevAssertions at: each name) copy.
-
+"self halt."
 			usableAssertion body isWFF
-				ifTrue: [  ]
+				"ifTrue: [  ]"
 				ifFalse: [ 
 					usableAssertion hasEhypoths
 						ifFalse: [ 
@@ -26,4 +26,4 @@ addUsableAssertionsToLeftpane
 
 
 					leftPane addChild: c.
-					] ]]
+					] "]"]

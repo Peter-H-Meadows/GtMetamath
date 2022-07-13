@@ -5,6 +5,6 @@ wff
 
 	[ :x |
 
-		MmW new body: x second 
+		MmWffModel new body: x second 
 	
 	] "

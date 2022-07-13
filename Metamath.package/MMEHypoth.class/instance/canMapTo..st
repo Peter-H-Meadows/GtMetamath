@@ -13,6 +13,8 @@ canMap ifTrue: [
 	
 	"self halt ."
 	
+	self announcer announce: #maps .
+	
 	owner isComplete ifTrue: [ "self halt" . "isComplete := true" ].
 
 	
@@ -22,7 +24,10 @@ canMap ifTrue: [
 
 "assertion without ehypoths could also make complete"
 
-].
+] ifFalse: [
+
+	self announcer announce: #fail .
+] .
 
 "isComplete ifTrue: [ 
 	

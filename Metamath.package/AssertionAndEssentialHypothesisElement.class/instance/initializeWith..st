@@ -23,8 +23,8 @@ model eHypoths reverse do: [ :ea |
 	el := MmEssentialHypothesisElement new initializeWith: ea  .
 
 	el constraintsDo: [ :co |
-			co horizontal matchParent ];
-		background: BlTransparentBackground new .
+			co horizontal matchParent ]";
+		background: BlTransparentBackground new" .
 	
 	hypothBox addChild: el    .
 	
