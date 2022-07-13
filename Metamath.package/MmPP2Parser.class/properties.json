@@ -48,7 +48,10 @@
 		"p5",
 		"notFree2",
 		"and3",
-		"squareBrackets2"
+		"squareBrackets2",
+		"squareBrackets3",
+		"subset2",
+		"powerSet"
 	],
 	"name" : "MmPP2Parser",
 	"type" : "normal"

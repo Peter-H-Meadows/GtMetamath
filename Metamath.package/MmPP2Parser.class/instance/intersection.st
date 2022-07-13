@@ -1,7 +1,7 @@
 accessing
 intersection
 
-^ label2 trim , 'i^i' asPParser trim  , label2 trim  ==> 
+^ (parentheses / label2) trim , 'i^i' asPParser trim  , (parentheses / label2) trim  ==> 
 
 	[ :x | 
 	

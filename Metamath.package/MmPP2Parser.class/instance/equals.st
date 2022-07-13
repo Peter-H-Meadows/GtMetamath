@@ -1,7 +1,7 @@
 accessing
 equals
 
-^ (parentheses / squareBrackets / curlyBraces / label2) , $= asPParser trim  , (parentheses / label2)  ==> 
+^ ( powerSet/ parentheses / squareBrackets / squareBrackets2 / squareBrackets3 / curlyBraces / label2) , $= asPParser trim  , ( powerSet/ parentheses / squareBrackets / squareBrackets2 / squareBrackets3 / curlyBraces / label2)  ==> 
 
 	[ :x | 
 	

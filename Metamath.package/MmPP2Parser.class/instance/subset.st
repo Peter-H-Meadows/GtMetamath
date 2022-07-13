@@ -1,7 +1,7 @@
 accessing
 subset
 
-^ label2 trim , 'C_' asPParser trim  , ( parentheses / label2) trim  ==> 
+^ ( parentheses / curlyBraces / label2) trim , 'C_' asPParser trim  , ( parentheses / curlyBraces / label2) trim  ==> 
 
 	[ :x | 
 	

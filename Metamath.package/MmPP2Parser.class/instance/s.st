@@ -1,7 +1,7 @@
 accessing
 s
 
-^ p3 trim , $\ asPParser trim  , p3 trim  ==> 
+^ label2 trim , $\ asPParser trim  , label2 trim  ==> 
 
 	[ :x | 
 	
