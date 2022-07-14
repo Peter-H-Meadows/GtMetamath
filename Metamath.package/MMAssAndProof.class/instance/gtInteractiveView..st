@@ -1,9 +1,8 @@
 accessing
 gtInteractiveView: aView
 	<gtView>
-	
-	
-self reparse.
+
+	self reparse.
 
 	^ aView explicit 
 		title: 'interactive';

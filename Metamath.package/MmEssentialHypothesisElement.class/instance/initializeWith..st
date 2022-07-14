@@ -4,6 +4,8 @@ initializeWith: aHypothModel
 model := aHypothModel .
 
 
+"self addEventHandler: MmOnListUsableEventListener new ."
+
 "model announcer when: #complete" "MmHighlightAnnouncement" "send: #highlight: to: self."
 
 model announcer when: #fail send: #fail: to: self.
@@ -14,8 +16,4 @@ self margin: (BlInsets all: 2).
 
 self addChildFirst: selectedMarkerElement .
 
-"model parsep ."
-
-"model body ifNotNil: ["
-
-	self addChild: model body gameElement 
+self addChild: model body gameElement 

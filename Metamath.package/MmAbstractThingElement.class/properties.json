@@ -8,7 +8,8 @@
 	"instvars" : [
 		"textElement",
 		"controller",
-		"selected"
+		"selected",
+		"announcer"
 	],
 	"name" : "MmAbstractThingElement",
 	"type" : "normal"

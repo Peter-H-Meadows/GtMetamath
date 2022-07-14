@@ -6,7 +6,7 @@ addHandlersForListUsable: con
 
 hypothBox childrenDo: [ :el | el controller: con . el addEventHandler: aEventListener . ]."
 
-aEventListener := MmOnListUsableEventListener new gameController: con .
+aEventListener := MmOnListUsableEventListener new "gameController: con" .
 self addEventHandler: aEventListener .
 
 

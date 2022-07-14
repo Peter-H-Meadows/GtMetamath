@@ -4,8 +4,9 @@ addUsableAssertionsToLeftpane
 	proofToDo "prevAssertions" assertionsUsed
 		do: [ :each | 
 			| usableAssertion |
-			"each name = 'a1ii' ifFalse: ["
-			
+			each name = 'a1ii' ifFalse: [
+			"self halt."
+			each name = 'idi' ifFalse: [
 			usableAssertion := (proofToDo prevAssertions at: each name) copy.
 "self halt."
 			usableAssertion body class = Array
@@ -22,8 +23,11 @@ addUsableAssertionsToLeftpane
 						].
 
 					c := (AssertionAndEssentialHypothesisElement new
-							initializeWith: usableAssertion) addHandlersForListUsable:  controller.
+							initializeWith: usableAssertion) "addHandlersForListUsable:  controller".
+							
+			
+c announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
 
 
 					leftPane addChild: c.
-					] "]"]
+					] ] ] ]

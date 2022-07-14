@@ -1,27 +1,26 @@
 initialization
 openOn: aProofModel
-	| aEventListener aSpace wantedResultElement hide cc |
+	| aEventListener wantedResultElement hide cc |
+	
 	proofToDo := aProofModel copy.
-
 	proofToDo setAllVariablesToFixed.
 
-	controller := MmGameController new board: self.
-	controller finalResultWanted: proofToDo.
+	"controller := MmGameController new board: self.
+	controller finalResultWanted: proofToDo."
 
-	topPane := BlElement new
+	"topPane := BlElement new
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent ];
-			layout: BlFlowLayout horizontal.
-"
-	self addChild: self topPane."
+			layout: BlFlowLayout horizontal."
+			
+	"self addChild: self topPane."
 
 	workPane := BlElement new
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent .
-				"c linear horizontal alignRight."
-				c frame horizontal weight: 0.5];
+				"c frame horizontal weight: 0.5" ];
 			layout: BlLinearLayout vertical.
 
 	leftPane := BlElement new
@@ -39,19 +38,20 @@ hide := BrButton new
 		
 		
 		leftPane isAttachedToSceneGraph ifTrue: [leftPane removeFromParent] ifFalse: [self addChild: leftPane].
-		 ]. 
-	aEventListener := MmProofResultListener new gameController: controller.
-	wantedResultElement := (MmWantedResultElement new initializeWith: proofToDo)
-			addEventHandler: aEventListener.
+		 ].
 			
-		hide	constraintsDo: [ :c |
+		hide constraintsDo: [ :c |
 			c frame horizontal alignCenter.
 			c frame vertical alignTop ].
 			
 
+	 
+	"aEventListener := MmProofResultListener new gameController: controller."
+	
+	wantedResultElement := (MmWantedResultElement new initializeWith: proofToDo)
+			"addEventHandler: aEventListener".
 
 
-	"wantedResultElement constraintsDo: [ :c | c linear horizontal alignRight ]."
 	wantedResultElement
 		"size: 200@200;"
 		constraintsDo: [ :c |
@@ -70,23 +70,19 @@ hide := BrButton new
 
 	proofToDo eHypoths
 		do: [ :ea | 
-			| ehypoth |
-			"ea setCompleted ."
-			ehypoth := MmOnBoardEssentialHypothesisElement new model: ea.
+				| ehypoth |
 
-			aEventListener := MmOnBoardHypothEventListener new gameController: controller.
-			ehypoth addEventHandler: aEventListener.
-			
-			
-ea announcer when: #mm send: #highlight: to: self.
-			
+				ehypoth := MmOnBoardEssentialHypothesisElement new model: ea.
 
-			leftPane addChild: ehypoth ].
-
-"
-	proofToDo comments do: [ :ea | workPane addChild: ea gameElement ]."
-	
-	"self topPane addChild: BlElement new."
+				"aEventListener := MmOnBoardHypothEventListener new gameController: controller.
+				ehypoth addEventHandler: aEventListener."
+			
+				"ea announcer when: #mm send: #highlight: to: self."
+				
+				ea announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
+			
+				leftPane addChild: ehypoth .
+		].
 
 	
 	self addChild: workPane asScalableElement asPannableElement.
@@ -105,7 +101,6 @@ ea announcer when: #mm send: #highlight: to: self.
 				c vertical fitContent ];
 			layout: BlLinearLayout horizontal."
 
-	""
 "
 	mPane addChild: workPane asScalableElement."
 

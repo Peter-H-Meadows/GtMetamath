@@ -16,7 +16,8 @@
 		"workPane",
 		"topPane",
 		"leftPane",
-		"mPane"
+		"mPane",
+		"selectedUsableElement"
 	],
 	"name" : "MmMainBoard",
 	"type" : "normal"

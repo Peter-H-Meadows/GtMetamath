@@ -5,7 +5,12 @@ initializeWith: assertion
 
 model := assertion .
 
-self addMenu.
+
+"self addEventHandler: MmOnListUsableEventListener new ."
+
+
+"self addMenu."
+
 "model fHypoths reverse do: [ :ea | 
 	
 	el := MmFloatingHypothesisElement new initializeWith: ea  .
@@ -41,8 +46,10 @@ divElement := BlElement new
 self addChild: divElement.
 
 resultElement := assertion gameElement constraintsDo: [ :c | c linear vertical alignCenter ] .
+
 "aEventListener := MmOnBoardUsableEventListener new gameController: con .
 self addEventHandler: aEventListener ."
+
 self addChild: resultElement.
 
 "selectedMarkerElement := BlElement new
@@ -53,14 +60,3 @@ self addChild: resultElement.
 
 self addChild: selectedMarkerElement."
 
-"anAccordion toggle."
-
-	"anAccordion header: [
-		BrButton new
-			look: BrGlamorousAccordionHeaderLook new;
-			label: model name printString;
-			action: [ anAccordion toggle ] ].
-			
-	anAccordion expand."
-	
-	"self halt ."

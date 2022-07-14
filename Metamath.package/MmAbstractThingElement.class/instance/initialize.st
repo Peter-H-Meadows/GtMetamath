@@ -3,15 +3,18 @@ initialize
 "| mmodel look |"
 super initialize .
 
+
+self addEventHandler: MmOnListUsableEventListener new .
+
 selected := false .
 
 selectedMarkerElement := BlElement new
 		constraintsDo: [ :c |
 			c horizontal exact: 4.
-			c vertical matchParent ];
-		background: BlTransparentBackground new.
+			c vertical matchParent ]
+		"background: BlTransparentBackground new".
 
-self geometry: BlRectangle new .
+"self geometry: BlRectangle new ."
 
 "self background: Color veryVeryDarkGray ."
 

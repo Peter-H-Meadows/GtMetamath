@@ -1,7 +1,6 @@
 accessing
 initialize 
 
-| menuModel |
 super initialize .
 
 "self border: (BlBorder paint: Color gray width: 2 ) ."
