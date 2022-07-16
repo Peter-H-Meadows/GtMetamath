@@ -1,3 +1,4 @@
 mouse handlers
 clickEvent: anEvent
-"self halt ."
+anEvent currentTarget clicked.
+	anEvent consumed: true.

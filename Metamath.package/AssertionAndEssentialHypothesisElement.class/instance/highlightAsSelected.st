@@ -1,6 +1,9 @@
 highlighting
 highlightAsSelected
 selectedMarkerElement background: Color gray .
-selected := true .
+
+self announcer announce: (MmUseableSelectedAnnouncement new element: self).
+
+"selected := true .
 selectedMarkerElement removeFromParent.
-self addChild: selectedMarkerElement.
+self addChild: selectedMarkerElement."

@@ -14,4 +14,4 @@ hypothBox constraintsDo: [ :c |
 					c horizontal fitContent.
 					c vertical fitContent ].
 
-self addChild: hypothBox
+self addChild: hypothBox.

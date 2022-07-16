@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"controller",
-		"currentlySelectedElement",
 		"usableList",
 		"proofToDo",
 		"aList",
@@ -17,7 +16,8 @@
 		"topPane",
 		"leftPane",
 		"mPane",
-		"selectedUsableElement"
+		"selectedUsableElement",
+		"selectedWantedElement"
 	],
 	"name" : "MmMainBoard",
 	"type" : "normal"

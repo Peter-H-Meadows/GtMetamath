@@ -1,11 +1,13 @@
 accessing
 usableSelected: ann
 	
-	"self halt."
+	selectedUsableElement  ifNotNil: [ selectedUsableElement unhighlightAsSelected ] .
 	
 	selectedUsableElement := ann element .
 	
-	ann element model hasEhypoths ifTrue: [
+	selectedWantedElement ifNotNil: [ self pairSelected ]
+	
+	"ann element model hasEhypoths ifTrue: [
 	
 		ann element unhighlightAsSelected .
 	
@@ -13,6 +15,8 @@ usableSelected: ann
 			AssertionAndEssentialHypothesisElement new initializeWith: ann element model copy .
 
  		workPane addChild: selectedUsableElement.
+ 		
+	selectedUsableElement hypothElements do: [:ea | ea announcer when: MmWantedSelectedAnnouncement send: #wantedSelected: to: self ] .
 	
-	].
+	]."
 	

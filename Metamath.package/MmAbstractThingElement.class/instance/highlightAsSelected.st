@@ -1,5 +1,3 @@
-accessing
-highlightAsSelected 
- 
-selectedMarkerElement background: Color gray .
-selected := true 
+emulating
+highlightAsSelected
+self subclassResponsibility

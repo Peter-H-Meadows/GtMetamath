@@ -1,20 +1,9 @@
 initialization
 openOn: aProofModel
-	| aEventListener wantedResultElement hide cc |
+	| wantedResultElement hide cc |
 	
 	proofToDo := aProofModel copy.
 	proofToDo setAllVariablesToFixed.
-
-	"controller := MmGameController new board: self.
-	controller finalResultWanted: proofToDo."
-
-	"topPane := BlElement new
-			constraintsDo: [ :c | 
-				c horizontal fitContent.
-				c vertical fitContent ];
-			layout: BlFlowLayout horizontal."
-			
-	"self addChild: self topPane."
 
 	workPane := BlElement new
 			constraintsDo: [ :c | 
@@ -31,7 +20,7 @@ openOn: aProofModel
 			layout: BlLinearLayout vertical.
 
 hide := BrButton new
-		beHugeSize;
+		"beHugeSize;"
 		aptitude: BrGlamorousButtonWithLabelAptitude new;
 		label: 'hide';
 		action: [ 
@@ -45,11 +34,7 @@ hide := BrButton new
 			c frame vertical alignTop ].
 			
 
-	 
-	"aEventListener := MmProofResultListener new gameController: controller."
-	
-	wantedResultElement := (MmWantedResultElement new initializeWith: proofToDo)
-			"addEventHandler: aEventListener".
+	wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
 
 
 	wantedResultElement
@@ -63,7 +48,6 @@ hide := BrButton new
 	proofToDo comments do: [ :ea |  cc := ea gameElement ].
 	
 	cc constraintsDo: [ :c |
-			"c frame horizontal alignRight."
 			c frame vertical alignBottom ].
 	self addChild: cc.
 
@@ -72,17 +56,16 @@ hide := BrButton new
 		do: [ :ea | 
 				| ehypoth |
 
-				ehypoth := MmOnBoardEssentialHypothesisElement new model: ea.
-
-				"aEventListener := MmOnBoardHypothEventListener new gameController: controller.
-				ehypoth addEventHandler: aEventListener."
-			
-				"ea announcer when: #mm send: #highlight: to: self."
+				ehypoth := MmOnBoardEssentialHypothesisElement new initializeWith:  ea.
 				
-				ea announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
+				ehypoth addBoardHandler .
+				
+				ehypoth announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
 			
 				leftPane addChild: ehypoth .
 		].
+		
+	leftPane addChild: BlElement new .
 
 	
 	self addChild: workPane asScalableElement asPannableElement.
@@ -94,20 +77,3 @@ hide := BrButton new
 	self addUsableAssertionsToLeftpane.
 
 	self addChild: hide.
-
-	"mPane := BlElement new
-			constraintsDo: [ :c | 
-				c horizontal fitContent.
-				c vertical fitContent ];
-			layout: BlLinearLayout horizontal."
-
-"
-	mPane addChild: workPane asScalableElement."
-
-	"self addChild: mPane."
-
-	"aSpace := BlSpace new
-			extent: 900 @ 700;
-			title: proofToDo name.
-	aSpace root addChild: self.
-	aSpace show"

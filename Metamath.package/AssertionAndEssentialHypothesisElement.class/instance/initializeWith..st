@@ -52,11 +52,5 @@ self addEventHandler: aEventListener ."
 
 self addChild: resultElement.
 
-"selectedMarkerElement := BlElement new
-		constraintsDo: [ :co |
-			co horizontal exact: 4.
-			co vertical matchParent ];
-		background: BlTransparentBackground new.
-
-self addChild: selectedMarkerElement."
+self addChild: selectedMarkerElement.
 

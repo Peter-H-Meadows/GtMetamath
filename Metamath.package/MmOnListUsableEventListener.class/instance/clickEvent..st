@@ -1,8 +1,13 @@
 accessing
-clickEvent: anEvent
-	anEvent currentTarget clicked.
-	"anEvent currentTarget isSelected
-		ifTrue: [ gameController usableClickedFromList: anEvent currentTarget.
-			anEvent currentTarget unhighlightAsSelected ]."
-		
-
+clickEvent: ev
+			| el |
+	el := 
+			AssertionAndEssentialHypothesisElement new initializeWith: ev currentTarget model copy .
+	el addBoardHandler: workPane.
+			
+	
+ 		workPane workPane addChild: el.
+ 		
+		"el hypothElements do: [:ea | 
+			ea announcer when: MmWantedSelectedAnnouncement send: #wantedSelected: to: self.
+		] ."

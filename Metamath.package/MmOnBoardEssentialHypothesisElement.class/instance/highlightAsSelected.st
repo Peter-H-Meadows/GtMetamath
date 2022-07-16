@@ -1,5 +1,5 @@
 api - highlighting
-highlightAsSelected 
- 
+highlightAsSelected
 selectedMarkerElement background: Color gray .
-selected := true 
+"self halt."
+self announcer announce: (MmUseableSelectedAnnouncement new element: self).

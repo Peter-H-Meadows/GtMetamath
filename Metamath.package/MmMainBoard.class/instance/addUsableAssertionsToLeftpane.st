@@ -1,33 +1,37 @@
 adding
 addUsableAssertionsToLeftpane
 	| c |
-	proofToDo "prevAssertions" assertionsUsed
+	proofToDo assertionsUsed "prevAssertions"
 		do: [ :each | 
 			| usableAssertion |
-			each name = 'a1ii' ifFalse: [
-			"self halt."
-			each name = 'idi' ifFalse: [
-			usableAssertion := (proofToDo prevAssertions at: each name) copy.
-"self halt."
-			usableAssertion body class = Array
-				"ifTrue: [  ]"
-				ifFalse: [ 
-					usableAssertion hasEhypoths
-						ifFalse: [ 
-						
-							"use same vars as proofworkingon"
-							
-							usableAssertion cloneVarsFrom: proofToDo .
-							
-							usableAssertion setAllVariablesToFixed
-						].
+			(each name = 'a1ii' or: [each name = 'idi'])
+				ifFalse: [  "self halt."
+				
+					 usableAssertion := (proofToDo prevAssertions at: each name) copy.
+							usableAssertion body class = Array
+								ifFalse: [ 
+								
+									c := AssertionAndEssentialHypothesisElement new
+											initializeWith: usableAssertion.
 
-					c := (AssertionAndEssentialHypothesisElement new
-							initializeWith: usableAssertion) "addHandlersForListUsable:  controller".
-							
-			
-c announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
+									leftPane addChild: c.
+									
+									
 
+									usableAssertion hasEhypoths
+										ifFalse: [ 
+											usableAssertion cloneVarsFrom: proofToDo.
 
-					leftPane addChild: c.
-					] ] ] ]
+											usableAssertion setAllVariablesToFixed.
+											c addHandler.
+											c announcer
+												when: MmUseableSelectedAnnouncement
+												send: #usableSelected:
+												to: self .]
+										ifTrue: [ c addHandler: self . 
+										
+										"c announcer
+												when: MmUseableSelectedAnnouncement
+												send: #usableSelectedFromList:
+												to: self" ]
+									 ] ] ] 

@@ -1,5 +1,8 @@
 accessing
-highlightAsSelected 
+highlightAsSelected  
  
-selectedMarkerElement background: ( Color gray ).
-selected := true 
+selectedMarkerElement background: Color gray .
+
+self announcer announce: (MmWantedSelectedAnnouncement new element: self).
+
+
