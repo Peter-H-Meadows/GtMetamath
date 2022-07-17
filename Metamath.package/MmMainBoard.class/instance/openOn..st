@@ -1,6 +1,6 @@
 initialization
 openOn: aProofModel
-	| wantedResultElement hide cc |
+	| hide cc |
 	
 	proofToDo := aProofModel copy.
 	proofToDo setAllVariablesToFixed.
@@ -16,8 +16,17 @@ openOn: aProofModel
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent .
-				c frame horizontal alignLeft.];
+				c frame horizontal alignLeft.
+				c frame vertical alignBottom ];
 			layout: BlLinearLayout vertical.
+			
+	hypothPane := BlElement new
+			constraintsDo: [ :c | 
+				c horizontal fitContent.
+				c vertical fitContent .
+				c frame horizontal alignLeft.
+				 ];
+			layout: BlLinearLayout vertical.			
 
 hide := BrButton new
 		"beHugeSize;"
@@ -55,20 +64,22 @@ hide := BrButton new
 	proofToDo eHypoths
 		do: [ :ea | 
 				| ehypoth |
-
-				ehypoth := MmOnBoardEssentialHypothesisElement new initializeWith:  ea.
+				ea setAsComplete .
+				ehypoth := MmOnBoardEssentialHypothesisElement new initializeWith:  ea .
 				
 				ehypoth addBoardHandler .
 				
 				ehypoth announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
 			
-				leftPane addChild: ehypoth .
+				hypothPane addChild: ehypoth .
 		].
 		
-	leftPane addChild: BlElement new .
+	"leftPane addChild: BlElement new ."
 
 	
 	self addChild: workPane asScalableElement asPannableElement.
+	
+	self addChild: hypothPane .
 	
 	self addChild: leftPane "asScalableElement".
 	

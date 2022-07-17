@@ -1,9 +1,12 @@
 accessing
 isComplete
-"self halt.""
-essentialHypoths do: [:ea | ea isComplete ifFalse: [^ false ] ]."
 
+essentialHypoths do: [:ea | ea isComplete ifFalse: [^ false ] ].
 
-self announcer announce: #complete . "(MmxAnn new )."
+self announcer announce: #complete .
+
+wantedResult body = body ifTrue: [
+	self announcer announce: #allDone .
+] .
 
 ^ true 

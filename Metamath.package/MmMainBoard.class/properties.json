@@ -17,7 +17,9 @@
 		"leftPane",
 		"mPane",
 		"selectedUsableElement",
-		"selectedWantedElement"
+		"selectedWantedElement",
+		"hypothPane",
+		"wantedResultElement"
 	],
 	"name" : "MmMainBoard",
 	"type" : "normal"

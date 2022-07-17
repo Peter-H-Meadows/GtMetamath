@@ -8,9 +8,9 @@ initializeWith: aHypothModel
 
 "model announcer when: #complete" "MmHighlightAnnouncement" "send: #highlight: to: self."
 
-"model announcer when: #fail send: #fail: to: self.
+"model announcer when: #fail send: #fail: to: self."
 
-model announcer when: #maps send: #success: to: self."
+model announcer when: #maps send: #success: to: self.
 
 "self margin: (BlInsets all: 2)."
 

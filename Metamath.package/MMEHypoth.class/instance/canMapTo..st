@@ -13,7 +13,9 @@ canMap ifTrue: [
 	
 	"self halt ."
 	
-	self announcer announce: #maps .
+	thing isComplete ifTrue: [ self announcer announce: #maps . ].
+	
+	
 	
 	owner isComplete ifTrue: [ "self halt" . "isComplete := true" ].
 

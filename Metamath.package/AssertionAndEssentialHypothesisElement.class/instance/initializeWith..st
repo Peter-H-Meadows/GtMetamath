@@ -28,10 +28,9 @@ model eHypoths reverse do: [ :ea |
 	el := MmEssentialHypothesisElement new initializeWith: ea  .
 
 	el constraintsDo: [ :co |
-			co horizontal matchParent ]";
-		background: BlTransparentBackground new" .
+			co horizontal matchParent ] .
 	
-	hypothBox addChild: el    .
+	hypothBox addChild: el .
 	
 ] .
 
@@ -54,3 +53,4 @@ self addChild: resultElement.
 
 self addChild: selectedMarkerElement.
 
+model announcer when: #complete send: #complete: to: self.
