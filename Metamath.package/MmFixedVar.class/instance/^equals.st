@@ -2,7 +2,7 @@ accessing
 = stuff
 "self halt."
 
-stuff isFixedVar ifTrue: [^ true ].
+stuff isFixedVar ifTrue: [^ name = stuff name ].
 
 stuff isFreeVar ifTrue: [^ true ].
 

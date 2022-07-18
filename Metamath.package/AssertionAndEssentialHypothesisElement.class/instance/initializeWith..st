@@ -54,3 +54,5 @@ self addChild: resultElement.
 self addChild: selectedMarkerElement.
 
 model announcer when: #complete send: #complete: to: self.
+
+model announcer when: #allDone send: #allDone: to: self.
