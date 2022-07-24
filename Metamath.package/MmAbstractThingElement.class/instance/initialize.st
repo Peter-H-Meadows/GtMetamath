@@ -3,6 +3,8 @@ initialize
 
 super initialize .
 
+announcer := Announcer new .
+
 "self addEventHandler: MmOnListUsableEventListener new ."
 
 selected := false .

@@ -17,8 +17,11 @@ addUsableAssertionsToLeftpane
 
 									usableAssertion hasEhypoths
 										ifFalse: [ 
-											usableAssertion cloneVarsFrom: proofToDo.
-											usableAssertion setAsComplete .
+										
+											"usableAssertion cloneVarsFrom: proofToDo.
+											usableAssertion setAsComplete ."
+											
+											
 										c := AssertionAndEssentialHypothesisElement new
 											initializeWith: usableAssertion.
 											"usableAssertion setAllVariablesToFixed."

@@ -1,8 +1,8 @@
 copying
-postCopyxxx 
+postCopy
 
 "body := body collect: [ :ea | ea copy ] ."
 
-body := body copy.
+"body := body copy."
 
 announcer := Announcer new

@@ -23,7 +23,7 @@ openOn: aProofModel
 	sc := BlScrollableElement new .
 sc addChild: leftPane .
 sc constraintsDo: [ :c | 
-	c horizontal matchParent  .
+	c horizontal fitContent  .
 	c vertical matchParent ].
 
 
