@@ -16,7 +16,8 @@
 		"usedString",
 		"compressedString",
 		"varObs",
-		"wantedResult"
+		"wantedResult",
+		"usedFor"
 	],
 	"name" : "MMAssAndProof",
 	"type" : "normal"

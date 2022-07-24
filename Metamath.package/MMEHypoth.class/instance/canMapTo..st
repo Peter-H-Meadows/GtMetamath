@@ -1,12 +1,12 @@
 accessing
 canMapTo: thing
 
-thing mappedTo: self .
+thing usedFor: self .
 
-"self announcer announce: #complete ."
+canMap := body canMapTo: thing body .
 
-canMap := body canMapTo: thing body . 
-isComplete := canMap .
+"isComplete := canMap ."
+
 canMap ifTrue: [
 
 	"if my owner is complete.. "
@@ -15,9 +15,11 @@ canMap ifTrue: [
 	
 	thing isComplete ifTrue: [ self announcer announce: #maps . ].
 	
+	isComplete := thing isComplete .
 	
+	owner isComplete .
 	
-	owner isComplete ifTrue: [ "self halt" . "isComplete := true" ].
+	"ifTrue: [  ]."
 
 	
 	"isComplete := thing isComplete .
@@ -37,4 +39,3 @@ canMap ifTrue: [
 ] ."
 
 ^ canMap
-

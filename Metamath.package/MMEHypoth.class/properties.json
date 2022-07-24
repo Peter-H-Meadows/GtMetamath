@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pmod"
+		"pmod",
+		"usedFor"
 	],
 	"name" : "MMEHypoth",
 	"type" : "normal"

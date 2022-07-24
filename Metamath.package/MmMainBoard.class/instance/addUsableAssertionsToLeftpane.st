@@ -1,7 +1,7 @@
 adding
 addUsableAssertionsToLeftpane
 	| c |
-	proofToDo assertionsUsed "prevAssertions"
+	proofToDo "assertionsUsed" prevAssertions
 		do: [ :each | 
 			| usableAssertion |
 			(each name = 'a1ii' or: [each name = 'idi'])

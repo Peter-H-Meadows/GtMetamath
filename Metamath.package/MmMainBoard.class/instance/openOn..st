@@ -1,6 +1,6 @@
 initialization
 openOn: aProofModel
-	| hide cc |
+	| hide cc sc |
 	
 	proofToDo := aProofModel copy.
 	proofToDo setAllVariablesToFixed.
@@ -19,6 +19,14 @@ openOn: aProofModel
 				c frame horizontal alignLeft.
 				c frame vertical alignBottom ];
 			layout: BlLinearLayout vertical.
+			
+	sc := BlScrollableElement new .
+sc addChild: leftPane .
+sc constraintsDo: [ :c | 
+	c horizontal matchParent  .
+	c vertical matchParent ].
+
+
 			
 	hypothPane := BlElement new
 			constraintsDo: [ :c | 
@@ -71,7 +79,9 @@ hide := BrButton new
 				
 				ehypoth announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
 			
-				hypothPane addChild: ehypoth .
+				"hypothPane addChild: ehypoth ."
+				
+				leftPane addChild: ehypoth .
 		].
 		
 	"leftPane addChild: BlElement new ."
@@ -79,9 +89,11 @@ hide := BrButton new
 	
 	self addChild: workPane asScalableElement asPannableElement.
 	
-	self addChild: hypothPane .
+	"self" sc addChild: hypothPane .
 	
-	self addChild: leftPane "asScalableElement".
+	"self addChild: leftPane" "asScalableElement".
+	
+	self addChild:  sc .
 	
 	self  addChild:  wantedResultElement.
 
