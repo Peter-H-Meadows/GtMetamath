@@ -4,6 +4,8 @@ clickEvent: ev
 	el := 
 			AssertionAndEssentialHypothesisElement new initializeWith: ev currentTarget model copy .
 	el addBoardHandler: workPane.
+	
+	el constraintsDo: [:c | c linear horizontal  alignRight].
 			
 	
  		workPane workPane addChild: el.

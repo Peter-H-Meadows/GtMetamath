@@ -9,6 +9,7 @@ openOn: aProofModel
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent .
+				"c linear horizontal alignCenter"
 				"c frame horizontal weight: 0.5" ];
 			layout: BlLinearLayout vertical.
 
@@ -32,11 +33,12 @@ sc constraintsDo: [ :c |
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent .
-				c frame horizontal alignCenter.
+				c frame horizontal alignRight.
+				c frame vertical alignBottom
 				 ];
 			layout: BlLinearLayout vertical.
 			
-			self addLevelButton.	
+			"self addLevelButton."	
 
 hide := BrButton new
 		"beHugeSize;"

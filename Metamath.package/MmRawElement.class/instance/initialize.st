@@ -5,7 +5,7 @@ initialize
 		constraintsDo: [ :c | 
 			c horizontal fitContent.
 			c vertical fitContent.
-			c linear vertical alignCenter ];
+			"c linear vertical alignCenter" ];
 		layout: BlLinearLayout horizontal .
 		
 		"announcer" 
