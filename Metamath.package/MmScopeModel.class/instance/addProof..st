@@ -7,3 +7,5 @@ addProof: aMMProof
 	"allProofs at: aMMProof name put: aMMProof ."
 	assertionsDict at: aMMProof name put: aMMProof .
 	
+	proofs add: aMMProof
+	

@@ -16,7 +16,8 @@
 		"assertionsDict",
 		"allProofs",
 		"allRawThings",
-		"allAssertions"
+		"allAssertions",
+		"proofz"
 	],
 	"name" : "MmScopeModel",
 	"type" : "normal"

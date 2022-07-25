@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "<historical>",
 	"super" : "PP2CompositeNode",
 	"category" : "Metamath-Parsing",
 	"classinstvars" : [ ],
