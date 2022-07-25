@@ -32,7 +32,7 @@ sc constraintsDo: [ :c |
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent .
-				c frame horizontal alignLeft.
+				c frame horizontal alignCenter.
 				 ];
 			layout: BlLinearLayout vertical.			
 
@@ -80,9 +80,9 @@ wantedResultElement  announcer when: MmWantedSelectedAnnouncement send: #wantedS
 				
 				ehypoth announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
 			
-				"hypothPane addChild: ehypoth ."
+				hypothPane addChild: ehypoth .
 				
-				leftPane addChild: ehypoth .
+				"leftPane addChild: ehypoth ."
 		].
 		
 	"leftPane addChild: BlElement new ."
@@ -90,7 +90,7 @@ wantedResultElement  announcer when: MmWantedSelectedAnnouncement send: #wantedS
 	
 	self addChild: workPane asScalableElement asPannableElement.
 	
-	"self" sc addChild: hypothPane .
+	self addChild: hypothPane .
 	
 	"self addChild: leftPane" "asScalableElement".
 	

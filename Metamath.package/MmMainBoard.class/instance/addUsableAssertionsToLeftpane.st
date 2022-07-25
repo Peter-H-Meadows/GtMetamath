@@ -14,17 +14,19 @@ addUsableAssertionsToLeftpane
 									
 									usableAssertion wantedResult: wantedResultElement model .
 									
+									c := AssertionAndEssentialHypothesisElement new
+											initializeWith: usableAssertion.
+											 c addHandler: self . 
 
-									usableAssertion hasEhypoths
-										ifFalse: [ 
+									"usableAssertion hasEhypoths
+										ifFalse: [ "
 										
 											"usableAssertion cloneVarsFrom: proofToDo.
 											usableAssertion setAsComplete ."
 											
 											
-										c := AssertionAndEssentialHypothesisElement new
+										"c := AssertionAndEssentialHypothesisElement new
 											initializeWith: usableAssertion.
-											"usableAssertion setAllVariablesToFixed."
 											c addHandler.
 											c announcer
 												when: MmUseableSelectedAnnouncement
@@ -33,12 +35,12 @@ addUsableAssertionsToLeftpane
 										ifTrue: [
 											c := AssertionAndEssentialHypothesisElement new
 											initializeWith: usableAssertion.
-											 c addHandler: self . 
+											 c addHandler: self . "
 										
 										"c announcer
 												when: MmUseableSelectedAnnouncement
 												send: #usableSelectedFromList:
-												to: self" ].
+												to: self" "]."
 												
 
 
