@@ -20,3 +20,5 @@ Metacello new
   load.
 ```
 
+```Metamath open
+```
