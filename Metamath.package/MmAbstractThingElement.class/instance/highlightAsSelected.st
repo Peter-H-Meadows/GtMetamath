@@ -1,3 +1,5 @@
 emulating
 highlightAsSelected
-self subclassResponsibility
+selectedMarkerElement background: Color gray .
+
+self announcer announce: (MmUseableSelectedAnnouncement new element: self).

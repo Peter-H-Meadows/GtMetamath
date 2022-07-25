@@ -43,7 +43,7 @@ hide := BrButton new
 		action: [ 
 		
 		
-		leftPane isAttachedToSceneGraph ifTrue: [leftPane removeFromParent] ifFalse: [self addChild: leftPane].
+		sc isAttachedToSceneGraph ifTrue: [sc removeFromParent] ifFalse: [self addChild: sc].
 		 ].
 			
 		hide constraintsDo: [ :c |
@@ -52,7 +52,8 @@ hide := BrButton new
 			
 
 	wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
-
+wantedResultElement addBoardHandler.
+wantedResultElement  announcer when: MmWantedSelectedAnnouncement send: #wantedSelected: to: self.
 
 	wantedResultElement
 		"size: 200@200;"

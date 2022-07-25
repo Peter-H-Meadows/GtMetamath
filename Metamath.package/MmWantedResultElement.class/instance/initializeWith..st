@@ -6,7 +6,7 @@ model := aProofModel .
 
 self margin: (BlInsets all: 2).
 
-self addChildFirst: selectedMarkerElement .
+self addChild: selectedMarkerElement .
 
 self addChild: model body gameElement .
 
