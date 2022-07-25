@@ -3,6 +3,8 @@ initialize
 
 super initialize .
 
+self addChild:  greenElement .
+
 "self border: (BlBorder paint: Color gray width: 2 ) ."
 
 hypothBox := BlElement new layout: BlLinearLayout  vertical .

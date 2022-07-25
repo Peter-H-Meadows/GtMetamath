@@ -9,7 +9,8 @@
 		"textElement",
 		"controller",
 		"selected",
-		"announcer"
+		"announcer",
+		"greenElement"
 	],
 	"name" : "MmAbstractThingElement",
 	"type" : "normal"

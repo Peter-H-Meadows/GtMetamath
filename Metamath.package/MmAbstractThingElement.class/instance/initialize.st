@@ -14,6 +14,10 @@ selectedMarkerElement := BlElement new
 			c horizontal exact: 4.
 			c vertical matchParent ].
 			
+greenElement := BlElement new
+		constraintsDo: [ :c |
+			c horizontal exact: 4.
+			c vertical matchParent ].
 
 "self geometry: BlRectangle new ."
 
