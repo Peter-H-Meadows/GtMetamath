@@ -34,7 +34,9 @@ sc constraintsDo: [ :c |
 				c vertical fitContent .
 				c frame horizontal alignCenter.
 				 ];
-			layout: BlLinearLayout vertical.			
+			layout: BlLinearLayout vertical.
+			
+			self addLevelButton.	
 
 hide := BrButton new
 		"beHugeSize;"
