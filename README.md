@@ -4,7 +4,9 @@ Implemented with: GT / Pharo / Smalltalk / Metamath.
 
 ![gif](images/1.gif.gif)
 
-https://vimeo.com/733391285
+
+![gif](images/2.gif)
+
 
 # Install
 Get [Glamorous Toolkit](https://gtoolkit.com/).
@@ -15,4 +17,5 @@ Metacello new
   baseline: 'Metamath'; 
   repository: 'github://Peter-H-Meadows/GtMetamath';
   load.
+  Metamath open .
 ```
