@@ -1,7 +1,9 @@
 A game/GUI to teach logic.
 Implemented with: GT / Pharo / Smalltalk / Metamath.
 
-md
+
+![gif](images/1.gif.gif)
+
 https://vimeo.com/733391285
 
 # Install
