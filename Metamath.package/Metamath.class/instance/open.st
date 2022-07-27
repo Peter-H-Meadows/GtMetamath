@@ -6,9 +6,9 @@ open
 			extent: 1400 @ 800;
 			title: 'GlamorousMetamath'.
 
-	aSpace root background: Color darkGray.
+	"aSpace root background: Color darkGray."
 	
-		levels := ReadStream on: Database proofs "allProofs asOrderedCollection" "reversed" .
+	levels := ReadStream on: Database proofs "allProofs asOrderedCollection" "reversed" .
 	
 	aSpace root addChild: ( MmMainBoard new openOn:  levels next ) .
 	
