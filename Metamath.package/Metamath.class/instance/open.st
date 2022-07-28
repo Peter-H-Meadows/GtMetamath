@@ -10,6 +10,9 @@ open
 	
 	levels := ReadStream on: Database proofs "allProofs asOrderedCollection" "reversed" .
 	
+	levels next.
+	levels next.
+	
 	aSpace root addChild: ( MmMainBoard new openOn:  levels next ) .
 	
 	"(aSpace addChild: (MmMainBoard new openOn: (Database allProofs at: 'a1i')))."
