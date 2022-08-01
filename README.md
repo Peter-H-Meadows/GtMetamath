@@ -16,7 +16,7 @@ Metacello new
   repository: 'github://Peter-H-Meadows/GtMetamath';
   load.
 ```
-2.
+3. Evaluate
 ![gif](images/install.png)
 ```Smalltalk
   Metamath open .
