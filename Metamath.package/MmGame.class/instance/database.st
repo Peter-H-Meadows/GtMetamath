@@ -3,7 +3,7 @@ database
 
 | pp |
 ^ Database ifNil: [ 
-	pp := MmPP2Parser new .
+	pp := MmBodyParser new .
 	pp parse: MmRawFileDataPartOne comment.
 	Database := pp database .
 	

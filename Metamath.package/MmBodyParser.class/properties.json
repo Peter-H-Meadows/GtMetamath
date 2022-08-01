@@ -53,6 +53,6 @@
 		"subset2",
 		"powerSet"
 	],
-	"name" : "MmPP2Parser",
+	"name" : "MmBodyParser",
 	"type" : "normal"
 }

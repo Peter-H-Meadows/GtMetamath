@@ -2,7 +2,7 @@ accessing
 body
 <gtExample>
 | parser body |
-parser := MmPP2Parser new  "varNames: {'ph'}" .
+parser := MmBodyParser new  "varNames: {'ph'}" .
 
 body := parser  parse: '|- ph'.
 self assert: body class equals: MmProveableModel.

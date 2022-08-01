@@ -1,7 +1,7 @@
 parsing
 reparsex 
 
-parser := MmPP2Parser new  varNames: varNames .
+parser := MmBodyParser new  varNames: varNames .
 
 body  := parser  parse: bodyString1 .
 

@@ -1,7 +1,7 @@
 parsing
 reparse 
 
-parser := MmPP2Parser new  varNames: varNames .
+parser := MmBodyParser new  varNames: varNames .
 
 essentialHypoths := essentialHypoths collect: [ :ea | | ee |
 	ee := ea copy .
