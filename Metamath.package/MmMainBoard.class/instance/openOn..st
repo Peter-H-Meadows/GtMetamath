@@ -69,6 +69,8 @@ wantedResultElement  announcer when: MmWantedSelectedAnnouncement send: #wantedS
 
 	proofToDo comments do: [ :ea |  cc := ea gameElement ].
 	
+	cc := MmCommentElement new createFromString: proofToDo name .
+	
 	cc constraintsDo: [ :c |
 			c frame vertical alignBottom ].
 	self addChild: cc.

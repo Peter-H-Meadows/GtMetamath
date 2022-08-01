@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BlEventListener",
-	"category" : "Metamath-Bloc",
+	"category" : "Metamath-BlocElements",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

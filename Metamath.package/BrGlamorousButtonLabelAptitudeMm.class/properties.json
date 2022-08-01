@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BrGlamorousButtonLabelAptitude",
-	"category" : "Metamath-Bloc",
+	"category" : "Metamath-BlocElements",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

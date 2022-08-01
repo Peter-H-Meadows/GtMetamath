@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "MmRawElement",
-	"category" : "Metamath-Bloc",
+	"category" : "Metamath-BlocElements",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

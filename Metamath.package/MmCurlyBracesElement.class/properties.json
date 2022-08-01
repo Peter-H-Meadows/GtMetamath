@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "MmAbstractBrackets",
-	"category" : "Metamath-Bloc",
+	"category" : "Metamath-BlocElements",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
