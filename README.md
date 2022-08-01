@@ -3,8 +3,6 @@ Implemented with: GT / Pharo / Smalltalk / Metamath.
 
 
 ![gif](images/1.gif.gif)
-
-
 ![gif](images/2.gif)
 
 
@@ -18,10 +16,8 @@ Metacello new
   repository: 'github://Peter-H-Meadows/GtMetamath';
   load.
 ```
-2
+2.
 ![gif](images/install.png)
-
-
 ```Smalltalk
   Metamath open .
 ```
