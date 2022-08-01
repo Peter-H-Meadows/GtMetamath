@@ -1,8 +1,3 @@
 accessing
 scopeContent: x
-
-x do: [ :ea |
-	
-	ea addTo: self .
-	
-	 ]
+	x do: [ :ea | ea addTo: self ]
