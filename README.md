@@ -9,13 +9,19 @@ Implemented with: GT / Pharo / Smalltalk / Metamath.
 
 
 # Install
-Get [Glamorous Toolkit](https://gtoolkit.com/).
-then:
+1. Get [Glamorous Toolkit](https://gtoolkit.com/).
 
+2. Open a playground and evaluate:
 ```Smalltalk
 Metacello new 
   baseline: 'Metamath'; 
   repository: 'github://Peter-H-Meadows/GtMetamath';
   load.
+```
+
+![gif](images/install.png)
+
+
+```Smalltalk
   Metamath open .
 ```
