@@ -18,7 +18,7 @@ Metacello new
   repository: 'github://Peter-H-Meadows/GtMetamath';
   load.
 ```
-
+2
 ![gif](images/install.png)
 
 
