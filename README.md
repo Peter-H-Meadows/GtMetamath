@@ -1,7 +1,9 @@
 A game/GUI to teach logic.
 Implemented with: GT / Pharo / Smalltalk / Metamath.
+
 ![gif](images/1.gif.gif)
 ![gif](images/2.gif)
+
 # Install
 1. Get [Glamorous Toolkit](https://gtoolkit.com/).
 
