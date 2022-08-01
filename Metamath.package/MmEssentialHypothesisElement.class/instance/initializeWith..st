@@ -23,5 +23,5 @@ self addChildFirst: selectedMarkerElement .
 		background: ( Color black ).
 
 self addChild: ee ."
-
-self addChild: model body gameElement 
+model body ifNotNil: [
+self addChild: model body gameElement ]

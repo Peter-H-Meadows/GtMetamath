@@ -4,7 +4,7 @@ openAllInEditor
 | aList aEventListener  aDocument aFigureFile editor txt text ed runner anAccordion |
 <gtExample>
 	
-	editor := BrTextEditor new. " beLineBased"
+	editor := BrTextEditorModel new. " beLineBased"
 	
 	"aFigureFile := self figureFileReference."
 	

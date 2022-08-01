@@ -25,17 +25,9 @@ aList when: BrSelectionChanged
 				"anEvent target look listElement scrollToPosition: anEvent selectedInterval last ."
 			
 			anEvent target look listElement scrollToPosition: rs next .
-			
-			"anEvent
-				selectedDo: [ :anInterval | anEvent target look listElement scrollToPosition: anInterval last ]."
-				
-				"
-			anEvent
-				deselectedDo: [ :anInterval | self inform: 'Deselected: ' , anInterval asString ]" 
 				
 ].
 		
 aList background: Color veryVeryDarkGray .
 
 ^ aList
-
