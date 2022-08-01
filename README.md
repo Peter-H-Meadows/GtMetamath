@@ -19,3 +19,4 @@ Metacello new
 ```Smalltalk
   Metamath open .
 ```
+![s](images/screen.png)
