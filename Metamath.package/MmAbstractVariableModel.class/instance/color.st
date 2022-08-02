@@ -1,6 +1,6 @@
 accessing
 color 
-| ab |
+
 "fixed ifFalse: [^ Color random]."
 
 "ab := Dictionary newFromPairs: {

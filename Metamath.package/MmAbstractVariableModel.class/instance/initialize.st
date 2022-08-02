@@ -4,6 +4,15 @@ super initialize .
 
 fixed := false .
 mapped := false .
+showName := false .
+
+7 atRandom = 1 ifTrue: [ showName := true ].
+
+geo := 
+		(BlTriangleGeometry new perform: 
+		#(beTop beBottom beLeft beRight) atRandom).
+		
+		7 atRandom = 1 ifTrue: [ geo := BlCircleGeometry new ] .
 
 "isSuccess := false .
 highlightStepDone := false ."

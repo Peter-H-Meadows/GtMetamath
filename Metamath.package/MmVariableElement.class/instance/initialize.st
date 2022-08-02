@@ -5,7 +5,7 @@ super initialize .
 
 self "geometry: BlRectangle new;"
 		
-		background: BlTransparentBackground new ;
+		"background: BlTransparentBackground new ;"
 		constraintsDo: [ :c | 
 					c horizontal fitContent.
 					c vertical fitContent .

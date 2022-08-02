@@ -12,13 +12,9 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 
 "aVariable identityHash printString"
 
-"col := Colors at: aVariable name ifAbsentPut: [ Color random ] ."
-	
 	"geometryClass := model fixed ifTrue: [ BlRoundedRectangleGeometry ] ifFalse: [ BlCircle ] ."
 
 	blob := BlElement new
-		"geometry: BlSquare new;"
-		"geometry: geometryClass new;"
 		background: model color
 		"border: (BlBorder paint: (Color blue alpha: 0.5) width: 6)" ;
 		"size: 30@30;"
@@ -29,9 +25,9 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 					c linear vertical alignCenter ].
 	
 		
-	model fixed ifTrue: [ "blob geometry: BlRoundedRectangleGeometry new"] ifFalse: [ 
+	model fixed ifTrue: [ ] ifFalse: [ 
 	
-		blob geometry: BlCircleGeometry new
+		blob geometry: model geo 
 	] .
 	
 				
@@ -54,8 +50,19 @@ textElement  margin: (BlInsets all: 8).
 
 blob layout: BlLinearLayout horizontal  .
 
-"blob addChild: textElement ."
+"."
 
+model showName 
+
+ ifTrue: [ 
+ 
+ blob constraintsDo: [ :c | 
+					c horizontal fitContent .
+					c vertical fitContent .
+					c linear horizontal  alignCenter .
+					c linear vertical alignCenter ].
+					
+					blob addChild: textElement  ] .
 				
 self addChild: blob .
 
