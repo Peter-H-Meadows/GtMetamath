@@ -17,7 +17,7 @@ geo :=
 "isSuccess := false .
 highlightStepDone := false ."
 
-letter := 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' atRandom .
+letter := 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' atRandom .
 
 color := { 
 Color random .

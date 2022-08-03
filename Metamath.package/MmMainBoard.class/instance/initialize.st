@@ -32,11 +32,12 @@ self background: Color veryVeryDarkGray .
 			
 			sc := BlScrollableElement new .
 
-"sc addChild: leftPane ."
+sc addChild: leftPane .
 
 sc constraintsDo: [ :c | 
-	c horizontal fitContent  .
-	c vertical matchParent ].
+	c horizontal fitContent .
+	c vertical matchParent .
+	c "linear" frame horizontal alignRight ].
 	
 	
 "hide := BrButton new
@@ -78,5 +79,5 @@ sc constraintsDo: [ :c |
 	
 	"self addChild:  sc ."
 	
-self addChild:  leftPane .
+self addChild:  "leftPane" sc .
 	"self addChild: hide."
