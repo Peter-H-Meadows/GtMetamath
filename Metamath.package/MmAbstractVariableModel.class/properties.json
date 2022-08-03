@@ -20,7 +20,8 @@
 		"mapCount",
 		"real",
 		"geo",
-		"showName"
+		"showName",
+		"letter"
 	],
 	"name" : "MmAbstractVariableModel",
 	"type" : "normal"

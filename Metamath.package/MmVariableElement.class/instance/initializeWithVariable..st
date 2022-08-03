@@ -19,8 +19,8 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 		"border: (BlBorder paint: (Color blue alpha: 0.5) width: 6)" ;
 		"size: 30@30;"
 		constraintsDo: [ :c | 
-					c horizontal exact: 16 "fitContent" .
-					c vertical exact: 16 "fitContent" .
+					c horizontal "exact: 16" fitContent .
+					c vertical "exact: 16" fitContent .
 					c linear horizontal  alignCenter .
 					c linear vertical alignCenter ].
 	
@@ -36,7 +36,7 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 
 "aText := (model name , model identityHash printString) asRopedText ."
 
-aText := model name asRopedText .
+aText := model "name" letter asRopedText .
 
 "blob background: Color gray."
 
@@ -46,23 +46,23 @@ aText fontSize: 18.
 aText foreground: Color black .
 
 textElement := (BlTextElement text: aText) constraintsDo: [ :c | c linear vertical alignCenter . c linear horizontal  alignCenter ].
-textElement  margin: (BlInsets all: 8).
+textElement  margin: (BlInsets all: 18).
 
 blob layout: BlLinearLayout horizontal  .
 
 "."
 
-model showName 
+"model showName 
 
- ifTrue: [ 
+ ifTrue: [ "
  
- blob constraintsDo: [ :c | 
+ "blob constraintsDo: [ :c | 
 					c horizontal fitContent .
 					c vertical fitContent .
 					c linear horizontal  alignCenter .
-					c linear vertical alignCenter ].
+					c linear vertical alignCenter ]."
 					
-					blob addChild: textElement  ] .
+blob addChild: textElement . "] ".
 				
 self addChild: blob .
 

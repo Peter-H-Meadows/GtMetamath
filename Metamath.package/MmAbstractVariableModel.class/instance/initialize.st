@@ -17,6 +17,8 @@ geo :=
 "isSuccess := false .
 highlightStepDone := false ."
 
+letter := 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' atRandom .
+
 color := { 
 Color random .
 Color purple.
