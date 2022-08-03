@@ -1,3 +1,3 @@
 adding
 addToWorkPane: mod 
-workPane addChild: (mod copy assertionAndEssentialHypothesisElement: controller) .
+"workPane addChild: (mod copy assertionAndEssentialHypothesisElement: controller) ."

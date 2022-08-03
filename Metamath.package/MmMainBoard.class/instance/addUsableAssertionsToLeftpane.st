@@ -18,6 +18,11 @@ addUsableAssertionsToLeftpane
 									c := AssertionAndEssentialHypothesisElement new
 											initializeWith: usableAssertion.
 											 c addHandler: self . 
+											 
+										c constraintsDo: [ :cc | 
+				"c horizontal fitContent.
+				c vertical fitContent ."
+				cc linear horizontal alignRight.].
 
 									"usableAssertion hasEhypoths
 										ifFalse: [ "
