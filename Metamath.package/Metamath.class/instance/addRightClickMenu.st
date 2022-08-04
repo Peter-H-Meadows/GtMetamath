@@ -9,7 +9,7 @@ addRightClickMenu
 									
 'next level' -> [ :e | e removeChildren . e addChild: ( MmMainBoard new openOn:  levels next ) . ].
 
-'reset' -> [ :e | e removeChildren	"e addChild: ( MmMainBoard new openOn:  levels peekBack  )" ].
+'restart' -> [ :e | e removeChildren . e addChild: ( MmMainBoard new openOn:  levels peekBack  ) ].
 
 'green' -> [ :e | e background: Color green ]
 											

@@ -4,7 +4,9 @@
 	"category" : "Metamath-GtExamples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"Database"
+	],
 	"instvars" : [ ],
 	"name" : "MmGtPetieParsingExamples",
 	"type" : "normal"

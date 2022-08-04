@@ -20,7 +20,7 @@ ${
 $} 
 
 ${
-	iii $e |- th $.    
+	aa.1 $e |- ph $.    
 
 	aa $a |- ( ps -> ph ) $.
 $}
@@ -67,6 +67,12 @@ $}
 ${    
 a2i.1 $e |- ( ph -> ( ps -> ch ) ) $.    
 a2i $p |- ( ( ph -> ps ) -> ( ph -> ch ) ) $= ( wi ax-2 ax-mp ) A $.  
+$}
+
+${
+mpd.1 $e |- ( ph -> ch ) $.  
+mpd.2 $e |- ( ph -> ( ch -> ps ) ) $.    
+mpd $p |- ( ph -> ps ) $= ( wi ax-2 ax-mp ) A $.  
 $}
 
 

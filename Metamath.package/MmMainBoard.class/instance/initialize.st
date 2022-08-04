@@ -1,7 +1,7 @@
 initialization
 initialize 
 
-| sc |
+| sc hideButton |
 	super initialize .
 
 self constraintsDo: [ :c | 
@@ -40,7 +40,7 @@ sc constraintsDo: [ :c |
 	c "linear" frame horizontal alignRight ].
 	
 	
-"hide := BrButton new
+hideButton := BrButton new
 		
 		aptitude: BrGlamorousButtonWithLabelAptitude new;
 		label: 'hide';
@@ -50,9 +50,9 @@ sc constraintsDo: [ :c |
 		sc isAttachedToSceneGraph ifTrue: [sc removeFromParent] ifFalse: [self addChild: sc].
 		 ].
 			
-		hide constraintsDo: [ :c |
-			c frame horizontal alignCenter.
-			c frame vertical alignTop ]."
+		hideButton constraintsDo: [ :c |
+			c frame horizontal alignRight.
+			c frame vertical alignBottom ].
 			
 
 
@@ -80,4 +80,4 @@ sc constraintsDo: [ :c |
 	"self addChild:  sc ."
 	
 self addChild:  "leftPane" sc .
-	"self addChild: hide."
+self addChild: hideButton.

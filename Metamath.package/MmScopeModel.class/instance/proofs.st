@@ -1,3 +1,3 @@
 accessing
 proofs
-^ proofs allButFirst: 2
+^ proofs "allButFirst: 2"
