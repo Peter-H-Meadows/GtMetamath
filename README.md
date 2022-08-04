@@ -21,3 +21,4 @@ Metacello new
 ```
 ![s](images/screen.png)
 ![s2](images/screen2.png)
+![s3](images/screen3syl.png)
