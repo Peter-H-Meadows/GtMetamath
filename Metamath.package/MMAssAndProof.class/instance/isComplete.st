@@ -5,9 +5,11 @@ essentialHypoths do: [:ea | ea isComplete ifFalse: [^ false ] ].
 
 self announcer announce: #complete .
 
-"self halt."
+isComplete := true .
 
-usedFor ifNotNil: [ usedFor owner isComplete ].
+usedFor ifNotNil: [ usedFor setAsComplete . usedFor owner isComplete ].
+
+self halt.
 
 wantedResult body = body ifTrue: [
 	self announcer announce: #allDone .

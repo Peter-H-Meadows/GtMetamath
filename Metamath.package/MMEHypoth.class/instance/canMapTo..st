@@ -11,7 +11,7 @@ canMap ifTrue: [
 
 	"if my owner is complete.. "
 	
-	"self halt ."
+	self halt .
 	
 	thing isComplete ifTrue: [ self announcer announce: #maps . ].
 	
@@ -22,9 +22,7 @@ canMap ifTrue: [
 	"ifTrue: [  ]."
 
 	
-	"isComplete := thing isComplete .
-
-	thing isEhypoth  ifTrue: [ isComplete := true ]."
+	"thing isEhypoth  ifTrue: [ isComplete := true ]."
 
 "assertion without ehypoths could also make complete"
 

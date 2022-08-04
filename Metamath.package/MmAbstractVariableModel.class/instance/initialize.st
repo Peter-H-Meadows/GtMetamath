@@ -34,9 +34,9 @@ Color  magenta .
 
 } atRandom.
 
-
+color := 
 {
-[ color := color muchDarker ]. [ color := color veryMuchLighter ]. []. } atRandom value.
+[ color muchDarker ]. [ color veryMuchLighter ]. [color]. } atRandom value.
 
 
 

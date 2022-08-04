@@ -1,7 +1,7 @@
 initialization
 initialize 
 
-| sc hideButton |
+| sc hideButton textElement aText |
 	super initialize .
 
 self constraintsDo: [ :c | 
@@ -20,6 +20,19 @@ self background: Color veryVeryDarkGray .
 				"c linear horizontal alignCenter"
 				"c frame horizontal weight: 0.5" ];
 			layout: BlLinearLayout vertical.
+			
+			
+"aText := ' level 1 ' asRopedText .
+aText fontSize: 30.
+aText foreground: Color green .
+textElement := (BlTextElement text: aText) .
+
+self addChild: textElement asScalableElement ."
+			
+			
+			
+			
+			
 
 	leftPane := BlElement new
 			constraintsDo: [ :c | 
