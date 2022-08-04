@@ -20,3 +20,4 @@ Metacello new
   Metamath open .
 ```
 ![s](images/screen.png)
+![s2](images/screen2.png)
