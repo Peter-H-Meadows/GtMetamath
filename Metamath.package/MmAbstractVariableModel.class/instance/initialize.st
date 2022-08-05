@@ -19,7 +19,7 @@ highlightStepDone := false ."
 
 letter := 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' atRandom .
 
-color := { 
+"color := { 
 Color random .
 Color purple.
 Color  brown .
@@ -32,11 +32,11 @@ Color orange .
 Color veryLightGray . 
 Color  magenta .
 
-} atRandom.
+} atRandom."
 
-color := 
-{
-[ color muchDarker ]. [ color veryMuchLighter ]. [color]. } atRandom value.
+ColorCycle atEnd ifTrue: [ ColorCycle reset ].
+color := ColorCycle next .
+color := { [ color muchDarker ]. [ color veryMuchLighter ]. [color]. } atRandom value.
 
 
 

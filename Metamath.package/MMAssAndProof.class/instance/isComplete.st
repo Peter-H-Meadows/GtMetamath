@@ -9,7 +9,7 @@ isComplete := true .
 
 usedFor ifNotNil: [ usedFor setAsComplete . usedFor owner isComplete ].
 
-self halt.
+"self halt."
 
 wantedResult body = body ifTrue: [
 	self announcer announce: #allDone .

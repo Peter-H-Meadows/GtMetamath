@@ -4,7 +4,9 @@
 	"category" : "Metamath-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"ColorCycle"
+	],
 	"instvars" : [
 		"fixed",
 		"mapped",
