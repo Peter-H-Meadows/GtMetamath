@@ -1,8 +1,4 @@
-as yet unclassified
+accessing
 scopeContent: x
-
-x do: [ :ea |
-	
-	ea addTo: self .
-	
-	 ]
+	self error.
+	x do: [ :ea | ea addTo: self ]

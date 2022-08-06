@@ -1,6 +1,6 @@
 parsing
 reparsex 
-
+self error .
 parser := MmBodyParser new  varNames: varNames .
 
 body  := parser  parse: bodyString1 .
