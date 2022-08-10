@@ -1,0 +1,3 @@
+generated
+startingStateForDatabase
+	^ 1

@@ -8,8 +8,9 @@
 	"instvars" : [
 		"model",
 		"gameModel",
-		"element"
+		"element",
+		"workPane"
 	],
-	"name" : "MmOnBoardWantedEventListener",
+	"name" : "MmUsableAssertionListener",
 	"type" : "normal"
 }

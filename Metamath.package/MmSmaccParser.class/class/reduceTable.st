@@ -1,0 +1,25 @@
+generated
+reduceTable
+^#(
+	#(16 0 #reduceActionForScopeItems1: 753665 false) 
+	#(13 1 #reduceActionForDatabase1: 553985 false) 
+	#(17 1 #reduceActionForMmComment1: 804865 false) 
+	#(18 1 #reduceActionForVar1: 846849 false) 
+	#(19 1 #reduceActionForConstant1: 876545 false) 
+	#(22 1 #reduceActionForDisjoint1: 992257 false) 
+	#(20 1 #reduceActionForProof1: 914433 false) 
+	#(21 1 #reduceActionForAssertion1: 949249 false) 
+	#(23 1 #reduceActionForEhypoth1: 1033217 false) 
+	#(24 1 #reduceActionForFhypoth1: 1072129 false) 
+	#(16 2 #reduceActionForScopeItems2: 753666 false) 
+	#(14 1 #liftFirstValue: 598017 false) 
+	#(14 1 #liftFirstValue: 598023 false) 
+	#(14 1 #liftFirstValue: 598022 false) 
+	#(14 1 #liftFirstValue: 598024 false) 
+	#(14 1 #liftFirstValue: 598018 false) 
+	#(14 1 #liftFirstValue: 598019 false) 
+	#(14 1 #liftFirstValue: 598025 false) 
+	#(14 1 #liftFirstValue: 598020 false) 
+	#(14 1 #liftFirstValue: 598021 false) 
+	#(15 3 #reduceActionForScope1: 714753 false)
+	).

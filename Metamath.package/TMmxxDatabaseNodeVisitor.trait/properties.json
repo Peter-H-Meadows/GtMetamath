@@ -1,0 +1,9 @@
+{
+	"commentStamp" : "",
+	"traitcomposition" : "TSmaCCParseNodeVisitor",
+	"classtraitcomposition" : "TSmaCCParseNodeVisitor classTrait",
+	"category" : "Metamath-ParsingSmaCC",
+	"classinstvars" : [ ],
+	"name" : "TMmxxDatabaseNodeVisitor",
+	"instvars" : [ ]
+}

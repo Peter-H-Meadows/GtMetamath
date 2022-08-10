@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SmaCCGLRParser",
+	"category" : "Metamath-ParsingSmaCC",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmSmaccParser",
+	"type" : "normal"
+}

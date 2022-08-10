@@ -1,0 +1,3 @@
+generated
+symbolTypes
+	^ #(#SmaCCToken #SmaCCToken #SmaCCToken #SmaCCToken #SmaCCToken #SmaCCToken #SmaCCToken #SmaCCToken #SmaCCToken #SmaCCToken #SmaCCToken #MmxxDatabaseNode #MmxxDatabaseNode #MmxxDatabaseNode #MmxxScopeNode #OrderedCollection #MmxxMmCommentNode #MmxxVarNode #MmxxConstantNode #MmxxProofNode #MmxxAssertionNode #MmxxDisjointNode #MmxxEhypothNode #MmxxFhypothNode #SmaCCToken #SmaCCErrorNode)
