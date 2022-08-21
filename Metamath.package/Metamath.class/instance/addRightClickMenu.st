@@ -7,7 +7,7 @@ addRightClickMenu
 							content: (BrGlamorousSimpleContextMenuContent new
 									items: {
 									
-'next level' -> [ :e | e removeChildren . e addChild: ( MmMainBoard new openOn:  levels next ) . ].
+'next level' -> [ :e | level := level + 1 . e removeChildren . e addChild: ( MmMainBoard new openOn:  levels next ) . ].
 
 'restart' -> [ :e | e removeChildren . e addChild: ( MmMainBoard new openOn:  levels peekBack  ) ].
 

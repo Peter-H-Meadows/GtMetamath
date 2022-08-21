@@ -2,4 +2,4 @@ accessing
 gameOnFirst10Levels
 <gtExample>
 	
-( Metamath new levels: self mmDb proofs ) open2.
+( Metamath new openOnProofs: self mmDb proofs ) open .

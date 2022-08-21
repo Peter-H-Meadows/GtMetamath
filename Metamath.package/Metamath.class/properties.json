@@ -9,7 +9,8 @@
 	],
 	"instvars" : [
 		"aSpace",
-		"levels"
+		"levels",
+		"level"
 	],
 	"name" : "Metamath",
 	"type" : "normal"

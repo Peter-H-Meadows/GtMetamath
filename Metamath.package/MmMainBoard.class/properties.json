@@ -19,7 +19,9 @@
 		"selectedUsableElement",
 		"selectedWantedElement",
 		"hypothPane",
-		"wantedResultElement"
+		"wantedResultElement",
+		"level",
+		"levels"
 	],
 	"name" : "MmMainBoard",
 	"type" : "normal"
