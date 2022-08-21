@@ -22,3 +22,49 @@ Metacello new
 ![s](images/screen.png)
 ![s2](images/screen2.png)
 ![s3](images/screen3syl.png)
+# Install
+1. Get [Glamorous Toolkit](https://gtoolkit.com/).
+
+2. Open a playground and evaluate:
+```Smalltalk
+Metacello new 
+  baseline: 'Metamath'; 
+  repository: 'github://Peter-H-Meadows/GtMetamath';
+  load.
+```
+On Wed, 27 Jul 2022 at 20:16, Jon P <drjonpennant@gmail.com> wrote:
+>
+> Looks like a fun thing you're making.
+
+I think fun is key to learning! :)
+(I'm sad that most schools seem to make learning mathematics boring).
+"School is like going to the best restaurant in town and then being
+told to eat the menu instead of the food."
+
+>
+> I've done a little game design and here's a couple of thoughts. I made this game about the four colour theorem on steam (if anyone would like to play feel free to email for a steam key).
+>
+
+Cool. I'm interested to study how my 8 year old nephew learns, so I'll
+use your game as one of the tests :)
+
+> One of the things I thought went best is that it doesn't have a tutorial, it's just a super slow ramp of complexity, each new idea is introduced with a couple of chances to play around with it before the next one. I'd really recommend an approach like that, especially if it's for kids, the hardest thing is walls of text, generally people learn easier by playing than reading.
+
+Yep! Here is a video of the first few proofs/levels in GtMetamath.
+https://youtu.be/TT5F75SK4gQ
+
+Any feedback/thoughts?
+
+weird words:
+
+deduction, elimination, transposes, inference, implies, hypotheses,
+assertion, antecedent, consequent, contraposition, axiom
+
+ph implies ps = red blob links to blue blob
+essential hypothesis = required input for transformer machine. and
+given starting chains.
+antecedent = thing at start (left-most)
+consequent = thing at end (right-most)
+modus ponens = detacher machine.
+a1i = add-to-front machine.
+syl = distributer machine.
