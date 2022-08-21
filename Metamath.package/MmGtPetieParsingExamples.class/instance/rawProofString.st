@@ -18,7 +18,6 @@ a1ii $p |- ( ps -> ph ) $=      ( aa ) ABADCABEF $.
 
 $}
 
-
 ${    
 	mm.1 $e |- ph $.    
 	mm.2 $e |- ( ph -> ps )  $. 
@@ -26,16 +25,11 @@ ${
 	ax-mp $a |- ps  $.  
 $}
 
-
-
-
-
 ${
 	mmphm.1 $e |- ch $.
 	mmphm.2 $e |- ( ch -> th )  $. 
 	mmphm $p |- th $= ( ax-mp ) AB $.  
 $} 
-
 
 ${
 $( Inference detaching an antecedent and introducing a new one. $)    
@@ -57,8 +51,6 @@ mp2.3 $e |- ( ph -> ( ps -> ch ) ) $.
 $( A double modus ponens inference. $)    
 mp2 $p |- ch $=      ( ax-mp ) X $.  $}
 
-
-
 ${    
 mp2b.1 $e |- ph $.    
 mp2b.2 $e |- ( ph -> ps ) $.    
@@ -66,8 +58,7 @@ mp2b.3 $e |- ( ps -> ch ) $.
 mp2b $p |- ch $=      ( ax-mp ) X $.  
 $}  
 
-
-${    
+${
 a2i.1 $e |- ( ph -> ( ps -> ch ) ) $.    
 a2i $a |- ( ( ph -> ps ) -> ( ph -> ch ) ) $.  
 $}
@@ -83,7 +74,6 @@ mpd.2 $e |- ( ph -> ( ch -> ps ) ) $.
 mpd $p |- ( ph -> ps ) $= ( a2i ax-mp ) A $.  
 $}
 
-
 ${    
 $( First of 2 premises for ~ syl . $)    
 syl.1 $e |- ( ph -> ps ) $.    
@@ -95,4 +85,3 @@ $( An inference version of the transitive laws for implication ~ imim2 and      
 syl $p |- ( ph -> ch ) $=      ( aa mpd ) X $.  
 $}
 ' 
-
