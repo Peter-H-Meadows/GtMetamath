@@ -3,7 +3,7 @@ mapped: ann
 
 "blob border: ( BlBorder paint: Color black width: 4 )."
 
-"self removeChildren ."
+self removeChildren .
 
 lineElement := BlElement new
 		constraintsDo: [ :c |
