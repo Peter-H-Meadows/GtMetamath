@@ -69,3 +69,11 @@ consequent = thing at end (right-most)
 modus ponens = detacher machine.
 a1i = add-to-front machine.
 syl = distributer machine.
+
+todo: add mmj features.
+  auto complete. 
+  
+I’m trying to decide if it would be quicker to (port to Smalltalk) or  write new code?
+If MMJ code is elegant/well designed, I will spend time reading it.
+If MMJ is badly designed/messy code then I guess it will be quicker just to write new code without looking at MMJ?
+
