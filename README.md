@@ -17,25 +17,13 @@ Metacello new
 ![gif](images/install.png)
 3. Evaluate
 ```Smalltalk
-  Metamath open .
+  Metamath new open .
 ```
 ![s](images/screen.png)
 ![s2](images/screen2.png)
 ![s3](images/screen3syl.png)
 it doesn't have a tutorial, it's just a super slow ramp of complexity, each new idea is introduced with a couple of chances to play around with it before the next one. I'd really recommend an approach like that, especially if it's for kids, the hardest thing is walls of text, generally people learn easier by playing than reading.
-# Install
-1. Get [Glamorous Toolkit](https://gtoolkit.com/).
 
-2. Open a playground and evaluate:
-```Smalltalk
-Metacello new 
-  baseline: 'Metamath'; 
-  repository: 'github://Peter-H-Meadows/GtMetamath';
-  load.
-```
-On Wed, 27 Jul 2022 at 20:16, Jon P <drjonpennant@gmail.com> wrote:
->
-> Looks like a fun thing you're making.
 
 I think fun is key to learning! :)
 (I'm sad that most schools seem to make learning mathematics boring).
