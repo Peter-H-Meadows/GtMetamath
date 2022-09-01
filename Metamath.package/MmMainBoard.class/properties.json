@@ -21,7 +21,8 @@
 		"hypothPane",
 		"wantedResultElement",
 		"level",
-		"levels"
+		"levels",
+		"aSpace"
 	],
 	"name" : "MmMainBoard",
 	"type" : "normal"

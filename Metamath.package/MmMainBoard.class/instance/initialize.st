@@ -1,6 +1,6 @@
 initialization
 initialize
-	| sc hideButton aText textElement |
+	| sc hideButton aText textElement model |
 	super initialize.
 
 	self
@@ -80,4 +80,31 @@ initialize
 	self addChild: hypothPane.	"self addChild: leftPane"	"asScalableElement"
 
 	self addChild: sc.	"self addChild:  sc ."	"leftPane"
-	self addChild: hideButton
+	self addChild: hideButton.
+	
+
+	
+	
+	
+	
+	model := BrWithContextMenuModel new
+			stencil: [ BrAnchoredElement new
+					aptitude: (BrGlamorousContextMenuAptitude new
+							content: (BrGlamorousSimpleContextMenuContent new
+									items: {
+									
+'next level' -> [ :e | level := level + 1 . e removeChildren . e addChild: ( MmMainBoard new openOn:  levels next ) . ].
+
+'restart' -> [ :e | e removeChildren . e addChild: ( MmMainBoard new openOn:  levels peekBack  ) ].
+
+'green' -> [ :e | e background: Color green ]
+											
+											
+											};
+									yourself);
+							yourself);
+					yourself ];
+			yourself.
+
+	self viewModel: model.
+	self aptitude: BrGlamorousWithContextMenuAptitude new
