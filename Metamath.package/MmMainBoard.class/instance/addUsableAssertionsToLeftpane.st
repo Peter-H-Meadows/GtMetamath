@@ -1,6 +1,16 @@
 adding
 addUsableAssertionsToLeftpane
-	| c |
+	| c aText textElement |
+	
+		aText := proofToDo name asRopedText .
+
+	aText fontSize: 42.
+	aText foreground: Color veryDarkGray .
+	textElement := (BlTextElement text: aText) .
+
+	leftPane addChild: textElement "asScalableElement" .
+	
+	
 	proofToDo assertionsUsed "prevAssertions"
 		do: [ :each | 
 			| usableAssertion |

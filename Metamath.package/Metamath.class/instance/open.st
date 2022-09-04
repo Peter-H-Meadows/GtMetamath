@@ -5,7 +5,7 @@ MmMainBoard new openPlz"
 
 | model |
 
-level := 1 .
+level := 11 .
 
 	aSpace := BlSpace new
 			extent: 1400 @ 800;
@@ -13,7 +13,9 @@ level := 1 .
 
 	aSpace root background: Color veryVeryDarkGray.
 	
-	aSpace addChild: (MmMainBoard new openOn: (Database allProofs at: 'a1i')).
+"	aSpace addChild: (MmMainBoard new openOn: (Database allProofs at: 'a1i'))."
+
+aSpace addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
 	
 	""
 	
@@ -38,7 +40,9 @@ level := level + 1 .
 e removeChildren . 
 
 
-e addChild: (MmMainBoard new openOn: (Database allProofs at: 'syl')).
+"e addChild: (MmMainBoard new openOn: (Database allProofs at: 'syl'))."
+
+e addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
 
 "e addChild: ( MmMainBoard new openOn:  levels next ) . "
 

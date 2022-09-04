@@ -1,8 +1,17 @@
 initialization
 openOn: aProofModel
 	
-proofToDo := aProofModel copy.
+| cc aText textElement |
+
+	proofToDo := aProofModel copy.
+	
 proofToDo setAllVariablesToFixed.
+
+
+
+
+	
+	
 
 wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
 wantedResultElement addBoardHandler.
@@ -20,13 +29,23 @@ self  addChild:  wantedResultElement.
 			c frame horizontal alignRight.
 			c frame vertical alignTop ]."
 
-"	proofToDo comments do: [ :ea |  cc := ea gameElement ].
+	proofToDo comments do: [ :ea |  cc := ea gameElement ].
 	
-	cc := MmCommentElement new createFromString: proofToDo name .
+	"cc := MmCommentElement new createFromString: proofToDo name ."
 	
 	cc constraintsDo: [ :c |
 			c frame vertical alignBottom ].
-	self addChild: cc."
+	self addChild: cc.
+	
+	
+	
+		aText := proofToDo name asRopedText .
+
+	aText fontSize: 42.
+	aText foreground: Color gray .
+	textElement := (BlTextElement text: aText) .
+
+	hypothPane addChild: textElement asScalableElement.
 
 
 	proofToDo eHypoths

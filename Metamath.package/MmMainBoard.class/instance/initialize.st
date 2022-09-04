@@ -18,14 +18,14 @@ initialize
 				c vertical fitContent	"c linear horizontal alignCenter"	"c frame horizontal weight: 0.5" ];
 			layout: BlLinearLayout vertical.	
 	
-	level := 1 .
+	"level := 1 .
 	aText := level asRopedText .
 
 	aText fontSize: 30.
 	aText foreground: Color veryDarkGray .
 	textElement := (BlTextElement text: aText) .
 
-	self addChild: textElement asScalableElement .
+	self addChild: textElement asScalableElement ."
 
 
 
