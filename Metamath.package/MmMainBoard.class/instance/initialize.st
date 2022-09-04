@@ -106,5 +106,5 @@ initialize
 					yourself ];
 			yourself.
 
-	self viewModel: model.
-	self aptitude: BrGlamorousWithContextMenuAptitude new
+	"self viewModel: model.
+	self aptitude: BrGlamorousWithContextMenuAptitude new"
