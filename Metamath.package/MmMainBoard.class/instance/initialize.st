@@ -1,6 +1,6 @@
 initialization
 initialize
-	| sc hideButton aText textElement model |
+	| sc hideButton |
 	super initialize.
 
 	self
@@ -17,20 +17,6 @@ initialize
 				c horizontal fitContent.
 				c vertical fitContent	"c linear horizontal alignCenter"	"c frame horizontal weight: 0.5" ];
 			layout: BlLinearLayout vertical.	
-	
-	"level := 1 .
-	aText := level asRopedText .
-
-	aText fontSize: 30.
-	aText foreground: Color veryDarkGray .
-	textElement := (BlTextElement text: aText) .
-
-	self addChild: textElement asScalableElement ."
-
-
-
-
-
 
 	leftPane := BlElement new
 			constraintsDo: [ :c | 
@@ -81,30 +67,3 @@ initialize
 
 	self addChild: sc.	"self addChild:  sc ."	"leftPane"
 	self addChild: hideButton.
-	
-
-	
-	
-	
-	
-	model := BrWithContextMenuModel new
-			stencil: [ BrAnchoredElement new
-					aptitude: (BrGlamorousContextMenuAptitude new
-							content: (BrGlamorousSimpleContextMenuContent new
-									items: {
-									
-'next level' -> [ :e | level := level + 1 . e removeChildren . e addChild: ( MmMainBoard new openOn:  levels next ) . ].
-
-'restart' -> [ :e | e removeChildren . e addChild: ( MmMainBoard new openOn:  levels peekBack  ) ].
-
-'green' -> [ :e | e background: Color green ]
-											
-											
-											};
-									yourself);
-							yourself);
-					yourself ];
-			yourself.
-
-	"self viewModel: model.
-	self aptitude: BrGlamorousWithContextMenuAptitude new"

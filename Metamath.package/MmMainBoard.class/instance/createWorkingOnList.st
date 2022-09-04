@@ -1,4 +1,4 @@
-accessing
+converting
 createWorkingOnList
 
 "workingOnList := BrSimpleList new.

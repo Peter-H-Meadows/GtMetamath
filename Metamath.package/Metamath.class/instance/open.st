@@ -1,11 +1,9 @@
 accessing
 open
-"<gtExample>
-MmMainBoard new openPlz"
+<gtExample>
 
-| model |
 
-level := 11 .
+	level := 11 .
 
 	aSpace := BlSpace new
 			extent: 1400 @ 800;
@@ -17,59 +15,11 @@ level := 11 .
 
 aSpace addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
 	
-	""
-	
 	"openOn: levels next" 
 	
 	"(aSpace addChild: (MmMainBoard new openOn: (Database allProofs at: 'a1i')))."
 	
-	"self addRightClickMenu ."
+	self addRightClickMenu .
 	
-	
-	model := BrWithContextMenuModel new
-			stencil: [ BrAnchoredElement new
-					aptitude: (BrGlamorousContextMenuAptitude new
-							content: (BrGlamorousSimpleContextMenuContent new
-									items: {
-									
-'next level' -> [ :e | 
-
-
-
-level := level + 1 . 
-e removeChildren . 
-
-
-"e addChild: (MmMainBoard new openOn: (Database allProofs at: 'syl'))."
-
-e addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
-
-"e addChild: ( MmMainBoard new openOn:  levels next ) . "
-
-
-].
-
-'restart' -> [ :e | e removeChildren . e addChild: ( MmMainBoard new openOn:  levels peekBack  ) ].
-
-'green' -> [ :e | e background: Color green ]
-											
-											
-											};
-									yourself);
-							yourself);
-					yourself ];
-			yourself.
-
-	aSpace root viewModel: model.
-	aSpace root aptitude: BrGlamorousWithContextMenuAptitude new.
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 	aSpace show.
+	

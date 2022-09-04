@@ -8,11 +8,6 @@ openOn: aProofModel
 proofToDo setAllVariablesToFixed.
 
 
-
-
-	
-	
-
 wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
 wantedResultElement addBoardHandler.
 wantedResultElement  announcer when: MmWantedSelectedAnnouncement send: #wantedSelected: to: self.
@@ -38,9 +33,7 @@ self  addChild:  wantedResultElement.
 	self addChild: cc.
 	
 	
-	
-		aText := proofToDo name asRopedText .
-
+	aText := proofToDo name asRopedText .
 	aText fontSize: 42.
 	aText foreground: Color gray .
 	textElement := (BlTextElement text: aText) .
