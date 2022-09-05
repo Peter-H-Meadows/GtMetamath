@@ -3,6 +3,8 @@ canMapTo: thing
 
 thing usedFor: self .
 
+"self halt."
+
 canMap := body canMapTo: thing body .
 
 "isComplete := canMap ."

@@ -9,24 +9,25 @@ addRightClickMenu
 									
 'next level' -> [ :e | 
 
+	level := level + 1 . 
+	e removeChildren . 
 
 
-level := level + 1 . 
-e removeChildren . 
+	"e addChild: (MmMainBoard new openOn: (Database allProofs at: 'syl'))."
 
+	e addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
 
-"e addChild: (MmMainBoard new openOn: (Database allProofs at: 'syl'))."
-
-e addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
-
-"e addChild: ( MmMainBoard new openOn:  levels next ) . "
+	"e addChild: ( MmMainBoard new openOn:  levels next ) . "
 
 
 ].
 
 
 
-'restart' -> [ :e | e removeChildren . e addChild: ( MmMainBoard new openOn:  levels peekBack  ) ].
+'restart' -> [ :e | 
+	e removeChildren . 
+	e addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
+	"e addChild: ( MmMainBoard new openOn:  levels peekBack  )" ].
 
 'green' -> [ :e | e background: Color green ]
 											
