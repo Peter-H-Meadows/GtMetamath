@@ -1,9 +1,6 @@
 A game/GUI to teach logic.
 Implemented with: GT / Pharo / Smalltalk / Metamath.
 
-![gif](images/1.gif.gif)
-![gif](images/2.gif)
-
 # Install
 1. Get [Glamorous Toolkit](https://gtoolkit.com/).
 
@@ -19,6 +16,14 @@ Metacello new
 ```Smalltalk
   Metamath new open .
 ```
+
+![playground](play.png)
+
+
+![gif](images/1.gif.gif)
+![gif](images/2.gif)
+
+
 ![s](images/screen.png)
 ![s2](images/screen2.png)
 ![s3](images/screen3syl.png)
