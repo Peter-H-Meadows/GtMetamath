@@ -7,8 +7,7 @@ addUsableAssertionsToLeftpane
 	proofToDo assertionsUsed "prevAssertions"
 		do: [ :each | 
 			| usableAssertion |
-			( {'idi' . 'a1ii' . 'ax-2' . 'ax-3'. 'ax-1'} includes: each name )
-			"(each name = 'a1ii' or: [each name = 'idi'])"
+			( {"'idi' . 'a1ii' . 'ax-2' . 'ax-3'. 'ax-1'"} includes: each name )
 				ifFalse: [  "self halt."
 				
 					 usableAssertion := (proofToDo prevAssertions at: each name) copy.

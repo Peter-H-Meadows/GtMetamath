@@ -10,7 +10,7 @@ tryMakeWithEl: el
 		self addChildFirst: el .
 	] .
 	
-	self halt.
+	"self halt."
 		
 	model canMapTo: el model .
 	
