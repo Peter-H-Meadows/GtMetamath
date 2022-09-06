@@ -1,6 +1,8 @@
 A game/GUI to teach logic.
 Implemented with: GT / Pharo / Smalltalk / Metamath.
 
+https://youtu.be/TT5F75SK4gQ
+
 # Install
 1. Get [Glamorous Toolkit](https://gtoolkit.com/).
 
@@ -17,16 +19,16 @@ Metacello new
   Metamath new open .
 ```
 
-![playground](play.png)
-
-
-![gif](images/1.gif.gif)
-![gif](images/2.gif)
+![playground](images/playground.png)
 
 
 ![s](images/screen.png)
 ![s2](images/screen2.png)
 ![s3](images/screen3syl.png)
+
+![gif](images/1.gif.gif)
+![gif](images/2.gif)
+
 it doesn't have a tutorial, it's just a super slow ramp of complexity, each new idea is introduced with a couple of chances to play around with it before the next one. I'd really recommend an approach like that, especially if it's for kids, the hardest thing is walls of text, generally people learn easier by playing than reading.
 
 
