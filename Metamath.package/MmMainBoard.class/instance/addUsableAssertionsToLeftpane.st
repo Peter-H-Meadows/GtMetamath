@@ -2,13 +2,6 @@ adding
 addUsableAssertionsToLeftpane
 	| c aText textElement |
 	
-		aText := proofToDo name asRopedText .
-
-	aText fontSize: 42.
-	aText foreground: Color veryDarkGray .
-	textElement := (BlTextElement text: aText) .
-
-	leftPane addChild: textElement "asScalableElement" .
 	
 	
 	proofToDo assertionsUsed "prevAssertions"
@@ -19,8 +12,21 @@ addUsableAssertionsToLeftpane
 				ifFalse: [  "self halt."
 				
 					 usableAssertion := (proofToDo prevAssertions at: each name) copy.
-							usableAssertion body class = Array
+					 
+					usableAssertion body class = Array
 								ifFalse: [ 
+								
+								
+
+	aText := usableAssertion name asRopedText .
+
+	aText fontSize: 30.
+	aText foreground: Color veryDarkGray .
+	textElement := (BlTextElement text: aText) .
+
+	leftPane addChild: textElement "asScalableElement" .								
+								
+								
 								
 									
 									usableAssertion wantedResult: wantedResultElement model .
