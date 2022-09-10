@@ -8,12 +8,15 @@ paintTreeWith: view
 				border: (BlBorder paint: Color black);
 				constraintsDo: [ :c | 
 				
-					"c horizontal fitContent.
-					c vertical fitContent."
+					c horizontal fitContent.
+					c vertical fitContent.
+					
 					"c linear vertical alignCenter.
-					c padding: (BlInsets all: 10)" ].
-			"elly padding: (BlInsets all: 20).
-			elly margin: (BlInsets all: 10)."
+					c padding: (BlInsets all: 10)" 
+				].
+				
+			elly padding: (BlInsets all: 20).
+			elly margin: (BlInsets all: 10).
 			
 			
 			textElement := BlTextElement new.
@@ -24,15 +27,17 @@ paintTreeWith: view
 						foreground: Color blue).
 			elly addChild: textElement.
 			
+			elly addChild: x gameElement.
 			
 			
-			elly. x gameElement ];
-		with: (self withDeepCollect: #body).
+			
+			elly.  ];
+		with: ( "{self}" "self withDeepCollect: #body" self essentialHypoths).
 		
-	view edges
+	"view edges
 		fromCenterBottom;
 		toCenterTop;
-		connectToAll: [ :ea | ea children ].
+		connectToAll: [ :ea | ea children ]."
 		
 	"view edges
 		shape: [ :x | 

@@ -1,3 +1,3 @@
 accessing
 variables
-^ { first variables. second variables }
+^ { first variables. second variables } flattened

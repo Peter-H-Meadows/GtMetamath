@@ -1,4 +1,4 @@
 accessing
 variables
 
-^ self
+^ { self }

@@ -1,6 +1,7 @@
 accessing
 variables
-body ifNil: [
+"body ifNil: [
 
-^ { first variables. second variables }] ifNotNil: [
-^ { body variables } "flattened" "asSet" .]
+^ { first variables. second variables }] ifNotNil: ["
+
+^ { body variables } flattened "asSet" ".]"
