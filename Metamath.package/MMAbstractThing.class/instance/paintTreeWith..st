@@ -16,24 +16,25 @@ paintTreeWith: view
 			elly margin: (BlInsets all: 10)."
 			
 			
-			"textElement := BlTextElement new.
+			textElement := BlTextElement new.
 			textElement
 				text:
-					(x depth asString asRopedText
-						fontSize: 50;
+					(x asString asRopedText
+						fontSize: 18;
 						foreground: Color blue).
-			elly addChild: textElement."
+			elly addChild: textElement.
 			
 			
 			
-			elly ];
+			elly. x gameElement ];
 		with: (self withDeepCollect: #body).
 		
-	"view edges
+	view edges
 		fromCenterBottom;
 		toCenterTop;
 		connectToAll: [ :ea | ea children ].
-	view edges
+		
+	"view edges
 		shape: [ :x | 
 			BlLineElement new
 				border: (BlBorder paint: (Color red alpha: 0.5) width: 5) ];

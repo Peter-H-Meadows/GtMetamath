@@ -1,3 +1,4 @@
 accessing
-= stuff
-^ false
+= x
+"^ name = stuff name"
+^ self == x
