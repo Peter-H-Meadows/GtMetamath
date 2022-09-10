@@ -1,6 +1,6 @@
 accessing
 gtDependenciesMapFor: aView
-	"<gtView>"
+	<gtView>
 	^ aView mondrian
 	title: 'Map';
 	priority: 1110;
@@ -9,11 +9,13 @@ gtDependenciesMapFor: aView
 			shape: [ :each |
 				| textElement |
 				textElement := BlTextElement new.
-				textElement text: each name asRopedText.
-				textElement.
+				textElement text: each printString asRopedText.
+				textElement."
+				
+				each gameElement ."
 				
 			];
-		  with: (self withDeepCollect: #body).
+		  with: ( self withDeepCollect: #body).
 		
 		mondrian edges connectToAll: #body .
 		
