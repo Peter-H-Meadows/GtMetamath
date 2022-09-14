@@ -1,12 +1,9 @@
 accessing
 gtV: aView
 	
-self reparse.
-"body  := MmPP2Parser new   parse: bodyString1 ."
-"self reparsee."
+"self reparse."
 
-
-"varsUsed := parser class varsUsed" "copy" .
+"varsUsed := parser class varsUsed" .
 	
 	^ aView explicit 
 		title: 'interactive';

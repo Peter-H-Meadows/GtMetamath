@@ -5,7 +5,7 @@ openOn: aProofModel
 
 	proofToDo := aProofModel copy.
 	
-proofToDo setAllVariablesToFixed.
+"proofToDo setAllVariablesToFixed."
 
 
 wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .

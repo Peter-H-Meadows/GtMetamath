@@ -1,20 +1,22 @@
 parsing
 reparse 
 
-parser := MmBodyParser new  varNames: varNames .
-
-essentialHypoths := essentialHypoths collect: [ :ea | | ee |
+"essentialHypoths := essentialHypoths collect: [ :ea | | ee |
 	ee := ea copy .
-	ee owner: self.
+	
 	ee parser: parser .
 	ee parse . 
 ].
 
-body  := parser  parse: bodyString1 .
-
 varsUsed := parser varsUsed copy .
 varObs := parser varDict copy .
-constsUsed := parser constsUsed copy .
+constsUsed := parser constsUsed copy ."
 
-"
-body class = PP2Failure ifTrue: [ self halt]"
+parser := MmBodyParser new  "varNames: varNames" .
+
+essentialHypoths do: [ :ea | ea parsee. ea owner: self. ].
+
+body  := parser  parse: bodyString1 .
+
+
+body class = PP2Failure ifTrue: [ self halt ].
