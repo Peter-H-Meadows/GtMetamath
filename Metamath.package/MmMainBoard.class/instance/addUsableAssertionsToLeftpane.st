@@ -68,4 +68,4 @@ addUsableAssertionsToLeftpane
 									leftPane addChild: c.
 												
 												
-									 ] ] ] 
+									 ] ] ]

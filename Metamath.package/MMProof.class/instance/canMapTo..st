@@ -2,5 +2,7 @@ accessing
 canMapTo: x
 
 "self announcer announce: MmCanMapAnnouncement new ."
-self halt .
+
+"self halt ."
+
 ^ body canMapTo: x body
