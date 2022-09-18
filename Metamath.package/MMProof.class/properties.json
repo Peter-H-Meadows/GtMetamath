@@ -10,7 +10,9 @@
 		"trying",
 		"allFhypoths",
 		"assertionsUsed",
-		"used"
+		"used",
+		"fff",
+		"nodesx"
 	],
 	"name" : "MMProof",
 	"type" : "normal"

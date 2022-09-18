@@ -3,6 +3,7 @@ gtProofsListView: aView
 	<gtView>
 	^ aView columnedList
 		title: 'Proofs';
+		priority: 1 ;
 		items: assertionsDict values asArray;
 		"send: [ :item |  ];"
 		

@@ -1,5 +1,5 @@
 accessing
 printOn: aStream
 
-aStream nextPutAll: ' ( ' .
+aStream nextPutAll: ' X ' .
 aStream nextPutAll: body printString .
