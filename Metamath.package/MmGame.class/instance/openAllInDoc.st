@@ -1,4 +1,4 @@
-accessing
+deprecated
 openAllInDoc
 
 | aList aEventListener  aDocument aFigureFile |

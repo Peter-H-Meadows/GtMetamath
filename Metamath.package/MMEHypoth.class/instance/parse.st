@@ -1,4 +1,4 @@
 parsing
 parse
-"self halt ."
+self halt .
 body  := parser  parse: rawString .
