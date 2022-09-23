@@ -3,6 +3,12 @@ postCopy
 
 announcer := Announcer new.
 
-self reparse .
+body ifNil: [self reparse].
+
+varObs := varObs veryDeepCopy.
+
+body := body copy .
+
+essentialHypoths := essentialHypoths copy .
 
 isComplete := false .

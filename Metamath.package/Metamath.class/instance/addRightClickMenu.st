@@ -15,7 +15,7 @@ addRightClickMenu
 
 	"e addChild: (MmMainBoard new openOn: (Database allProofs at: 'syl'))."
 
-	e addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
+	e addChild: (MmMainBoard new openSolveOn: (Database allProofs asArray at: level)).
 
 	"e addChild: ( MmMainBoard new openOn:  levels next ) . "
 

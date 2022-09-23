@@ -1,3 +1,3 @@
 accessing
 mappedTo: h
-mappedTo := h
+	mappedTo := h

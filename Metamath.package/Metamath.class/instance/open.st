@@ -13,7 +13,7 @@ open
 	
 "	aSpace addChild: (MmMainBoard new openOn: (Database allProofs at: 'a1i'))."
 
-aSpace addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
+aSpace addChild: (MmMainBoard new openSolveOn: (Database allProofs asArray at: level)).
 	
 	"openOn: levels next" 
 	

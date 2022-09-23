@@ -1,5 +1,4 @@
 accessing
 localVariables 
-
-^ body variables
-
+	self error.
+	^ body variables

@@ -1,3 +1,3 @@
 accessing
 place: x
-place := x
+	place := x

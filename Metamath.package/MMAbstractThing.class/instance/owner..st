@@ -1,3 +1,3 @@
 accessing
 owner: o
-owner := o
+	owner := o

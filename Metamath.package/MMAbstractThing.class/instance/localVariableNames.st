@@ -1,5 +1,4 @@
 names
 localVariableNames
-
-^ (self localVariables collect: #name) asSet .
-
+	self error.
+	^ (self localVariables collect: #name) asSet .

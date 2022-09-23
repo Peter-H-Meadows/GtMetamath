@@ -1,0 +1,3 @@
+accessing
+isWFFAssertion
+^ body isWFF

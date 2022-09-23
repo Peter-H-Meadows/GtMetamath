@@ -1,4 +1,4 @@
-accessing
+deprecated
 gameElement2o
 
 	| vertBox anAccordion anAccordion2 bb tBox |
