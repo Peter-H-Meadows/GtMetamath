@@ -1,5 +1,7 @@
 copying
-copy 
+copy2 
+
+self halt .
 
 fixed ifTrue: [ ^ self ] .
 

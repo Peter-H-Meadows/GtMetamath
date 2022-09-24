@@ -1,5 +1,6 @@
 accessing
 initialize
+CopyDic := Dictionary new .
 ColorCycle := ReadStream on: 
 { 
 "Color random ."
@@ -15,4 +16,4 @@ Color purple.
 Color green . 
 Color  brown .
 
-} 
+} shuffle

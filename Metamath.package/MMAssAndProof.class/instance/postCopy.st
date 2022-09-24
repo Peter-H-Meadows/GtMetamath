@@ -5,10 +5,20 @@ announcer := Announcer new.
 
 body ifNil: [self reparse].
 
-varObs := varObs veryDeepCopy.
+"varObs valuesDo: [ :ea | ea resetCopy ]."
+
+MmAbstractVariableModel clearCopyDic.
+
+varObs := varObs "deepCopy" veryDeepCopy.
+
+"dic copy      only copies associations "
+
+"self halt."
 
 body := body copy .
 
-essentialHypoths := essentialHypoths copy .
+"self halt."
+
+essentialHypoths := essentialHypoths collect: [:ea | ea copy] .
 
 isComplete := false .

@@ -1,3 +1,3 @@
 accessing
-clean 
+resetCopy 
 	copy := nil
