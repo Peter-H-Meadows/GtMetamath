@@ -17,17 +17,17 @@ addAllUsableAssertionsToLeftpane2
 		
 		(usableAssertion canMapTo: proofToDo) ifTrue: [ 
 						
-							usableAssertionCopy := usableAssertion copy.
+				usableAssertionCopy := usableAssertion copy.
+				usableAssertionCopy wantedResult: wantedResultElement model.
 
-							usableAssertionCopy wantedResult: wantedResultElement model.
-
-							c := AssertionAndEssentialHypothesisElement new
+				c := AssertionAndEssentialHypothesisElement new
 									initializeWith: usableAssertionCopy.
+		
+				c addBoardHandler: self.
+				c constraintsDo: [ :con | con linear horizontal alignRight ].
+				workPane addChild: c.
 
-		c addBoardHandler: self.
-		c constraintsDo: [ :con | con linear horizontal alignRight ].
-		workPane addChild: c.
-							
+
 		"for each ehypoth
 			try to make it with each prevAssertion"
 							
@@ -38,6 +38,6 @@ addAllUsableAssertionsToLeftpane2
 									usableAssertion cloneVarsFrom: proofToDo. 
 									usableAssertion setAsComplete .
 									]."
-]	
-		] 
-	]	
+		]	
+	]
+]
