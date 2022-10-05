@@ -1,7 +1,7 @@
 initialization
 addAllUsableAssertionsToLeftpane2
-	| c aText textElement |
-	proofToDo prevAssertions
+	| c usableAssertionCopy |
+	proofToDo "prevAssertions" assertionsUsed
 		do: [ :each | 
 			| usableAssertion |
 			({'wn'.
@@ -11,41 +11,33 @@ addAllUsableAssertionsToLeftpane2
 				'ax-2'.
 				'ax-3'.
 				'ax-1'} includes: each name)
-				ifFalse: [ 
-				
-				
-					usableAssertion := (proofToDo prevAssertions at: each name) copy .
+	ifFalse: [ 
+	
+		usableAssertion := (proofToDo prevAssertions at: each name) copy.
+		
+		(usableAssertion canMapTo: proofToDo) ifTrue: [ 
+						
+							usableAssertionCopy := usableAssertion copy.
 
-					aText := usableAssertion name asRopedText.
+							usableAssertionCopy wantedResult: wantedResultElement model.
 
-					aText fontSize: 30.
-					aText foreground: Color veryDarkGray.
-					textElement := BlTextElement text: aText.
+							c := AssertionAndEssentialHypothesisElement new
+									initializeWith: usableAssertionCopy.
 
-					leftPane addChild: textElement.	"asScalableElement"
-
-					usableAssertion canMapTo: proofToDo.
-					"if maps, can we make its ehypoths?"
-
-
-					usableAssertion wantedResult: wantedResultElement model.
-
-					c := AssertionAndEssentialHypothesisElement new
-							initializeWith: usableAssertion.
+		c addBoardHandler: self.
+		c constraintsDo: [ :con | con linear horizontal alignRight ].
+		workPane addChild: c.
 							
-					"c addHandler: self."
-					
-					c addBoardHandler: self .
-
-					c constraintsDo: [ :cc | cc linear horizontal alignRight ].	
-					
-					"usableAssertion hasEhypoths ifFalse: [ 
+		"for each ehypoth
+			try to make it with each prevAssertion"
+							
+							"check if ehypoths can be made from usableEhypoths.
+							if not, try to make it with each usableAssertion available."
+							
+							"usableAssertion hasEhypoths ifFalse: [ 
 									usableAssertion cloneVarsFrom: proofToDo. 
 									usableAssertion setAsComplete .
 									]."
-
-
-					 workPane addChild: c.
-					"leftPane addChild: c ."
-				] 
-			]
+]	
+		] 
+	]	
