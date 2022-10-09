@@ -2,7 +2,6 @@ accessing
 open
 <gtExample>
 
-
 	level := 11 .
 
 	aSpace := BlSpace new

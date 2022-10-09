@@ -8,9 +8,31 @@ proofToDo := aProofModel copy.
 proofToDo setAllVariablesToFixed.
 
 
+Transcript clear .
+
+Transcript next
+		tab;
+		color: Color red;
+		fontSize: 28;
+		putAll: proofToDo ;
+		cr.
+		
+				
+"Transcript show: proofToDo ; cr ; show: ' trying '; cr ."
+				
+
+
 wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
 wantedResultElement addBoardHandler.
 wantedResultElement  announcer when: MmWantedSelectedAnnouncement send: #wantedSelected: to: self.
+
+
+
+				
+				
+"BlElement new constraintsDo: [ :c | c textFlow pushLine ];
+						size: snapshot extent;
+						background: snapshot "
 
 wantedResultElement
 	constraintsDo: [ :c |
@@ -25,10 +47,10 @@ self  addChild:  wantedResultElement.
 	aText foreground: Color gray .
 	textElement := (BlTextElement text: aText) .
 
-	hypothPane addChild: textElement "asScalableElement".
+	hypothPane addChild: textElement .
 
 
-	proofToDo eHypoths
+	"proofToDo eHypoths
 		do: [ :ea | 
 				| ehypoth |
 				ea setAsComplete .
@@ -39,7 +61,7 @@ self  addChild:  wantedResultElement.
 				ehypoth announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
 			
 				hypothPane addChild: ehypoth .
-		].
+		]."
 		
 		self addAllUsableAssertionsToLeftpane2.
 	

@@ -1,4 +1,3 @@
 testing
 hasEhypoths
-
-^ essentialHypoths size > 0
+	^ essentialHypoths size > 0
