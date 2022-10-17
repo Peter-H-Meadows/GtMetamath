@@ -1,4 +1,6 @@
-#The principles of first order unification are not so bad. Here's a sketch of the algorithm.
+#The principles of first order unification are not so bad. 
+
+##Here's a sketch of the algorithm.
 
 Let's say you want to apply a theorem like 
 
