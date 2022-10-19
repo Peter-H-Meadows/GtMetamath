@@ -1,6 +1,7 @@
 accessing
-paintSolveWith3: view
+paintSolveWith4: view
 
+	| edgeElement anEdgeModel |
 	view root background: Color veryVeryDarkGray.
 	
 	view root when: BlMouseDownEvent do: [ :anEvent | 
@@ -10,30 +11,47 @@ paintSolveWith3: view
 		
 		fromElement := view topStep root graph nodeChildren atRandom.
 		
-		fromElement := BlElement new background: Color random.
+		"fromElement := BlElement new background: Color random."
 		
 		toElement := BlElement new background: Color random.
 		
 		
-		view topStep addChildren: { toElement . fromElement } .
+		view topStep addChildren: { toElement } .
+		"
+		edgeElement := 
+		BlLineElement new
+		border: (BlBorder paint: (Color red alpha: 0.5) width: 1);
+		constraintsDo: [:c | c ignoreByLayout ];
+		zIndex: -1 .
 		
-		view edges
-		"fromCenterBottom;
-		toCenterTop;"
-		"connectTo: [ :ea | { toElement } ]."
-		connectFrom: [ :xxx | fff] to: [:yyy | toElement].
+		edgeElement
+		fromAnchor: (BlNearestPositionBoundsAnchor referenceElement: fromElement relatedTo: toElement);
+		toAnchor: (BlNearestPositionBoundsAnchor referenceElement: toElement relatedTo: fromElement).
+	edgeElement constraints ignoreByLayout.
+	
+	anEdgeModel := GtGraphEdgeWithElement new
+		element: edgeElement;
+		from: fromElement to: toElement.
+	
+	edgeElement graph model: anEdgeModel.
+	edgeElement graph beEdge.
+	
+	fromElement constraints graph addConnectedEdge: edgeElement graph model.
+	toElement constraints graph addConnectedEdge: edgeElement graph model."
 		
-		"view edges
-		shape: [ :x | 
-			BlLineElement new
-				border: (BlBorder paint: (Color red alpha: 0.5) width: 2) ];
 		
-		connect:
-			{(toElement -> fromElement)}
-			from: #key
-			to: #value."
+		
+		
+		
+		
+		"self edgeConstraintsFrom: fromElement to: toElement line: line .
+		elements add: line ."
+		
 			
-	view layout tree.
+		toElement graph connectTo: fromElement .
+	
+	
+	view layout "tree" horizontalDominanceTree .
 		
 		
 		
@@ -72,42 +90,20 @@ paintSolveWith3: view
 		toCenterTop;
 		connectToAll: [ :ea | { fromElement } ].	"	
 		
-		view layout tree .
+		"view layout grid ."
 		
 		
 	].
 
 	view nodes
 		shape: [ :x |  
-			fff := x gameElement "when: BlMouseEnterEvent do: [ :anEvent | 
-		
-				view topStep addChildren: { BlElement new background: Color red } .
-		
-				view layout rectanglePack.
-		
-				anEvent currentTarget border: (BlBorder paint: (Color red alpha: 0.5)).
-					anEvent currentTarget graph connectedEdges do: [ :inner | 
-							inner element border: (BlBorder paint: (Color red alpha: 0.5)) ]
-							
-			]"
-				
+			 fff := BlElement new background: Color random.
 		];
 		
 		"with: (self withDeepCollect: #children)."
 		
-		with: (self children).
+		with: "(self children)" { 1. 2. 3 }.
 		
-	"view edges
-		fromCenterBottom;
-		toCenterTop;
-		connectToAll: [ :ea | ea children ]."
-		
-	"view edges
-		shape: [ :x | 
-			BlLineElement new
-				border: (BlBorder paint: (Color red alpha: 0.5) width: 5) ];
-		passive;
-		connectToAll: [ :ea | ea children ]."
 		
 	view layout "radialTree" tree  "rectanglePack" "circle" "horizontalDominanceTree" "vertical".
 	^ view
