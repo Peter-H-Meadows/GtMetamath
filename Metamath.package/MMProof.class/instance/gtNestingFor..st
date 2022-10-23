@@ -1,6 +1,6 @@
 accessing
 gtNestingFor: aView
-	<gtView>
+	"<gtView>"
 	^ aView pannable 
 		title: 'GtNestedTreeMap';
 		priority: 1112;
