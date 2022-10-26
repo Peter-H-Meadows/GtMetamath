@@ -13,15 +13,15 @@ metamathUniverse
 		on: stream
 		bufferSize: 8*1024 .
 		
-	
-    
- MmPP2ParserFirst new parse: st .
+	 MmPP2ParserFirst new parse: st .
  
- database :=  MmPP2ParserFirst database .
+ database :=   MmPP2ParserFirst database .
     
 ].
 
-"self assert: database comments size equals: 4947 ."
+self assert: database proofs size equals: 134 .
+
+self assert: database proofs last name equals: 'mt3d' .
 
 "self assert: database proofs size equals: 1 ."
 

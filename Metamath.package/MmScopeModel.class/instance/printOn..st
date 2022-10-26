@@ -2,4 +2,4 @@ printing
 printOn: aStream
 
 aStream nextPutAll: 'Scope. size: '.
-aStream nextPutAll: assertionsDict size printString .
+aStream nextPutAll: proofs size printString .
