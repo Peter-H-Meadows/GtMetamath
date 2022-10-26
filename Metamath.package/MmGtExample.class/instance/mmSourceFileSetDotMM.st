@@ -9,7 +9,6 @@ $c -> $.
 $c -. $.
 $c wff $.
 $c |- $. 
-
 $v ph $.
 $v ps $.
 wph $f wff ph $.
@@ -27,4 +26,6 @@ ${
 a1i.1 $e |- ph $.
 a1i $p |- ( ps -> ph ) $=
 ( wi ax-1 ax-mp ) ABADCABEF $.
-$}'
+$}
+
+'
