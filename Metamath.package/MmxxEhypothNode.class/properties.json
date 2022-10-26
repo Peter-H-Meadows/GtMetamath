@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MmxxDatabaseNode",
+	"category" : "Metamath-ParsingSmaCC",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"value"
+	],
+	"name" : "MmxxEhypothNode",
+	"type" : "normal"
+}

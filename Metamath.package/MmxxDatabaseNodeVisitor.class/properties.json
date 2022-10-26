@@ -1,0 +1,13 @@
+{
+	"classtraitcomposition" : "TMmxxDatabaseNodeVisitor classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmxxDatabaseNodeVisitor",
+	"commentStamp" : "",
+	"super" : "Object",
+	"traitcomposition" : "TMmxxDatabaseNodeVisitor",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"category" : "Metamath-ParsingSmaCC"
+}
