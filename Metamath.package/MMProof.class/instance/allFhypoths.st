@@ -1,3 +1,3 @@
-as yet unclassified
+deprecated
 allFhypoths
 	^ allFhypoths

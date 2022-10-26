@@ -1,4 +1,4 @@
-accessing
+printing
 paintSolveWith3: view
 
 	view root background: Color veryVeryDarkGray.

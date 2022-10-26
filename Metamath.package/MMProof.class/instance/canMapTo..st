@@ -1,4 +1,4 @@
-accessing
+names
 canMapTo: x
 
 "self announcer announce: MmCanMapAnnouncement new ."

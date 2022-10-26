@@ -12,7 +12,8 @@
 		"assertionsUsed",
 		"used",
 		"fff",
-		"nodesx"
+		"nodesx",
+		"highest"
 	],
 	"name" : "MMProof",
 	"type" : "normal"

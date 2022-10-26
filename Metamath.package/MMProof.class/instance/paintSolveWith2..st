@@ -1,4 +1,4 @@
-accessing
+printing
 paintSolveWith2: view
 
 	| edgeElement anEdgeModel |
