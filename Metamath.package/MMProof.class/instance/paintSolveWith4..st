@@ -5,7 +5,6 @@ paintSolveWith4: view
 	
 	view root background: Color veryVeryDarkGray.
 	
-	
 	proofToDo := self copy.
 	
 	proofToDo setAllVariablesToFixed.
@@ -139,35 +138,9 @@ Transcript next
 								               items: { 
 										               ('model inspect' -> [ :e |  e inspect]).
 										               
-										               ('model inspect' -> [ :e |  view layout circle ]).
+										               ('circle' -> [ :e |  view layout circle ]).
 										               
-										               
-										               "('free'
-										                -> [ :e | model setAllVariablesToFixed ]).
-										               ('color' -> [ :e | model reColor ]).
-										               ('bg' -> [ :e | e background: Color red ]).
-										               ('inspect vars'
-										                -> [ :e | model allVariables inspect ]).
-
-										               (model name printString
-										                -> [ :e | MmGame new openGame: model name ]).
-
-										               ('browse'
-										                -> [ :e | MmGame new openGame: model name ])"
-
-										               "('aaa' -> [ :e | "
-
-										               "model fHypoths reverse do: [ :ea | | el |
-	
-	el := MmFloatingHypothesisElement new initializeWith: ea  .
-
-	el constraintsDo: [ :co |
-			co horizontal matchParent ];
-		background: BlTransparentBackground new .
-	
-	hypothBox addChild: el"
-										               "] ."
-										               "])." };
+};
 								               yourself);
 						              yourself);
 				             yourself ];
@@ -183,16 +156,9 @@ Transcript next
 	
 	
 	
-	proofToDo prevAssertions "asArray first asArray" "assertionsUsed"
-		do: [ :each | 
+	proofToDo prevAssertions do: [ :each | 
 		
 			usableAssertion := each copy.
-			
-			"Transcript next tab;
-			color: Color random;
-			fontSize: 21;
-			putAll: usableAssertion ;
-			cr."
 	
 	
 	"(proofToDo prevAssertions at: each name) "

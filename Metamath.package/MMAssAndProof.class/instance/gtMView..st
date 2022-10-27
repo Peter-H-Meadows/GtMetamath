@@ -1,6 +1,6 @@
-accessing
+deprecated
 gtMView: aView
-	<gtView>
+	"<gtView>"
 "self reparse."
 	^ aView mondrian 
 		title: 'i3'.

@@ -1,6 +1,6 @@
 accessing
-gtTree2For: aView
+gtBodyTree2For: aView
 	<gtView>
 	^ aView mondrian
-		title: 'tree b';
+		title: 'body tree';
 		painting: [ :aMondrian | body paintTreeWith: aMondrian ]

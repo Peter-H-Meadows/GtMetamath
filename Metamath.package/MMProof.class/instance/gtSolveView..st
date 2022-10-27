@@ -2,5 +2,5 @@ accessing
 gtSolveView: aView
 	<gtView>
 	^ aView mondrian
-		title: 'exp';
+		title: 'Solver';
 		painting: [ :aMondrian | self paintSolveWith4: aMondrian ]

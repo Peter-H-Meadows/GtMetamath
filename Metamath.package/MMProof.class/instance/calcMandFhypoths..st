@@ -1,4 +1,4 @@
-accessing
+deprecated
 calcMandFhypoths: fs
 
 allFhypoths := fs copy .
