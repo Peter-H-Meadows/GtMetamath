@@ -2,7 +2,7 @@ example
 axmpMapToa1i
 <gtExample>
 
-| axmp a1i ph ps usableAssertion proofToDo usableAssertionCopy |
+| axmp a1i ph ps usableAssertion proofToDo usableAssertionCopy ax1 |
 axmp := self axMpFirst copy .
 
 a1i := self a1i copy setAllVariablesToFixed .
@@ -12,6 +12,12 @@ a1i := self a1i copy setAllVariablesToFixed .
 
 self assert: ( axmp canMapTo: a1i) equals: true .
 
+ax1 := self ax1 copy .
+
+self assert: ( ax1 canMapTo: a1i) equals: false .
+
+
+self assert: ( a1i canMapTo: ax1) equals: false .
 
 ph := axmp varObs asArray first .
 
@@ -32,8 +38,7 @@ self assert: ( ps isMappedVar ) equals: true .
 
 self assert: ( a1i prevAssertions size ) equals: 2 .
 
-	a1i prevAssertions "asArray first asArray" "assertionsUsed"
-		do: [ :each | 
+	a1i prevAssertions do: [ :each | 
 		
 			usableAssertion := each copy.
 			
