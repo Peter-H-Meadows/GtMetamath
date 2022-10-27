@@ -2,7 +2,7 @@ example
 axmpMapToa1i
 <gtExample>
 
-| axmp a1i ph ps |
+| axmp a1i ph ps usableAssertion proofToDo usableAssertionCopy |
 axmp := self axMpFirst copy .
 
 a1i := self a1i copy setAllVariablesToFixed .
@@ -19,6 +19,8 @@ self assert: ( ph name) equals: 'ph' .
 
 ps := axmp varObs asArray second .
 
+proofToDo := a1i .
+
 
 self assert: ( ph isFreeVar ) equals: true .
 
@@ -27,5 +29,86 @@ self assert: ( ps  isFreeVar ) equals: false .
 self assert: ( ps isMappedVar ) equals: true .
 
 "self assert: axmp localVariables anyOne isMapped equals: true ."
+
+self assert: ( a1i prevAssertions size ) equals: 2 .
+
+	a1i prevAssertions "asArray first asArray" "assertionsUsed"
+		do: [ :each | 
+		
+			usableAssertion := each copy.
+			
+			"Transcript next tab;
+			color: Color random;
+			fontSize: 21;
+			putAll: usableAssertion ;
+			cr."
+	
+	
+	"(proofToDo prevAssertions at: each name) "
+	
+		Transcript next
+		tab;
+		color: Color gray;
+		fontSize: 18;
+		putAll: 'trying with: ' ;
+		putAll: usableAssertion ;
+		cr.
+
+		
+		"self halt ."
+		
+		
+		(usableAssertion canMapTo: proofToDo) ifTrue: [ 
+		
+			usableAssertionCopy := usableAssertion copy.
+			
+			"self halt."
+			Transcript next
+		tab;
+		color: Color green;
+		fontSize: 24;
+		putAll: usableAssertionCopy ;
+		cr.
+			
+			
+			"Transcript next cr;
+	expanded: [ 
+		AssertionAndEssentialHypothesisElement new initializeWith: usableAssertionCopy 
+	]; cr ; cr ."
+	
+			usableAssertionCopy ham: proofToDo prevAssertions "asArray first asArray" .
+			
+				
+"	usableAssertionCopy wantedResult: wantedResultElement model.
+
+				c := AssertionAndEssentialHypothesisElement new
+									initializeWith: usableAssertionCopy.
+		
+				c addBoardHandler: self.
+				c constraintsDo: [ :con | con linear horizontal alignRight ].
+				workPane addChild: c."
+
+
+		"for each ehypoth
+			try to make it with each prevAssertion"
+							
+							"check if ehypoths can be made from usableEhypoths.
+							if not, try to make it with each usableAssertion available."
+							
+							"usableAssertion hasEhypoths ifFalse: [ 
+									usableAssertion cloneVarsFrom: proofToDo. 
+									usableAssertion setAsComplete .
+									]."
+	] ifFalse: [
+	
+		Transcript next
+		tab;
+		color: Color red;
+		fontSize: 22;
+		putAll: ' failed ' ;
+		cr.
+	
+	]
+].
 
 ^ axmp varObs
