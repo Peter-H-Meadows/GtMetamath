@@ -1,4 +1,4 @@
-printing
+deprecated
 paintSolveWith2: view
 
 	| edgeElement anEdgeModel |

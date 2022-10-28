@@ -1,7 +1,7 @@
 printing
 paintSolveWith4: view
 
-	| gel edgeElement anEdgeModel menuModel proofToDo usableAssertion usableAssertionCopy |
+	| gel edgeElement anEdgeModel menuModel proofToDo usableAssertion usableAssertionCopy uel |
 	
 	view root background: Color veryVeryDarkGray.
 	
@@ -26,14 +26,11 @@ Transcript next
 		
 		"fromElement := BlElement new background: Color random ."
 		
-		
-		
-		fromElement := view topStep root graph nodeChildren atRandom.
+		"fromElement := view topStep root graph nodeChildren atRandom."
 		
 		"fromElement := BlElement new background: Color random."
 		
-		toElement := BlElement new background: Color random.
-		
+		"toElement := BlElement new background: Color random."
 		
 		gel :=  self gameElement.
 		
@@ -43,7 +40,7 @@ Transcript next
 		
 				"view layout rectanglePack."
 		
-				anEventm currentTarget border: (BlBorder paint: (Color red alpha: 0.5)).
+				"anEventm currentTarget border: (BlBorder paint: (Color red alpha: 0.5))."
 				
 	"anEventm currentTarget graph connectedEdges do: [ :inner | "
 	"
@@ -52,8 +49,11 @@ Transcript next
 		
 		
 		gel graph connectTo: highest atRandom .
+"		toElement graph connectTo:  highest atRandom ."
 		
-		toElement graph connectTo:  highest atRandom .
+		
+		
+		
 		
 		"view topStep root graph nodeChildren atRandom." 		
 		
@@ -66,68 +66,52 @@ Transcript next
 			
 			
 			"line := self edgeElementFor: each from: fromElement to: toElement."
-			
-				
-		"elementStencilBuilder
-		ifNotNil: [ elementStencilBuilder 
-				cull: anObject
-				cull: fromElement
-				cull: toElement ]
-		ifNil: [ self defaultEdgeElement ]."
 		
 		
-		edgeElement := 
+		"edgeElement := 
 		BlLineElement new
 		border: (BlBorder paint: (Color green alpha: 0.5) width: 1);
 		constraintsDo: [:c | c ignoreByLayout ];
 		zIndex: -1.
 		
-		
-		
-		
 	edgeElement
 		fromAnchor: (BlElementCenterAnchor referenceElement: fromElement relatedTo: toElement);
-		toAnchor: ("BlNearestPositionAnchor" BlElementCenterAnchor referenceElement: toElement relatedTo: fromElement).
+		toAnchor: (BlElementCenterAnchor referenceElement: toElement relatedTo: fromElement)."
 		
 		
-	edgeElement constraints ignoreByLayout.
+	"edgeElement constraints ignoreByLayout.
 	
 	anEdgeModel := GtGraphEdgeWithElement new
 		element: edgeElement;
 		from: fromElement to: toElement.
 	
 	edgeElement graph model: anEdgeModel.
-	edgeElement graph beEdge.
+	edgeElement graph beEdge."
 		
 		
+		view topStep addChildren: { gel . "edgeElement" } .
 		
-		
-		
-		
-		view topStep addChildren: { "toElement ." gel . edgeElement } .
-			
+		"highest := view topStep root graph nodeChildren ."
 	
+		view layout circle .
 		
-		highest := view topStep root graph nodeChildren "atRandom".
-	
-		view layout circle "tree" "horizontalDominanceTree" .
-		view layout horizontalTree nodeDistance: 5.
+		"tree" "horizontalDominanceTree" .
+		
+		"view layout horizontalTree nodeDistance: 5."
 ].
 
-	view nodes
-		shape: [ :x |  x gameElement
-			 "fff := BlElement new background: Color random."
-		];
+"fff := BlElement new background: Color random."
+
+	view nodes shape: [ :x |  x gameElement ];
 		
 		"with: (self withDeepCollect: #children)."
 		
 		with: { proofToDo }.
+		
 		"(self children)" 
 		
 		
 	highest := view topStep root graph nodeChildren .
-		
-	view layout tree .
 	
 	
 	menuModel := BrWithContextMenuModel new
@@ -179,7 +163,46 @@ Transcript next
 		
 			usableAssertionCopy := usableAssertion copy.
 			
-			"self halt."
+			
+			uel :=  usableAssertion gameElement.
+			
+			
+			
+			uel graph connectTo: highest first .
+		
+			highest first graph connectTo:  uel .
+			
+			
+			
+			
+			edgeElement := 
+		BlLineElement new
+		border: (BlBorder paint: (Color green alpha: 0.5) width: 1);
+		constraintsDo: [:c | c ignoreByLayout ];
+		zIndex: -1.
+		
+	edgeElement
+		fromAnchor: (BlElementCenterAnchor referenceElement: uel relatedTo: highest first );
+		toAnchor: (BlElementCenterAnchor referenceElement: highest first  relatedTo: uel).
+		
+		
+	edgeElement constraints ignoreByLayout.
+	
+	anEdgeModel := GtGraphEdgeWithElement new
+		element: edgeElement;
+		from: highest first  to: uel.
+	
+	edgeElement graph model: anEdgeModel.
+	edgeElement graph beEdge.
+		
+		
+		view topStep addChildren: { uel . edgeElement } .
+			
+			
+			
+			view layout tree .
+			
+			
 			Transcript next
 		tab;
 		color: Color green;
@@ -187,13 +210,8 @@ Transcript next
 		putAll: usableAssertionCopy ;
 		cr.
 			
-			
-			"Transcript next cr;
-	expanded: [ 
-		AssertionAndEssentialHypothesisElement new initializeWith: usableAssertionCopy 
-	]; cr ; cr ."
 	
-			usableAssertionCopy ham: proofToDo prevAssertions "asArray first asArray" .
+			"usableAssertionCopy ham: proofToDo prevAssertions" "asArray first asArray" .
 			
 				
 "	usableAssertionCopy wantedResult: wantedResultElement model.
@@ -228,7 +246,4 @@ Transcript next
 	]
 ].
 	
-	
-	
-	
-	^ view
+^ view

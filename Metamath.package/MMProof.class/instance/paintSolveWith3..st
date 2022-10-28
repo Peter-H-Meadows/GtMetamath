@@ -1,4 +1,4 @@
-printing
+deprecated
 paintSolveWith3: view
 
 	view root background: Color veryVeryDarkGray.
