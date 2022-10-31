@@ -4,8 +4,7 @@ metamathUniverse
 
 | st database |
 
-"
-'se.txt' asFileReference"
+"'se.txt' asFileReference"
 (self class comment copyFrom: 1 to: 61112) readStreamDo: [ :stream | 
     "stream upToEnd" 
     
@@ -15,14 +14,12 @@ metamathUniverse
 		
 	 MmPP2ParserFirst new parse: st .
  
- database :=   MmPP2ParserFirst database .
+ 	database :=   MmPP2ParserFirst database .
     
 ].
 
 self assert: database proofs size equals: 134 .
 
 self assert: database proofs last name equals: 'mt3d' .
-
-"self assert: database proofs size equals: 1 ."
 
 ^ database
