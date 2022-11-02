@@ -1,3 +1,3 @@
 accessing
-pageNamed: aString
+pageNamed: aString 
 	^ self database pageNamed: aString
