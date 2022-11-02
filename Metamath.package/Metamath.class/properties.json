@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "Object",
-	"category" : "Metamath-Game",
+	"category" : "Metamath-Infrastructure",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [
