@@ -3,7 +3,7 @@ documentationCard
 	^ self
 		newHeaderCardWithTitle: 'Metamath'
 		description: 'Read the Metamath book'
-		size: 200@150
+		size: 300@150
 		content:
 			(BrLabel new
 				text: 'Metamath Book';
@@ -11,10 +11,10 @@ documentationCard
 					bold;
 				padding: (BlInsets all: 20)) asScalableElement
 		action: [ :card | 
-			"| startPage |
-			startPage := LzBook pageNamed: 'Leibniz - a Digital Scientific Notation'.
+			| startPage |
+			startPage := MmBook pageNamed: 'root'.
 			GtWorldUtility 
 				showSpaceWithTitle: startPage title
 				inPagerWith: [ startPage
 					asLepiterPagePhlowTool asElementDo: [ :e | e ] ] asStencil
-				from: card" ].
+				from: card ].
