@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GtHomeSection",
+	"category" : "Metamath-Infrastructure",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmGtHomeSection",
+	"type" : "normal"
+}
