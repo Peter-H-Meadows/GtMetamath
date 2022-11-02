@@ -1,7 +1,4 @@
 accessing
 databaseLocation
-	^ FileLocator imageDirectory
-		/ 'pharo-local' / 'Metamath-Book' 
-		
-		"'iceberg'
-		/ 'khinsen' / 'leibniz-pharo' / 'documentation'"
+	^ FileLocator imageDirectory / 'pharo-local' / 'iceberg' / 'Peter-H-Meadows'
+		/ 'GtMetamath' / 'Metamath-Book'
