@@ -1,0 +1,113 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:11:11.366+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:11:11.366+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EGey/u6oDQCU2TCpCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Another implementation you might want to look at is\r\nmm0-rs: https://github.com/digama0/mm0/blob/master/mm0-rs/src/elab/refine.rs#L692-L772\r\n\r\nIt's MM0 not metamath, but it basically represents what I would do for a metamath unification algorithm, with the slight extension that it supports unfolding definitions as well. You can just ignore the cases that call self.unfold (and the returned conversion proof) for mmj2-style unification.\r\n \r\nI think it's quite possible that anything goes when it comes to writing a unification algorithm?  Maybe it doesn't matter in the slightest how you come by a unification, because the very next thing you're going to do is run a validator to ensure the proof is correct anyway, and because a perfect algorithm does not currently exist so you're always going to have to be able to fall back on the option of manual unification.  Heuristics, AI, quantum superposition of all potential unifications, whatever.  I'll almost certainly stick to the standard algorithm anyway, but it might become tempting to massage away some difficulties (if any) encountered while attempting to re-unifying theorems in set.mm.\r\n\r\nKind of. It's true that the result of a unification algorithm is checked, but it is possible to get the wrong answer, for example if you unify ?a =?= ?b with ?a := 1 and ?b := 2 that's obviously wrong and will cause issues in the proof assistant and confusion for the user, and if you resolve it with ?a := 1 and ?b := 1 that's also wrong because it's too specific and may cause the user to not be able to complete the proof. It's not true that there is no perfect algorithm though - for first order unification the \"most general unifier\" (mgu) is the unique best answer and it is decidable by exactly the algorithm I described. You will see that all extant verifiers are implementing something like that algorithm.\r\n\r\nThere is a caveat regarding the metamath-exe algorithm though, which is that it doesn't actually have a complete and correct math parser so the classical algorithm doesn't exactly apply (since it goes by recursion on the structure of the term), and moreover it will sometimes give syntactically incorrect outputs and/or require user input to determine how to parse the expression. This is a metamath peculiarity which only exists for non-grammatical databases, but most other proof assistants do some kind of parsing to handle this step correctly.\r\n \r\nMario"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:11:19.702+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:11:19.702+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2BXHE++oDQCU4U5RCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T09:05:25.975+00:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T09:05:31.674+00:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "MetamathZero"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "d89fb1fe-eea8-0d00-94d8-fa2b0a876daf"
+	}
+}

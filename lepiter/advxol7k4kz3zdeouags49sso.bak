@@ -1,0 +1,187 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:05:53.405+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:05:53.405+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SCxUAO+oDQCU2r2hCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "\r\nin a metamath verifier unification is trivial because:\r\n(\r\nMandatory hypotheses must be pushed on the proof stack in the order in\r\nwhich they appear.\r\nIn addition, each variable must have its type specified with a $f hypothesis\r\nbefore it is used and that each $f hypothesis have the restricted\r\nsyntax of a typecode\r\n(a constant) followed by a variable.\r\nThe typecode in the $f hypothesis must match the first symbol of the\r\ncorresponding RPN stack entry\r\n(which will also be a constant),\r\nso the only possible match for the variable in the $f hypothesis\r\nis the sequence of symbols in the stack entry after the initial constant.\r\n)\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:06:00.338+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:06:00.338+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aPK9AO+oDQCU28t0Codtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "to discover new proofs\r\nis non-trivial because ... ... Godel... etc. P != NP ......?\r\n\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:06:17.858+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:06:17.858+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AETJAe+oDQCU3FDbCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The general algorithm for unification described in the literature is\r\nsomewhat complex.\r\nIn the Proof Assistant, a more general unification algorithm is used.\r\n\r\nDOES MMJ use the same algo?\r\nHOW does MMJ do it?\r\n\r\nWhat is the best (description of the) algorithm? ?\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:04:46.452+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:06:17.86+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GJIV+u6oDQCU14iwCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "GtMM currently has some tricks/features.\r\neg, you can work forwards and backwards.\r\n\r\nforwards = starting with the essential hypoths and moving from left right .\r\n\r\nbackwards = starting with the chain we want to make and moving right to left.\r\nsuppose we guess at the last machine we'll use,\r\nthen GtMM can show us what chain(s) that machine would need for its inputs\r\n\r\n\r\n\r\n\r\n\r\n\r\nchains are strings of blobs.\r\nblobs are metamath variables.\r\ntriangular blobs are variables that can be 'mapped' to other chains.\r\nsquare blobs cannot be mapped.\r\n\r\n\r\nunification = doing the mapping? / finding it\r\n\r\n|- = provable /         starting chain  /   essential hypoths\r\n\r\nGtMM just ignores floating hypoths????\r\n\r\nchain we need to make to complete the level\r\nalways shown top-center in Gtmm\r\n\r\nessential hypoths = chains given to start with,\r\nthey are used as input for the machines.\r\nshown in top left of gtmm.\r\n\r\nmachines you can use (= things we've already proved)\r\nare shown on the right of the screen.\r\n\r\nclick on a machine to add it to the workspace pane.\r\nworkspace pane is always in the center of gtmm screen.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n4.3.1 The Concept of Unification During the course of verifying a proof,\r\n\r\nwhen Metamath encounters an assertion label,\r\nit associates the mandatory hypotheses of the assertion\r\nwith the top entries of the RPN stack.\r\n\r\nMetamath then determines what substitutions\r\nit must make to the variables in the assertion’s mandatory hypotheses\r\nin order for these hypotheses to become identical to their\r\ncorresponding stack entries.\r\n\r\nThis process is called unification.\r\n\r\n(We also informally use the term “unification”\r\nto refer to a set of substitutions that results from the process,\r\nas in “two unifications are possible.”)\r\n\r\nAfter the substitutions are made,\r\nthe hypotheses are said to be unified.\r\n\r\nIf no such substitutions are possible,\r\nMetamath will consider the proof incorrect and notify you with an error message.\r\n\r\nWhile a proof is being developed, sometimes not enough information is\r\navailable to determine a unique unification.\r\nIn this case Metamath will ask you to pick the correct one.\r\n\r\n\r\n\r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T09:04:08.597+00:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T09:04:19.752+00:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Unification "
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "08ee14fa-eea8-0d00-94d6-c10a0a876daf"
+	}
+}

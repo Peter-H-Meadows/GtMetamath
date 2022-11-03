@@ -1,0 +1,150 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:12:51.709+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:12:51.709+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wIS4Fu+oDQCU5C1lCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ",\r\n\r\nin the tool I'm working on, I definitely went for the Martinelli Montanari mgu algorithm (you will find a lot of clear descriptions of the algorithm and even a nice youtube video with a \"concrete\" example).\r\n\r\nPlease, be aware that the unifier associates 'parse trees' (not formula tokens) to working vars (the &Wnn and &Cmm stuff).\r\n\r\nThe hard part is not to implement the (nice) algorithm, you first need to parse your statements and build parse trees (the algorithm works with 'terms' but 'parse trees' play the same role, thanks to set.mm non-ambiguity).\r\n\r\nAnd before building parse trees, you have to build the grammar :-) \r\nAnd this is done \"on the fly\" (it depends on the specific theory, i.e. .mm file).\r\nAnd, of course, you need to write a parser to feed with the (generated) grammar and each statement (I used nearly.js, thus I did not needed to write a new one).\r\n\r\nAnd once you've got parse trees, you'll need to build \"substitutions\" to feed the mgu algorithm with the 'starting pairs' of parse trees to unify.\r\n\r\nJust for fun, this is a Jest test of what you can do with Diagnostic(s) (in a language server) for a failing unification  (mp2parse is not defined here: it is an object of the class MmParser that parses .mm format and has been fed with a supersmall subset of set.mm)\r\n\r\ntest('Expect Working Var unification error', () => {\r\n    const mmpSource =\r\n        'd1:: |- &W2\\n' +\r\n        'd2:: |- &W2\\n' +\r\n        'qed:d1,d2:ax-mp |- ph';\r\n    const mmpParser: MmpParser = new MmpParser(mmpSource, mp2Parser.labelToStatementMap, mp2Parser.outermostBlock, mp2Parser.grammar, new WorkingVars());\r\n    mmpParser.parse();\r\n    expect(doesDiagnosticsContain(mmpParser.diagnostics, MmpParserErrorCode.workingVarUnificationError)).toBeTruthy();\r\n    expect(mmpParser.diagnostics.length).toBe(4);\r\n    mmpParser.diagnostics.forEach((diagnostic: Diagnostic) => {\r\n        if (diagnostic.code == MmpParserErrorCode.workingVarUnificationError) {\r\n            const errMsg = 'Working Var unification error: the  working var &W2 should be ' +\r\n                'replaced with the following subformula, containing itself ( &W2 -> ph )';\r\n            expect(diagnostic.message).toEqual(errMsg);\r\n            expect(diagnostic.range.start.line == 0 || diagnostic.range.start.line == 1).toBeTruthy();\r\n            expect(diagnostic.range.start.character).toBe(8);\r\n            expect(diagnostic.range.end.character).toBe(11);\r\n        }\r\n    });\r\n});\r\n\r\nHTH\r\nGlauco\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:14:43.385+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:14:43.385+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CPnAH++oDQCU5U3NCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "\r\nPlease learn how to work with version control, so I can help, or at least cheer from the sidelines if you don't want help.  They have nice YouTube videos from that too and I'm sure it's much easier to understand than the Martinelli Montanari mgu algorithm.  The basic usage is probably easier than learning how to do unit testing with Jest.\r\n\r\nI've just started writing a prettier plugin for mm files (https://github.com/Antony74/prettier-plugin-mm), and fully half the task is tied up and neatly tucked away if I can get my hands on a serviceable parse tree.  And surely there's no point in us both writing unifiers in TypeScript when we could both just work on yours?\r\n\r\nMy other option is to focus on the third pillar - html generation - while you carry on writing your unifier.\r\n\r\nMario writes:\r\n> It's not true that there is no perfect algorithm though - for first order unification the \"most general unifier\" (mgu) is the unique best answer and it is decidable by exactly the algorithm I described.\r\n\r\nFantastic, I wasn't looking forward to having to implement a fallback on manual unification like how metamath-exe does.  So I'm never likely to see a unifier failure as long as I don't try to copy the metamath-exe algorithm or play with non-grammatical databases.  Great :-)\r\n\r\n    Best regards,\r\n\r\n        Antony"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:14:46.172+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:14:46.172+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YI0VIO+oDQCU5gcQCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T09:12:09.055+00:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T09:12:21.808+00:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Martinelli Montanari mgu algorithm "
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "301fb816-efa8-0d00-94e3-c7300a876daf"
+	}
+}

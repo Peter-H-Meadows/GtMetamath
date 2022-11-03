@@ -1,0 +1,224 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T08:59:17.246+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T08:59:17.246+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SEC36O6oDQCUz08NCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "I've done a little game design and here's a couple of thoughts. I made this game about the four colour theorem on steam (if anyone would like to play feel free to email for a steam key). \r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T08:59:20.994+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T08:59:20.994+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6HDw6O6oDQCU0BK6Codtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "One of the things I thought went best is that it doesn't have a tutorial, it's just a super slow ramp of complexity, each new idea is introduced with a couple of chances to play around with it before the next one. I'd really recommend an approach like that, especially if it's for kids, the hardest thing is walls of text, generally people learn easier by playing than reading. \r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T08:59:24.025+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T08:59:24.025+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8Kge6e6oDQCU0aWzCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "https://store.steampowered.com/app/816770/The_Four_Colour_Theorem/\r\n\r\nAnd then yeah another suggestion might be some sort of power connectors game? Like when you're doing a proof in MMJ2 you're trying to make sure every statement is connected to the rest. So you're hypotheses are sort of like your power sources and the theorem is like the lightbulb or something and what you're trying to do is make a complete chain in-between with no loose ends.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T08:59:07.959+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T08:59:24.026+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8Mlj5+6oDQCUzl8QCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "I really like the sound of what you're saying with factories etc, maybe little roads / power cables / conveyor belts / water pipes might communicate that idea of connections pretty well.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:00:32.522+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:00:32.522+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KM8M7e6oDQCU0qazCodtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "\r\nI think fun is key to learning! :)\r\n(I'm sad that most schools seem to make learning mathematics boring).\r\n\"School is like going to the best restaurant in town and then being\r\ntold to eat the menu instead of the food.\"\r\n\r\n>\r\n> I've done a little game design and here's a couple of thoughts. I made this game about the four colour theorem on steam (if anyone would like to play feel free to email for a steam key).\r\n>\r\n\r\nCool. I'm interested to study how my 8 year old nephew learns, so I'll\r\nuse your game as one of the tests :)\r\n\r\n> One of the things I thought went best is that it doesn't have a tutorial, it's just a super slow ramp of complexity, each new idea is introduced with a couple of chances to play around with it before the next one. I'd really recommend an approach like that, especially if it's for kids, the hardest thing is walls of text, generally people learn easier by playing than reading.\r\n\r\nYep! Here is a video of the first few proofs/levels in GtMetamath.\r\nhttps://youtu.be/TT5F75SK4gQ\r\n\r\nAny feedback/thoughts?\r\n\r\nweird words:\r\n\r\ndeduction, elimination, transposes, inference, implies, hypotheses,\r\nassertion, antecedent, consequent, contraposition, axiom\r\n\r\nph implies ps = red blob links to blue blob\r\nessential hypothesis = required input for transformer machine. and\r\ngiven starting chains.\r\nantecedent = thing at start (left-most)\r\nconsequent = thing at end (right-most)\r\nmodus ponens = detacher machine.\r\na1i = add-to-front machine.\r\nsyl = distributer machine."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T08:58:54.972+00:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T08:59:03.021+00:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Game"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "786063e7-eea8-0d00-94cd-87100a876daf"
+	}
+}

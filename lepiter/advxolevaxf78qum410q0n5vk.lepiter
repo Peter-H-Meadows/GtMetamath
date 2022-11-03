@@ -1,0 +1,113 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:01:56.929+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:01:56.929+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "MMo78u6oDQCU1en8Codtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "That is really cool, yeah I really like the progress you've made on it.\r\n\r\nI think it's great how clear and simple it all is just with the basic shapes. I also like how much reward there is in it with it going green and saying \"well done\" etc, that's very nice. I think giving lots of encouragement/stars/badges really helps.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:01:49.676+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T09:01:56.93+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qAUg8e6oDQCU1Bq+Codtrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "A couple of thoughts:\r\n\r\nFirstly it kind of looks like the squares are kind of items and the triangles are slots/boxes/containers where you can put the items. So I wonder if it might make sense to make that connection more obvious? Like rather than a triangle have a square which has a border and nothing in the middle, and that way it makes it clear you put a square in there.\r\n\r\nSecondly, I don't know exactly how this would work logically, but yeah it might be nice if the first level is just 1 square and 1 slot and all you do is drag the square into the slot, that makes it super simple as a first step for people to understand what to do. Then maybe a nice second level is to have a more complex expression on the left to be dragged into a more complex set of connected slots on the right, that way it teaches you that you can drag larger objects.\r\n\r\nThirdly I think you currently have squares on the left, the goal in the middle and the triangle connectors on the right. Would it make more sense to have the triangle connectors in the middle and the goal on the right? That way it kind of reads left to right as \"inputs\" -> \"transformers\" -> \"goal\". Maybe that is less good if the screen ends up cluttered, the connectors could be along the bottom maybe?\r\n\r\nFourthly it reminded me of this game https://www.zachtronics.com/opus-magnum/ which has a similar vibe of taking the little orbs and using machines to combine them into larger objects. Could be a nice place to look for inspiration and graphics.\r\n\r\nNot sure if any of that is useful, obviously feel free to ignore any or all of it. Overall I'd just like to be really encouraging! I think it's a really cool idea and I think you're close to having something really powerful.\r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T09:01:38.288+00:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-03T09:01:47.032+00:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "JonPFeedback"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "80651ff1-eea8-0d00-94d3-65fe0a876daf"
+	}
+}

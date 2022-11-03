@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:28:36.151+00:00"
+						"dateAndTimeString" : "2022-11-03T08:59:17.246+00:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:28:36.946+00:00"
+						"dateAndTimeString" : "2022-11-03T08:59:17.246+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "cIUEeu6oDQCS6VIfCMtAQw=="
+					"uidString" : "SEC36O6oDQCUz08NCodtrw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "mm."
+				"string" : "I've done a little game design and here's a couple of thoughts. I made this game about the four colour theorem on steam (if anyone would like to play feel free to email for a steam key). \r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:28:39.011+00:00"
+						"dateAndTimeString" : "2022-11-03T08:59:20.994+00:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:28:39.205+00:00"
+						"dateAndTimeString" : "2022-11-03T08:59:20.994+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CN0Oe+6oDQCS6nxECMtAQw=="
+					"uidString" : "6HDw6O6oDQCU0BK6Codtrw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "m."
+				"string" : "One of the things I thought went best is that it doesn't have a tutorial, it's just a super slow ramp of complexity, each new idea is introduced with a couple of chances to play around with it before the next one. I'd really recommend an approach like that, especially if it's for kids, the hardest thing is walls of text, generally people learn easier by playing than reading. \r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:48:39.321+00:00"
+						"dateAndTimeString" : "2022-11-03T08:59:24.025+00:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:48:46.881+00:00"
+						"dateAndTimeString" : "2022-11-03T08:59:24.025+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "KF8we+6oDQCS64ryCMtAQw=="
+					"uidString" : "8Kge6e6oDQCU0aWzCodtrw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[uni]]"
+				"string" : "https://store.steampowered.com/app/816770/The_Four_Colour_Theorem/\r\n\r\nAnd then yeah another suggestion might be some sort of power connectors game? Like when you're doing a proof in MMJ2 you're trying to make sure every statement is connected to the rest. So you're hypotheses are sort of like your power sources and the theorem is like the lightbulb or something and what you're trying to do is make a complete chain in-between with no loose ends.\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:48:48.607+00:00"
+						"dateAndTimeString" : "2022-11-03T08:59:07.959+00:00"
 					}
 				},
 				"editEmail" : {
@@ -140,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:48:48.607+00:00"
+						"dateAndTimeString" : "2022-11-03T08:59:24.026+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "GP8+w+6oDQCUtybbCodtrw=="
+					"uidString" : "8Mlj5+6oDQCUzl8QCodtrw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "I really like the sound of what you're saying with factories etc, maybe little roads / power cables / conveyor belts / water pipes might communicate that idea of connections pretty well.\r\n"
 			}
 		]
 	},
@@ -162,7 +162,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-03T08:28:20.014+00:00"
+			"dateAndTimeString" : "2022-11-03T08:58:54.972+00:00"
 		}
 	},
 	"editEmail" : {
@@ -173,15 +173,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-03T08:28:29.651+00:00"
+			"dateAndTimeString" : "2022-11-03T08:59:03.021+00:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Metamath"
+		"title" : "Game"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "b027047a-eea8-0d00-92e8-e30408cb4043"
+		"uuid" : "786063e7-eea8-0d00-94cd-87100a876daf"
 	}
 }
