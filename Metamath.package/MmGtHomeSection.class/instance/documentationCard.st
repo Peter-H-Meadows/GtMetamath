@@ -12,7 +12,7 @@ documentationCard
 				padding: (BlInsets all: 20)) asScalableElement
 		action: [ :card | 
 			| startPage |
-			startPage := MmBook pageNamed: 'lepiter'.
+			startPage := MmBook pageNamed: 'Metamath'.
 			GtWorldUtility 
 				showSpaceWithTitle: startPage title
 				inPagerWith: [ startPage
