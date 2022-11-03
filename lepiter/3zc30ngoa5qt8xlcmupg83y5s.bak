@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:28:36.151+00:00"
+						"dateAndTimeString" : "2022-11-03T09:23:53.449+00:00"
 					}
 				},
 				"editEmail" : {
@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:28:36.946+00:00"
+						"dateAndTimeString" : "2022-11-03T09:23:53.449+00:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "mm."
+				"string" : "[[Unification ]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:28:39.011+00:00"
+						"dateAndTimeString" : "2022-11-03T09:24:00.861+00:00"
 					}
 				},
 				"editEmail" : {
@@ -66,54 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:28:39.205+00:00"
+						"dateAndTimeString" : "2022-11-03T09:24:00.861+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CN0Oe+6oDQCS6nxECMtAQw=="
+					"uidString" : "MPPmQO+oDQCVNIMoCodtrw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "m."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:48:39.321+00:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T08:48:43.793+00:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "KF8we+6oDQCS64ryCMtAQw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[u"
+				"string" : "[[Martinelli Montanari mgu algorithm ]]"
 			}
 		]
 	},
