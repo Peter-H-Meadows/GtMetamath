@@ -8,7 +8,45 @@
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
-					"items" : [ ]
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-03T12:14:15.304+00:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-03T12:14:15.304+00:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "WHP5ofGoDQCEyJIzDgJQMw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Metamath Zero is a language for writing specifications and proofs. Its emphasis is on balancing simplicity of verification and human readability of the specification. That is, it should be easy to see what exactly is the meaning of a proven theorem, but at the same time the language is as pared down as possible to minimize the number of complications in potential verifiers.\r\n\r\nThe language was inspired by Metamath and Lean, two proof languages at opposite ends of a spectrum.\r\n\r\nMetamath is a logical framework with a focus on simplicity of the verifier and as a result a multitude of different verifiers exist for it. It has a strong specification, and proof checking is seriously fast (on the order of 1-10s to check the entire considerable library set.mm)."
+						}
+					]
 				},
 				"createEmail" : {
 					"__type" : "email",
@@ -29,7 +67,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T10:23:03.375+00:00"
+						"dateAndTimeString" : "2022-11-03T12:35:25.62+00:00"
 					}
 				},
 				"uid" : {
@@ -39,44 +77,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Another implementation you might want to look at is\r\nmm0-rs: "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T10:24:16.149+00:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T10:24:16.149+00:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "OFKiGPCoDQCVTgu0Codtrw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "[[https://github.com/digama0/mm0/blob/master/mm0-rs/src/elab/refine.rs#L692-L772]]\r\n"
+				"string" : "##mm0-rs"
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +130,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T10:24:43.046+00:00"
+						"dateAndTimeString" : "2022-11-03T12:36:01.506+00:00"
 					}
 				},
 				"editEmail" : {
@@ -140,49 +141,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T10:24:43.046+00:00"
+						"dateAndTimeString" : "2022-11-03T12:36:01.506+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "cMQ8GvCoDQCVUZXsCodtrw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T12:16:18.586+00:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T12:16:18.586+00:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "wJFSqfGoDQCEzDETDgJQMw=="
+					"uidString" : "6ILU7/GoDQCFevcZDgJQMw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -203,7 +167,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T12:16:22.89+00:00"
+						"dateAndTimeString" : "2022-11-03T12:16:18.586+00:00"
 					}
 				},
 				"editEmail" : {
@@ -214,17 +178,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T12:16:22.89+00:00"
+						"dateAndTimeString" : "2022-11-03T12:36:01.506+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "KEKUqfGoDQCEzfnVDgJQMw=="
+					"uidString" : "wJFSqfGoDQCEzDETDgJQMw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : " \r\nI think it's quite possible that anything goes when it comes to writing a unification algorithm?  Maybe it doesn't matter in the slightest how you come by a unification, because the very next thing you're going to do is run a validator to ensure the proof is correct anyway, and because a perfect algorithm does not currently exist so you're always going to have to be able to fall back on the option of manual unification.  Heuristics, AI, quantum superposition of all potential unifications, whatever.  I'll almost certainly stick to the standard algorithm anyway, but it might become tempting to massage away some difficulties (if any) encountered while attempting to re-unifying theorems in set.mm."
+				"string" : "I think it's quite possible that anything goes when it comes to writing a unification algorithm?  Maybe it doesn't matter in the slightest how you come by a unification, because the very next thing you're going to do is run a validator to ensure the proof is correct anyway, and because a perfect algorithm does not currently exist so you're always going to have to be able to fall back on the option of manual unification.  Heuristics, AI, quantum superposition of all potential unifications, whatever.  I'll almost certainly stick to the standard algorithm anyway, but it might become tempting to massage away some difficulties (if any) encountered while attempting to re-unifying theorems in set.mm."
 			},
 			{
 				"__type" : "textSnippet",
@@ -299,43 +263,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "There is a caveat regarding the metamath-exe algorithm though, which is that it doesn't actually have a complete and correct math parser so the classical algorithm doesn't exactly apply (since it goes by recursion on the structure of the term), and moreover it will sometimes give syntactically incorrect outputs and/or require user input to determine how to parse the expression. This is a metamath peculiarity which only exists for non-grammatical databases, but most other proof assistants do some kind of parsing to handle this step correctly.\r\n \r\nMario"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T12:14:15.304+00:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T12:14:15.304+00:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "WHP5ofGoDQCEyJIzDgJQMw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Metamath Zero is a language for writing specifications and proofs. Its emphasis is on balancing simplicity of verification and human readability of the specification. That is, it should be easy to see what exactly is the meaning of a proven theorem, but at the same time the language is as pared down as possible to minimize the number of complications in potential verifiers.\r\n\r\nThe language was inspired by Metamath and Lean, two proof languages at opposite ends of a spectrum.\r\n\r\nMetamath is a logical framework with a focus on simplicity of the verifier and as a result a multitude of different verifiers exist for it. It has a strong specification, and proof checking is seriously fast (on the order of 1-10s to check the entire considerable library set.mm)."
 			},
 			{
 				"__type" : "textSnippet",
@@ -617,12 +544,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-03T09:05:31.674+00:00"
+			"dateAndTimeString" : "2022-11-03T12:39:25.384+00:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "MetamathZero"
+		"title" : "Metamath Zero"
 	},
 	"uid" : {
 		"__type" : "uuid",

@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T09:10:03.513+00:00"
+						"dateAndTimeString" : "2022-11-03T12:40:26.024+00:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,239 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T09:10:03.513+00:00"
+						"dateAndTimeString" : "2022-11-03T12:41:29.297+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "YOskDe+oDQCU32cECodtrw=="
+					"uidString" : "WLyY//GoDQCFfrEpDgJQMw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Perhaps we could look briefly at what implementations currently exist?\r\n\r\nmetamath-exe: https://github.com/metamath/metamath-exe/blob/master/src/mmunif.c\r\nmmj2: (see also /doc/StepUnifier.html) https://github.com/digama0/mmj2/blob/master/src/mmj/pa/ProofUnifier.java\r\nmetamath-knife: I don't think this has a proof assistant yet, and formula.rs (comes up in searches but) is part of the verifier?\r\n\r\nAre there any more implementations anyone wants to offer, please?\r\n\r\nI think it's quite possible that anything goes when it comes to writing a unification algorithm?  Maybe it doesn't matter in the slightest how you come by a unification, because the very next thing you're going to do is run a validator to ensure the proof is correct anyway, and because a perfect algorithm does not currently exist so you're always going to have to be able to fall back on the option of manual unification.  Heuristics, AI, quantum superposition of all potential unifications, whatever.  I'll almost certainly stick to the standard algorithm anyway, but it might become tempting to massage away some difficulties (if any) encountered while attempting to re-unifying theorems in set.mm.\r\n\r\nOr maybe it does matter because it's important to know whether it's the proof or the unification that was wrong.\r\n"
+				"string" : "##metamath-exe"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:40:32.328+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:41:09.227+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WO34//GoDQCFfzT2DgJQMw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[](https://github.com/metamath/metamath-exe/blob/master/src/mmunif.c)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:40:41.305+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:40:45.318+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wOeBAPKoDQCFgB8qDgJQMw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##mmj2"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:41:47.165+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:41:47.165+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YNluBPKoDQCFgtfEDgJQMw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "see also /doc/StepUnifier.html) https://github.com/digama0/mmj2/blob/master/src/mmj/pa/ProofUnifier.java"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:41:55+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:41:55+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8GLmBPKoDQCFg7ntDgJQMw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "metamath-knife: I don't think this has a proof assistant yet, and formula.rs (comes up in searches but) is part of the verifier?\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:42:20.257+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:43:04.614+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AMtnBvKoDQCFhIzRDgJQMw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##mm0-rs"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:42:35.845+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-03T12:42:35.845+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oKVVB/KoDQCFhS6XDgJQMw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[](https://github.com/digama0/mm0/blob/master/mm0-rs/src/elab/refine.rs#L692-L772)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -66,7 +288,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T09:10:56.575+00:00"
+						"dateAndTimeString" : "2022-11-03T12:42:35.846+00:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +298,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Another implementation you might want to look at is\r\nmm0-rs: https://github.com/digama0/mm0/blob/master/mm0-rs/src/elab/refine.rs#L692-L772\r\n\r\nIt's MM0 not metamath, but it basically represents what I would do for a metamath unification algorithm, with the slight extension that it supports unfolding definitions as well. You can just ignore the cases that call self.unfold (and the returned conversion proof) for mmj2-style unification.\r\n \r\nI think it's quite possible that anything goes when it comes to writing a unification algorithm?  Maybe it doesn't matter in the slightest how you come by a unification, because the very next thing you're going to do is run a validator to ensure the proof is correct anyway, and because a perfect algorithm does not currently exist so you're always going to have to be able to fall back on the option of manual unification.  Heuristics, AI, quantum superposition of all potential unifications, whatever.  I'll almost certainly stick to the standard algorithm anyway, but it might become tempting to massage away some difficulties (if any) encountered while attempting to re-unifying theorems in set.mm.\r\n\r\nKind of. It's true that the result of a unification algorithm is checked, but it is possible to get the wrong answer, for example if you unify ?a =?= ?b with ?a := 1 and ?b := 2 that's obviously wrong and will cause issues in the proof assistant and confusion for the user, and if you resolve it with ?a := 1 and ?b := 1 that's also wrong because it's too specific and may cause the user to not be able to complete the proof. It's not true that there is no perfect algorithm though - for first order unification the \"most general unifier\" (mgu) is the unique best answer and it is decidable by exactly the algorithm I described. You will see that all extant verifiers are implementing something like that algorithm.\r\n\r\nThere is a caveat regarding the metamath-exe algorithm though, which is that it doesn't actually have a complete and correct math parser so the classical algorithm doesn't exactly apply (since it goes by recursion on the structure of the term), and moreover it will sometimes give syntactically incorrect outputs and/or require user input to determine how to parse the expression. This is a metamath peculiarity which only exists for non-grammatical databases, but most other proof assistants do some kind of parsing to handle this step correctly.\r\n \r\nMario"
+				"string" : "It's MM0 not metamath, but it basically represents what I would do for a metamath unification algorithm, with the slight extension that it supports unfolding definitions as well. You can just ignore the cases that call self.unfold (and the returned conversion proof) for mmj2-style unification.\r\n \r\nI think it's quite possible that anything goes when it comes to writing a unification algorithm?  Maybe it doesn't matter in the slightest how you come by a unification, because the very next thing you're going to do is run a validator to ensure the proof is correct anyway, and because a perfect algorithm does not currently exist so you're always going to have to be able to fall back on the option of manual unification.  Heuristics, AI, quantum superposition of all potential unifications, whatever.  I'll almost certainly stick to the standard algorithm anyway, but it might become tempting to massage away some difficulties (if any) encountered while attempting to re-unifying theorems in set.mm.\r\n\r\nKind of. It's true that the result of a unification algorithm is checked, but it is possible to get the wrong answer, for example if you unify ?a =?= ?b with ?a := 1 and ?b := 2 that's obviously wrong and will cause issues in the proof assistant and confusion for the user, and if you resolve it with ?a := 1 and ?b := 1 that's also wrong because it's too specific and may cause the user to not be able to complete the proof. It's not true that there is no perfect algorithm though - for first order unification the \"most general unifier\" (mgu) is the unique best answer and it is decidable by exactly the algorithm I described. You will see that all extant verifiers are implementing something like that algorithm.\r\n\r\nThere is a caveat regarding the metamath-exe algorithm though, which is that it doesn't actually have a complete and correct math parser so the classical algorithm doesn't exactly apply (since it goes by recursion on the structure of the term), and moreover it will sometimes give syntactically incorrect outputs and/or require user input to determine how to parse the expression. This is a metamath peculiarity which only exists for non-grammatical databases, but most other proof assistants do some kind of parsing to handle this step correctly.\r\n \r\nMario"
 			}
 		]
 	},
