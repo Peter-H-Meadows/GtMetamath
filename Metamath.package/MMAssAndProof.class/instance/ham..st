@@ -1,6 +1,6 @@
 testing
-ham: x
-	| xxx |
+ham: assertions
+	| ass |
 	essentialHypoths second asArray do: [ :ea | 
 		
 			Transcript next
@@ -10,21 +10,21 @@ ham: x
 		putAll: ea ;
 		cr.
 		
-		x "asArray first asArray" do: [ :each | 
+		assertions "asArray first asArray" do: [ :each | 
 		
-			xxx := each copy.
+			ass := each copy.
 			
 				Transcript next
 		tab;
 		color: Color black;
 		fontSize: 18;
 		putAll: 'trying: ' ;
-		putAll: xxx;
+		putAll: ass;
 		cr.
 			
 			"self halt ."
 				 
-			( xxx canMapTo: ea ) ifTrue: [ 
+			( ass canMapTo: ea ) ifTrue: [ 
 			
 			Transcript next
 		tab;
@@ -33,13 +33,13 @@ ham: x
 		putAll: 'success ' ;
 		color: Color white;
 		fontSize: 20;
-		putAll: xxx ;
+		putAll: ass ;
 		cr.
 		
 					
 			Transcript next cr;
 	expanded: [ 
-		AssertionAndEssentialHypothesisElement new initializeWith: xxx
+		AssertionAndEssentialHypothesisElement new initializeWith: ass
 	]; cr ; cr .
 			
 				"Transcript show: ea ; cr . "
@@ -52,7 +52,7 @@ ham: x
 		fontSize: 20;
 		putAll: ' FAIL ' ;
 		color: Color gray;
-		putAll: xxx ;
+		putAll: ass ;
 		cr.
 			
 			]

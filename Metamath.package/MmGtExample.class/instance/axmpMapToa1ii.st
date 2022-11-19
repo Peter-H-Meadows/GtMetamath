@@ -1,8 +1,8 @@
 example
-axmpMapToa1i
+axmpMapToa1ii
 <gtExample>
 
-| axmp a1i ph ps usableAssertion proofToDo usableAssertionCopy ax1 |
+| axmp a1i ph ps usableAssertion proofToDo usableAssertionCopy ax1 axmp2 ph2 ps2 |
 axmp := self axMpFirst copy .
 
 a1i := self a1i copy setAllVariablesToFixed .
@@ -44,6 +44,14 @@ axmp essentialHypoths first canMapTo: ax1) equals: true .
 self assert: (
 axmp essentialHypoths second canMapTo: ax1) equals: false .
 
+
+axmp2 := axmp copy .
+
+ph2 := axmp2 varObs asArray first .
+ps2 := axmp2 varObs asArray second .
+"self assert: ( ph2 isFreeVar ) equals: true ."
+self assert: ( ps2 isFreeVar ) equals: false .
+self assert: ( ps2 isMappedVar ) equals: true .
 
 self assert: ( a1i prevAssertions size ) equals: 2 .
 

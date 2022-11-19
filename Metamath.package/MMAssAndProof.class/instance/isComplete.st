@@ -11,8 +11,8 @@ usedFor ifNotNil: [ usedFor setAsComplete . usedFor owner isComplete ].
 
 "self halt."
 
-wantedResult body = body ifTrue: [
+"wantedResult body = body ifTrue: [
 	self announcer announce: #allDone .
-] .
+] ."
 
 ^ true 

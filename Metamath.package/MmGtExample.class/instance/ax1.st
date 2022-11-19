@@ -14,4 +14,6 @@ self assert: ( ax canMapTo: self a1i) equals: false .
 
 self assert: ( ax canMapTo: self axMpFirst) equals: true .
 
+self assert: ( self axMpFirst canMapTo: ax  ) equals: true .
+
 ^ ax
