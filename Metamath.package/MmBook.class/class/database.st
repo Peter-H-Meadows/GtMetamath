@@ -8,7 +8,7 @@ database
 			logicalDB properties addRegisteredDirectory: self databaseLocation.
 			logicalDB reload.
 			logicalDB databases.
-			"logicalDB databaseNamed: self databaseName" 
-			logicalDB databaseNamed: 'lepiter'
+			logicalDB databaseNamed: self databaseName
+			"logicalDB databaseNamed: 'lepiter'"
 			].
 	^ db
