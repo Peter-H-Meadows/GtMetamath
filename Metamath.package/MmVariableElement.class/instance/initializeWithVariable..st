@@ -2,7 +2,7 @@ initialization
 initializeWithVariable: aVariableModel
 | aText |
 
-model := aVariableModel .
+model := aVariableModel.
 
 model announcer when: MmHighlightAnnouncement send: #highlight: to: self.
 model announcer when: MmVariableMappedAnnouncement send: #mapped: to: self.
@@ -12,7 +12,7 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 
 "aVariable identityHash printString"
 
-	"geometryClass := model fixed ifTrue: [ BlRoundedRectangleGeometry ] ifFalse: [ BlCircle ] ."
+"geometryClass := model fixed ifTrue: [ BlRoundedRectangleGeometry ] ifFalse: [ BlCircle ] ."
 
 	blob := BlElement new
 		background: model color
@@ -80,7 +80,7 @@ model mapped ifTrue: [
 	]."
 
 
-	self addChild: model mappedTo gameElement.
+	"self addChild: model mappedTo gameElement."
 	
 	
 ] .

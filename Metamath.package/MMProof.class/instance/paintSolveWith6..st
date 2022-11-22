@@ -1,7 +1,7 @@
 printing
-paintSolveWith5: view
+paintSolveWith6: view
 
-	| gel edgeElement anEdgeModel menuModel proofToDo usableAssertion usableAssertionCopy uel fromElement edgee eee usableAssertionx ele |
+	| gel edgeElement anEdgeModel menuModel proofToDo usableAssertion usableAssertionCopy uel fromElement edgee eee usableAssertionx ele prev |
 	
 	view root background: Color veryVeryDarkGray.
 	
@@ -77,9 +77,21 @@ items: {
 	
 	"for each ehypoth, when clicked; try to make, if yes, add ass and it's ehypoths to graph"
 	
+	prev := proofToDo prevAssertions collect: #copy .
+	proofToDo g: prev .
+	"(proofToDo g: prev) do: [:ea | "
 	
+		"ea inspect."
+			"uel :=  ea gameElement.
+			
+			uel graph connectTo: highest first ."
+		
+			"view topStep addChildren: { uel } ."
+			
+			"highest := uel ."
+		"]."
 	
-	proofToDo prevAssertions do: [ :each | 
+	"proofToDo prevAssertions do:" false ifTrue: [ :each | 
 		
 		usableAssertion := each copy.
 	

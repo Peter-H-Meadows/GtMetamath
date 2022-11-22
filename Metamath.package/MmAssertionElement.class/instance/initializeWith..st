@@ -1,6 +1,6 @@
 initialization
 initializeWith: aAssertion
-|  el  |
+|  el  aText |
 
 model := aAssertion .
 
@@ -10,11 +10,11 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 
 model announcer when: MmCanMapAnnouncement send: #canMap: to: self."
 
-"aText := aAssertion name asRopedText .
+aText := aAssertion name asRopedText .
 aText fontSize: 18.
 aText foreground: Color gray  .
 textElement := (BlTextElement text: aText). 
-self addChild: textElement ."
+self addChild: textElement .
 
 el := aAssertion body gameElement . 
 el constraintsDo: [ :c | c linear horizontal alignCenter ].
