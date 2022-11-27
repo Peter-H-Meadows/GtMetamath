@@ -9,13 +9,15 @@ body ifNil: [self reparse].
 
 MmAbstractVariableModel clearCopyDic.
 
-varObs := varObs "deepCopy" veryDeepCopy.
+"varObs := varObs veryDeepCopy."
 
 "dic copy      only copies associations "
 
 "self halt."
 
 body := body copy .
+
+
 
 "self halt."
 

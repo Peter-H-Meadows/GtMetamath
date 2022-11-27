@@ -1,4 +1,3 @@
 accessing
 isFreeVar
-
-^ true
+	^ fixed not and: [ mappedTo = nil ]

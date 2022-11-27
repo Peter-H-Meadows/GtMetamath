@@ -2,18 +2,50 @@ example
 ax1
 <gtExample>
 
-| ax |
-ax := (self metamathUniverse assertions second) copy .
+| ax1 db axmp a1i |
 
-self assert: ax name equals: 'ax-1' .
+db := self metamathUniverse .
+ax1 := db assertions second reparse.
+self assert: ax1 name equals: 'ax-1' .
+self assert: ax1 essentialHypoths size equals: 0 .
+
+axmp := db assertions first reparse .
+self assert: axmp name equals: 'ax-mp' .
+self assert: axmp essentialHypoths size equals: 2 .
+self assert: axmp variables size equals: 2 .
+self assert: axmp variables asArray first name equals: 'ph' .
+self assert: axmp variables asArray second name equals: 'ps' .
+"self assert: ( ax1 canMapTo: axmp) equals: true ."
+
+a1i := db proofs first copy .
+
+self assert: a1i name equals: 'a1i' .
+self assert: a1i essentialHypoths size equals: 1 .
+self assert: a1i essentialHypoths first name equals: 'a1i.1' .
+
+a1i setAllVariablesToFixed .
+
+self assert: axmp variables asArray second isFreeVar equals: true .
+
+self assert: ( axmp canMapTo: a1i) equals: true .
+
+self assert: axmp variables asArray second isFreeVar equals: false .
+
+self assert: axmp variables asArray second isMappedVar equals: true .
 "
-self assert: axmp mands size equals: 4 ."
-self assert: ax essentialHypoths size equals: 0 .
+self assert: ( axmp canMapTo: a1i) equals: true ."
 
-self assert: ( ax canMapTo: self a1i) equals: false .
+ax1 setAllVariablesToFixed .
 
-self assert: ( ax canMapTo: self axMpFirst) equals: true .
+self assert: ( axmp canMapTo: ax1 ) equals: false .
 
-self assert: ( self axMpFirst canMapTo: ax  ) equals: true .
+"
+self assert: ( axmp canMapTo: ax1) equals: false ."
 
-^ ax
+"
+self assert: ( ax canMapTo: self axMpFirst) equals: true ."
+
+"
+self assert: ( self axMpFirst canMapTo: ax  ) equals: true ."
+
+^ ax1 "variables asArray second" 

@@ -1,6 +1,6 @@
 example
 axmpMapToa1ii
-<gtExample>
+"<gtExample>"
 
 | axmp a1i ph ps usableAssertion proofToDo usableAssertionCopy ax1 axmp2 ph2 ps2 |
 axmp := self axMpFirst copy .

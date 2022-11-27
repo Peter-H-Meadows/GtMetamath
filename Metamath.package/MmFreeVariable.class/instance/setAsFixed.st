@@ -1,0 +1,3 @@
+accessing
+setAsFixed
+fixed := true .

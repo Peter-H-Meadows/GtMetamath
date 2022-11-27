@@ -2,6 +2,14 @@ accessing
 printOn: aStream
 	aStream nextPutAll: name .
 	aStream nextPutAll: ' ' .
-	aStream nextPutAll: 'Free ' .
 	
-	"aStream nextPutAll: self identityHash printString ."
+	fixed ifTrue: [ 
+		aStream nextPutAll: 'Fixed ' . 
+	] ifFalse: [
+	
+		mappedTo ifNil: [ aStream nextPutAll: 'Free ' ] ifNotNil: [
+			aStream nextPutAll: 'Mapped '
+		 ].
+	].
+	
+	aStream nextPutAll: self identityHash printString .
