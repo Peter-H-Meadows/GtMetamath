@@ -1,3 +1,3 @@
 accessing
-g: a
+returnMappableFrom: a
 ^ a select: [ :ea | self copy canMapTo: ea ]

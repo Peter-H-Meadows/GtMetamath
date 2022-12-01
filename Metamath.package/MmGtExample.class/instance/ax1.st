@@ -36,8 +36,10 @@ self assert: axmp variables asArray second isMappedVar equals: true .
 self assert: ( axmp canMapTo: a1i) equals: true ."
 
 ax1 setAllVariablesToFixed .
+"
+self assert: ( axmp canMapTo: ax1 ) equals: false ."
 
-self assert: ( axmp canMapTo: ax1 ) equals: false .
+self assert: ( axmp essentialHypoths second canMapTo: ax1 ) equals: true.
 
 "
 self assert: ( axmp canMapTo: ax1) equals: false ."
@@ -48,4 +50,4 @@ self assert: ( ax canMapTo: self axMpFirst) equals: true ."
 "
 self assert: ( self axMpFirst canMapTo: ax  ) equals: true ."
 
-^ ax1 "variables asArray second" 
+^ axmp essentialHypoths second "variables asArray second" 

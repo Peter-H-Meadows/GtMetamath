@@ -1,3 +1,3 @@
 accessing
 isMapped
-	^ mapped
+	^ mappedTo isNotNil

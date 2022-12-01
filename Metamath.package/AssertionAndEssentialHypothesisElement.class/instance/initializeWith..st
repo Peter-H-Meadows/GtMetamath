@@ -1,58 +1,44 @@
 accessing
 initializeWith: assertion
-
-| el divElement |
-
-model := assertion .
-
-
-"self addEventHandler: MmOnListUsableEventListener new ."
-
-
-"self addMenu."
-
-"model fHypoths reverse do: [ :ea | 
 	
-	el := MmFloatingHypothesisElement new initializeWith: ea  .
-
-	el constraintsDo: [ :co |
-			co horizontal matchParent ];
-		background: BlTransparentBackground new .
+	| el divElement |
 	
-	hypothBox addChild: el .
+	model := assertion .
 	
-] ."
-
-model eHypoths reverse do: [ :ea | 
+	self addEventHandler: MmP new .
 	
-	el := MmEssentialHypothesisElement new initializeWith: ea  .
-
-	el constraintsDo: [ :co |
-			co horizontal matchParent ] .
+	"self addMenu."
 	
-	hypothBox addChild: el .
+	model eHypoths reverse do: [ :ea | 
+		
+		el := MmEssentialHypothesisElement new initializeWith: ea  .
 	
-] .
-
-"(ea gameElementInCont: con pmod: model )"
-
-divElement := BlElement new
-		constraintsDo: [ :co |
-			co horizontal exact: 2.
-			co vertical matchParent ];
-		background: Color black .
-
-self addChild: divElement.
-
-resultElement := assertion gameElement constraintsDo: [ :c | c linear vertical alignCenter ] .
-
-"aEventListener := MmOnBoardUsableEventListener new gameController: con .
-self addEventHandler: aEventListener ."
-
-self addChild: resultElement.
-
-self addChild: selectedMarkerElement.
-
-model announcer when: #complete send: #complete: to: self.
-
-model announcer when: #allDone send: #allDone: to: self.
+		el constraintsDo: [ :co |
+				co horizontal matchParent ] .
+		
+		hypothBox addChild: el .
+		
+	] .
+	
+	"(ea gameElementInCont: con pmod: model )"
+	
+	divElement := BlElement new
+			constraintsDo: [ :co |
+				co horizontal exact: 2.
+				co vertical matchParent ];
+			background: Color black .
+	
+	self addChild: divElement.
+	
+	resultElement := assertion gameElement constraintsDo: [ :c | c linear vertical alignCenter ] .
+	
+	"aEventListener := MmOnBoardUsableEventListener new gameController: con .
+	self addEventHandler: aEventListener ."
+	
+	self addChild: resultElement.
+	
+	self addChild: selectedMarkerElement.
+	
+	model announcer when: #complete send: #complete: to: self.
+	
+	model announcer when: #allDone send: #allDone: to: self.

@@ -4,7 +4,7 @@ initializeWith: aHypothModel
 	model := aHypothModel .
 
 
-"self addEventHandler: MmOnListUsableEventListener new ."
+self addEventHandler: MmEhyp new .
 
 "model announcer when: #complete" "MmHighlightAnnouncement" "send: #highlight: to: self."
 

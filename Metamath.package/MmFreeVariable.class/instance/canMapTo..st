@@ -3,7 +3,7 @@ canMapTo: x
 
 fixed ifTrue: [ ^ x name = name ].
 
-mappedTo ifNotNil: [ self halt. ^ mappedTo canMapTo: x ].
+mappedTo ifNotNil: [ "self halt." ^ mappedTo canMapTo: x ].
 
 self announcer announce: (MmVariableMappedAnnouncement new mappedTo: x).
 

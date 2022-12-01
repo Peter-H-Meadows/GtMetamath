@@ -24,7 +24,7 @@ a1i setAllVariablesToFixed .
 self assert: (self metamathUniverse proofNamed: 'a1i') localVariables anyOne isFixed equals: false .
 "
 
-res := a1i g: (a1i prevAssertions collect: [:ea | ea reparse ]) .
+res := a1i returnMappableFrom: (a1i prevAssertions collect: [:ea | ea reparse ]) .
 "
 ^ a1i prevAssertions collect: [:ea | ea reparse ]"
 

@@ -7,7 +7,7 @@ pa
 	
 	view root background: Color veryVeryDarkGray.
 	
-	proofToDo := self copy.
+	proofToDo := self reparse "copy".
 	
 	proofToDo setAllVariablesToFixed.
 
@@ -40,8 +40,8 @@ Transcript next
 ].
 
 
-	view nodes shape: [ :x |  x gameElement ];
-		with: { proofToDo }.
+	"view nodes shape: [ :x |  x gameElementWithEhypoths ];
+		with: { proofToDo }."
 		
 		menuModel := BrWithContextMenuModel new
 		             stencil: [ 
@@ -73,26 +73,26 @@ items: {
 	"radialTree"
 	
 			
-		
-	highest := view topStep root graph nodeChildren .
+		"
+	highest := view topStep root graph nodeChildren ."
 	
 	
 	"for each ehypoth, when clicked; try to make, if yes, add ass and it's ehypoths to graph"
 	
-	prevs := proofToDo prevAssertions collect: #copy .
+	prevs := proofToDo prevAssertions collect: #reparse .
 	"proofToDo g: prevs ."
 	
-	(proofToDo g: prevs) do: [:ea | 
+	(proofToDo returnMappableFrom: prevs) do: [:ea | 
 	
 		"ea inspect."
-			uel :=  ea gameElement.
+			uel :=  ea gameElementWithEhypoths.
 			
-			uel graph connectTo: highest first .
+			"uel graph connectTo: highest first ."
 		
 			view topStep addChildren: { uel } .
 			
 			"highest := uel ."
 		].
-
+view layout rectanglePack.
 	
 ^ view

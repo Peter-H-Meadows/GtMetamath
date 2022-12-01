@@ -78,7 +78,7 @@ items: {
 	"for each ehypoth, when clicked; try to make, if yes, add ass and it's ehypoths to graph"
 	
 	prev := proofToDo prevAssertions collect: #copy .
-	proofToDo g: prev .
+	proofToDo returnMappableFrom: prev .
 	"(proofToDo g: prev) do: [:ea | "
 	
 		"ea inspect."

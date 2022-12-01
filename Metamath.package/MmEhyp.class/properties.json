@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MmAbstractEventListener",
+	"category" : "Metamath-Bloc-Listeners",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"MmPrevs"
+	],
+	"instvars" : [ ],
+	"name" : "MmEhyp",
+	"type" : "normal"
+}

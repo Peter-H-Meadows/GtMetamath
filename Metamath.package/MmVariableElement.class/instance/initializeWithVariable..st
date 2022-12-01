@@ -25,7 +25,7 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 					c linear vertical alignCenter ].
 	
 		
-	model fixed ifTrue: [ ] ifFalse: [ 
+	model isFixed ifTrue: [ ] ifFalse: [ 
 	
 		blob geometry: model geo 
 	] .
@@ -66,7 +66,7 @@ blob addChild: textElement . "] ".
 				
 self addChild: blob .
 
-model mapped ifTrue: [ 
+model isMapped ifTrue: [ 
 	
 	
 	"box := BlElement new layout: BlLinearLayout horizontal .
@@ -79,37 +79,15 @@ model mapped ifTrue: [
 		box addChild: ea gameElement
 	]."
 
+	5 atRandom = 1 ifFalse: [
 
-	"self addChild: model mappedTo gameElement."
+	self addChild: model mappedTo gameElement.
 	
-	
+	]
 ] .
 
 
 	"textElement := (BlTextElement text: aText) constraintsDo: [ :c | c linear horizontal alignCenter ].
 	self addChild: textElement ."
 	
-
-
-
-	"model fixed ifTrue: [  
-			
-		
-		aText := '+' asRopedText .
-		aText fontSize: 20.
-		aText foreground: Color black   .
-		textElement := (BlTextElement text: aText) constraintsDo: [ :c | c linear vertical alignCenter ]."
-
-		"textElement := BlElement new background: (Color black) ; constraintsDo: [ :c | 
-		c vertical exact: 4. 
-		c horizontal matchParent . 
-		c linear vertical alignCenter ].
-
-
-		blob layout: BlLinearLayout horizontal  .
-		blob addChild: textElement .	
-			
-	] ."
-
-
 self addMenu
