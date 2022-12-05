@@ -6,16 +6,17 @@ clickEvent: ev
 	el addBoardHandler: workPane."
 	
 	| prevs proofToDo uel |
-	proofToDo := ev currentTarget model copy .
+	proofToDo := ev currentTarget model "reparse setAllVariablesToFixed" .
 	
 	prevs := proofToDo prevAssertions collect: #reparse .
 	"proofToDo g: prevs ."
 	
 	MmEhyp prevs: (proofToDo prevAssertions collect: #reparse) .
 	
+	""
+	
 	(proofToDo returnMappableFrom: prevs) do: [:ea | 
 	
-		"ea inspect."
 			uel :=  ea gameElementWithEhypoths.
 			
 			ev currentTarget addChild: uel

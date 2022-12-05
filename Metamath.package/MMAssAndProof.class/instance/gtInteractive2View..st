@@ -1,6 +1,6 @@
 accessing
 gtInteractive2View: aView
-	<gtView>
+	"<gtView>"
 self reparse.
 	^ aView explicit 
 		title: 'i2';

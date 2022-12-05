@@ -18,6 +18,80 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-12-04T12:41:59.889+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-12-04T12:41:59.889+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gKBFomGrDQCkD681CEDlrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Metamath is a formal language and proof assistant for mathematical logic and set theory. It is designed to provide a precise, rigorous, and formal foundation for mathematical concepts and theorems, and it includes a proof checker that can verify the correctness of proofs written in the language. Metamath is a declarative language, which means that it is based on defining and stating theorems and propositions, rather than on providing a set of instructions or algorithms for solving problems. The syntax and semantics of Metamath are designed to be as simple and clear as possible, and the language includes a small set of axioms and inference rules that can be used to construct formal proofs of mathematical statements. Some of the main features and characteristics of Metamath include the following:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-12-04T12:41:53.635+00:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-12-04T12:41:59.89+00:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aNq/oWGrDQCkDWjECEDlrw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Metamath is a formal language that is based on first-order logic and set theory. It includes a small set of axioms and inference rules that can be used to construct formal proofs of mathematical statements.\r\nMetamath is a declarative language, which means that it is based on defining and stating theorems and propositions, rather than on providing algorithms or instructions for solving problems.\r\nMetamath is designed to be a simple, intuitive, and easy-to-use language, with a clear and concise syntax and semantics. The language includes a small set of basic concepts and principles that are used to define and construct mathematical proofs.\r\nMetamath includes a proof checker that can verify the correctness of proofs written in the language. The proof checker uses the axioms and inference rules of the language to check the logical consistency and validity of proofs, and it can detect and report errors or inconsistencies in the proof.\r\nMetamath is a open-source project, and the source code and documentation of the language are freely available online. The project is maintained by a community of users and contributors, who collaborate on the development and improvement of the language.\r\nOverall, Metamath is a formal language and proof assistant for mathematical logic and set theory, and it provides a precise, rigorous, and formal foundation for mathematical concepts and theorems. If you are interested in learning more about Metamath, I recommend consulting the project website or other sources of information for more details."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-11-03T09:23:53.449+00:00"
 					}
 				},

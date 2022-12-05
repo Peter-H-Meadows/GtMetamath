@@ -500,7 +500,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T09:11:19.702+00:00"
+						"dateAndTimeString" : "2022-12-04T12:48:24.895+00:00"
 					}
 				},
 				"editEmail" : {
@@ -511,7 +511,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-03T09:11:19.702+00:00"
+						"dateAndTimeString" : "2022-12-04T12:48:24.895+00:00"
 					}
 				},
 				"uid" : {
@@ -521,7 +521,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Metamath Zero is a proof assistant and programming language that is based on the principles of the Metamath language. Metamath Zero is designed to be a simpler, more intuitive, and more powerful version of Metamath, with a more flexible and extensible design. Like Metamath, Metamath Zero is a declarative language that is based on defining and stating theorems and propositions, rather than on providing algorithms or instructions for solving problems. However, Metamath Zero is designed to be a more versatile and expressive language than Metamath, with support for features such as higher-order logic, type theory, and dependent types. Additionally, Metamath Zero includes a proof checker that can verify the correctness of proofs written in the language, and it provides a number of tools and libraries for working with mathematical concepts and theorems. Some of the main features and characteristics of Metamath Zero include the following:\r\n\r\nMetamath Zero is a proof assistant and programming language that is based on the principles of the Metamath language. It is designed to be a simpler, more intuitive, and more powerful version of Metamath, with a more flexible and extensible design.\r\nMetamath Zero is a declarative language that is based on defining and stating theorems and propositions, rather than on providing algorithms or instructions for solving problems. It includes a small set of axioms and inference rules that can be used to construct formal proofs of mathematical statements.\r\nMetamath Zero is a more versatile and expressive language than Metamath, with support for features such as higher-order logic, type theory, and dependent types. It provides a more flexible and powerful foundation for constructing mathematical proofs and expressing mathematical concepts.\r\nMetamath Zero includes a proof checker that can verify the correctness of proofs written in the language. The proof checker uses the axioms and inference rules of the language to check the logical consistency and validity of proofs, and it can detect and report errors or inconsistencies in the proof.\r\nMetamath Zero is an open-source project, and the source code and documentation of the language are freely available online. The project is maintained by a community of users and contributors, who collaborate on the development and improvement of the language.\r\nOverall, Metamath Zero is a proof assistant and programming language that is based on the principles of the Metamath language, and it provides a simpler,"
 			}
 		]
 	},
@@ -544,12 +544,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-03T09:05:31.674+00:00"
+			"dateAndTimeString" : "2022-11-03T12:39:25.384+00:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "MetamathZero"
+		"title" : "Metamath Zero"
 	},
 	"uid" : {
 		"__type" : "uuid",

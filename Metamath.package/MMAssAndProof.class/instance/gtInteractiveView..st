@@ -1,6 +1,6 @@
 accessing
 gtInteractiveView: aView
-	<gtView>
+	"<gtView>"
 
 	self reparse.
 

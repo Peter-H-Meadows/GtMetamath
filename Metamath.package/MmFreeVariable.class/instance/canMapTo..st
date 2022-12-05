@@ -1,7 +1,14 @@
 printing
 canMapTo: x  
 
-fixed ifTrue: [ ^ x name = name ].
+fixed ifTrue: [ 
+	x isFixed ifTrue: [ ^ x name = name ].
+	
+	x isFreeVar ifTrue: [ x  canMapTo: self ].
+	
+	^ false
+	
+	].
 
 mappedTo ifNotNil: [ "self halt." ^ mappedTo canMapTo: x ].
 

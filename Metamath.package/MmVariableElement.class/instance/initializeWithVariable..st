@@ -48,21 +48,9 @@ aText foreground: Color black .
 textElement := (BlTextElement text: aText) constraintsDo: [ :c | c linear vertical alignCenter . c linear horizontal  alignCenter ].
 textElement  margin: (BlInsets all: 18).
 
-blob layout: BlLinearLayout horizontal  .
+blob layout: BlLinearLayout horizontal.
 
-"."
-
-"model showName 
-
- ifTrue: [ "
- 
- "blob constraintsDo: [ :c | 
-					c horizontal fitContent .
-					c vertical fitContent .
-					c linear horizontal  alignCenter .
-					c linear vertical alignCenter ]."
-					
-blob addChild: textElement . "] ".
+blob addChild: textElement .
 				
 self addChild: blob .
 
@@ -79,7 +67,7 @@ model isMapped ifTrue: [
 		box addChild: ea gameElement
 	]."
 
-	5 atRandom = 1 ifFalse: [
+	33 atRandom = 11 ifFalse: [
 
 	self addChild: model mappedTo gameElement.
 	
