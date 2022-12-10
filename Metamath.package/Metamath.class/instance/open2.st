@@ -12,7 +12,7 @@ open2
 	
 "	aSpace addChild: (MmMainBoard new openOn: (Database allProofs at: 'a1i'))."
 
-aSpace addChild: ((Metamath at: 'a1i') gameElementWithEhypoths).
+aSpace addChild: ((Metamath at: 'a1i') reparse setAllVariablesToFixed gameElementWithEhypoths).
 	
 	"openOn: levels next" 
 	

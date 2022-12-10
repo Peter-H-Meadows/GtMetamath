@@ -1,5 +1,6 @@
 printing
 canMapTo: x  
+"self halt ."
 
 fixed ifTrue: [ 
 	x isFixed ifTrue: [ ^ x name = name ].

@@ -10,8 +10,11 @@ vDeepCopyWith: copier
 	class := self class.
 	class isMeta ifTrue: [ "a metaclass" ^ self ].
 	copyOfSelf := self shallowCopy.
+	copyOfSelf bvDeepCopyWith: copier.
 	copier references at: self put: copyOfSelf.
 	"remember"
 	
-	body := body vDeepCopyWith: copier.
-	essentialHypoths := essentialHypoths collect: [:ea | ea vDeepCopyWith: copier]
+	^ copyOfSelf
+	
+	"body := body vDeepCopyWith: copier.
+	essentialHypoths := essentialHypoths collect: [:ea | ea vDeepCopyWith: copier]"

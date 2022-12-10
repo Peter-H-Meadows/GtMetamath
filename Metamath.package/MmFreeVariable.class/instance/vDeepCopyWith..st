@@ -11,6 +11,8 @@ vDeepCopyWith: copier
 	class isMeta ifTrue: [ "a metaclass" ^ self ].
 	copyOfSelf := self shallowCopy.
 	copier references at: self put: copyOfSelf.
+	copyOfSelf vDeepWith: copier .
+	^ copyOfSelf
 	"remember"
 	
 	"body := body vDeepCopyWith: copier"

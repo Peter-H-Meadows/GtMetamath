@@ -13,4 +13,6 @@ vDeepCopyWith: copier
 	copier references at: self put: copyOfSelf.
 	"remember"
 	
-	body := body vDeepCopyWith: copier
+	copyOfSelf bvDeepCopyWith: copier.
+	
+	^ copyOfSelf

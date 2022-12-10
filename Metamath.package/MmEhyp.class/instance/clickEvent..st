@@ -1,6 +1,6 @@
 accessing
 clickEvent: ev
-| uel hy |
+| uel hy ax1 |
 	
 	
 "	MmPrevs := ev currentTarget model owner prevAssertions collect: #reparse ."
@@ -9,10 +9,10 @@ clickEvent: ev
 	hy := ev currentTarget model owner vcopy essentialHypoths second .
 	
 	"prev := ev currentTarget model owner prevAssertions"
+	ax1 := ( MmPrevs at: 'ax-1' ) reparse setAllVariablesToFixed.
+	hy canMapTo: ax1.
 	
-	hy canMapTo: ( MmPrevs at: 'ax-1' ).
-	
-	uel :=  ( MmPrevs at: 'ax-1' ) gameElementWithEhypoths.
+	uel :=  ax1 gameElementWithEhypoths.
 			
 		ev currentTarget addChild: uel.
 	
