@@ -7,7 +7,7 @@ fixed ifTrue: [
 	
 	x isFreeVar ifTrue: [ x  canMapTo: self ].
 	
-	^ false
+	^ x  canMapTo: self 
 	
 	].
 

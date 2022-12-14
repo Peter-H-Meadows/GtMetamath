@@ -16,14 +16,12 @@ self margin: (BlInsets all: 4)."
 box constraintsDo: [ :c | 
 					c horizontal fitContent.
 					c vertical fitContent ].
+	
+(aAssertion body respondsTo: #gameElement) ifFalse: [
+	self error.
+] . 
 
-
-(aAssertion body respondsTo: #gameElement) ifTrue: [
-el := aAssertion body gameElement ] ifFalse: [
-el := BlElement new] . 
-
-
-
+el := aAssertion body gameElement . 
 
 el constraintsDo: [ :c | c linear horizontal alignCenter ].
 
@@ -31,6 +29,5 @@ box addChild: el .
 
 "comment := MmCommentElement new createFromString: aAssertion lastComment body .
 box addChild: comment ."
+
 self addChild: box .
-
-

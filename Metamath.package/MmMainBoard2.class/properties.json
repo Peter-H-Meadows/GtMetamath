@@ -1,0 +1,29 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "Metamath-Game",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"controller",
+		"usableList",
+		"proofToDo",
+		"aList",
+		"workingOnList",
+		"aPannableElement",
+		"workPane",
+		"topPane",
+		"leftPane",
+		"mPane",
+		"selectedUsableElement",
+		"selectedWantedElement",
+		"hypothPane",
+		"wantedResultElement",
+		"level",
+		"levels",
+		"aSpace"
+	],
+	"name" : "MmMainBoard2",
+	"type" : "normal"
+}

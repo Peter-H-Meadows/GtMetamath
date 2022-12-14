@@ -1,4 +1,3 @@
 accessing
 borderWidth 
-
-^ 0
+	^ 4

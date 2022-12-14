@@ -1,0 +1,4 @@
+accessing
+workPane
+
+	^ workPane

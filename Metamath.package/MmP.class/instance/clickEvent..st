@@ -20,7 +20,7 @@ clickEvent: ev
 			
 			cp := ea vcopy .
 			
-			ea tryMakeEhypothsWith: proofToDo essentialHypoths.
+			cp tryMakeEhypothsWith: proofToDo essentialHypoths.
 			
 			uel :=  cp gameElementWithEhypoths.
 			
