@@ -9,16 +9,13 @@ open2
 
 	aSpace root background: Color veryVeryDarkGray.
 
-"aSpace addChild: 
-((Metamath at: 'syl') reparse setAllVariablesToFixed gameElementWithEhypoths)."
-
-
 	aSpace show.
-	morph := MmMainBoard2 new openOn: (Database allProofs at: 'syl') .
+	
+	level := 11 .
+	
+	morph := MmMainBoard2 new openOn: (Database allProofs asArray at: level).
 	aSpace addChild: morph.
 	
-	morph solve .
 	
-	"self addRightClickMenu ."
-	
+	self addRightClickMenu .
 	

@@ -5,19 +5,17 @@ solve
 	prevs := proofToDo prevAssertions collect: #reparse .
 	MmEhyp prevs: (proofToDo prevAssertions collect: #reparse) .
 	
-	self halt.
+	""
 	
-	(proofToDo returnMappableFrom: {prevs at: 'mpd'}) do: [:ea | 
+	(proofToDo returnMappableFrom: prevs "at: 'mpdd'}") do: [:ea | 
 	
-			uel :=  ea gameElementWithEhypoths.
+			uel :=  ea vcopy gameElementWithEhypoths.
+			
+			uel addBoardHandler: self .
 			
 			workPane addChild: uel .
-			
-			"ev currentTarget addChild: uel."
-			
-			
-			
-			cp := ea vcopy .
+			"self halt."
+			"cp := ea vcopy .
 			
 			(cp tryMakeEhypothsWith: proofToDo essentialHypoths) 
 				do: [:high |
@@ -26,6 +24,5 @@ solve
 			
 					workPane addChild: uel.
 					
-					self halt.
-				].
+				]."
 	].

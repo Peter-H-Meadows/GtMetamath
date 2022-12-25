@@ -12,10 +12,7 @@ addRightClickMenu
 	level := level + 1 . 
 	e removeChildren . 
 
-
-	"e addChild: (MmMainBoard new openOn: (Database allProofs at: 'syl'))."
-
-	e addChild: (MmMainBoard new openSolveOn: (Database allProofs asArray at: level)).
+	e addChild: (MmMainBoard2 new openOn: (Database allProofs asArray at: level)).
 
 	"e addChild: ( MmMainBoard new openOn:  levels next ) . "
 
@@ -26,7 +23,7 @@ addRightClickMenu
 
 'restart' -> [ :e | 
 	e removeChildren . 
-	e addChild: (MmMainBoard new openOn: (Database allProofs asArray at: level)).
+	e addChild: (MmMainBoard2 new openOn: (Database allProofs asArray at: level)).
 	"e addChild: ( MmMainBoard new openOn:  levels peekBack  )" ].
 
 'green' -> [ :e | e background: Color green ]

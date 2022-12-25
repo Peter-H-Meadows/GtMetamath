@@ -1,7 +1,8 @@
 accessing
 initialize 
 
-super initialize .
+| hideButton |
+	super initialize .
 
 self addChild:  greenElement .
 
@@ -17,3 +18,17 @@ hypothBox constraintsDo: [ :c |
 					c vertical fitContent ].
 
 self addChild: hypothBox.
+
+	hideButton := BrButton new
+			aptitude: BrGlamorousButtonWithLabelAptitude new;
+			label: 'X';
+			action: [ self removeFromParent ].
+
+	hideButton
+		constraintsDo: [ :c | 
+			c frame horizontal alignRight.
+			c frame vertical alignBottom ].
+			
+	hideButton background: Color veryVeryDarkGray.
+	
+	self addChild: hideButton.

@@ -15,8 +15,13 @@ initialize
 	workPane := BlElement new
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
-				c vertical fitContent	"c linear horizontal alignCenter"	"c frame horizontal weight: 0.5" ];
-			layout: BlLinearLayout vertical.	
+				c vertical fitContent
+				"c linear horizontal alignCenter"	
+				"c frame horizontal weight: 0.5" 
+			];
+			layout: 
+				"BlLinearLayout vertical" 
+				(BlGridLayout  new columnCount: 6).	
 
 	leftPane := BlElement new
 			constraintsDo: [ :c | 
@@ -50,20 +55,23 @@ initialize
 			c frame horizontal alignRight.
 			c frame vertical alignBottom ].
 
-
-
-
 	hypothPane := BlElement new
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent.
-				c frame horizontal alignLeft	"c frame vertical alignBottom" ];
-			layout: BlLinearLayout vertical.	"self addLevelButton."	"leftPane addChild: BlElement new ."
+				c frame horizontal alignLeft	
+				"c frame vertical alignBottom" 
+			];
+			layout: BlLinearLayout vertical.	
+			"self addLevelButton."	
+			"leftPane addChild: BlElement new ."
 
 
 	self addChild: workPane asScalableElement asPannableElement.
 
-	self addChild: hypothPane.	"self addChild: leftPane"	"asScalableElement"
+	self addChild: hypothPane.
+	"self addChild: leftPane"	
+	"asScalableElement"
 
-	self addChild: sc.	"self addChild:  sc ."	"leftPane"
+	self addChild: sc.
 	self addChild: hideButton.

@@ -1,2 +1,0 @@
-initialization
-initializeWithHypoth: aHypoth

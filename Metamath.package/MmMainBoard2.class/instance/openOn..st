@@ -1,9 +1,9 @@
 initialization
 openOn: aProofModel
 	
-| cc aText textElement prevs uel cp |
+| cc aText textElement |
 
-proofToDo := aProofModel vcopy.
+proofToDo := aProofModel reparse "vcopy".
 	
 proofToDo setAllVariablesToFixed.
 
@@ -56,4 +56,6 @@ self  addChild:  wantedResultElement.
 		].
 		
 		"self addUsableAssertionsToLeftpane."
+		
+		self solve .
 	

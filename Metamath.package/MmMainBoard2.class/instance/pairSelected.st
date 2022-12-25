@@ -3,7 +3,7 @@ pairSelected
 	selectedUsableElement unhighlightAsSelected.
 	selectedWantedElement unhighlightAsSelected.
 	
-	"self halt ."
+	self halt .
 	
 	selectedWantedElement tryMakeWithEl: selectedUsableElement.
 	

@@ -4,8 +4,9 @@ initializeWith: aHypothModel
 	| aText |
 	model := aHypothModel .
 
+"self addEventHandler: MmEhyp new ."
 
-self addEventHandler: MmEhyp new .
+self addEventHandler: MmBoardListener new .
 
 "model announcer when: #complete" "MmHighlightAnnouncement" "send: #highlight: to: self."
 
@@ -37,4 +38,6 @@ textElement := (BlTextElement text: aText).
 self addChild: textElement .
 
 self addChild: model body gameElement .
+
+self addRightClickMenu .
 

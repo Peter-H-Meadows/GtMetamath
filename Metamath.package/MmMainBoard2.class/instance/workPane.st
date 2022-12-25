@@ -1,4 +1,3 @@
 accessing
 workPane
-
 	^ workPane

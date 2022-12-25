@@ -34,13 +34,15 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 
 "abDict := Dictionary newFromPairs: {'ph' . 'R' . 'ps' . 'G' . 'ch' . 'B' . 'th' . 'C'. 'ta' . 'E' . 'et' . 'F' . 'G' . 'ze'} ."
 
-"aText := (model name , model identityHash printString) asRopedText ."
+""
 
 aText := model "name" letter asRopedText .
 
 "blob background: Color gray."
 
 "aText := (abDict at: model name ifAbsent: [  'z']) asRopedText ."
+
+aText := (model name , model identityHash printString) asRopedText .
 
 aText fontSize: 18.
 aText foreground: Color black .
@@ -52,7 +54,7 @@ blob layout: BlLinearLayout horizontal.
 
 blob addChild: textElement .
 				
-self addChild: blob .
+
 
 model isMapped ifTrue: [ 
 	
@@ -67,12 +69,13 @@ model isMapped ifTrue: [
 		box addChild: ea gameElement
 	]."
 
-	33 atRandom = 11 ifFalse: [
+	55 atRandom = 11 ifTrue: [ self halt ].
 
 	self addChild: model mappedTo gameElement.
 	
-	]
-] .
+	
+	
+] ifFalse: [self addChild: blob .].
 
 
 	"textElement := (BlTextElement text: aText) constraintsDo: [ :c | c linear horizontal alignCenter ].

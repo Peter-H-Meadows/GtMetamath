@@ -8,8 +8,8 @@ tryMakeEhypothsWith: inp
 	
 		sc := self vcopy .
 		
-		aa := sc essentialHypoths select: [ :ea | 
-			self halt.
+		aa := { sc essentialHypoths first } select: [ :ea | 
+			"self halt."
 			fin canMapTo: ea ] .
 	
 		bb addAll: (aa collect: #owner) .

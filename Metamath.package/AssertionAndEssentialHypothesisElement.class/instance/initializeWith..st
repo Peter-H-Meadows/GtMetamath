@@ -5,7 +5,7 @@ initializeWith: assertion
 	
 	model := assertion .
 	
-	self addEventHandler: MmP new .
+	"self addEventHandler: MmP new ."
 	
 	"self addMenu."
 	

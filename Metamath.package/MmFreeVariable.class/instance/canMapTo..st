@@ -3,11 +3,18 @@ canMapTo: x
 "self halt ."
 
 fixed ifTrue: [ 
+
+	x isVar ifFalse: [ ^ false ].
+
 	x isFixed ifTrue: [ ^ x name = name ].
 	
 	x isFreeVar ifTrue: [ x  canMapTo: self ].
 	
-	^ x  canMapTo: self 
+	"self halt ."
+	
+	"^ x  canMapTo: self "
+	
+	^ self canMapTo: x mappedTo
 	
 	].
 
