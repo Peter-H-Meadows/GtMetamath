@@ -9,19 +9,24 @@ initialize
 			c vertical matchParent ].
 
 	self layout: BlFrameLayout new.
+	"BlLinearLayout vertical."
 
 	self background: Color veryVeryDarkGray.
 
 	workPane := BlElement new
+	"constraintsDo: [ :c | 
+			c horizontal matchParent.
+			c vertical matchParent ];"
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent
-				"c linear horizontal alignCenter"	
-				"c frame horizontal weight: 0.5" 
 			];
 			layout: 
 				"BlLinearLayout vertical" 
-				(BlGridLayout  new columnCount: 6).	
+				"GtGraphTreemapLayout squarify."
+				(BlGridLayout  new columnCount: 3).
+				
+	"workPane size: 1028@720."	
 
 	leftPane := BlElement new
 			constraintsDo: [ :c | 
@@ -59,18 +64,20 @@ initialize
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent.
-				c frame horizontal alignLeft	
-				"c frame vertical alignBottom" 
+				c frame horizontal alignLeft.
+				c frame vertical alignBottom
 			];
-			layout: BlLinearLayout vertical.	
+			layout: BlLinearLayout vertical.
+			
 			"self addLevelButton."	
 			"leftPane addChild: BlElement new ."
 
 
-	self addChild: workPane asScalableElement asPannableElement.
+	self addChild: workPane  asPannableElement "asScalableElement".
 
 	self addChild: hypothPane.
-	"self addChild: leftPane"	
+	
+	"self addChild: leftPane"
 	"asScalableElement"
 
 	self addChild: sc.

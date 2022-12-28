@@ -42,7 +42,7 @@ aText := model "name" letter asRopedText .
 
 "aText := (abDict at: model name ifAbsent: [  'z']) asRopedText ."
 
-aText := (model name , model identityHash printString) asRopedText .
+"aText := (model name , model identityHash printString) asRopedText ."
 
 aText fontSize: 18.
 aText foreground: Color black .
@@ -53,11 +53,8 @@ textElement  margin: (BlInsets all: 18).
 blob layout: BlLinearLayout horizontal.
 
 blob addChild: textElement .
-				
-
 
 model isMapped ifTrue: [ 
-	
 	
 	"box := BlElement new layout: BlLinearLayout horizontal .
 
@@ -69,14 +66,11 @@ model isMapped ifTrue: [
 		box addChild: ea gameElement
 	]."
 
-	55 atRandom = 11 ifTrue: [ self halt ].
+	222 atRandom = 11 ifTrue: [ self halt ].
 
 	self addChild: model mappedTo gameElement.
 	
-	
-	
-] ifFalse: [self addChild: blob .].
-
+] ifFalse: [ self addChild: blob ].
 
 	"textElement := (BlTextElement text: aText) constraintsDo: [ :c | c linear horizontal alignCenter ].
 	self addChild: textElement ."

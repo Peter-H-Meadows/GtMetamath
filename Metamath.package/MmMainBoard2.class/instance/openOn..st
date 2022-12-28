@@ -14,7 +14,7 @@ wantedResultElement  announcer when: MmWantedSelectedAnnouncement send: #wantedS
 wantedResultElement
 	constraintsDo: [ :c |
 			c frame horizontal alignRight "alignCenter".
-			c frame vertical alignTop ].
+			c frame vertical alignBottom ].
 			
 self  addChild:  wantedResultElement.
 
@@ -29,17 +29,17 @@ self  addChild:  wantedResultElement.
 	
 	"cc := MmCommentElement new createFromString: proofToDo name ."
 	
-	cc constraintsDo: [ :c |
+	"cc constraintsDo: [ :c |
 			c frame vertical alignBottom ].
-	self addChild: cc.
+	self addChild: cc."
 	
 	
-	aText := proofToDo name asRopedText .
+	"aText := proofToDo name asRopedText .
 	aText fontSize: 42.
 	aText foreground: Color gray .
 	textElement := (BlTextElement text: aText) .
 
-	hypothPane addChild: textElement asScalableElement.
+	hypothPane addChild: textElement asScalableElement."
 
 
 	proofToDo eHypoths

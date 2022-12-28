@@ -1,6 +1,6 @@
 accessing
 usableSelected: ann
-	self halt.
+	"self halt."
 	selectedUsableElement  ifNotNil: [ selectedUsableElement unhighlightAsSelected ] .
 	
 	selectedUsableElement := ann element .

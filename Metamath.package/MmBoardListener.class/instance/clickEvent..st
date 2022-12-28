@@ -1,4 +1,5 @@
 mouse handlers
 clickEvent: anEvent
-anEvent currentTarget clicked.
+	"self halt."
 	anEvent consumed: true.
+	anEvent currentTarget clicked.

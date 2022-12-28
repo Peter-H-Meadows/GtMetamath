@@ -1,5 +1,8 @@
 accessing
 addBoardHandler: board
+
+	mainBoard := board .
+
 	self addEventHandler: MmBoardListener new.
 	
 	self announcer
@@ -9,6 +12,7 @@ addBoardHandler: board
 
 	hypothBox
 		childrenDo: [ :el | 
+			el mainBoard: board .
 			el addEventHandler: MmBoardListener new.
 			el announcer
 				when: MmWantedSelectedAnnouncement

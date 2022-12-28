@@ -9,7 +9,7 @@ initializeWith: assertion
 	
 	"self addMenu."
 	
-	model eHypoths reverse do: [ :ea | 
+	model eHypoths "reverse" do: [ :ea | 
 		
 		el := MmEssentialHypothesisElement new initializeWith: ea  .
 	
@@ -24,13 +24,13 @@ initializeWith: assertion
 	
 	divElement := BlElement new
 			constraintsDo: [ :co |
-				co horizontal exact: 2.
+				co horizontal exact: 4.
 				co vertical matchParent ];
 			background: Color black .
 	
 	self addChild: divElement.
 	
-	resultElement := assertion gameElement constraintsDo: [ :c | c linear vertical alignCenter ] .
+	resultElement := assertion gameElement "constraintsDo: [ :c | c linear vertical alignCenter ]" .
 	
 	"aEventListener := MmOnBoardUsableEventListener new gameController: con .
 	self addEventHandler: aEventListener ."
