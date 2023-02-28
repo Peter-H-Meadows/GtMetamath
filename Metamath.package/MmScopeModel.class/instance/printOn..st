@@ -1,5 +1,5 @@
 printing
 printOn: aStream
-
-aStream nextPutAll: 'Scope. size: '.
-aStream nextPutAll: proofs size printString .
+	aStream nextPutAll: proofs first name .
+	aStream nextPutAll: ' Scope. size: ' .
+	aStream nextPutAll: proofs size printString .

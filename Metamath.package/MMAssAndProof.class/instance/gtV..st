@@ -1,7 +1,7 @@
 accessing
 gtV: aView
-	
-"self reparse."
+	<gtView>
+	self reparse.
 
 "varsUsed := parser class varsUsed" .
 	
