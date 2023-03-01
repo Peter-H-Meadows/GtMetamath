@@ -28,7 +28,7 @@ addAllUsableAssertionsToLeftpane2
 		"self halt ."
 		
 		
-		(usableAssertion canMapTo: proofToDo) ifTrue: [ 
+		"(usableAssertion canMapTo: proofToDo)" false ifTrue: [ 
 		
 			usableAssertionCopy := usableAssertion copy.
 			
