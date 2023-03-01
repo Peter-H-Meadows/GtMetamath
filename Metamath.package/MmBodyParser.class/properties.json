@@ -51,7 +51,8 @@
 		"squareBrackets2",
 		"squareBrackets3",
 		"subset2",
-		"powerSet"
+		"powerSet",
+		"summoi"
 	],
 	"name" : "MmBodyParser",
 	"type" : "normal"

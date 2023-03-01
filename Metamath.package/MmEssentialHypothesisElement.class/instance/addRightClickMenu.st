@@ -3,11 +3,11 @@ addRightClickMenu
 | mmodel itms mmm aa |
 
 mmm := OrderedCollection new .
-itms := MmEhyp prevs do: [:ee |
+"itms := MmEhyp prevs do: [:ee |
 
 mmm add: (ee name -> [ :e | self tryMakeWit: ee ]).
 
-].
+]."
 
 mmm add: ('ICT MOD' -> [ :e | 
 	self halt.
