@@ -3,7 +3,7 @@ postCopy
 
 announcer := Announcer new.
 
-body ifNil: [self reparse].
+body ifNil: [ self reparse ].
 
 "varObs valuesDo: [ :ea | ea resetCopy ]."
 
@@ -21,6 +21,6 @@ body := body copy .
 
 "self halt."
 
-essentialHypoths := essentialHypoths collect: [:ea | ea copy] .
+essentialHypoths := essentialHypoths collect: [ :ea | ea copy ] .
 
 isComplete := false .
