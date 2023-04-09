@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-03T10:13:40.919+00:00"
+						"dateAndTimeString" : "2023-03-03T10:47:53.503+00:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-03T10:14:00.307+00:00"
+						"dateAndTimeString" : "2023-03-03T10:49:41.948+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "mDYM7l2yDQCBwjU8BHJQeA=="
+					"uidString" : "QHm1aF6yDQCC96KeBHJQeA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "is copying done correctly?"
+				"string" : "[](https://matklad.github.io/2023/02/21/why-SAT-is-hard.html)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-03T10:14:40.663+00:00"
+						"dateAndTimeString" : "2023-03-03T10:47:54.753+00:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-03T10:15:00.114+00:00"
+						"dateAndTimeString" : "2023-03-03T10:47:54.753+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CI2r8V2yDQCCN8ZqBHJQeA=="
+					"uidString" : "6Iclal6yDQCC/bz3BHJQeA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Is PetitParser correct?"
+				"string" : ""
 			}
 		]
 	},
@@ -88,7 +88,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-03-03T10:13:12.703+00:00"
+			"dateAndTimeString" : "2023-03-03T10:47:30.569+00:00"
 		}
 	},
 	"editEmail" : {
@@ -99,15 +99,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2023-03-03T10:13:12.703+00:00"
+			"dateAndTimeString" : "2023-03-03T10:47:30.569+00:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "SmalltalkQuestions"
+		"title" : "RandomLinks"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "18f80bee-5db2-0d00-81c1-250404725078"
+		"uuid" : "2883b468-5eb2-0d00-82f6-8bd604725078"
 	}
 }

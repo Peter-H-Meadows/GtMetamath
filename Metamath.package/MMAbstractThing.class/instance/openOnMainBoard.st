@@ -1,3 +1,3 @@
 accessing
 openOnMainBoard
-^ MmMainBoard new  openOn: self
+^ MmMainBoard2 new  openOn: self

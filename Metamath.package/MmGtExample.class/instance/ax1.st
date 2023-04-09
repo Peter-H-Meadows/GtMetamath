@@ -5,11 +5,11 @@ ax1
 | ax1 db axmp a1i |
 
 db := self metamathUniverse .
-ax1 := db assertions second reparse.
+ax1 := db assertions second vcopy .
 self assert: ax1 name equals: 'ax-1' .
 self assert: ax1 essentialHypoths size equals: 0 .
 
-axmp := db assertions first reparse .
+axmp := db assertions first vcopy .
 self assert: axmp name equals: 'ax-mp' .
 self assert: axmp essentialHypoths size equals: 2 .
 self assert: axmp variables size equals: 2 .
@@ -17,7 +17,7 @@ self assert: axmp variables asArray first name equals: 'ph' .
 self assert: axmp variables asArray second name equals: 'ps' .
 "self assert: ( ax1 canMapTo: axmp) equals: true ."
 
-a1i := db proofs first copy .
+a1i := db proofs first vcopy .
 
 self assert: a1i name equals: 'a1i' .
 self assert: a1i essentialHypoths size equals: 1 .
