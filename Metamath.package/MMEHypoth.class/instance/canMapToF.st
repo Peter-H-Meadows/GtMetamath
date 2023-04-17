@@ -1,7 +1,10 @@
 accessing
-canMapTo: thing
+canMapToF
 
 "self halt."
+
+| thing |
+	thing := FixedEhypoth .
 
 canMap := body canMapTo: thing body .
 

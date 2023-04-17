@@ -5,11 +5,11 @@ mm
 | ax1 db axmp a1i maps maj aa |
 
 db := self metamathUniverse .
-ax1 := db assertions second vcopy.
+ax1 := db assertions second "vcopy".
 self assert: ax1 name equals: 'ax-1' .
 self assert: ax1 essentialHypoths size equals: 0 .
 
-a1i := db proofs first vcopy .
+a1i := db proofs first "vcopy" .
 
 self assert: a1i name equals: 'a1i' .
 self assert: a1i essentialHypoths size equals: 1 .

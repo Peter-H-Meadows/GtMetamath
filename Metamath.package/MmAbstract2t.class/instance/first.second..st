@@ -1,4 +1,7 @@
 accessing
 first: x second: y
+"self halt."
 first := x .
-second := y
+first owner: self .
+second := y.
+second owner: self .

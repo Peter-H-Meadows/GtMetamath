@@ -1,4 +1,4 @@
 accessing
 body: b
 
-body := b
+body := b.

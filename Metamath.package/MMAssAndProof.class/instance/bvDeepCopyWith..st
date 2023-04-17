@@ -2,6 +2,9 @@ accessing
 bvDeepCopyWith: copier
 	
 	| dd |
+	
+	announcer := Announcer new.
+	
 	body := body vDeepCopyWith: copier.
 	essentialHypoths := essentialHypoths collect: [:ea | ea vDeepCopyWith: copier].
 	

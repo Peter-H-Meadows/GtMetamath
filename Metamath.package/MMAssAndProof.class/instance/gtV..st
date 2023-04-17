@@ -5,7 +5,9 @@ gtV: aView
 	"self reparse." "if already parsed, should use 'copy' here"
 
 "varsUsed := parser class varsUsed" .
+
+	"self halt."
 	
 	^ aView explicit 
 		title: 'interactive';
-		stencil: [ self copy openOnMainBoard ]
+		stencil: [ self vcopy openOnMainBoard ]

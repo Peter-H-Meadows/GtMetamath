@@ -1,6 +1,7 @@
 accessing
 vcopy
 	| copier new |
+	"self halt."
 	body ifNil: [ self reparse].
 	copier := DeepCopier new initialize: 4096 "self initialDeepCopierSize".
 	new := self vDeepCopyWith: copier.

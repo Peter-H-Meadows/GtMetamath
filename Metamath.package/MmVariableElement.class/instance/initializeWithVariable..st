@@ -55,20 +55,19 @@ blob layout: BlLinearLayout horizontal.
 blob addChild: textElement .
 
 model isMapped ifTrue: [ 
-	
-	"box := BlElement new layout: BlLinearLayout horizontal .
+	| box |
+	box := BlElement new layout: BlLinearLayout vertical .
 
 	box constraintsDo: [ :c | 
 						c horizontal fitContent.
 						c vertical fitContent ].
 
-	model mappedTo do: [ :ea |
-		box addChild: ea gameElement
-	]."
+		box addChild: "model gameElement" blob .
+	box addChild:  model mappedTo gameElement .
 
-	222 atRandom = 11 ifTrue: [ self halt ].
+	22 atRandom = 11 ifTrue: [ self halt ].
 
-	self addChild: model mappedTo gameElement.
+	self addChild: box
 	
 ] ifFalse: [ self addChild: blob ].
 

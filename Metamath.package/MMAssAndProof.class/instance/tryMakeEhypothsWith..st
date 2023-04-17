@@ -1,20 +1,44 @@
 accessing
 tryMakeEhypothsWith: inp
-| sc aa bb |
+| sc aa bb nn xx |
 	
 	bb := OrderedCollection new.
 	
-	inp do: [ :fin |
+	"inp do: [ :eachAssertion |"
 	
-		sc := self vcopy .
+		"self halt."
+	
+		"sc := self vcopy .
 		
-		aa := { sc essentialHypoths first } select: [ :ea | 
-			"self halt."
-			fin canMapTo: ea ] .
+		sc essentialHypoths first canMapTo: inp second ."
+		
+		"bb add: sc vcopy" "owner" .
+		
+		self halt.
+		
+		nn := self vcopy .
+		nn   essentialHypoths second canMapTo: inp third .
+		
+		xx := self vcopy .
+		
+		xx essentialHypoths second canMapTo: nn .
+		
+		
+		bb add: xx .
+		
+		bb add: nn .
+		
+		"nn := self vcopy .
+		nn   essentialHypoths second canMapTo: inp second .
+		bb add: nn ."
+		
+		"aa := { sc essentialHypoths first  } select: [ :ea | 
+			
+			eachAssertion canMapTo: ea ] .
 	
 		bb addAll: (aa collect: #owner) .
 	
-	].
+	]."
 	
 	^ bb
 "^ a select: [ :ea | essentialHypoths first canMapTo: ea ]"

@@ -1,9 +1,9 @@
 accessing
 proveable
 
-^ '|-' asPParser trim , p4  ==> 
+^ '|-' asPParser trim , "p4" (   parentheses / label2 )  ==> 
 
-	[ :x |
+	[ :x | "self halt."
 
 		MmProveableModel new body: x second 
 	

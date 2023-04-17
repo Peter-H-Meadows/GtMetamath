@@ -11,7 +11,8 @@
 		"announcer",
 		"varNames",
 		"second",
-		"first"
+		"first",
+		"owner"
 	],
 	"name" : "MmAbstractModel",
 	"type" : "normal"

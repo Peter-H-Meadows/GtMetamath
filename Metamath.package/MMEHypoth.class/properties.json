@@ -2,12 +2,17 @@
 	"commentStamp" : "",
 	"super" : "MMHypoth",
 	"category" : "Metamath-Model",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"fixedEhypoths"
+	],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"FixedEhypoth"
+	],
 	"instvars" : [
 		"pmod",
-		"usedFor"
+		"usedFor",
+		"usedBy"
 	],
 	"name" : "MMEHypoth",
 	"type" : "normal"
