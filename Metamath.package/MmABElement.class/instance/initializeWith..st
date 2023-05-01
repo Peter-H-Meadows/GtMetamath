@@ -1,7 +1,7 @@
 accessing
 initializeWith: mod 
 
-| aText textElement |
+| aText textElement ee |
 	model := mod .
 
 
@@ -19,6 +19,8 @@ initializeWith: mod
 		
 	self addChild: textElement.
 	
-	self addChild: model first gameElement.
+	 ee := model first gameElement constraintsDo: [ :c | c linear vertical alignCenter ].
+	
+	self addChild: ee.
 
 	self addChild: model second gameElement.

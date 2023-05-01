@@ -4,7 +4,7 @@ initializeWith: m
 | aText textElement |
 	model := m .
 	
-	self addChild: model first gameElement.
+	self addChild: (model first gameElement constraintsDo: [ :c | c linear vertical alignCenter ]).
 
 	
 	aText := model unicodeSymbol asRopedText

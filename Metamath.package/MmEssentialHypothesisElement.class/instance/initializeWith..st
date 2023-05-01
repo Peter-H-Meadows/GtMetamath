@@ -38,6 +38,6 @@ self addChild: textElement ."
 
 self addChild: model body gameElement .
 
-self halt .
+"self halt ."
 
 self addRightClickMenu .

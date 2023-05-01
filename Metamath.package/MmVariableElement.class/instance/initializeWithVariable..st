@@ -65,7 +65,7 @@ model isMapped ifTrue: [
 		box addChild: "model gameElement" blob .
 	box addChild:  model mappedTo gameElement .
 
-	22 atRandom = 11 ifTrue: [ self halt ].
+	55 atRandom = 11 ifTrue: [ self halt ].
 
 	self addChild: box
 	

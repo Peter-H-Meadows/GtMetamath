@@ -2,24 +2,24 @@ accessing
 solve
 | prevs uel cp axmpp |
 
-	prevs := proofToDo prevAssertions collect: #reparse .
+	prevs := proofToDo prevAssertions collect: #vcopy .
 	MmEhyp prevs: (proofToDo prevAssertions collect: #reparse) .
 	
 	"prevs at: 'mpdd'}"
 	
-	"( proofToDo returnMappableFrom: prevs ) do: [ :ea | "
+	( proofToDo returnMappableFrom: prevs ) do: [ :ea | 
 	
+		uel :=  ea vcopy gameElementWithEhypoths.
+			
+		uel addBoardHandler: self .
+			
+		workPane addChild: uel .
+	].
 			
 			
-			axmpp := prevs at: 'ax-mp' .
+			"ea := prevs at: 'ax-mp' ."
 			
-			axmpp essentialHypoths first class remFixedEhypoths: proofToDo essentialHypoths first .
-	
-			uel :=  axmpp vcopy gameElementWithEhypoths.
-			
-			uel addBoardHandler: self .
-			
-			workPane addChild: uel .
+			"ea essentialHypoths first class remFixedEhypoths: proofToDo essentialHypoths first ."
 			
 			"(ea tryMakeEhypothsWith: proofToDo essentialHypoths) "
 			{}

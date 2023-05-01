@@ -1,6 +1,6 @@
 accessing
 addRightClickMenu
-| mmodel itms mmm aa |
+| mmodel itms mmm aa prevs fits |
 
 mmm := OrderedCollection new .
 "itms := MmEhyp prevs do: [:ee |
@@ -22,7 +22,21 @@ mmm add: ('try use ax-mp' -> [ :e |
 	
 ]).
 
-mmm add: ('try use mp2.3 ehypoyh' -> [ :e | 
+
+
+mmm add: ('try use ehypoyh 1' -> [ :e | 
+	
+	e model canMapTo: mainBoard proofToDo essentialHypoths first .
+	
+]).
+
+mmm add: ('try use ehypoyh 2' -> [ :e | 
+	
+	e model canMapTo: mainBoard proofToDo essentialHypoths second .
+	
+]).
+
+mmm add: ('try use ehypoyh 3' -> [ :e | 
 
 	self halt.
 	
@@ -37,15 +51,19 @@ mmm add: ('try use mp2.3 ehypoyh' -> [ :e |
 	
 ]).
 
-mmm add: ('try use mp2.1 ehypoyh' -> [ :e | 
-	
-	e model canMapTo: mainBoard proofToDo essentialHypoths first .
-	
-]).
 
-mmm add: ('try use mp2.2 ehypoyh' -> [ :e | 
+
+mmm add: ('try a' -> [ :e | 
+
+	self halt.
 	
-	e model canMapTo: mainBoard proofToDo essentialHypoths second .
+	prevs := mainBoard proofToDo prevAssertions collect: #vcopy "#reparse" .
+	
+	fits := e model returnMappableFrom: prevs .
+	
+	self addChildFirst: (fits first gameElementWithEhypoths addBoardHandler: mainBoard) .
+	
+	"e model canMapTo: mainBoard proofToDo essentialHypoths first ."
 	
 ]).
 

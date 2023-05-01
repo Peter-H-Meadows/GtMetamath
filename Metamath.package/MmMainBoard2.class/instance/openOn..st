@@ -57,5 +57,7 @@ self  addChild:  wantedResultElement.
 		
 		"self addUsableAssertionsToLeftpane."
 		
-		self solve .
+		self addUsableAssertionsToC.
+		
+		"self solve" .
 	

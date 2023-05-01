@@ -3,11 +3,15 @@ reparse
 
 "constsUsed := parser constsUsed copy ."
 
-"self halt ."
+""
 
 parser := MmBodyParser new  "varNames: varNames" .
 
+"parser := MmParenParser new ."
+
 essentialHypoths "second asArray" do: [ :ea | ea parsee: parser. ea owner: self. ].
+
+"self halt ."
 
 body := parser  parse: bodyString1 .
 

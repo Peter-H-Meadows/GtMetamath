@@ -10,4 +10,4 @@ gtV: aView
 	
 	^ aView explicit 
 		title: 'interactive';
-		stencil: [ self vcopy openOnMainBoard ]
+		stencil: [ self "vcopy" openOnMainBoard ]
