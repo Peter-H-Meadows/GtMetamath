@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PP2CompositeNode",
+	"category" : "Metamath-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"wff",
+		"turn"
+	],
+	"name" : "MmBody",
+	"type" : "normal"
+}
