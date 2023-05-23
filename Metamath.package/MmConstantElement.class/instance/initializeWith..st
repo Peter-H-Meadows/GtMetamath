@@ -50,11 +50,22 @@ initializeWith: aModel
 	"aptitude: BrGlamorousButtonWithLabelAptitudeMm new;"
 	"aptitude: BrGlamorousButtonWithLabelAptitude new;" "aText"
 
+	
+	
+	
+	
+	aText := name asRopedText fontName: 'Cambria Math'.
+	"bold ;"
 
-	"textElement := (BlTextElement text: aText) constraintsDo: [ :c | 
+	aText fontSize: 22.
+	"aText foreground: col."
+
+	aText foreground: Color lightGray.
+
+	textElement := (BlTextElement text: aText) constraintsDo: [ :c | 
 		               c linear vertical alignCenter ].
 	textElement margin: (BlInsets all: 4).
 	
-	self addChild: textElement"
+	self addChild: textElement.
 
-	self addChild: bb
+	"self addChild: bb"

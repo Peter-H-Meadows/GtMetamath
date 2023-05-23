@@ -14,6 +14,9 @@ proof
 	==> [ :x | 
 		Place := Place + 1 .
 		"(x first = 'syl') ifTrue: [ self halt ]."
+		
+		(x first = 'jaao') ifTrue: [ self halt ].
+		
 		"(x first = 'ibi') ifTrue: [ self halt ].
 		(x first = 'fsumsub') ifTrue: [ self halt ]."
 		
@@ -32,8 +35,8 @@ proof
 			
 			"Transcript show: x third ; cr ."
 			
-			(Bp parse: x third) class = PP2Failure ifTrue: [
-			self halt . ] .
+			"(Bp parse: x third) class = PP2Failure ifTrue: [
+			self halt . ] ."
 			
 		"thing reparse ."
 			

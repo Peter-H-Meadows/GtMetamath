@@ -1,7 +1,5 @@
 parsing
 parse
-self error.
-body  := parser  parse: rawString .
-varsUsed := parser class varsUsed "copy" .
-
-body class = PP2Failure ifTrue: [self halt]
+	body := MmPP2ParserFirst2 bp parse: bodyString1.
+	body class = PP2Failure ifTrue: [ self halt ].
+	essentialHypoths do: [ :ea | ea parsee2 ]

@@ -3,9 +3,11 @@ openOn: aProofModel
 	
 | cc aText textElement |
 
-proofToDo := aProofModel reparse "vcopy".
+"proofToDo := aProofModel reparse" "vcopy".
 	
-proofToDo setAllVariablesToFixed.
+"proofToDo setAllVariablesToFixed."
+
+proofToDo := aProofModel .
 
 wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
 wantedResultElement addBoardHandler.

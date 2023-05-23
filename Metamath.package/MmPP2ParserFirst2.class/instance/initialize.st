@@ -16,11 +16,19 @@ initialize
 	
 	ConstDict := OrderedDictionary new.
 	
-	Bp := MmBody new .
+	"Bp := MmBody new ."
 	
 	WffPP := PP2DelegateNode named: 'wff' .
 	ClassPP := PP2DelegateNode named: 'class' .
 	
-	Bp := '|-' asPParser trim , WffPP .
+	Bp := '|-' asPParser trim / 'wff' asPParser trim , WffPP  ==> 
 
-	"VarDict := Dictionary new"
+	[ :x | "self halt."
+
+		MmProveableModel new body: x second 
+	
+	] .
+
+	VarDict := Dictionary new .
+	
+	VarNameToObDict := Dictionary new .

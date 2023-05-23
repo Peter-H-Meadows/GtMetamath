@@ -13,6 +13,8 @@
 		"ConstDict",
 		"Database",
 		"Place",
+		"VarDict",
+		"VarNameToObDict",
 		"VarNames",
 		"WffPP"
 	],

@@ -3,6 +3,10 @@ makeDict
 
 Dict := Dictionary new .
 
+
+Dict at: '(' put: ''.
+Dict at: ')' put: ''.
+
 Dict at: 'E.' put: 16r2203 asCharacter.
 Dict at: 'A.' put: 16r2200 asCharacter.
 Dict at: '->' put: 16r2192 asCharacter.
@@ -39,6 +43,6 @@ Dict at: 'C_' put: 16r2282 asCharacter.
 
 Dict at: ( $` asString , $' asString ) put: 16r23DC asCharacter.
 
-
 Dict at: 'o.' put: 16r2218 asCharacter.
 
+^ Dict

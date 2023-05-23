@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MmSetVariableElement",
+	"type" : "normal"
+}

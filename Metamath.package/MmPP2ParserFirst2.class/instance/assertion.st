@@ -14,37 +14,27 @@ assertion
 		place: Place ;
 		varNames: VarNames copy ; 
 		comments: Comments copy .
-		
-	"thing reparse ."
-	
-
 	
 	ss := x third substrings .
 	
 	ss first = 'wff' ifTrue: [
-	"pf := Bp wffdel child ."
 	
 	pf := nil.
 	
 	 ss allButFirst do: [ :ea | 
 	
-		self halt.
-	
-		(VarNames includes: ea) ifTrue: [
-			pp := (VarNames at: ea) type .
-			"(ea = 'x' or: [ ea = 'y' ] or: [ ea = 'y' ]) ifTrue: [ pp := ea asPParser trim ] ifFalse: [
-			pp := Bp wffdel . ]"
-		] ifFalse: [
-			pp := ea asPParser trim
-		].
-		
+		pp := VarDict at: ea  .
+			
 		pf ifNil: [ pf := pp ] ifNotNil: [  pf := pf , pp ].
 		
 	] .
 	
-	""
+	WffPP child: WffPP child / ( pf ==> 
+
+		[ :xd | "self halt." "MmParensModel" MmListModel new body: xd . ] ).
 	
-	WffPP child: WffPP child / pf .
+	"(WffPP parse: x third) class = PP2Failure ifTrue: [
+			self halt . ] ."
 	
 		
 	] ifFalse: ["self halt"].
@@ -53,9 +43,9 @@ assertion
 	
 	Comments := OrderedCollection new .
 		
-	"(x first = 'df-dm') ifTrue: [ self halt ].	
+	(x first = 'df-dm') ifTrue: [ self halt ].	
 	(x first = 'ax-reg') ifTrue: [ self halt ].
-	(x first = 'ax5') ifTrue: [ self halt ]."
+	(x first = 'ax5') ifTrue: [ self halt ].
 	
 	AllProofs  at: x first put: thing .
 	

@@ -6,9 +6,9 @@ addUsableAssertionsToC
 			| usableAssertion |
 			"( {'idi' . 'a1ii' . 'ax-2' . 'ax-3'. 'ax-1'} includes: each name )
 				ifFalse: [ "
-			usableAssertion := proofToDo prevAssertions at: each name.
+			usableAssertion := proofToDo prevAssertions at: each name ifAbsent: [ proofToDo prevAssertions at: 'a1i' ].
 			
-			usableAssertion reparse .
+			usableAssertion parse .
 			
 			"usableAssertion wantedResult: wantedResultElement model."
 

@@ -1,11 +1,19 @@
 initialization
-initializeWith: aModel 
+initializeWith: aModel
+	model := aModel.	"model announcer when: MmHighlightAnnouncement send: #highlight to: self .
+	model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self."
 
-model := aModel .
+	(model body class canUnderstand: #do:)
+		ifTrue: [ model body first name = '('
+				ifTrue: [ self geometry: BlEllipseGeometry new.
 
-"model announcer when: MmHighlightAnnouncement send: #highlight to: self .
-model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self."
+					self padding: (BlInsets all: 8).
 
-(model body class canUnderstand: #do:) ifTrue: [
-model body do: [ :ea | self addChild: ea gameElement  ].
-] ifFalse: [self addChild: model body gameElement]
+					self border: (BlBorder paint: Color gray width: 1) ].
+
+
+			model body
+				do: [ :ea | 
+					self
+						addChild: (ea gameElement constraintsDo: [ :c | c linear vertical alignCenter ]) ] ]
+		ifFalse: [ self addChild: model body gameElement ]

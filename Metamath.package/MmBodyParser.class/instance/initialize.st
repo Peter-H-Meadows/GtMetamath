@@ -1,6 +1,8 @@
 initialization
 initialize 
 
+	self error: 'dont use'.
+
 	super initialize .
 	AllAssertions := Dictionary new.
 	AllProofs := OrderedCollection new.
