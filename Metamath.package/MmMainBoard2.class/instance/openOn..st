@@ -1,13 +1,13 @@
 initialization
 openOn: aProofModel
 	
-| cc aText textElement |
-
-"proofToDo := aProofModel reparse" "vcopy".
+| cc |
 	
 "proofToDo setAllVariablesToFixed."
 
-proofToDo := aProofModel .
+proofToDo := aProofModel vcopy .
+
+self halt.
 
 wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
 wantedResultElement addBoardHandler.

@@ -13,7 +13,8 @@
 		"used",
 		"fff",
 		"nodesx",
-		"highest"
+		"highest",
+		"varDict2"
 	],
 	"name" : "MMProof",
 	"type" : "normal"

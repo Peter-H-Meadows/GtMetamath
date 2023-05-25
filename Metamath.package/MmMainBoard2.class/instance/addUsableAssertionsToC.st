@@ -18,6 +18,6 @@ addUsableAssertionsToC
 
 			"el constraintsDo: [ :cc | cc linear horizontal alignRight ]."
 
-			"leftPane addChild: el "
-			workPane addChild: el 
+			leftPane addChild: el .
+			"workPane addChild: el" 
 		]

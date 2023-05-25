@@ -27,6 +27,7 @@ proof
 		thing := MMProof new name: x first ;
 			bodyString: x third ;
 			varNames: VarNames copy ; 
+			varDict: VarNameToObDict copy ; 
 			usedString: (x at: 6) ;
 			compressed: (x at: 8) ;
 			place: Place ;
