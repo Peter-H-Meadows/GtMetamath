@@ -18,7 +18,8 @@
 		"varObs",
 		"wantedResult",
 		"usedFor",
-		"complete"
+		"complete",
+		"varDict2"
 	],
 	"name" : "MMAssAndProof",
 	"type" : "normal"

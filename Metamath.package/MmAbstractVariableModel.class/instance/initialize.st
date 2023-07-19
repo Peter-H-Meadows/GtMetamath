@@ -6,18 +6,18 @@ fixed := false .
 mapped := false .
 showName := false .
 
-7 atRandom = 1 ifTrue: [ showName := true ].
+"7 atRandom = 1 ifTrue: [ showName := true ]."
 
 geo := 
 		(BlTriangleGeometry new perform: 
 		#(beTop beBottom beLeft beRight) atRandom).
 		
-		7 atRandom = 1 ifTrue: [ geo := BlCircleGeometry new ] .
+		"7 atRandom = 1 ifTrue: [ geo := BlCircleGeometry new ] ."
 
 "isSuccess := false .
 highlightStepDone := false ."
 
-letter := 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' atRandom .
+letter := 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' atRandom .
 
 "color := { 
 Color random .
@@ -37,8 +37,6 @@ Color  magenta .
 ColorCycle atEnd ifTrue: [ ColorCycle reset ].
 color := ColorCycle next .
 color := { [ color muchDarker ]. [ color veryMuchLighter ]. [color]. } atRandom value.
-
-
 
 count := 0.
 mapCount := 0.

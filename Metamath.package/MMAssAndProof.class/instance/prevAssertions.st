@@ -3,13 +3,13 @@ prevAssertions
 ^ prevAssertions reject: [ :ea | ( {
 
 
-'mp2'.
-'mp2b'.
+"'mp2'.
+'mp2b'."
 'wn'.
 'wi'.
 'idi'.
 'a1ii'.
-'ax-2'.
+"'ax-2'."
 'ax-3'.
 "'ax-1'"
 

@@ -8,10 +8,10 @@ gtV: aView
 
 	"self halt."
 	
-	body := MmPP2ParserFirst2 bp parse: bodyString1 .
+	"body := MmPP2ParserFirst2 bp parse: bodyString1 .
 	
-	essentialHypoths  do: [ :ea | ea parsee2 ].
+	essentialHypoths  do: [ :ea | ea parsee2 ]."
 	
 	^ aView explicit 
 		title: 'interactive';
-		stencil: [ self "vcopy" openOnMainBoard "gameElement" "gameElementWithEhypoths" ]
+		stencil: [ self vcopy openOnMainBoard "gameElement" "gameElementWithEhypoths" ]

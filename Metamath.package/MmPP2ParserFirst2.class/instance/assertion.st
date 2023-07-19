@@ -13,6 +13,7 @@ assertion
 		bodyString: x third ;
 		place: Place ;
 		varNames: VarNames copy ; 
+		varDict: VarNameToObDict copy ; 
 		comments: Comments copy .
 	
 	ss := x third substrings .
@@ -20,6 +21,9 @@ assertion
 	ss first = 'wff' ifTrue: [
 	
 	pf := nil.
+	
+	
+		(x first = 'wceq') ifTrue: [ self halt ].
 	
 	 ss allButFirst do: [ :ea | 
 	

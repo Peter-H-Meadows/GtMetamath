@@ -1,4 +1,4 @@
 accessing
 gameElement
-
-^ MmSetVariableElement "on: self" new .
+"self halt."
+^ MmSetVariableElement "on: self" new initializeWith: self .

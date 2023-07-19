@@ -5,7 +5,7 @@ mmgrr
 | a bb db |
 
 db := self metamathUniverse .
-a := db assertions first reparse .
+a := db assertions second vcopy .
 bb := a vcopy .
 
 "

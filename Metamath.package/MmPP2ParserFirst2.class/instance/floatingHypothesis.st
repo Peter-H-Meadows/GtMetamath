@@ -33,14 +33,12 @@ floatingHypothesis
 	   	
 	   	VarNameToObDict at: vname put: (MmSetvarVariableModel new name: vname) .
 	   	
-	   	pf := vname asPParser trim ==> [ :xi | 
-	   	
-	   	"MmFreeVariable new name: vname."
-	   	
-			 VarNameToObDict at: xi.  
-		].
+	   	pf := vname asPParser trim ==> 
+	   		[ :xi | "VarNameToObDict at: xi ."
+	   		MmSetvarVariableModel new name: 'x' ].
 		
 	  	"Bp wffdel child: Bp wffdel child / pf ."
+	  	
 	  	
 	  	ClassPP child ifNil: [ ClassPP child: pf ] ifNotNil: [
 	  	ClassPP child: ClassPP child / pf .] .

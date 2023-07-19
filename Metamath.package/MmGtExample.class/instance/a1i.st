@@ -8,8 +8,6 @@ a1i := (self metamathUniverse proofs first "at: 'a1i'") vcopy .
 
 self assert: a1i name equals: 'a1i' .
 
-"self assert: a1i mands size equals: 3 ."
-
 self assert: a1i essentialHypoths size equals: 1 .
 
 self assert: a1i essentialHypoths first name equals: 'a1i.1' .

@@ -12,7 +12,19 @@ addMenu
 										               ('free'
 										                -> [ :e | model setAllVariablesToFixed ]).
 										               ('color' -> [ :e | model reColor ]).
-										               ('bg' -> [ :e | e background: Color red ]).
+										               
+										               ('add grid v' -> [ :e | 
+										               	"e background: Color red "
+										               
+										               	e addChild: model assertion gameElement .
+										               
+										               
+										               
+										               ]).
+										               
+										               
+										               
+										               
 										               ('inspect vars'
 										                -> [ :e | model allVariables inspect ]).
 

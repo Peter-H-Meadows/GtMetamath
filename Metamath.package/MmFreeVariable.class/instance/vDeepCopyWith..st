@@ -4,13 +4,13 @@ vDeepCopyWith: copier
 | copyOfSelf |
 	copier references at: self ifPresent: [ :newer | 
 		"already copied" 
-		"Transcript show: 'same list' ; cr ."
+		Transcript show: 'already copied var' ; cr .
 		^ newer
 	].
 	
 	copyOfSelf := self shallowCopy.
 	
-	Transcript show: 'making new, ' ; show: copyOfSelf class ; cr ; show:  copyOfSelf ; cr .
+	"copyOfSelf := MmFreeVariable new name: name ."
 	
 	copier references at: self put: copyOfSelf.
 	"remember"

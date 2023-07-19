@@ -16,6 +16,9 @@ $v ch $.
 
 wph $f wff ph $.
 wps $f wff ps $.
+wps $f wff ch $.
+
+wi $a wff ( ph -> ps ) $.
 
 ${
 min $e |- ph $.
@@ -35,6 +38,6 @@ ${
 mp2.1 $e |- ph $.
 mp2.2 $e |- ps $.
 mp2.3 $e |- ( ph -> ( ps -> ch ) ) $.
-    mp2 $p |- ch $=      ( wi ax-mp ) BCEABCGDFHH $.  $} 
+    mp2 $p |- ch $=      ( a1i ax-mp ) BCEABCGDFHH $.  $} 
 
 '

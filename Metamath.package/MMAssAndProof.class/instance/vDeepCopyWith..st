@@ -12,6 +12,8 @@ vDeepCopyWith: copier
 	copier references at: self put: copyOfSelf.
 	"remember"
 	
+	"self halt."
+	
 	copyOfSelf bvDeepCopyWith: copier.
 	
 	

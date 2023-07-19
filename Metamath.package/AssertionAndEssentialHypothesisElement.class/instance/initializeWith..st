@@ -5,9 +5,9 @@ initializeWith: assertion
 	
 	model := assertion .
 	
-	self addEventHandler: MmP new .
+	"self addEventHandler: MmP new ."
 	
-	"self addMenu."
+	self addMenu.
 	
 	model eHypoths "reverse" do: [ :ea | 
 		

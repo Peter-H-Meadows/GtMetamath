@@ -19,12 +19,17 @@ initialize
 			c vertical matchParent ];"
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
-				c vertical fitContent
+				c vertical fitContent.
+				"c frame horizontal weight: 0.7 ."
+				c frame horizontal alignRight
 			];
 			layout: 
 				"BlLinearLayout vertical" 
 				"GtGraphTreemapLayout squarify."
-				(BlGridLayout  new columnCount: 3).
+				"(BlGridLayout  new columnCount: 3)."
+				BlLinearLayout vertical.
+				
+	workPane background: Color veryDarkGray.
 				
 	"workPane size: 1028@720."	
 
@@ -32,8 +37,8 @@ initialize
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent.
-				c frame horizontal alignRight.
-				c frame vertical alignBottom ];
+				"c frame horizontal alignLeft.
+				c frame vertical alignBottom" ];
 			layout: BlLinearLayout vertical.
 
 
@@ -45,7 +50,7 @@ initialize
 		constraintsDo: [ :c | 
 			c horizontal fitContent.
 			c vertical matchParent.
-			c frame horizontal alignRight	"linear" ].
+			c frame horizontal alignLeft	"linear" ].
 
 
 	hideButton := BrButton new
@@ -57,8 +62,8 @@ initialize
 
 	hideButton
 		constraintsDo: [ :c | 
-			c frame horizontal alignRight.
-			c frame vertical alignBottom ].
+			c frame horizontal alignLeft .
+			c frame vertical alignTop ].
 
 	hypothPane := BlElement new
 			constraintsDo: [ :c | 
@@ -73,7 +78,7 @@ initialize
 			"leftPane addChild: BlElement new ."
 
 
-	self addChild: workPane  asPannableElement "asScalableElement".
+	self addChild: workPane  "asPannableElement" "asScalableElement".
 
 	self addChild: hypothPane.
 	

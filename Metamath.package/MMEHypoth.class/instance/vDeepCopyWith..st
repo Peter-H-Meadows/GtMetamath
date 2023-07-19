@@ -9,6 +9,8 @@ vDeepCopyWith: copier
 	
 	copyOfSelf := self shallowCopy.
 	
+	Transcript show: 'new ehypoth ' ; cr .
+	
 	copier references at: self put: copyOfSelf.
 	"remember"
 	

@@ -1,0 +1,3 @@
+accessing
+vDeepCopyWith: copier
+^ self

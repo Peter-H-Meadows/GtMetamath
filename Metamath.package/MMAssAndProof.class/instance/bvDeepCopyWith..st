@@ -5,11 +5,15 @@ bvDeepCopyWith: copier
 	
 	announcer := Announcer new.
 	
-	body := body vDeepCopyWith: copier.
+	Transcript show: 'copying essential hypoyhs' ; cr .
 	essentialHypoths := essentialHypoths collect: [:ea | ea vDeepCopyWith: copier].
+	
+	Transcript show: 'copying body' ; cr .
+	body := body vDeepCopyWith: copier.
+	
 	
 	"dd := Dictionary new .
 	
-	varObs keysAndValuesDo: [:k :v | dd at: k put: (v vDeepCopyWith: copier) ] .
+	varDict2 keysAndValuesDo: [:k :v | dd at: k put: (v vDeepCopyWith: copier) ] .
 	
-	varObs := dd ."
+	varDict2 := dd ."

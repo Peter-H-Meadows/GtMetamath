@@ -7,7 +7,8 @@ openOn: aProofModel
 
 proofToDo := aProofModel vcopy .
 
-self halt.
+"self halt."
+proofToDo variables do: #setAsFixed .
 
 wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
 wantedResultElement addBoardHandler.
@@ -27,7 +28,7 @@ self  addChild:  wantedResultElement.
 			c frame horizontal alignRight.
 			c frame vertical alignTop ]."
 
-	proofToDo comments do: [ :ea |  cc := ea gameElement ].
+	"proofToDo comments do: [ :ea |  cc := ea gameElement ]."
 	
 	"cc := MmCommentElement new createFromString: proofToDo name ."
 	

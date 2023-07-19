@@ -12,7 +12,25 @@ initializeWith: aModel
 	"self aptitude: (BrGlamorousButtonWithLabelAptitudeMm content: content)."
 
 	name := model name.
+	
+	name = '-.' ifTrue: [
+		aText := 'X' asRopedText
+			fontSize: 20; bold ;
+			foreground: (Color red);
+			fontName: 'Phosphate'.
+		
+		textElement := BlTextElement new 
+			text: aText ;
+			constraintsDo: [ :c | 
+			               c linear vertical alignCenter ].
+			               
+			 textElement margin: (BlInsets all: 4).
+			
+			self addChild: textElement.
+			^self
 
+		].
+		
 	name := Dict at: name ifAbsent: [ name ].
 
 	aText := name asRopedText fontName: 'Cambria Math'.
@@ -63,7 +81,8 @@ initializeWith: aModel
 	aText foreground: Color lightGray.
 
 	textElement := (BlTextElement text: aText) constraintsDo: [ :c | 
-		               c linear vertical alignCenter ].
+		              " c linear vertical alignCenter" ].
+		              
 	textElement margin: (BlInsets all: 4).
 	
 	self addChild: textElement.

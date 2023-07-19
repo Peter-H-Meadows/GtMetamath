@@ -3,7 +3,7 @@ axMpFirst
 <gtExample>
 
 | axmp |
-axmp := (self metamathUniverse assertions first) vcopy .
+axmp := (self metamathUniverse assertions second) vcopy .
 
 self assert: axmp name equals: 'ax-mp' .
 "

@@ -1,16 +1,16 @@
 mouse handlers
 clickEvent: ev
-			"| el |
+			| el |
 	el := 
-			AssertionAndEssentialHypothesisElement new initializeWith: ev currentTarget model copy .
+			AssertionAndEssentialHypothesisElement new initializeWith: ev currentTarget model vcopy .
 	el addBoardHandler: workPane.
 	
 	el constraintsDo: [:c | c linear horizontal  alignLeft].
 			
 	
- 		workPane workPane addChild: el."
+ 	workPane workPane addChild: el.
  		
- 		ev currentTarget model canMapTo: workPane proofToDo .
+ 		"ev currentTarget model canMapTo: workPane proofToDo ."
  		
 		"el hypothElements do: [:ea | 
 			ea announcer when: MmWantedSelectedAnnouncement send: #wantedSelected: to: self.
