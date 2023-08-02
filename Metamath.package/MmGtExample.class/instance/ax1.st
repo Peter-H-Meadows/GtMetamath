@@ -5,7 +5,7 @@ ax1
 | ax1 db axmp a1i |
 
 db := self metamathUniverse .
-ax1 := db assertions second vcopy .
+ax1 := db assertions third vcopy .
 self assert: ax1 name equals: 'ax-1' .
 self assert: ax1 essentialHypoths size equals: 0 .
 
