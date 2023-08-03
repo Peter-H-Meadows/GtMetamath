@@ -17,7 +17,7 @@ self margin: (BlInsets all: 6).
 
 self addChildFirst: selectedMarkerElement .
 
-self background: ( Color blue ).
+self background: ( Color blue  darker ).
 
 "ee := BlElement new
 		constraintsDo: [ :c |
