@@ -23,7 +23,9 @@ self addEventHandler: MmBoardListener new .
 hideButton := BrButton new
 			aptitude: BrGlamorousButtonWithLabelAptitude new;
 			label: '>';
-			action: [ self halt. self removeFromParent ].
+			action: [ "self halt. self removeFromParent "
+			
+				self announcer announce: (MmUseableSelectedAnnouncement new element: self) ].
 
 	hideButton
 		constraintsDo: [ :c | 

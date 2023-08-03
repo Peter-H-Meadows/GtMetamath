@@ -18,6 +18,8 @@ self assert: a1i hypothVariableNames equals: { 'ph' } asSet ."
 
 a1i setAllVariablesToFixed .
 
+self assert: a1i isComplete equals: true .
+
 "self assert: a1i localVariables anyOne isFixed equals: true .
 
 self assert: (self metamathUniverse proofNamed: 'a1i') localVariables anyOne isFixed equals: false .

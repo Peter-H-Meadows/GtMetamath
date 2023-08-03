@@ -1,16 +1,21 @@
 accessing
 isComplete
+
+	"self halt."
 	essentialHypoths do: [ :ea | ea isComplete ifFalse: [ ^ false ] ].
 
+	
+	isComplete := true.
+	
 	self announcer announce: #complete.
 
-	isComplete := true.
 
 	usedFor
 		ifNotNil: [ usedFor setAsComplete.
-			usedFor owner isComplete ].	"
-
-self halt.
-
-"
-	wantedResult body = body ifTrue: [ self announcer announce: #allDone ]
+			usedFor owner isComplete ].
+			
+			""
+			
+	"wantedResult body = body ifTrue: [" self announcer announce: #allDone "]".
+	
+	^ true
