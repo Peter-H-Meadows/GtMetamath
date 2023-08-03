@@ -49,13 +49,17 @@ self  addChild:  wantedResultElement.
 		do: [ :ea | 
 				| ehypoth |
 				ea setAsComplete .
-				ehypoth := MmOnBoardEssentialHypothesisElement new initializeWith:  ea .
+				ehypoth := MmOnBoardEssentialHypothesisElement
 				
-				ehypoth addBoardHandler .
+					"MmEssentialHypothesisElement" new initializeWith:  ea .
 				
-				ehypoth announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
+				"ehypoth addBoardHandler .
+				
+				ehypoth announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self."
 			
-				hypothPane addChild: ehypoth .
+				"hypothPane addChild: ehypoth ."
+				
+				leftPane addChild: ehypoth .
 		].
 		
 		"self addUsableAssertionsToLeftpane."

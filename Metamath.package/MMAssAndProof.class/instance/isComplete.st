@@ -1,18 +1,16 @@
 accessing
 isComplete
+	essentialHypoths do: [ :ea | ea isComplete ifFalse: [ ^ false ] ].
 
-"essentialHypoths do: [:ea | ea isComplete ifFalse: [^ false ] ].
+	self announcer announce: #complete.
 
-self announcer announce: #complete .
+	isComplete := true.
 
-isComplete := true .
+	usedFor
+		ifNotNil: [ usedFor setAsComplete.
+			usedFor owner isComplete ].	"
 
-usedFor ifNotNil: [ usedFor setAsComplete . usedFor owner isComplete ]."
+self halt.
 
-"self halt."
-
-"wantedResult body = body ifTrue: [
-	self announcer announce: #allDone .
-] ."
-
-^ true 
+"
+	wantedResult body = body ifTrue: [ self announcer announce: #allDone ]

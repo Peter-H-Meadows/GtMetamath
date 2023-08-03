@@ -1,4 +1,3 @@
 accessing
 initialize
-
-isComplete := false
+	isComplete := false

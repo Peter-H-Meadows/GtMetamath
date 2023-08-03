@@ -17,6 +17,8 @@ self margin: (BlInsets all: 6).
 
 self addChildFirst: selectedMarkerElement .
 
+self background: ( Color blue ).
+
 "ee := BlElement new
 		constraintsDo: [ :c |
 			c horizontal exact: 8.
@@ -40,4 +42,4 @@ self addChild: model body gameElement .
 
 "self halt ."
 
-self addRightClickMenu .
+"self addRightClickMenu ."

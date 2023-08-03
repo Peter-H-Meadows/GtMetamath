@@ -1,3 +1,4 @@
 accessing
 addBoardHandler
-self addEventHandler: MmBoardListener new .
+	self addEventHandler: MmBoardListener new.
+	"self halt"
