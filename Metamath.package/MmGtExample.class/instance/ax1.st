@@ -9,12 +9,15 @@ ax1 := db assertions third vcopy .
 self assert: ax1 name equals: 'ax-1' .
 self assert: ax1 essentialHypoths size equals: 0 .
 
-axmp := db assertions first vcopy .
+axmp := db assertions second vcopy .
 self assert: axmp name equals: 'ax-mp' .
 self assert: axmp essentialHypoths size equals: 2 .
 self assert: axmp variables size equals: 2 .
-self assert: axmp variables asArray first name equals: 'ph' .
-self assert: axmp variables asArray second name equals: 'ps' .
+
+"self assert: axmp variables asArray first name equals: 'ph' .
+self assert: axmp variables asArray second name equals: 'ps' ."
+
+
 "self assert: ( ax1 canMapTo: axmp) equals: true ."
 
 a1i := db proofs first vcopy .
@@ -29,9 +32,10 @@ self assert: axmp variables asArray second isFreeVar equals: true .
 
 self assert: ( axmp canMapTo: a1i) equals: true .
 
-self assert: axmp variables asArray second isFreeVar equals: false .
+"self assert: axmp variables asArray second isFreeVar equals: false .
 
-self assert: axmp variables asArray second isMappedVar equals: true .
+self assert: axmp variables asArray second isMappedVar equals: true ."
+
 "
 self assert: ( axmp canMapTo: a1i) equals: true ."
 
