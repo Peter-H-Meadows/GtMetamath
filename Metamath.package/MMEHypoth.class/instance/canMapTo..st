@@ -1,7 +1,7 @@
 accessing
 canMapTo: thing
 
-"self halt."
+""
 
 canMap := body canMapTo: thing body .
 
@@ -14,12 +14,12 @@ canMap ifTrue: [
 	usedBy := thing .
 
 	"if my owner is complete.. "
-	
+	"self halt."
 	thing isComplete ifTrue: [ self announcer announce: #maps . ].
 	
-	isComplete := thing isComplete .
+	isComplete := "thing isComplete" true .
 	
-	owner isComplete .
+	owner checkIfComplete .
 	
 	"ifTrue: [  ]."
 

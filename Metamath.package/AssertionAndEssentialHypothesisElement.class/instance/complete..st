@@ -1,7 +1,10 @@
 accessing
 complete: x
 
-greenElement background: ( Color green ) .
+self halt.
+
+"greenElement" self background: ( Color green ) .
+
 "selectedMarkerElement background: ( Color green ) .
 
 selectedMarkerElement removeFromParent .

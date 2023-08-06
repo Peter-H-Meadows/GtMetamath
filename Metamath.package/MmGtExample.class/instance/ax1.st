@@ -13,9 +13,11 @@ axmp := db assertions second vcopy .
 self assert: axmp name equals: 'ax-mp' .
 self assert: axmp essentialHypoths size equals: 2 .
 self assert: axmp variables size equals: 2 .
+"
+self assert: axmp localVariables size equals: 1 ."
 
-"self assert: axmp variables asArray first name equals: 'ph' .
-self assert: axmp variables asArray second name equals: 'ps' ."
+self assert: axmp variables first name equals: 'ph' .
+self assert: axmp variables second name equals: 'ps' .
 
 
 "self assert: ( ax1 canMapTo: axmp) equals: true ."
