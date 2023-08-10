@@ -10,17 +10,16 @@ initializeWith: aModel
 					self padding: (BlInsets all: 8).
 
 					self border: (BlBorder paint: Color gray width: 1) ].
-					
-					model body first name = '['
+
+			model body first name = '['
 				ifTrue: [ self geometry: BlEllipseGeometry new.
 
 					self padding: (BlInsets all: 8).
 
 					self border: (BlBorder paint: Color black width: 1) ].
 
+	model body do: [ :ea | 
+		self addChild: (ea gameElement constraintsDo: [ :c | c linear vertical "alignBottom" alignCenter ]) 
+	] 
 
-			model body
-				do: [ :ea | 
-					self
-						addChild: (ea gameElement constraintsDo: [ :c | c linear vertical alignBottom "alignCenter" ]) ] ]
-		ifFalse: [ self addChild: model body gameElement ]
+] ifFalse: [ self addChild: model body gameElement ]

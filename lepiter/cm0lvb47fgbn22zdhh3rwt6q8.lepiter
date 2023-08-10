@@ -179,6 +179,40 @@
 					"uidString" : "OLLx1mK+DQCXcnzfAVUG1Q=="
 				},
 				"code" : "MmPP2ParserFirst2 database at: 'mp2'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-08-10T15:59:40.798+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-08-10T15:59:42.665+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SHgllfS+DQCtYfwsBipzUA=="
+				},
+				"code" : "MmPP2ParserFirst2 database"
 			}
 		]
 	},

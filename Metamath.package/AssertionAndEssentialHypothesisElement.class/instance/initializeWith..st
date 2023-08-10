@@ -30,6 +30,8 @@ initializeWith: assertion
 	
 	self addChild: divElement.
 	
+	"self halt."
+	
 	resultElement := assertion gameElement "constraintsDo: [ :c | c linear vertical alignCenter ]" .
 	
 	"aEventListener := MmOnBoardUsableEventListener new gameController: con .

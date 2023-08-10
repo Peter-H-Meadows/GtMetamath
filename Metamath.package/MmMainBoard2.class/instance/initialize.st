@@ -63,7 +63,7 @@ initialize
 	hideButton
 		constraintsDo: [ :c | 
 			c frame horizontal alignLeft .
-			c frame vertical alignTop ].
+			c frame vertical alignBottom ].
 
 	hypothPane := BlElement new
 			constraintsDo: [ :c | 

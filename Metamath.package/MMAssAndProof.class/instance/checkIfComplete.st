@@ -1,18 +1,23 @@
 accessing
 checkIfComplete
 
-	"self halt."
-	essentialHypoths do: [ :ea | ea isComplete ifFalse: [ ^ false ] ].
+	essentialHypoths do: [ :ea | 
+		ea isComplete ifFalse: [ ^ false ] 
+	].
 
 	
 	isComplete := true.
+	
+	
+	self halt.
+	
 	
 	self announcer announce: #complete.
 
 
 	usedFor
 		ifNotNil: [ usedFor setAsComplete.
-			usedFor owner isComplete ].
+			usedFor owner checkIfComplete ].
 			
 			
 	"wantedResult body = body ifTrue: [
