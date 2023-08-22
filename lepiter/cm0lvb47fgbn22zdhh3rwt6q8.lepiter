@@ -97,7 +97,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-08-03T09:47:42.655+01:00"
+						"dateAndTimeString" : "2023-08-22T12:19:18.851+01:00"
 					}
 				},
 				"uid" : {
@@ -107,7 +107,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "click ax-mp. click low right corner. click ax-mp"
+				"string" : "click ax-mp. click low right corner. click ax-mp."
 			},
 			{
 				"__type" : "textSnippet",
