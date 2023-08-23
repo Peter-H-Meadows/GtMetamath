@@ -1,7 +1,11 @@
 initialization
 setAllVariablesToFixed
 	isComplete := true.
-	varDict2
-		valuesDo: [  "self allVariables do: #setFixed"
+	
+	
+	self variables do: #setFixed .
+	
+	"varDict2
+		valuesDo: [  
 			:ea | ea setAsFixed	
-			"becomeForward: (MmFixedVar new name: ea name)" ]
+			becomeForward: (MmFixedVar new name: ea name) ]"

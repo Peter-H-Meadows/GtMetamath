@@ -1,11 +1,9 @@
 accessing
 canMapTo: thing
 
-""
+	canMap := body canMapTo: thing body .
 
-canMap := body canMapTo: thing body .
-
-"isComplete := canMap ."
+	"isComplete := canMap ."
 
 canMap ifTrue: [
 
@@ -13,20 +11,24 @@ canMap ifTrue: [
 	
 	usedBy := thing .
 
-	"if my owner is complete.. "
+	
 	"self halt."
-	thing isComplete ifTrue: [ self announcer announce: #maps . ].
 	
-	isComplete := "thing isComplete" true .
+	thing isComplete ifTrue: [ 
 	
-	owner checkIfComplete .
+		self announcer announce: #maps . 
 	
-	"ifTrue: [  ]."
-
+		isComplete := thing isComplete "true" .
+	
+		owner checkIfComplete .
+		"if my owner is complete.. "
+	
+	] .
+	
 	
 	"thing isEhypoth  ifTrue: [ isComplete := true ]."
 
-"assertion without ehypoths could also make complete"
+	"assertion without ehypoths could also make complete"
 
 ] ifFalse: [
 

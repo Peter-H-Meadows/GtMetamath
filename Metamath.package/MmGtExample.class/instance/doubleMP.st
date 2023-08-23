@@ -36,4 +36,4 @@ self assert:
  
  equals: false .
 
-^ axmpc1
+^ mp2

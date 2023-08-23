@@ -4,7 +4,7 @@ initializeWith: aModel
 	model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self."
 
 	(model body class canUnderstand: #do:)
-		ifTrue: [ model body first name = '('
+		ifTrue: [ "self halt." model body first name = '('
 				ifTrue: [ self geometry: BlEllipseGeometry new.
 
 					self padding: (BlInsets all: 8).

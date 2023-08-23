@@ -39,5 +39,13 @@ mp2.1 $e |- ph $.
 mp2.2 $e |- ps $.
 mp2.3 $e |- ( ph -> ( ps -> ch ) ) $.
     mp2 $p |- ch $=      ( a1i ax-mp ) BCEABCGDFHH $.  $} 
+    
+    
+   ${
+    mp1i.1 $e |- ph $.
+    mp1i.2 $e |- ( ph -> ps ) $.
+    mp1i $p |- ( ch -> ps ) $=
+      ( ax-mp a1i ) BCABDEFG $.
+  $}
 
 '

@@ -27,18 +27,19 @@ box constraintsDo: [ :c |
 		child constraintsDo: [ :c | c grid horizontal alignCenter ] ]."
 
 
+"
+box layout: (BlGridLayout horizontal cellSpacing: 8; columnCount: aAssertion body body body size )."
 
-box layout: (BlGridLayout horizontal cellSpacing: 8; columnCount: aAssertion body body body size ).
 
-"el := aAssertion body gameElement . 
+el := aAssertion body gameElement . 
 
 el constraintsDo: [ :c | c linear horizontal alignCenter ].
 
-box addChild: el ."
+box addChild: el .
 
-aAssertion body body sts  do: [ :ea | 
+"aAssertion body body sts  do: [ :ea | 
 	box addChild: ea gameElement .
-].
+]."
 
 "comment := MmCommentElement new createFromString: aAssertion lastComment body .
 box addChild: comment ."

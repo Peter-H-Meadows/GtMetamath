@@ -1,3 +1,3 @@
 accessing
 gameElement
-^ MmListElement new initializeWith: self .
+	^ MmListElement new initializeWith: self .
