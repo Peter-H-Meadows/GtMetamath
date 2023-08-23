@@ -9,7 +9,7 @@ checkIfComplete
 	isComplete := true.
 	
 	
-	self halt.
+	"self halt."
 	
 	
 	self announcer announce: #complete.
