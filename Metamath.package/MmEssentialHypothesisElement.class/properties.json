@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "AbstractHypothesisElement",
+	"super" : "MmAbstractHypothesisElement",
 	"category" : "Metamath-BlocElements",
 	"classinstvars" : [ ],
 	"pools" : [ ],

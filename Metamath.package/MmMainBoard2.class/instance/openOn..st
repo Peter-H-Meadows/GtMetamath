@@ -53,7 +53,7 @@ self  addChild:  wantedResultElement.
 				
 					"MmEssentialHypothesisElement" new initializeWith:  ea .
 				
-				ehypoth addBoardHandler .
+				"ehypoth addBoardHandler ."
 				
 				ehypoth announcer when: MmUseableSelectedAnnouncement send: #usableSelected: to: self.
 			

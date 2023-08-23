@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "AbstractHypothesisElement",
+	"name" : "MmAbstractHypothesisElement",
 	"type" : "normal"
 }

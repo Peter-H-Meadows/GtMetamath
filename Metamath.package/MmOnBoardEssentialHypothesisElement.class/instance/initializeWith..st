@@ -1,29 +1,34 @@
 accessing
 initializeWith: aHypothModel
-	| ee hideButton |
+	| greenBar hideButton |
+	
+	"we only use this element for fixed ehypoths that we can use."
+	
 	model := aHypothModel.
 
-	ee := BlElement new
+	greenBar := BlElement new
 			constraintsDo: [ :c | 
 				c horizontal exact: 8.
 				c vertical matchParent ];
-			background: Color black.
+			background: Color green.
 
-	self addChild: ee.	"selectedMarkerElement background: Color gray ."
+	self addChild: greenBar.
 	self addChild: model body gameElement.
 	self addChild: selectedMarkerElement.
+	
+	"selectedMarkerElement background: Color gray ."
 	
 	self addRightClickMenu.
 	
 	
-self background: ( Color red ).
+self background: ( Color darkGray ).
 
 self addEventHandler: MmBoardListener new .
 
-hideButton := BrButton new
+"hideButton := BrButton new
 			aptitude: BrGlamorousButtonWithLabelAptitude new;
 			label: '>';
-			action: [ "self halt. self removeFromParent "
+			action: [
 			
 				self announcer announce: (MmUseableSelectedAnnouncement new element: self) ].
 
@@ -34,4 +39,4 @@ hideButton := BrButton new
 			
 	hideButton background: Color veryVeryDarkGray.
 	
-	self addChild: hideButton.
+	self addChild: hideButton."

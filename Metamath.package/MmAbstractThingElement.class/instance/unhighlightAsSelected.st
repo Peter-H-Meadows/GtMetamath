@@ -1,5 +1,5 @@
 api - highlighting
-unhighlightAsSelected  
+unhighlightAsSelected
  
 selectedMarkerElement background: BlTransparentBackground new .
 selected := false 

@@ -1,7 +1,7 @@
 accessing
 clicked
-	selected := selected not. "self halt."
+	selected := selected not.
+	
 	selected
-		ifTrue: [ self highlightAsSelected	
-			"self announcer announce: #usableSelected: ." ]
+		ifTrue: [ self highlightAsSelected ]
 		ifFalse: [ self unhighlightAsSelected ]
