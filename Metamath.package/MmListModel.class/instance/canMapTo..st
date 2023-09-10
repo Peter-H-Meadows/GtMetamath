@@ -19,6 +19,7 @@ stuff "isParens" isList ifFalse: [
 ] .
 
 body with: stuff body do: [:b1 :b2 |
+	self halt.
 	b1  canMapTo: b2
  ] .
  
