@@ -1,4 +1,6 @@
 accessing
 printOn: aStream
-	"aStream nextPutAll: name ."
-	aStream nextPutAll: ' Class ' .
+	""
+	aStream nextPutAll: ' Set ' .
+	aStream nextPutAll: name .
+	aStream nextPutAll: ' ' .

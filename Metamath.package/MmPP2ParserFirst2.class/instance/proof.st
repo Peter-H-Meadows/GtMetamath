@@ -26,8 +26,8 @@ proof
 		
 		mm := Dictionary new .
 		
-		VarNameToObDict keysDo: [:ekey | mm at:  ekey put: (MmFreeVariable new name: ekey ).] .
-	VarNameToObDict := mm.
+		"VarNameToObDict keysDo: [:ekey | mm at:  ekey put: (MmFreeVariable new name: ekey ).] .
+	VarNameToObDict := mm."
 	
 		thing := MMProof new name: x first ;
 			bodyString: x third ;
@@ -49,10 +49,12 @@ proof
 		Comments := OrderedCollection new .
 		
 		"(x first = 'alnex') ifTrue: [ self halt ]."
-		(x first = 'trujust') ifTrue: [ self halt ].
+		"(x first = 'trujust') ifTrue: [ self halt ]."
 	
 		AllProofs at: x first put: thing .
 		Database addProof: thing.
+		
+		(x first = '2alimi') ifTrue: [ self halt ].
 		
 		thing
 		

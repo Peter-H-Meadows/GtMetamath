@@ -25,25 +25,33 @@ floatingHypothesis
 	  	
 	  	VarDict at: vname put: WffPP .
 	  	
+	  	
+	  	
 	  	"(Bp parse: '|- ph') class = PP2Failure ifTrue: [
 			self halt . ] ."
 	  	
 	  ] ifFalse: [
-	   	"self halt ."
+	   	""
 	   	
 	   	VarNameToObDict at: vname put: (MmSetvarVariableModel new name: vname) .
 	   	
 	   	pf := vname asPParser trim ==> 
-	   		[ :xi | "VarNameToObDict at: xi ."
-	   		MmSetvarVariableModel new name: 'x' ].
+	   		[ :xi | VarNameToObDict at: xi .
+	   		"MmSetvarVariableModel new name: vname" ].
 		
 	  	"Bp wffdel child: Bp wffdel child / pf ."
 	  	
 	  	
-	  	ClassPP child ifNil: [ ClassPP child: pf ] ifNotNil: [
+	  	ClassPP child ifNil: [ ClassPP child: pf ] ifNotNil: [ 
 	  	ClassPP child: ClassPP child / pf .] .
 	  	
 	  	VarDict at: vname put: ClassPP .
+	  	
+	  	
+	  	"VarDict
+				at: vname
+				put: ( vname asPParser trim ==> [ :zz | MmSetvarVariableModel new name: vname ] )."
+	  
 	  
 	  ] .
 	  

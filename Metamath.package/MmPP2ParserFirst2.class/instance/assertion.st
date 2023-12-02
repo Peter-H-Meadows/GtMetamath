@@ -20,14 +20,22 @@ assertion
 	
 	ss first = 'wff' ifTrue: [
 	
+		Transcript show: x third ; cr .
+	
 	pf := nil.
 	
 	
 		(x first = 'wceq') ifTrue: [ self halt ].
+		
+		
 	
 	 ss allButFirst do: [ :ea | 
-	
+	 
+		""
+		
 		pp := VarDict at: ea  .
+		
+		"ea = 'x' ifTrue: [ self halt ]."
 			
 		pf ifNil: [ pf := pp ] ifNotNil: [  pf := pf , pp ].
 		
@@ -40,7 +48,6 @@ assertion
 	"(WffPP parse: x third) class = PP2Failure ifTrue: [
 			self halt . ] ."
 	
-		
 	] ifFalse: ["self halt"].
 		
 	"thing constsUsed do: [:ea | ea hasAssertion ifFalse: [ea firstUsed: thing ] ]."
