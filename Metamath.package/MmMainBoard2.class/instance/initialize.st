@@ -1,6 +1,7 @@
 initialization
 initialize
 	| sc hideButton |
+	
 	super initialize.
 
 	self
