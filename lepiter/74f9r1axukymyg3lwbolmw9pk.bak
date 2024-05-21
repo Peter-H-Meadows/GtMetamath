@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-03-03T10:49:37.792+00:00"
+						"dateAndTimeString" : "2023-03-03T10:49:41.948+00:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "(https://matklad.github.io/2023/02/21/why-SAT-is-hard.html)"
+				"string" : "[](https://matklad.github.io/2023/02/21/why-SAT-is-hard.html)"
 			},
 			{
 				"__type" : "textSnippet",
