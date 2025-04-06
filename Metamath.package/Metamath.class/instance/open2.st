@@ -19,3 +19,5 @@ open2
 	
 	self addRightClickMenu .
 	
+	"ok"
+	

@@ -239,14 +239,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-11-30T20:36:36.867+00:00"
+						"dateAndTimeString" : "2023-11-30T20:36:44.366+00:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "4FrlXLfHDQCOOV6ACWKamw=="
 				},
-				"code" : "'$c -> $.\r$c ( $.\r$c ) $.\rwph $f w x $.\r\rwi $a wff x $.\rdi $p |- ( x -> x ) $= (  ) B $.' \r\treadStreamDo: [ :stream | \r\t\tst := PP2BufferStream on: stream bufferSize:  1024.\r\t\tMmPP2ParserFirst2 new parse: st ]"
+				"code" : "'$c -> $.\r$c ( $.\r$c ) $.\rwph $f w x $.\r\rwi $a wff x $.\rdi $p |- x $= (  ) B $.' \r\treadStreamDo: [ :stream | \r\t\tst := PP2BufferStream on: stream bufferSize:  1024.\r\t\tMmPP2ParserFirst2 new parse: st ]"
 			}
 		]
 	},

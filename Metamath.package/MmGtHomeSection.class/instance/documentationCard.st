@@ -3,18 +3,15 @@ documentationCard
 	^ self
 		newHeaderCardWithTitle: 'Metamath'
 		description: 'Read the Metamath book'
-		size: 300@150
-		content:
-			(BrLabel new
+		size: 300 @ 150
+		content: (BrLabel new
 				text: 'Metamath Book';
-				aptitude: BrGlamorousLabelAptitude new
-					bold;
+				aptitude: BrGlamorousLabelAptitude new bold;
 				padding: (BlInsets all: 20)) asScalableElement
 		action: [ :card | 
 			| startPage |
 			startPage := MmBook pageNamed: 'Metamath'.
-			GtWorldUtility 
-				showSpaceWithTitle: startPage title
-				inPagerWith: [ startPage
-					asLepiterPagePhlowTool asElementDo: [ :e | e ] ] asStencil
-				from: card ].
+			BlSpace new
+				title: startPage title;
+				inPager: [ startPage asLepiterPagePhlowTool asElementDo: [ :e | e ] ] asStencil;
+				showFrom: card ]
