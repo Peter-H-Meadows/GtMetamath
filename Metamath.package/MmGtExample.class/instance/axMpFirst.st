@@ -6,8 +6,7 @@ axMpFirst
 axmp := (self metamathUniverse assertions second) vcopy .
 
 self assert: axmp name equals: 'ax-mp' .
-"
-self assert: axmp mands size equals: 4 ."
+"self assert: axmp mands size equals: 4 ."
 self assert: axmp essentialHypoths size equals: 2 .
 
 self assert: axmp essentialHypoths first name equals: 'min' .

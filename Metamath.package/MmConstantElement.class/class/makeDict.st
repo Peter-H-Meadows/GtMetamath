@@ -4,12 +4,12 @@ makeDict
 Dict := Dictionary new .
 
 
-Dict at: '(' put: '.'.
-Dict at: ')' put: '.'.
+Dict at: '(' put: ' '.
+Dict at: ')' put: ' '.
 
 Dict at: 'E.' put: 16r2203 asCharacter.
 Dict at: 'A.' put: 16r2200 asCharacter.
-Dict at: '->' put: 16r2192 asCharacter.
+Dict at: '->' put: "16r2192 asCharacter" '>'.
 Dict at: 'e.' put: 16r2208 asCharacter.
 
 Dict at: '<->' put: 16r2194 asCharacter.

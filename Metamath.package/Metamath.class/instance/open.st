@@ -3,6 +3,7 @@ open
 <gtExample>
 
 	level := 11 .
+	level := 110 .
 
 	aSpace := BlSpace new
 			extent: 1400 @ 800;
@@ -14,7 +15,7 @@ open
 
 "aSpace addChild: (MmMainBoard new openSolveOn2: (Database allProofs asArray at: level))."
 
-aSpace addChild: Database proofs third "vcopy" reparse openOnMainBoard .
+aSpace addChild: Database proofs third vcopy "reparse" openOnMainBoard .
 	
 	"openOn: levels next" 
 	

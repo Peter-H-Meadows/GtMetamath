@@ -14,7 +14,15 @@ addRightClickMenu
 
 	e addChild: (MmMainBoard2 new openOn: (Database allProofs asArray at: level)).
 
-	"e addChild: ( MmMainBoard new openOn:  levels next ) . "
+
+].
+
+'prev level' -> [ :e | 
+
+	level := level - 1 . 
+	e removeChildren . 
+
+	e addChild: (MmMainBoard2 new openOn: (Database allProofs asArray at: level)).
 
 
 ].

@@ -11,7 +11,7 @@ open2
 
 	aSpace show.
 	
-	level := 130 .
+	level := 11 .
 	
 	morph := MmMainBoard2 new openOn: (Database allProofs asArray at: level).
 	aSpace addChild: morph.

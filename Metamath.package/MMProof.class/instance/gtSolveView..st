@@ -1,6 +1,6 @@
 accessing
 gtSolveView: aView
-	"<gtView>"
+	<gtView>
 	^ aView mondrian
 		title: 'Solver';
 		painting: [ :aMondrian | self paintSolveWith6: aMondrian ]

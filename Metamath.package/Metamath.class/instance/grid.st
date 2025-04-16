@@ -9,7 +9,7 @@ numbProofs := theProofs size .
 
 	view nodes
 		stencil: [ :each | AssertionAndEssentialHypothesisElement new
-											initializeWith: each copy ];
+											initializeWith: each vcopy ];
 		with:
 		( theProofs "reverse" copyFrom: 1 "numbProofs - 18" to: numbProofs ).
 

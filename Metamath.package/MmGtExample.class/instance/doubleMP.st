@@ -13,7 +13,7 @@ self assert: axmpc1 name equals: 'ax-mp' .
 
 axmpc3 := axmpc1 vcopy ."
 
-mp2 := db proofs last vcopy  "setAllVariablesToFixed" .
+mp2 := (db proofs at: 2) vcopy  "setAllVariablesToFixed" .
 
 mp2 variables do: #setAsFixed .
 

@@ -24,11 +24,11 @@ Transcript next
 	view root when: BlMouseWheelEvent do: [ :anEvent | 
 		
 		
-		gel when: BlMouseEnterEvent do: [ :anEventm | ].
+		"gel when: BlMouseEnterEvent do: [ :anEventm | ].
 		
 		gel graph connectTo: highest atRandom .
 			
-		view topStep addChildren: { gel . "edgeElement" } .
+		view topStep addChildren: { gel . } ."
 		
 		view layout circle .
 		
@@ -65,20 +65,39 @@ items: {
 
 	view root viewModel: menuModel.
 
-	view root aptitude: BrWithContextMenuAptitude new.
+	"view root aptitude: BrWithContextMenuAptitude new."
+	
+	view root aptitude: BrWithExplicitContextMenuAptitude new.
 	
 	"rectanglePack" "circle" "horizontalDominanceTree" "vertical"
 	"radialTree"
-	
-			
 		
 	highest := view topStep root graph nodeChildren .
+	
+	"self halt."
 	
 	
 	"for each ehypoth, when clicked; try to make, if yes, add ass and it's ehypoths to graph"
 	
-	prev := proofToDo prevAssertions collect: #copy .
-	proofToDo returnMappableFrom: prev .
+	prev := proofToDo prevAssertions collect: #vcopy .
+	
+	"(proofToDo  returnMappableFrom: prev) do: [:eaa | "
+	
+		"eaa" proofToDo essentialHypoths do: [:ea | 
+			
+			uel :=  ea copy gameElement.
+			
+			uel graph connectTo: highest first .
+			
+			view topStep addChildren: { uel } .
+			].
+			
+		"]."
+		
+		view layout circle .
+	
+	
+	
 	"(proofToDo g: prev) do: [:ea | "
 	
 		"ea inspect."

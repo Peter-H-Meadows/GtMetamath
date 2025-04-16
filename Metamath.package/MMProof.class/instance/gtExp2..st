@@ -1,9 +1,9 @@
 accessing
 gtExp2: aView
-	"<gtView>"
+	<gtView>
 	^ aView mondrian
 	title: 'Map';
-	priority: 1110;
+	priority: 2110;
 	painting: [ :mondrian | 
 		mondrian nodes 
 			shape: [ :each |
@@ -17,7 +17,7 @@ gtExp2: aView
 			];
 		  with: ( self withDeepCollect: #body).
 		
-		mondrian edges connectToAll: #body .
+		"mondrian edges connectToAll: #body ."
 		
 		"mondrian edges 
 			shape: [ 
