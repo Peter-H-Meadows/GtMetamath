@@ -34,8 +34,11 @@ Color  magenta .
 
 } atRandom."
 
-ColorCycle atEnd ifTrue: [ ColorCycle reset ].
-color := ColorCycle next .
+"ColorCycle atEnd ifTrue: [ ColorCycle reset ].
+color := ColorCycle next ."
+
+color := Color red .
+
 color := { [ color muchDarker ]. [ color veryMuchLighter ]. [color]. } atRandom value.
 
 count := 0.

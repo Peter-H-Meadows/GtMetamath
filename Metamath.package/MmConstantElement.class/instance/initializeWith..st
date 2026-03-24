@@ -31,7 +31,7 @@ initializeWith: aModel
 
 		].
 		
-	name := Dict at: name ifAbsent: [ name ].
+	"name := Dict at: name ifAbsent: [ name ]."
 
 	aText := name asRopedText fontName: 'Cambria Math'.
 	"bold ;"
