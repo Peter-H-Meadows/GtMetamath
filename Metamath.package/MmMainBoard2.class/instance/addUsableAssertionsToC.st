@@ -17,7 +17,7 @@ addUsableAssertionsToC
 			"usableAssertion wantedResult: wantedResultElement model."
 
 			el := AssertionAndEssentialHypothesisElement new
-					initializeWith: ua vcopy.
+					initializeWith: ua parse.
 					"self addEventHandler: MmP new ."
 			el addHandler: self.
 

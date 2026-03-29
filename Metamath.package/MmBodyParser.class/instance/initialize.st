@@ -1,7 +1,7 @@
 initialization
 initialize 
 
-	self error: 'dont use'.
+	"self error: 'dont use'."
 
 	super initialize .
 	AllAssertions := Dictionary new.

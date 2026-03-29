@@ -5,7 +5,7 @@ openOn: aProofModel
 	
 "proofToDo setAllVariablesToFixed."
 
-proofToDo := aProofModel vcopy .
+proofToDo := aProofModel "vcopy" .
 
 "self halt."
 proofToDo variables do: #setAsFixed .

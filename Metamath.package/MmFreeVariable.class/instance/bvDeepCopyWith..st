@@ -3,11 +3,11 @@ bvDeepCopyWith: copier
 
 	announcer := Announcer new.
 	
-	letter := 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' atRandom .
+	self newLook .
 	
-	Transcript show: 'new var '; show: self ; cr .
-	
-	color := Color random.
+"geo := 
+		(BlTriangleGeometry new perform: 
+		#(beTop beBottom beLeft beRight) atRandom)."
 
 	"mappedTo ifNotNil: [
 		mappedTo := mappedTo vDeepCopyWith: copier.

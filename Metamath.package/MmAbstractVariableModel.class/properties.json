@@ -24,7 +24,12 @@
 		"real",
 		"geo",
 		"showName",
-		"letter"
+		"letter",
+		"rotation",
+		"rotationt",
+		"letter2",
+		"xxSize",
+		"yySize"
 	],
 	"name" : "MmAbstractVariableModel",
 	"type" : "normal"

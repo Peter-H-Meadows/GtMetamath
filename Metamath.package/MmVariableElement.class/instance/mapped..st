@@ -10,6 +10,9 @@ lineElement := BlElement new
 			c horizontal matchParent.
 			c vertical exact: 2 ];
 		background: Color lightGray .
+		
+		
+					lineElement margin:  (BlInsets top: 4 bottom: 4).
 
 self addChild: lineElement .
 

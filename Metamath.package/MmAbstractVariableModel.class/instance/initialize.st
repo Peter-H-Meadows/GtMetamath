@@ -6,18 +6,25 @@ fixed := false .
 mapped := false .
 showName := false .
 
-"7 atRandom = 1 ifTrue: [ showName := true ]."
-
-geo := 
-		(BlTriangleGeometry new perform: 
-		#(beTop beBottom beLeft beRight) atRandom).
-		
-		"7 atRandom = 1 ifTrue: [ geo := BlCircleGeometry new ] ."
-
 "isSuccess := false .
 highlightStepDone := false ."
 
-letter := 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' atRandom .
+letter := ('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnpqrstu?' atRandom) asString ,
+('oeiua' atRandom ) asString.
+
+{'Mo'. 'me'. 'Mi'. 'ma'. }. 
+
+
+xxSize := 40 + 20 atRandom .
+
+yySize := 40 + 20 atRandom .
+
+
+letter2 := 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnpqrstu?' atRandom .
+
+
+self newLook .
+
 
 "color := { 
 Color random .

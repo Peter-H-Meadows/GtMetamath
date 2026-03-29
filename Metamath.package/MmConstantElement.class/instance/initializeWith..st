@@ -14,24 +14,24 @@ initializeWith: aModel
 	name := model name.
 	
 	name = '-.' ifTrue: [
-		aText := 'X' asRopedText
-			fontSize: 20; bold ;
-			foreground: (Color red);
-			fontName: 'Phosphate'.
+	
+		aText := 'X' asRopedText fontSize: 20; bold ; 
+		foreground: (Color red); fontName: 'Phosphate'.
 		
 		textElement := BlTextElement new 
-			text: aText ;
-			constraintsDo: [ :c | 
-			               c linear vertical alignCenter ].
+		text: aText ;
+		constraintsDo: [ :c | c linear vertical alignCenter ].
 			               
-			 textElement margin: (BlInsets all: 4).
+		textElement margin: (BlInsets all: 4).
 			
-			self addChild: textElement.
-			^self
-
-		].
+		self addChild: textElement.
+		^self
+	].
 		
 	"name := Dict at: name ifAbsent: [ name ]."
+	
+	
+	name = '->' ifTrue: [ name := '-' ].
 
 	aText := name asRopedText fontName: 'Cambria Math'.
 	"bold ;"
@@ -80,10 +80,62 @@ initializeWith: aModel
 
 	aText foreground: Color lightGray.
 
-	textElement := (BlTextElement text: aText) constraintsDo: [ :c | 
-		              " c linear vertical alignCenter" ].
+	textElement := BlTextElement text: aText. "constraintsDo: [ :c | 
+		              c linear vertical alignCenter ]."
 		              
 	textElement margin: (BlInsets all: 4).
+	
+	
+	name = '-' ifTrue: [ 
+	aText fontSize: 44. ].
+	
+	((name = '(') | (name = ')')) ifTrue: [
+		
+"		aText fontSize: 0.
+		
+		textElement margin: (BlInsets all: 0)."
+		
+		
+		aText foreground: Color transparent.
+	].
+	
+	
+	name = '<->' ifTrue: [ 
+	
+		| theVertices theCorners theAnchors ccc aPolygon |
+		theVertices := {0 @ 5.
+			10 @ 0.
+			20 @ 5.
+			10 @ 10}.
+
+	theCorners := theVertices
+			collect: [ :eachPoint | BlElement new relocate: eachPoint ].
+	theAnchors := theCorners
+			collect: [ :eachCorner | BlElementTopLeftAnchor element: eachCorner ].
+
+	aPolygon := BlPolygonElement new
+			anchors: theAnchors;
+			background: (Color lightGray);
+			border: (BlBorder paint: Color gray width: 0).
+
+			
+			ccc := BlElement new
+		background: Color transparent.
+		ccc constraintsDo: [ :c |
+			c horizontal exact: 20.
+			c vertical exact: 10 ].
+			
+			ccc margin: (BlInsets all: 4).
+			
+	ccc
+		addChild: aPolygon;
+		addChildren: theCorners.
+	
+	self addChild: ccc.
+	
+	^ self
+	
+	].
 	
 	self addChild: textElement.
 
