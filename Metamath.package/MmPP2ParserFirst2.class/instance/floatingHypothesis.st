@@ -10,7 +10,7 @@ floatingHypothesis
 	  
 	  vname := floatParts fourth .
 	  
-	  (floatParts third = 'wff') ifTrue: [
+	  ((floatParts third = 'wff') | (floatParts third = 'class')) ifTrue: [
 	  
 	  	VarNameToObDict at: vname put: (MmFreeVariable new name: vname) .
 	  	

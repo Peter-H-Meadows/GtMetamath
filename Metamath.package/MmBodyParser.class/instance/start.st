@@ -1,4 +1,4 @@
 accessing
 start
 
-^ ( proveable / wff ) end
+^ ( proveable "/ wff" ) end

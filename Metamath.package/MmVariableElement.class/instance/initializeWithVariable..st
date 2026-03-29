@@ -8,7 +8,8 @@ model announcer when: MmHighlightAnnouncement send: #highlight: to: self.
 model announcer when: MmVariableMappedAnnouncement send: #mapped: to: self.
 model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 
-"self  margin: (BlInsets all: 4)."
+"self  margin: (BlInsets all: 4).
+self  padding: (BlInsets all: 4)."
 
 "aVariable identityHash printString"
 
@@ -18,6 +19,8 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 		background: model color
 		"border: (BlBorder paint: (Color blue alpha: 0.5) width: 6)" .
 		"size: 30@30;"
+		
+	blob  margin: (BlInsets all: 4).	
 		
 	model isFixed ifTrue: [ ] ifFalse: [ 
 	
@@ -30,10 +33,15 @@ model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
 					c linear horizontal  alignCenter .
 					c linear vertical alignCenter ]."
 					
-blob constraintsDo: [ :c | 
+"blob constraintsDo: [ :c | 
 					c horizontal fitContent  .
 					c vertical fitContent  .
-					c linear horizontal  alignCenter .].
+					
+					c linear horizontal  alignCenter]."
+					
+					
+		model rotation ifNil: [model rotation: 180 atRandom].
+
 				
 
 "abDict := Dictionary newFromPairs: {'ph' . 'R' . 'ps' . 'G' . 'ch' . 'B' . 'th' . 'C'. 'ta' . 'E' . 'et' . 'F' . 'G' . 'ze'} ."
@@ -44,8 +52,12 @@ aText := model "name" letter asRopedText .
 
 "aText := (model name , model identityHash printString) asRopedText ."
 
-aText fontSize: 16.
 "aText foreground: Color blue ."
+
+aText 
+		fontSize: 18; bold ;
+		foreground: (Color black);
+		fontName: "'Bauhaus 93'" "'Curlz MT'" 'Phosphate'.
 
 textElement := BlTextElement text: aText.
 	
@@ -53,7 +65,7 @@ textElement constraintsDo: [ :c |
 	c frame vertical alignCenter . 
 	c frame horizontal  alignCenter ].
 	
-textElement  margin: (BlInsets all: 10).
+"textElement  margin: (BlInsets all: 20)."
 
 "blob layout: BlLinearLayout horizontal."
 
@@ -61,7 +73,13 @@ blob layout: BlFrameLayout new.
 
 blob addChild: textElement .
 
-"blob size:  20@20."
+blob size:  (model xxSize @ model yySize) .
+
+		
+		blob
+		 transform
+		rotateBy: model rotation ;
+		apply.
 
 "self addChild: textElement ."
 
