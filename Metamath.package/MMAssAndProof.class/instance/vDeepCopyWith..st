@@ -1,7 +1,7 @@
 accessing
 vDeepCopyWith: copier
 
-| copyOfSelf dd |
+| copyOfSelf |
 	copier references at: self ifPresent: [ :newer | 
 		"already copied" 
 		^ newer
@@ -15,8 +15,6 @@ vDeepCopyWith: copier
 	"self halt."
 	
 	copyOfSelf bvDeepCopyWith: copier.
-	
-	
 	
 	^ copyOfSelf
 	

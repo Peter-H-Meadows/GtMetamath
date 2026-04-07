@@ -2,7 +2,7 @@ accessing
 bvDeepCopyWith: copier
 
 	announcer := Announcer new.
-	
+	"self halt ."
 	self newLook .
 	
 "geo := 

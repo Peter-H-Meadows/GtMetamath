@@ -1,7 +1,7 @@
 accessing
 veryDeepInner: copier
 
-"self halt ."
+self halt .
 
 CopyDic at: name ifPresent: [:x |  
 		"self becomeForward: x ."

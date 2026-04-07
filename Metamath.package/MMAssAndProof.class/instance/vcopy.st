@@ -2,7 +2,9 @@ accessing
 vcopy
 	| copier new |
 	"self halt."
-	body ifNil: [ self parse].
+	"body ifNil: [ self parse]."
+	
+	self parse .
 	
 	Transcript cr; cr; show: 'Copying: ' ; show: self ; cr ; show: essentialHypoths ; cr .
 	

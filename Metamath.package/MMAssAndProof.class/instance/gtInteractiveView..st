@@ -2,8 +2,8 @@ accessing
 gtInteractiveView: aView
 	"<gtView>"
 
-	self reparse.
+	"self reparse."
 
 	^ aView explicit 
 		title: 'interactive';
-		stencil: [ MmMainBoard new  openOn: self "self gameElement2" ]
+		stencil: [ MmMainBoard new  openOn: self vcopy "self gameElement2" ]

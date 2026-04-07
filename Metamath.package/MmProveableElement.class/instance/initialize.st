@@ -3,4 +3,4 @@ initialize
 
 super initialize .
 
-self geometry: BlRectangle new
+"self geometry: BlRectangle new"
