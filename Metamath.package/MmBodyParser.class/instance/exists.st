@@ -1,7 +1,7 @@
 accessing
 exists
 
-^ 'E.' asPParser trim  , p5 , p5 ==> 
+^ 'E.' asPParser trim  , label2 , p5 ==> 
 
 	[ :x | 
 	

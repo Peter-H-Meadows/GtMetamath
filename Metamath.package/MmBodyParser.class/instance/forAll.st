@@ -1,7 +1,7 @@
 accessing
 forAll
 
-^ 'A.' asPParser trim  , p5 , p5 ==> 
+^ 'A.' asPParser trim  , label2 , implies ==> 
 
 	[ :x | 
 	

@@ -1,8 +1,6 @@
 initialization
 openOn: aProofModel
 	
-| cc |
-	
 "proofToDo setAllVariablesToFixed."
 
 proofToDo := aProofModel "vcopy" .
@@ -49,9 +47,8 @@ self  addChild:  wantedResultElement.
 		do: [ :ea | 
 				| ehypoth |
 				ea setAsComplete .
-				ehypoth := MmOnBoardEssentialHypothesisElement
-				
-					"MmEssentialHypothesisElement" new initializeWith:  ea .
+				ehypoth := MmOnBoardEssentialHypothesisElement new initializeWith:  ea .
+					"MmEssentialHypothesisElement" 
 				
 				"ehypoth addBoardHandler ."
 				
@@ -66,5 +63,4 @@ self  addChild:  wantedResultElement.
 		
 		self addUsableAssertionsToC.
 		
-		"self solve" .
-	
+		"self solve"

@@ -18,7 +18,9 @@ addUsableAssertionsToC
 
 			el := AssertionAndEssentialHypothesisElement new
 					initializeWith: ua vcopy.
-					"self addEventHandler: MmP new ."
+					
+			"self addEventHandler: MmP new ."
+					
 			el addHandler: self.
 
 			"el constraintsDo: [ :cc | cc linear horizontal alignRight ]."

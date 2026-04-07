@@ -13,4 +13,4 @@ initialize
 	VarDict := Dictionary new .
 	
 	VarsUsed := Set new .
-	
+	Cow := 0 .

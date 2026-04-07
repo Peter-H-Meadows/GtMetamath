@@ -1,7 +1,7 @@
 accessing
 implies
 
-^ p4 "( parentheses / label2 trim )" , '->' asPParser trim  , p4 "( parentheses / label2 trim )" ==> 
+^ (label2 / p4) "( parentheses / label2 trim )" , '->' asPParser trim  , (label2 / p4) "( parentheses / label2 trim )" ==> 
 
 	[ :x | 
 	"self halt."

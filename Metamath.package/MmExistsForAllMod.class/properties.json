@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "MmA",
+	"category" : "Metamath-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"third"
+	],
+	"name" : "MmExistsForAllMod",
+	"type" : "normal"
+}
