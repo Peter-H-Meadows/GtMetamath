@@ -4,7 +4,7 @@ vcopy
 	"self halt."
 	"body ifNil: [ self parse]."
 	
-	self parse .
+	"self parse ."
 	
 	Transcript cr; cr; show: 'Copying: ' ; show: self ; cr ; show: essentialHypoths ; cr .
 	
@@ -12,7 +12,7 @@ vcopy
 	new := self vDeepCopyWith: copier.
 	
 	
-	Transcript cr; show: 'new: ' ; show: new ; cr ; show: new essentialHypoths ; cr .
+	"Transcript cr; show: 'new: ' ; show: new ; cr ; show: new essentialHypoths ; cr ."
 	
 	
 	"copier references associationsDo: [:assoc | 

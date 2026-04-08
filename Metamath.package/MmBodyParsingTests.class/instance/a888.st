@@ -2,7 +2,7 @@ accessing
 a888
 <gtExample>
 | parser body |
-parser := MmBodyParser new.
+parser := MmmmParseBody new.
 
 body := parser  parse: '|- ( -. ( ph -> ps ) -> -. ph )'.
 self assert: body class equals: MmProveableModel.

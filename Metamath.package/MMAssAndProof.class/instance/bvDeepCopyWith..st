@@ -8,8 +8,12 @@ bvDeepCopyWith: copier
 	
 	body := body vDeepCopyWith: copier.
 	
-	Transcript show: 'copying essential hypoyhs' ; cr .
-	essentialHypoths := essentialHypoths collect: [:ea | ea vDeepCopyWith: copier].
+	
+	
+	"Transcript show: 'copying essential hypoyhs' ; cr .
+	essentialHypoths := essentialHypoths collect: [:ea | ea vDeepCopyWith: copier]."
+	
+	
 	
 	"dd := Dictionary new .
 	

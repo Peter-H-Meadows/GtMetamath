@@ -1,0 +1,10 @@
+as yet unclassified
+forAll
+^ 'A.' asPParser trim ,
+	label , terms ==> 
+
+	[ :x | 
+	
+		MmForAllModel new first: x second second: x third
+	
+	] 

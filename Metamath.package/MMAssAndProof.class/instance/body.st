@@ -1,4 +1,4 @@
 accessing
 body
-body ifNil: [self parse].
+"body ifNil: [self parse]."
 ^ body

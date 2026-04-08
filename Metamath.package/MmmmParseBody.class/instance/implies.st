@@ -1,4 +1,4 @@
-accessing
+as yet unclassified
 implies
 
 ^ primary , '->' asPParser trim  , terms "( parentheses / label2 trim )" ==> 

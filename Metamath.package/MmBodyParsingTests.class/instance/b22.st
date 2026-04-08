@@ -2,8 +2,8 @@ accessing
 b22
 <gtExample>
 | parser body |
-parser := MmBodyParser new.
+parser := MmmmParseBody new.
 
-body := parser  parse: '|- ( A. x ph -> ph )'.
+body := parser  parse: '|- ( A. ph ph -> ph )'.
 self assert: body class equals: MmProveableModel.
 ^ body

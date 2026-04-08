@@ -1,9 +1,9 @@
 accessing
-a7
+b223
 <gtExample>
 | parser body |
-parser := MmmmParseBody new.
+parser := MmBodyParser new.
 
-body := parser  parse: '|- -. -. ( ph -> ( ph <-> -. ps ) )'.
+body := parser  parse: '|- A. ph ph'.
 self assert: body class equals: MmProveableModel.
 ^ body

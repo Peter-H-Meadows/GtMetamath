@@ -1,0 +1,27 @@
+{
+	"commentStamp" : "",
+	"super" : "PP2CompositeNode",
+	"category" : "Metamath-Parsing",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"forAll",
+		"terms",
+		"primary",
+		"label",
+		"proveable",
+		"parentheses",
+		"implies",
+		"not",
+		"impliesBi",
+		"and",
+		"or",
+		"forAllfa",
+		"equals",
+		"exists",
+		"notFree"
+	],
+	"name" : "MmmmParseBody",
+	"type" : "normal"
+}

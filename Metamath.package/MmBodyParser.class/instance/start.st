@@ -1,4 +1,4 @@
 accessing
 start
 
-^ ( proveable "/ wff" ) end
+^ (  label3 , label3 "/ wff" ) end

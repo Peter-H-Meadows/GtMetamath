@@ -28,7 +28,35 @@ gtProofsListView: aView
 		
 		
 		
-		list column: 'Name' text: #name width: 400.
+		list column: 'Name' text: #name width: 40.
+		
+		list column
+		width: 900;
+		title: 'pii';
+		stencil: [ :aProof :aRowIndex |
+		
+		
+		| col |
+		
+		aProof body ifNil: [BrLabel new
+				aptitude: BrGlamorousLabelAptitude new ;
+				"foreground: col contrastingBlackAndWhiteColor);"
+				text: aProof body asString;
+				"background: col;"
+				padding: (BlInsets all: 4) ] ifNotNil: [
+		
+		col := Color indexedColors atRandom .
+		
+		
+		aProof vcopy body gameElement background: Color black.
+		
+		
+		
+		]
+		
+			
+				
+				].		
 		
 "		list column: 'prrr'
 			text: [ :proof | proof printString ]."

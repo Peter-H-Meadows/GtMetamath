@@ -1,7 +1,7 @@
 accessing
 proveable
 
-^ '|-' asPParser trim , label2 / p4 "(   parentheses / label2 )"  ==> 
+^ "'|-' asPParser trim ," label3  , label3 , label3 "forAll" "terms"  "(   parentheses / label2 )"  ==> 
 
 	[ :x | "self halt."
 	
