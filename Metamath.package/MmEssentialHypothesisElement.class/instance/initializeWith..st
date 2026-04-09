@@ -30,13 +30,14 @@ self addChild: ee ."
 "model body ifNotNil: [
 self addChild: model body gameElement ]"
 
-model body ifNil: [ self error ].
+model body ifNil: [ "self error ]."
 
-"aText := model name asRopedText .
+aText := model name asRopedText .
 aText fontSize: 18.
 aText foreground: Color gray  .
 textElement := (BlTextElement text: aText). 
-self addChild: textElement ."
+self addChild: textElement .
+^ self ].
 
 self addChild: model body gameElement .
 

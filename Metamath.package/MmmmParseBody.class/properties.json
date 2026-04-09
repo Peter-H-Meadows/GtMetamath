@@ -4,7 +4,9 @@
 	"category" : "Metamath-Parsing",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"VarDict"
+	],
 	"instvars" : [
 		"forAll",
 		"terms",

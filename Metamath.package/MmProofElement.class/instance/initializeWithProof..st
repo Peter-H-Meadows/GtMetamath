@@ -18,7 +18,12 @@ box constraintsDo: [ :c |
 					c vertical fitContent ].
 	
 (aAssertion body respondsTo: #gameElement) ifFalse: [
-	self error.
+
+| comment |
+comment := MmCommentElement new createFromString: "aAssertion lastComment body " 'huh'.
+box addChild: comment .
+^ box
+	"self error."
 ] . 
 
 

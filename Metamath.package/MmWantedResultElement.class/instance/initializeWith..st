@@ -1,14 +1,25 @@
 initialization
 initializeWith: aProofModel
 
-| startBracketElement |
+| startBracketElement aText textElemen hypothBox vertCont |
 model := aProofModel .
+
+vertCont := self vertBox .
+
+self addChild: vertCont.
 
 self margin: (BlInsets all: 2).
 
 self addChild: selectedMarkerElement .
 
-self addChild: model body gameElement .
+vertCont addChild: model body gameElement .
+
+	aText := aProofModel bodyString asRopedText .
+
+	aText fontSize: 18.
+	aText foreground: Color veryLightGray .
+	textElemen := (BlTextElement text: aText) "constraintsDo: [ :c | c linear horizontal alignCenter ]".
+	vertCont addChild: textElemen .
 
 startBracketElement := BlElement new
 		constraintsDo: [ :c |

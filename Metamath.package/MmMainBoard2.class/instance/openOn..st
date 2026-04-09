@@ -6,7 +6,8 @@ openOn: aProofModel
 proofToDo := aProofModel "vcopy" .
 
 "self halt."
-proofToDo variables do: #setAsFixed .
+
+"proofToDo variables do: #setAsFixed ."
 
 wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
 wantedResultElement addBoardHandler.

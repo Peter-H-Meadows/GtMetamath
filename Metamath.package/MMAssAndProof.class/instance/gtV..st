@@ -12,6 +12,8 @@ gtV: aView
 	
 	essentialHypoths  do: [ :ea | ea parsee2 ]."
 	
+	self parse.
+	
 	^ aView explicit 
 		title: 'interactive';
 		stencil: [ self vcopy openOnMainBoard "gameElement" "gameElementWithEhypoths" ]

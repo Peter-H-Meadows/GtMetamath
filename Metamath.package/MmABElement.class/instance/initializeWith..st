@@ -7,7 +7,7 @@ initializeWith: mod
 
 
 	aText := model unicodeSymbol asRopedText
-		fontSize: 18; "bold ;"
+		fontSize: 26; "bold ;"
 		foreground: (Color white);
 		fontName: 'Cambria Math' .
 
