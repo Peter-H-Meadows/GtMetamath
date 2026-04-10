@@ -52,7 +52,10 @@ proof
 		"(x first = 'trujust') ifTrue: [ self halt ]."
 	
 		AllProofs at: x first put: thing .
+		
+		Place > 1790 ifTrue: [ 
 		Database addProof: thing.
+		].
 		
 		(x first = '2alimi') ifTrue: [ self halt ].
 		

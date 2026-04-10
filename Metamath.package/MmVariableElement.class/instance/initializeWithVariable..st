@@ -4,12 +4,24 @@ initializeWithVariable: aVariableModel
 
 model := aVariableModel.
 
-model announcer when: MmHighlightAnnouncement send: #highlight: to: self.
-model announcer when: MmVariableMappedAnnouncement send: #mapped: to: self.
-model announcer when: MmFailedToMapAnnouncement send: #failedToMap: to: self.
+self initAnnouncers .
 
-"self  margin: (BlInsets all: 4).
-self  padding: (BlInsets all: 4)."
+self  margin: (BlInsets all: 4).
+self  padding: (BlInsets all: 4).
+
+aVariableModel name = 'x' ifTrue: [
+"self background: Color blue ."
+	blob := BlElement new
+		background: Color blue ;
+		border: (BlBorder paint: (Color red alpha: 0.5) width: 6);
+		size: 30@30.
+		
+		blob geometry: BlCircleGeometry new.
+		
+		self addChild: blob.
+^ self
+
+].
 
 "aVariable identityHash printString"
 
@@ -56,7 +68,7 @@ aText := model "name" letter asRopedText .
 
 aText 
 		fontSize: 18; bold ;
-		foreground: (Color black);
+		foreground: model color contrastingBlackAndWhiteColor;
 		fontName: "'Bauhaus 93'" "'Curlz MT'" 'Phosphate'.
 
 textElement := BlTextElement text: aText.

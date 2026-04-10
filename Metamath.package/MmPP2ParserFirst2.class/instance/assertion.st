@@ -18,7 +18,7 @@ assertion
 	
 	ss := x third substrings .
 	
-	ss first = 'wff' ifTrue: [
+	ss first = 'wffxxxxxx' ifTrue: [
 	
 		Transcript show: x third ; cr .
 	
