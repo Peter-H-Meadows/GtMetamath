@@ -60,7 +60,7 @@ assertion
 	
 	AllProofs  at: x first put: thing .
 	
-	Database addAssertion: thing.
+	"Database addAssertion: thing."
 		
 	thing
 ]

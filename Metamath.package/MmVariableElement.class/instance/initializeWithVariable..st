@@ -23,6 +23,20 @@ aVariableModel name = 'x' ifTrue: [
 
 ].
 
+aVariableModel name = 'y' ifTrue: [
+"self background: Color blue ."
+	blob := BlElement new
+		background: Color yellow ;
+		border: (BlBorder paint: (Color red alpha: 0.5) width: 6);
+		size: 30@30.
+		
+		blob geometry: BlCircleGeometry new.
+		
+		self addChild: blob.
+^ self
+
+].
+
 "aVariable identityHash printString"
 
 "geometryClass := model fixed ifTrue: [ BlRoundedRectangleGeometry ] ifFalse: [ BlCircle ] ."

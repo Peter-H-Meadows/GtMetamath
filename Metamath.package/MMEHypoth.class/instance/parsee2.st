@@ -7,4 +7,4 @@ parsee2
 	
 	"body := MmmmParseBody new  parse: bodyString1."
 	
-	body class = PP2Failure ifTrue: [ self halt ].
+	"body class = PP2Failure ifTrue: [ self halt ]."

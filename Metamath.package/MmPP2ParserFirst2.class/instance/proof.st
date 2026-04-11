@@ -29,9 +29,9 @@ proof
 
 			AllProofs at: x first put: thing.
 
-			Place > 1790 ifTrue: [ Database addProof: thing ].
+			Place > 2222 ifTrue: [ Database addProof: thing ].
 
-			Place > 2222 ifTrue: [ self halt: '2222' ].
+			Place > 3333 ifTrue: [ self halt: '2222' ].
 
 			x first = '2alimi' ifTrue: [ self halt ].
 

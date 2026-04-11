@@ -4,7 +4,18 @@ addUsableAssertionsToC
 	proofToDo assertionsUsed
 		do: [ :each | 
 			
-			( {'wnf' . 'wb' . 'wex' . 'idi' . 'a1ii' . 'ax-2' . 'wal'. 'ax-1'} includes: each name )
+			( {'wa' .'wnf' . 'wb' . 'wex' . 'idi' . 'a1ii' . 'ax-2' . 'wal'. 'ax-1'} includes: each name )
+			ifTrue: [
+				| aText textElement |
+				aText := each name asRopedText .
+
+	aText fontSize: 18.
+	aText foreground: Color veryLightGray .
+	textElement := (BlTextElement text: aText) .
+			
+						leftPane addChild: textElement.
+			
+			]
 				ifFalse: [ 
 			 		proofToDo prevAssertions at: each name ifPresent: [ :ua |
 			

@@ -22,7 +22,9 @@
 		"forAllfa",
 		"equals",
 		"exists",
-		"notFree"
+		"notFree",
+		"squareBrackets",
+		"existsUniq"
 	],
 	"name" : "MmmmParseBody",
 	"type" : "normal"
