@@ -4,7 +4,7 @@ vcopy
 	"self halt."
 	"body ifNil: [ self parse]."
 	
-	"self parse ."
+	self parse .
 	
 	Transcript cr; cr; show: 'Copying: ' ; show: self ; cr ; show: essentialHypoths ; cr .
 	
