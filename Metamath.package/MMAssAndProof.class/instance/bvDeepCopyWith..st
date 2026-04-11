@@ -3,17 +3,12 @@ bvDeepCopyWith: copier
 	
 	announcer := Announcer new.
 	
-	
 	Transcript show: 'copying body' ; cr .
 	
 	body := body vDeepCopyWith: copier.
 	
-	
-	
-	"Transcript show: 'copying essential hypoyhs' ; cr .
-	essentialHypoths := essentialHypoths collect: [:ea | ea vDeepCopyWith: copier]."
-	
-	
+	Transcript show: 'copying essential hypoyhs' ; cr .
+	essentialHypoths := essentialHypoths collect: [:ea | ea vDeepCopyWith: copier].
 	
 	"dd := Dictionary new .
 	

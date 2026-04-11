@@ -1,7 +1,7 @@
 as yet unclassified
 notFree
 
-^ 'F/' asPParser trim  , label , label ==> 
+^ 'F/' asPParser trim  , primary , terms ==> 
 
 	[ :x | 
 	

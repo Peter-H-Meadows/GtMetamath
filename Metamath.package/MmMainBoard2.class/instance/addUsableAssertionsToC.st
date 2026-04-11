@@ -4,7 +4,7 @@ addUsableAssertionsToC
 	proofToDo assertionsUsed
 		do: [ :each | 
 			
-			( {'wex' . 'idi' . 'a1ii' . 'ax-2' . 'ax-3'. 'ax-1'} includes: each name )
+			( {'wnf' . 'wb' . 'wex' . 'idi' . 'a1ii' . 'ax-2' . 'wal'. 'ax-1'} includes: each name )
 				ifFalse: [ 
 			 		proofToDo prevAssertions at: each name ifPresent: [ :ua |
 			
@@ -17,7 +17,7 @@ addUsableAssertionsToC
 						"usableAssertion wantedResult: wantedResultElement model."
 
 						el := AssertionAndEssentialHypothesisElement new
-						initializeWith: ua "vcopy".
+						initializeWith: ua vcopy.
 					
 						"self addEventHandler: MmP new ."
 					

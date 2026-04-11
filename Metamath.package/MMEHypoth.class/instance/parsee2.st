@@ -3,7 +3,7 @@ parsee2
 	
 	"body := MmPP2ParserFirst2 bp parse: rawString ."
 	
-	body := MmmmParseBody new  parse: rawString.
+	body := MmmmParseBody  parse: rawString.
 	
 	"body := MmmmParseBody new  parse: bodyString1."
 	
