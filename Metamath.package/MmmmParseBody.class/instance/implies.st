@@ -1,7 +1,7 @@
 as yet unclassified
 implies
 
-^ primary , '->' asPParser trim  , terms "( parentheses / label2 trim )" ==> 
+^ primary , '->' asPParser trim  , terms ==> 
 
 	[ :x | 
 	"self halt."

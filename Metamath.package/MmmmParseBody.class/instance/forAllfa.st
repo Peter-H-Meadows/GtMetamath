@@ -1,10 +1,10 @@
 as yet unclassified
 forAllfa
-^ 'A.' asPParser trim ,
-	label , 'A.' asPParser trim , label , terms ==> 
+^ txForAll ,
+	label , txForAll , label , terms ==> 
 
 	[ :x | 
-	
-		MmForAllModel new first: x second second: x fourth
+		MmListyMod new stuff: x
+		"MmForAllModel new first: x second second: x fourth"
 	
 	] 

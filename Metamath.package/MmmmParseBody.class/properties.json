@@ -24,7 +24,11 @@
 		"exists",
 		"notFree",
 		"squareBrackets",
-		"existsUniq"
+		"existsUniq",
+		"member",
+		"forAllForAll",
+		"txForAll",
+		"pp"
 	],
 	"name" : "MmmmParseBody",
 	"type" : "normal"

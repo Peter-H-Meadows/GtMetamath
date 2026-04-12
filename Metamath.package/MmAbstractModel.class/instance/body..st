@@ -1,7 +1,9 @@
 accessing
 body: b
 
-b isArray ifTrue: [
+body := b
+
+"b isArray ifTrue: [
 
 	body := MmListModel new body: b .
 	^ self
@@ -9,5 +11,5 @@ b isArray ifTrue: [
 ].
 
 body := b.
-"self halt."
-body owner: self
+
+body owner: self"

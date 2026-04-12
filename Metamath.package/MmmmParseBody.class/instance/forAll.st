@@ -1,7 +1,7 @@
 as yet unclassified
 forAll
 ^ 'A.' asPParser trim ,
-	label , terms ==> 
+	pp , terms ==> 
 
 	[ :x | 
 	

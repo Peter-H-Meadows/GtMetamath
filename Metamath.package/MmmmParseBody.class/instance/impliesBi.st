@@ -1,7 +1,7 @@
 as yet unclassified
 impliesBi
 
-^ primary , '<->' asPParser trim  , terms "( parentheses / label2 trim )" ==> 
+^ primary, '<->' asPParser trim  , terms "( parentheses / label2 trim )" ==> 
 
 	[ :x | 
 	
