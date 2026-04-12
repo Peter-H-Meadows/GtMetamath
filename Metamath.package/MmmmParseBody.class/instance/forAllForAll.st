@@ -1,7 +1,7 @@
 as yet unclassified
 forAllForAll
 ^ txForAll ,
-	pp , txForAll , pp , label ==> 
+	pp , txForAll , pp , terms ==> 
 
 	[ :x | 
 		"MmListyMod new stuff: x"

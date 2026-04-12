@@ -1,7 +1,7 @@
 as yet unclassified
 exists
 ^ 'E.' asPParser trim ,
-	primary , terms ==> 
+	pp , terms ==> 
 
 	[ :x | 
 	
