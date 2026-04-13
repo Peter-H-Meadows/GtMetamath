@@ -49,6 +49,10 @@ self  addChild:  wantedResultElement.
 				| ehypoth |
 				ea setAsComplete .
 				ehypoth := MmOnBoardEssentialHypothesisElement new initializeWith:  ea .
+				
+				ehypoth constraintsDo: [ :c |
+			c frame horizontal alignRight .
+			c frame vertical alignTop ].
 					"MmEssentialHypothesisElement" 
 				
 				"ehypoth addBoardHandler ."
@@ -57,7 +61,7 @@ self  addChild:  wantedResultElement.
 			
 				"hypothPane addChild: ehypoth ."
 				
-				leftPane addChild: ehypoth .
+				self addChild: ehypoth .
 		].
 		
 		"self addUsableAssertionsToLeftpane."

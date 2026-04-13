@@ -1,3 +1,3 @@
 as yet unclassified
 primary
-^  parentheses / forAllForAll / forAll/ label
+^  parentheses / member / forAllForAll / forAll/ label

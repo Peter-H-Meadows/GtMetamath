@@ -28,7 +28,8 @@
 		"member",
 		"forAllForAll",
 		"txForAll",
-		"pp"
+		"pp",
+		"notFreeunder"
 	],
 	"name" : "MmmmParseBody",
 	"type" : "normal"

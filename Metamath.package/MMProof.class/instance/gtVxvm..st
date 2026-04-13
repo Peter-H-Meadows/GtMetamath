@@ -1,11 +1,20 @@
-adding
-addUsableAssertionsToC
-	| el |
-	proofToDo assertionsUsed
+as yet unclassified
+gtVxvm: aView
+<gtView>
+	self parse.
+
+	^ aView explicit
+		title: 'vvv';
+		stencil: [ | cont |
+		self vcopy .
+		
+		cont := BlElement new .
+		
+	self assertionsUsed
 		do: [ :each | 
 			
-			( {'wa' .'wnf' . 'wb' . 'wex' . 'idi' . 'a1ii' . 'ax-2' . 'wal'. 'ax-1'} includes: each name )
-			ifTrue: [
+			"( {'wa' .'wnf' . 'wb' . 'wex' . 'idi' . 'a1ii' . 'ax-2' . 'wal'. 'ax-1'} includes: each name )"
+		"false" true	ifTrue: [
 				| aText textElement |
 				aText := each name asRopedText .
 
@@ -13,15 +22,16 @@ addUsableAssertionsToC
 	aText foreground: Color veryLightGray .
 	textElement := (BlTextElement text: aText) .
 			
-						leftPane addChild: textElement.
+						cont addChild: textElement.
 			
 			]
 				ifFalse: [ 
-			 		proofToDo prevAssertions at: each name ifPresent: [ :ua |
+			 		self prevAssertions at: each name ifPresent: [ :ua |
 			
 						"proofToDo prevAssertions at: 'ax-1'."
 				
 						"ua parse ."
+						| el |
 						Transcript show: ua ; cr .
 			
 						"self halt."
@@ -32,24 +42,20 @@ addUsableAssertionsToC
 					
 						"self addEventHandler: MmP new ."
 					
-							"el addHandler: self."
-							
-							el addEventHandler: MmBoardListener new.
-							
-							el	hypothBox
-		childrenDo: [ :ell | 
-			ell mainBoard: self .
-			ell addEventHandler: MmBoardListener new.
-			ell announcer
-				when: MmWantedSelectedAnnouncement
-				send: #wantedSelected:
-				to: self ].
-	
+							el addHandler: self.
 
 						"el constraintsDo: [ :cc | cc linear horizontal alignRight ]."
 
-						leftPane addChild: el .
+						cont addChild: el .
 						"workPane addChild: el" 
-						]
+						].
+						
+						
 			].
-		]
+		].
+		
+		cont
+		
+		
+		
+		 ]

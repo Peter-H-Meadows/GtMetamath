@@ -1,7 +1,7 @@
 as yet unclassified
 proveable
 
-^ '|-' asPParser trim , terms   ==> 
+^ ( '|-' asPParser trim / 'wff'  asPParser trim / 'class'  asPParser trim ) , terms   ==> 
 
 	[ :x | 
 

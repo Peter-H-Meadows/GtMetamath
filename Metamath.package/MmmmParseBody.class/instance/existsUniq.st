@@ -1,7 +1,7 @@
 as yet unclassified
 existsUniq
 
-^ 'E!' asPParser trim  , label , terms ==> 
+^ 'E!' asPParser trim  , pp , terms ==> 
 
 	[ :x | 
 	
