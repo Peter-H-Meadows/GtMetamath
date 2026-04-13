@@ -1,6 +1,6 @@
 accessing
 gtBoboView: aView
-	<gtView>
+	"<gtView>"
 	^ aView explicit 
 		title: 'interactive';
 		stencil: [ proofs first gameElement2 ]

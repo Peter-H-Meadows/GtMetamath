@@ -22,7 +22,8 @@
 		"wantedResultElement",
 		"level",
 		"levels",
-		"aSpace"
+		"aSpace",
+		"eHypothPane"
 	],
 	"name" : "MmMainBoard2",
 	"type" : "normal"

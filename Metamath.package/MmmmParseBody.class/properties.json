@@ -29,7 +29,8 @@
 		"forAllForAll",
 		"txForAll",
 		"pp",
-		"notFreeunder"
+		"notFreeunder",
+		"truet"
 	],
 	"name" : "MmmmParseBody",
 	"type" : "normal"
