@@ -15,8 +15,8 @@ aptitude: (BrGlamorousContextMenuAptitude new
 										            ('color green' -> [ :e | model reColor: Color green  ]).
 										            ('color red' -> [ :e | model reColor: Color red  ]).
 										            
-										            ('set First' -> [ :e | model reColor: Color green  ]).
-										            ('set Second' -> [ :e | model reColor: Color red  ]).
+										            ('set First' -> [ :e | model setFirst: nil ]).
+										            ('set Second' -> [ :e | model setSecond: nil ]).
 										            
 										            
 										               ('bg' -> [ :e | e background: Color red ]).

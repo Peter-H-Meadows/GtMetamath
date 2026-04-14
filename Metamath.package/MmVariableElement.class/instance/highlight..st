@@ -1,4 +1,8 @@
 highlighting
 highlight: ann
 
-blob background: ann color 
+blob background: ann first color .
+
+model :=  ann first.
+
+		blob geometry: model geo .

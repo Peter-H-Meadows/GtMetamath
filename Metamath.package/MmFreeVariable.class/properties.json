@@ -4,7 +4,10 @@
 	"category" : "Metamath-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"Vfirst",
+		"Vsecond"
+	],
 	"instvars" : [
 		"owners"
 	],

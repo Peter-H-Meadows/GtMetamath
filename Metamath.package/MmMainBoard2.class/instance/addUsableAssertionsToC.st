@@ -1,6 +1,9 @@
 adding
 addUsableAssertionsToC
 	| el |
+	
+	leftPane addChild: (BlElement new size: 4@ 400).
+	
 	proofToDo assertionsUsed
 		do: [ :each | 
 			
@@ -52,4 +55,7 @@ addUsableAssertionsToC
 						"workPane addChild: el" 
 						]
 			].
-		]
+		].
+		
+		
+	leftPane addChild: (BlElement new size: 4@ 400).

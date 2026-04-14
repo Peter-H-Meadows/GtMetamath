@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"first"
+	],
 	"name" : "MmSetSecondAnn",
 	"type" : "normal"
 }

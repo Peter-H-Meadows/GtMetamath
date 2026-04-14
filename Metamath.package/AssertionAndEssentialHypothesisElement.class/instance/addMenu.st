@@ -11,7 +11,7 @@ addMenu
 										               ('model inspect' -> [ :e | model inspect ]).
 										               ('free'
 										                -> [ :e | model setAllVariablesToFixed ]).
-										               ('color' -> [ :e | model reColor ]).
+										               (model bodyString -> [ :e | model reColor ]).
 										               
 										               ('add grid v' -> [ :e | 
 										               	"e background: Color red "
