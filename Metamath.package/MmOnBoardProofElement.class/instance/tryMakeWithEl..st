@@ -1,7 +1,9 @@
 accessing
-tryMakeWithEl: el 
-el removeFromParent .
-self addChildFirst: el .
+tryMakeWithEl: el
+
+"el removeFromParent .
+self addChildFirst: el ."
+
 model canMapTo: el model.
 
 			"self background:

@@ -23,7 +23,10 @@
 		"level",
 		"levels",
 		"aSpace",
-		"eHypothPane"
+		"eHypothPane",
+		"leftPane2",
+		"listo",
+		"resultPane"
 	],
 	"name" : "MmMainBoard2",
 	"type" : "normal"

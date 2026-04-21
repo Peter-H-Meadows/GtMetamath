@@ -7,7 +7,7 @@ proofToDo := aProofModel "vcopy" .
 
 "self halt."
 
-"proofToDo variables do: #setAsFixed ."
+proofToDo variables do: #setAsFixed .
 
 wantedResultElement := MmWantedResultElement new initializeWith: proofToDo .
 wantedResultElement addBoardHandler.
@@ -19,6 +19,10 @@ wantedResultElement
 			c frame vertical alignBottom ].
 			
 self  addChild:  wantedResultElement.
+
+"leftPane2 picture: wantedResultElement asScalableElement ."
+
+"resultPane addChild: wantedResultElement asScalableElement ."
 
 "workPane addChild: proofToDo gameElementWithEhypoths ."
 	

@@ -17,6 +17,12 @@ fixed ifTrue: [
 	^ self canMapTo: x mappedTo
 	
 	].
+	
+	Count ifNil: [Count := 0].
+	Count > 99 ifTrue: [
+		Count := 0.
+		self halt .
+	].
 
 mappedTo ifNotNil: [ "self halt." ^ mappedTo canMapTo: x ].
 

@@ -1,7 +1,8 @@
 accessing
 usableSelected: ann
+"self halt."
 	
-	selectedUsableElement == ann element ifTrue: [self halt.] ifFalse: [ "self halt."
+	selectedUsableElement == ann element ifTrue: [ ] ifFalse: [ "self halt."
 	selectedUsableElement  ifNotNil: [ selectedUsableElement unhighlightAsSelected ] . 
 ].
 	

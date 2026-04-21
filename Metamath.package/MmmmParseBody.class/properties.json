@@ -30,7 +30,9 @@
 		"txForAll",
 		"pp",
 		"notFreeunder",
-		"truet"
+		"truet",
+		"subset",
+		"union"
 	],
 	"name" : "MmmmParseBody",
 	"type" : "normal"

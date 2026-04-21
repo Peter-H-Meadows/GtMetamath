@@ -4,7 +4,7 @@ addHideButton
 	hideButton := BrButton new
 			aptitude: BrGlamorousButtonWithLabelAptitude new;
 			label: 'X';
-			action: [ self removeFromParent ].
+			action: [ self parent removeFromParent ].
 
 	hideButton
 		constraintsDo: [ :c | 

@@ -19,8 +19,8 @@ initialize
 			c horizontal matchParent.
 			c vertical matchParent ];"
 			constraintsDo: [ :c | 
-				c horizontal fitContent.
-				c vertical fitContent.
+				c horizontal matchParent.
+				c vertical matchParent.
 				"c frame horizontal weight: 0.7 ."
 				c frame horizontal alignRight
 			];
@@ -38,10 +38,14 @@ initialize
 			constraintsDo: [ :c | 
 				c horizontal fitContent.
 				c vertical fitContent.
-				"c frame horizontal alignLeft.
-				c frame vertical alignBottom" ];
+				"c frame horizontal alignLeft."
+				c frame horizontal alignRight.
+				"c frame vertical alignBottom" ];
 			layout: BlLinearLayout vertical.
 
+		leftPane	aptitude: BrShadowAptitude + BrTextLabelAptitude + BrIconAptitude + BrDescriptionAptitude
+				+ BrGlamorousWithVerticalResizerAptitude
+				+ ("BrGlamorousResizerAptitude" BrGlamorousWithHorizontalResizerAptitude "new keepRatio: false" ).
 
 	sc := BlScrollableElement new.
 
@@ -51,7 +55,7 @@ initialize
 		constraintsDo: [ :c | 
 			c horizontal fitContent.
 			c vertical matchParent.
-			c frame horizontal alignLeft	"linear" ].
+			c frame horizontal alignRight	"linear" ].
 
 
 	hideButton := BrButton new
@@ -79,12 +83,16 @@ initialize
 			"leftPane addChild: BlElement new ."
 
 
-	self addChild: workPane  "asPannableElement" "asScalableElement".
+	self addChild: workPane.  "asPannableElement" "asScalableElement"
 
-	self addChild: hypothPane.
+	"self addChild: hypothPane."
 	
 	"self addChild: leftPane"
 	"asScalableElement"
 
 	self addChild: sc.
 	self addChild: hideButton.
+	
+	self addMenux .
+	
+	"self initCardLeft ."

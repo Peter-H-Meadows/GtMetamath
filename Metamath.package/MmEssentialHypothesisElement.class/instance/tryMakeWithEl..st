@@ -6,8 +6,8 @@ tryMakeWithEl: el
 	"ehypel := MmOnBoardEssentialHypothesisElement new model: el model copy ."
 		
 	el model isEhypoth ifFalse: [
-		el removeFromParent .
-		self addChildFirst: el .
+		el parent removeFromParent .
+		self addChildFirst: el asScalableElement.
 	] .
 	
 	"self halt."
