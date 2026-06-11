@@ -32,7 +32,10 @@
 		"notFreeunder",
 		"truet",
 		"subset",
-		"union"
+		"union",
+		"primary2",
+		"primary3",
+		"intersection"
 	],
 	"name" : "MmmmParseBody",
 	"type" : "normal"

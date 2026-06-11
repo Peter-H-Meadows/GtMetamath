@@ -5,6 +5,6 @@ union
 
 	[ :x | 
 	
-		MmMemberModel new first: x first second: x third   
+		MmUnionModel new first: x first second: x third   
 	
 	] 

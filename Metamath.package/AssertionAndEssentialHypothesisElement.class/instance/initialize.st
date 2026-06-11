@@ -1,8 +1,7 @@
 accessing
 initialize 
 
-| hideButton |
-	super initialize .
+super initialize .
 
 self addChild:  greenElement .
 
@@ -10,8 +9,8 @@ self addChild:  greenElement .
 
 hypothBox := BlElement new layout: BlLinearLayout  vertical .
 
-self padding: (BlInsets all: 4).
-self margin: (BlInsets all: 4).
+"self padding: (BlInsets all: 4).
+self margin: (BlInsets all: 4)."
 
 hypothBox constraintsDo: [ :c | 
 					c horizontal fitContent.

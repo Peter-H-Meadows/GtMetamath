@@ -1,7 +1,7 @@
 as yet unclassified
 member
 
-^ ( label / squareBrackets ) trim , 'e.' asPParser trim  , label trim  ==> 
+^ ( label / squareBrackets ) trim , 'e.' asPParser trim  , primary2 trim  ==> 
 
 	[ :x | 
 	

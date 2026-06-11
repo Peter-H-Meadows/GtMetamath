@@ -15,9 +15,9 @@ letter := ('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnpqrstu?' atRandom) asString 
 {'Mo'. 'me'. 'Mi'. 'ma'. }. 
 
 
-xxSize := 40 + 20 atRandom .
+xxSize := 12 + 10 atRandom .
 
-yySize := 40 + 20 atRandom .
+yySize := 12 + 10 atRandom .
 
 
 letter2 := 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnpqrstu?' atRandom .

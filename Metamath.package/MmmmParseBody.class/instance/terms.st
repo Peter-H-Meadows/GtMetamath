@@ -1,3 +1,3 @@
 as yet unclassified
 terms
-	^ and /  impliesBi / implies / union / subset/ forAllForAll / member / notFreeunder / existsUniq / squareBrackets / not  /  or /  forAll / exists / "forAllfa /" equals / notFree /  primary
+	^ or / and /  impliesBi / implies / union / subset/ forAllForAll / member / intersection / notFreeunder / existsUniq / squareBrackets / not  /    forAll / exists / "forAllfa /" equals / notFree /  primary

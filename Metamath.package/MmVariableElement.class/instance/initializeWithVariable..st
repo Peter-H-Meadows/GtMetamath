@@ -42,7 +42,7 @@ aVariableModel name = 'y' ifTrue: [
 "geometryClass := model fixed ifTrue: [ BlRoundedRectangleGeometry ] ifFalse: [ BlCircle ] ."
 
 	blob := BlElement new
-		background: model color
+		background: model color "Color transparent"
 		"border: (BlBorder paint: (Color blue alpha: 0.5) width: 6)" .
 		"size: 30@30;"
 		
@@ -99,7 +99,7 @@ blob layout: BlFrameLayout new.
 
 blob addChild: textElement .
 
-blob size:  (model xxSize @ model yySize) .
+blob size:  (model xxSize @ model yySize) "12@12".
 
 		
 		blob

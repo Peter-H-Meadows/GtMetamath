@@ -1,10 +1,10 @@
 as yet unclassified
 subset
 
-^ label , 'C_' asPParser trim  , primary "terms trim"  ==> 
+^ primary3 , 'C_' asPParser trim  , primary "terms trim"  ==> 
 
 	[ :x | 
 	
-		MmEqualsModel new first: x first second: x third   
+		MmSubsetModel new first: x first second: x third   
 	
 	] 
