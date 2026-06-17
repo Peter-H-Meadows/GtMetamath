@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-21T13:27:03.658+02:00"
+						"dateAndTimeString" : "2026-06-17T09:26:41.372+01:00"
 					}
 				},
 				"editEmail" : {
@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-05-21T13:27:03.658+02:00"
+						"dateAndTimeString" : "2026-06-17T09:27:15.962+01:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "TODO:\r\n1) upload thoughts into Leipiter wiki."
 			}
 		]
 	},
