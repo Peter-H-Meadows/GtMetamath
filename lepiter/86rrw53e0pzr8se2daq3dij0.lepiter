@@ -40,6 +40,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "Peter H Meadows\r\nSpencer Cambell\r\nWill Baca\r\nJake\r\nJoe / kuro\r\nLodewijk ADLP"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-19T12:14:33.104+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-19T12:15:21.59+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Sm+6GoNx8ECqYCy2TUh42Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[wowwow]]\r\n\r[[Lodewijk]]\r\n\r[[PHM personal]]\r\n\r\n"
 			}
 		]
 	},

@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-17T09:39:10.405+01:00"
+						"dateAndTimeString" : "2026-06-19T12:09:58.442+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-17T09:39:29.66+01:00"
+						"dateAndTimeString" : "2026-06-19T12:11:50.972+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "qpcJQeZuTk2w6jPgUV156g=="
+					"uidString" : "Q9ELsP+qJkSnXwUJDpE1Kw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Am i banned from europe?\r\nam i banned from the US?"
+				"string" : "Con Air.\r\nWill Swam coolers work in Portugal? [[[[wowwow]]]]]]]\r\n[wowwow]\r\n[[wowwow]]\r\n\r\n[[BWCD Portugal base]]\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-17T09:38:52.038+01:00"
+						"dateAndTimeString" : "2026-06-19T12:12:05.734+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-17T09:38:52.038+01:00"
+						"dateAndTimeString" : "2026-06-19T12:12:05.734+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "AJmqiNew30GjU6nm7xJT1A=="
+					"uidString" : "bsKsWuiLNEKU+Qc5uf2ZMg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "[[ADHD]]"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-19T12:16:46.522+01:00"
+						"dateAndTimeString" : "2026-06-19T12:12:21.324+01:00"
 					}
 				},
 				"editEmail" : {
@@ -103,54 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-19T12:19:49.73+01:00"
+						"dateAndTimeString" : "2026-06-19T12:12:37.757+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "oXfwwddfC0mZSF6YCV9RRQ=="
+					"uidString" : "pm6jkikbUEGezG/G/7PzpQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Alex Berlin rando mexican cat. piano. polymath adhd. sociopath.\r\n\r\nSwikida discord. Cantor. Contractor . areospace. NASA\r\n\r\nTheresea Coventry. BPD. DWP?\r\n\r\nSatsuma. NSFW\r\n\r\nBenjamin Ikue . Inflection point."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-20T12:49:41.838+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-20T12:51:24.344+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "woqXrzVeUUqB4Zowj0aGiA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##DONE\r\n*done* _done_\r\nscrews in HP Omen laptop. one loose.\r\nhdds from anex\r\n"
+				"string" : "[[BWCD Portugal base]]\r\n[wowwow]\r\n"
 			}
 		]
 	},
@@ -162,7 +125,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-06-17T09:39:02.818+01:00"
+			"dateAndTimeString" : "2026-06-19T12:09:41.081+01:00"
 		}
 	},
 	"editEmail" : {
@@ -173,15 +136,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-06-17T09:39:02.818+01:00"
+			"dateAndTimeString" : "2026-06-19T12:09:41.081+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "PHM personal"
+		"title" : "AIR CON"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "9bcbb356-3050-4a45-804d-332b3618d121"
+		"uuid" : "1a1a85f2-6202-af4c-93c0-cb4875cc924d"
 	}
 }

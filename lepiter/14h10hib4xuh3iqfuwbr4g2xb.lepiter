@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-17T09:42:06.654+01:00"
+						"dateAndTimeString" : "2026-06-19T12:13:23.289+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-17T09:43:01.534+01:00"
+						"dateAndTimeString" : "2026-06-19T12:13:24.961+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "LU74MVQvBEudl3Ng9l48Gg=="
+					"uidString" : "6SBQ2VQZKEudh9h80ssp4Q=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Peter H Meadows\r\nSpencer Cambell\r\nWill Baca\r\nJake\r\nJoe / kuro\r\nLodewijk ADLP"
+				"string" : "[[Utrecht]]\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-19T12:14:33.104+01:00"
+						"dateAndTimeString" : "2026-06-19T12:12:44.435+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-19T12:14:48.645+01:00"
+						"dateAndTimeString" : "2026-06-19T12:12:44.435+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Sm+6GoNx8ECqYCy2TUh42Q=="
+					"uidString" : "4BZ47UOLUUSvjL+WtiOG0A=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[wowwow]]\r\n\r[[Lodewijk]]\r\n\r\n"
+				"string" : ""
 			}
 		]
 	},
@@ -88,7 +88,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-06-17T09:42:04.061+01:00"
+			"dateAndTimeString" : "2026-06-19T12:12:52.487+01:00"
 		}
 	},
 	"editEmail" : {
@@ -99,15 +99,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-06-17T09:42:04.061+01:00"
+			"dateAndTimeString" : "2026-06-19T12:12:52.487+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "BWCD core crew"
+		"title" : "wowwow"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "0c0a053e-5616-d747-880e-25ccdc83d703"
+		"uuid" : "cff298fa-5cd5-c840-b32e-a512636cfd12"
 	}
 }

@@ -77,6 +77,80 @@
 					"__type" : "textStyle"
 				},
 				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-19T12:16:46.522+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-19T12:19:49.73+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oXfwwddfC0mZSF6YCV9RRQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Alex Berlin rando mexican cat. piano. polymath adhd. sociopath.\r\n\r\nSwikida discord. Cantor. Contractor . areospace. NASA\r\n\r\nTheresea Coventry. BPD. DWP?\r\n\r\nSatsuma. NSFW\r\n\r\nBenjamin Ikue . Inflection point."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-20T12:49:41.838+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-20T12:51:47.477+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "woqXrzVeUUqB4Zowj0aGiA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##DONE\r\n*done* _done_\r\nscrews in HP Omen laptop. one loose.\r\nhdds from anex.\r\nLewis defo for move?\r\n\r\n"
 			}
 		]
 	},
