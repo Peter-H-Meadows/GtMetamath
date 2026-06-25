@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-20T13:20:39.394+01:00"
+						"dateAndTimeString" : "2026-06-20T13:26:10.455+01:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-20T13:21:38.592+01:00"
+						"dateAndTimeString" : "2026-06-20T13:26:49.367+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "EyaxK5GTUEKaDTef5m7M6Q=="
+					"uidString" : "EJNcPftIxkCn+EV2wKJzAQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "fisherman guy next to wowwow's co-working space. party.\r\n\r\nguy from pod hotel.\r\n\r\n"
+				"string" : "Berlin.\r\n\r\nalcuin.space\r\n\r\nParis. Minty. SDF"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-19T12:13:03.333+01:00"
+						"dateAndTimeString" : "2026-06-20T13:26:05.852+01:00"
 					}
 				},
 				"editEmail" : {
@@ -66,12 +66,49 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-19T12:13:03.333+01:00"
+						"dateAndTimeString" : "2026-06-20T13:26:05.852+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "zoAfbIYLzEG2sIIG1g+OSw=="
+					"uidString" : "vnW0wczDnkW2YVFh0i5+WQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-20T13:25:57.346+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-20T13:25:57.346+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "bcJPY8ciB0iBOd5AB8afKw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -88,7 +125,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-06-19T12:13:11.19+01:00"
+			"dateAndTimeString" : "2026-06-20T13:26:05.837+01:00"
 		}
 	},
 	"editEmail" : {
@@ -99,15 +136,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2026-06-19T12:13:11.19+01:00"
+			"dateAndTimeString" : "2026-06-20T13:26:05.837+01:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Utrecht"
+		"title" : "AlcuinAI"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "d875d944-93c8-854d-88db-c8c3549ddefd"
+		"uuid" : "e07d217c-7ac2-2441-8469-dcefdee56aef"
 	}
 }
